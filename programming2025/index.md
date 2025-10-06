@@ -26,7 +26,7 @@
   - [その他](#その他)
 
 ###
-[サイトへ戻る](index.html)
+[サイトへ戻る](yamachan050125.github.io/index.html)
 
 
 ## 授業の概要
