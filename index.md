@@ -30,6 +30,8 @@
 [計量経済学2025資料_高知工科大学](KeiryouKeizaigaku25/index.md)
 
 [教育制度論](Kyouikuseidoronn/index.md)
+
+[社会科指導法](SyakaikaSidouhou4/index.md)
 ## このサイト構築のために使用した資料
 [高知工科大学25'『プログラミング』資料　-小林豊](programming2025\index.html)
 
