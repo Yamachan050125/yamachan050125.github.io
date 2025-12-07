@@ -1,6 +1,7 @@
+---
 layout: page
 permalink: /FranceKakumeiSiryou_Mogijyugyou1/  
-
+---
 
 # 社会科指導法４-模擬１ 『フランス革命』
 
