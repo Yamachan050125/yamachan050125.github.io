@@ -3,11 +3,24 @@ project:
 
 website:
   title: "Syakaikano-Omochabako"
+  description: "社会科のおもちゃ箱へようこそ！歴史や地理、文化に関する楽しい学びの場です。"
+
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      # ここに作成したファイル（例: france.md）を追加していく
+     
+      
+  # 上部のメニュー（不要なら消してもOK）
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
 
 format:
   html:
@@ -16,6 +29,5 @@ format:
       - brand
     css: styles.css
     toc: true
-
 
 
