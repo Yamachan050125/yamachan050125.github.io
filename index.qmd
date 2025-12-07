@@ -1,7 +1,16 @@
 ---
 title: "社会科のおもちゃ箱"
-author: "藤井大和"
+author: 
+    - name: "藤井大和"
+    - affiliation: 高知工科大学 経済マネジメント学群
 ---
+
+1 
+
+こんにちは。
+
+
+
 
 # 参考資料
 [倫理学2025資料_高知工科大学](Rinrigaku25\index.html)

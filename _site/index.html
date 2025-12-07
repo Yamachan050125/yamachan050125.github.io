@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="藤井大和">
 
 <title>社会科のおもちゃ箱 – Syakaikano-Omochabako</title>
 <style>
@@ -157,6 +158,12 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>藤井大和 </p>
+          </div>
+  </div>
     
   
     
@@ -167,6 +174,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<ol type="1">
+<li>自己紹介 こんにちは。</li>
+</ol>
 <section id="参考資料" class="level1">
 <h1>参考資料</h1>
 <p><a href="Rinrigaku25\index.html">倫理学2025資料_高知工科大学</a></p>
@@ -250,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/Yamachan050125\.github\.io\/yamachan050125\.github\.io\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
