@@ -22,6 +22,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: introduce\introduction.qmd
+        text: 筆者紹介
       
 
 format:
