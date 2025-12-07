@@ -11,6 +11,12 @@ website:
     contents:
       - href: index.qmd
         text: Home
+      - href: Rinrigaku25\index.html
+        text: 2025倫理学
+      - href: KeiryouKeizaigaku25\index.md
+        text: 2025計量経済学
+      - href: Shizenchirigaku\index.md
+        text: 2025自然地理学
       # 他のページを作ったらここに追加します
       # - href: about.qmd
       #   text: About
@@ -20,12 +26,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: Rinrigaku25\index.html
-        text: 2025倫理学
-      - href: KeiryouKeizaigaku25\index.md
-        text: 2025計量経済学
-      - href: Shizenchirigaku\index.md
-        text: 2025自然地理学
+      
 
 format:
   html:
