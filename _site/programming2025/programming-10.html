@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>programming-10 – Syakaikano-Omochabako</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-43081d808c96cc46af55a3a816ae9eed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Syakaikano-Omochabako</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#第10回-pandas入門" id="toc-第10回-pandas入門" class="nav-link active" data-scroll-target="#第10回-pandas入門">第10回　pandas入門</a>
+  <ul class="collapse">
+  <li><a href="#pandasとは" id="toc-pandasとは" class="nav-link" data-scroll-target="#pandasとは">pandasとは</a></li>
+  <li><a href="#データフレームの作成" id="toc-データフレームの作成" class="nav-link" data-scroll-target="#データフレームの作成">データフレームの作成</a></li>
+  <li><a href="#データフレームのデータ構造" id="toc-データフレームのデータ構造" class="nav-link" data-scroll-target="#データフレームのデータ構造">データフレームのデータ構造</a>
+  <ul class="collapse">
+  <li><a href="#論理的なデータ構造" id="toc-論理的なデータ構造" class="nav-link" data-scroll-target="#論理的なデータ構造">論理的なデータ構造</a></li>
+  <li><a href="#物理的なデータ構造" id="toc-物理的なデータ構造" class="nav-link" data-scroll-target="#物理的なデータ構造">物理的なデータ構造</a></li>
+  </ul></li>
+  <li><a href="#データのチェック" id="toc-データのチェック" class="nav-link" data-scroll-target="#データのチェック">データのチェック</a>
+  <ul class="collapse">
+  <li><a href="#データの閲覧" id="toc-データの閲覧" class="nav-link" data-scroll-target="#データの閲覧">データの閲覧</a></li>
+  <li><a href="#各変数の型チェック" id="toc-各変数の型チェック" class="nav-link" data-scroll-target="#各変数の型チェック">各変数の型チェック</a></li>
+  <li><a href="#各変数の分布のチェック" id="toc-各変数の分布のチェック" class="nav-link" data-scroll-target="#各変数の分布のチェック">各変数の分布のチェック</a></li>
+  <li><a href="#要約統計量の計算" id="toc-要約統計量の計算" class="nav-link" data-scroll-target="#要約統計量の計算">要約統計量の計算</a></li>
+  </ul></li>
+  <li><a href="#可視化の方法概観" id="toc-可視化の方法概観" class="nav-link" data-scroll-target="#可視化の方法概観">可視化の方法概観</a></li>
+  <li><a href="#matplotlibのフォント設定" id="toc-matplotlibのフォント設定" class="nav-link" data-scroll-target="#matplotlibのフォント設定">matplotlibのフォント設定</a></li>
+  <li><a href="#散布図のプロット" id="toc-散布図のプロット" class="nav-link" data-scroll-target="#散布図のプロット">散布図のプロット</a></li>
+  <li><a href="#色の微調整" id="toc-色の微調整" class="nav-link" data-scroll-target="#色の微調整">色の微調整</a></li>
+  <li><a href="#回帰直線のプロット" id="toc-回帰直線のプロット" class="nav-link" data-scroll-target="#回帰直線のプロット">回帰直線のプロット</a></li>
+  <li><a href="#回帰直線と散布図のオーバレイ" id="toc-回帰直線と散布図のオーバレイ" class="nav-link" data-scroll-target="#回帰直線と散布図のオーバレイ">回帰直線と散布図のオーバレイ</a></li>
+  <li><a href="#seabornの活用" id="toc-seabornの活用" class="nav-link" data-scroll-target="#seabornの活用">Seabornの活用</a></li>
+  <li><a href="#グラフの保存" id="toc-グラフの保存" class="nav-link" data-scroll-target="#グラフの保存">グラフの保存</a></li>
+  <li><a href="#インデクシングとスライス" id="toc-インデクシングとスライス" class="nav-link" data-scroll-target="#インデクシングとスライス">インデクシングとスライス</a>
+  <ul class="collapse">
+  <li><a href="#インデックス番号" id="toc-インデックス番号" class="nav-link" data-scroll-target="#インデックス番号">インデックス番号</a></li>
+  <li><a href="#ラベル" id="toc-ラベル" class="nav-link" data-scroll-target="#ラベル">ラベル</a></li>
+  <li><a href="#スライスiloc" id="toc-スライスiloc" class="nav-link" data-scroll-target="#スライスiloc">スライス(<code>iloc</code>)</a></li>
+  <li><a href="#スライスloc" id="toc-スライスloc" class="nav-link" data-scroll-target="#スライスloc">スライス(<code>loc</code>)</a></li>
+  <li><a href="#ブールインデックス" id="toc-ブールインデックス" class="nav-link" data-scroll-target="#ブールインデックス">ブールインデックス</a></li>
+  <li><a href="#ファンシーインデックス" id="toc-ファンシーインデックス" class="nav-link" data-scroll-target="#ファンシーインデックス">ファンシーインデックス</a></li>
+  </ul></li>
+  <li><a href="#欠測値" id="toc-欠測値" class="nav-link" data-scroll-target="#欠測値">欠測値</a>
+  <ul class="collapse">
+  <li><a href="#nan-not-a-number" id="toc-nan-not-a-number" class="nav-link" data-scroll-target="#nan-not-a-number">NaN (Not a Number)</a></li>
+  <li><a href="#欠測の除去" id="toc-欠測の除去" class="nav-link" data-scroll-target="#欠測の除去">欠測の除去</a></li>
+  </ul></li>
+  <li><a href="#csvの読み書き" id="toc-csvの読み書き" class="nav-link" data-scroll-target="#csvの読み書き">CSVの読み書き</a></li>
+  <li><a href="#まとめ" id="toc-まとめ" class="nav-link" data-scroll-target="#まとめ">まとめ</a></li>
+  <li><a href="#参考書" id="toc-参考書" class="nav-link" data-scroll-target="#参考書">参考書</a></li>
+  <li><a href="#宿題ホームワーク" id="toc-宿題ホームワーク" class="nav-link" data-scroll-target="#宿題ホームワーク">宿題(ホームワーク)</a></li>
+  <li><a href="#補遺" id="toc-補遺" class="nav-link" data-scroll-target="#補遺">補遺</a>
+  <ul class="collapse">
+  <li><a href="#データフレーム表示行数の設定" id="toc-データフレーム表示行数の設定" class="nav-link" data-scroll-target="#データフレーム表示行数の設定">データフレーム表示行数の設定</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="第10回-pandas入門" class="level1">
+<h1>第10回　pandas入門</h1>
+<ul>
+<li><a href="#第10回pandas入門">第10回　pandas入門</a>
+<ul>
+<li><a href="#pandasとは">pandasとは</a></li>
+<li><a href="#データフレームの作成">データフレームの作成</a></li>
+<li><a href="#データフレームのデータ構造">データフレームのデータ構造</a>
+<ul>
+<li><a href="#論理的なデータ構造">論理的なデータ構造</a></li>
+<li><a href="#物理的なデータ構造">物理的なデータ構造</a></li>
+</ul></li>
+<li><a href="#データのチェック">データのチェック</a>
+<ul>
+<li><a href="#データの閲覧">データの閲覧</a></li>
+<li><a href="#各変数の型チェック">各変数の型チェック</a></li>
+<li><a href="#各変数の分布のチェック">各変数の分布のチェック</a></li>
+<li><a href="#要約統計量の計算">要約統計量の計算</a></li>
+</ul></li>
+<li><a href="#可視化の方法概観">可視化の方法概観</a></li>
+<li><a href="#matplotlibのフォント設定">matplotlibのフォント設定</a></li>
+<li><a href="#散布図のプロット">散布図のプロット</a></li>
+<li><a href="#色の微調整">色の微調整</a></li>
+<li><a href="#回帰直線のプロット">回帰直線のプロット</a></li>
+<li><a href="#回帰直線と散布図のオーバレイ">回帰直線と散布図のオーバレイ</a></li>
+<li><a href="#seabornの活用">Seabornの活用</a></li>
+<li><a href="#グラフの保存">グラフの保存</a></li>
+<li><a href="#インデクシングとスライス">インデクシングとスライス</a>
+<ul>
+<li><a href="#インデックス番号">インデックス番号</a></li>
+<li><a href="#ラベル">ラベル</a></li>
+<li><a href="#スライスiloc">スライス(<code>iloc</code>)</a></li>
+<li><a href="#スライスloc">スライス(<code>loc</code>)</a></li>
+<li><a href="#ブールインデックス">ブールインデックス</a></li>
+<li><a href="#ファンシーインデックス">ファンシーインデックス</a></li>
+</ul></li>
+<li><a href="#欠測値">欠測値</a>
+<ul>
+<li><a href="#nan-not-a-number">NaN (Not a Number)</a></li>
+<li><a href="#欠測の除去">欠測の除去</a></li>
+</ul></li>
+<li><a href="#csvの読み書き">CSVの読み書き</a></li>
+<li><a href="#まとめ">まとめ</a></li>
+<li><a href="#参考書">参考書</a></li>
+<li><a href="#宿題ホームワーク">宿題(ホームワーク)</a></li>
+<li><a href="#課題アサインメント">課題(アサインメント)</a></li>
+<li><a href="#補遺">補遺</a>
+<ul>
+<li><a href="#データフレーム表示行数の設定">データフレーム表示行数の設定</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="pandasとは" class="level2">
+<h2 class="anchored" data-anchor-id="pandasとは">pandasとは</h2>
+<p>前回の講義で学んだNumPyでは、配列構造を導入することにより、データ解析において必須とも言えるベクトル演算や要素への高速なアクセスを可能としていました。</p>
+<p>しかしながら、NumPyの配列は基本的には複数のデータ型を混在させずに使用します。厳密にはオブジェクト型というデータ型を用いると混在させることができますが、高速化の利点は失われてしまいます。現実のデータは、測定する項目によってデータの型は異なるのが普通です。従って、NumPyの配列だけでは、データ解析には十分な柔軟性が得られないことが想像されます。</p>
+<p>Rでは、こうした問題を<strong>データフレーム</strong>という構造を用いて解決しています。データフレームは行列、あるいは表のような構造をしており、各列内ではデータ型は固定ですが、列ごとに異なるデータ型を用いることが可能です。これによって、高速な計算と柔軟性を同時に実現することが出来ます。</p>
+<p><strong>pandas</strong>は、Pythonでデータフレームを使うためのモジュールであり、Pythonの世界におけるデータ解析ではスタンダードなツールとなっています。pandasは、<strong>NumPy</strong>をベースに構築されており、操作方法も似ています。</p>
+<p>以前は機械学習モジュールのscikit-learnや可視化モジュールのmatplotlibなどの他のモジュールとの連携が十分でないイメージがありましたが、この問題は現在ではかなり解消し、他のデータ解析モジュールと高い互換性を実現しています。今や、Pythonでデータ解析をするならば、NumPyと同様、pandasを理解することは避けられないと言えます。</p>
+<p>本講義では、前回の講義で作成した線形モデルの疑似サンプルデータを用いて、データを<strong>pandas</strong>のデータフレームに加工し、操作する方法を解説します。特にCSVファイルの操作と可視化に焦点を当てたいと思います。</p>
+</section>
+<section id="データフレームの作成" class="level2">
+<h2 class="anchored" data-anchor-id="データフレームの作成">データフレームの作成</h2>
+<p>まずは<code>pandas</code>データフレームがどのようなものか説明するために、前回作った線形モデルの疑似データをデータフレームに格納してみましょう。まずは以下のコードを再実行し、疑似データを再作成してください。今回は、シード値を123に設定してからサンプリングしましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 線形モデルからのサンプリング</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">123</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> rng.normal(<span class="dv">8</span>,<span class="dv">2</span>,<span class="dv">100</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>e <span class="op">=</span> rng.normal(<span class="dv">0</span>,<span class="dv">3</span>,<span class="dv">100</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> x <span class="op">+</span> e</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>念のため、<code>x</code>、<code>e</code>、<code>y</code>の内容を表示して、サイズ100のサンプルがちゃんと生成されているか確認しておいてください。</p>
+<p>次に、<code>pandas</code>モジュールを読み込みます。<code>pandas</code>は、<code>pd</code>の別名で読み込むのが慣例となっているので、特段の理由が無い限りこれに従いましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>それでは、<code>x</code>、<code>y</code>、<code>e</code>を変数とするデータフレームを作成しましょう。データフレームを作成する方法は幾つかありますが、最も簡単なのは以下のように辞書を用いる方法です。</p>
+<p>この方法では、変数名をキー、対応するNumPyの配列を値として持つ辞書を作成し、pandasの関数DataFrameの引数に与えます。戻り値はデータフレームオブジェクトですので、これを適当な変数(ここでは<code>df</code>)に代入しておきましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {<span class="st">'x'</span>:x,<span class="st">'y'</span>:y,<span class="st">'e'</span>:e}</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(df))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span><span class="kw">class</span> <span class="st">'pandas.core.frame.DataFrame'</span><span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>データフレーム<code>df</code>を表示してみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>            x          y         e</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>    <span class="fl">6.021757</span>  <span class="fl">11.496212</span> <span class="op">-</span><span class="fl">1.547303</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>    <span class="fl">7.264427</span>  <span class="fl">20.503193</span>  <span class="fl">4.974340</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>   <span class="fl">10.575851</span>  <span class="fl">21.259913</span> <span class="op">-</span><span class="fl">0.891788</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>    <span class="fl">8.387949</span>  <span class="fl">13.625766</span> <span class="op">-</span><span class="fl">4.150131</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>    <span class="fl">9.840462</span>  <span class="fl">19.837310</span> <span class="op">-</span><span class="fl">0.843614</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>..        ...        ...       ...</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="dv">95</span>   <span class="fl">5.555309</span>  <span class="fl">12.561268</span>  <span class="fl">0.450651</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="dv">96</span>   <span class="fl">7.392817</span>  <span class="fl">15.309035</span> <span class="op">-</span><span class="fl">0.476600</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="dv">97</span>   <span class="fl">5.652623</span>   <span class="fl">9.026150</span> <span class="op">-</span><span class="fl">3.279095</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="dv">98</span>   <span class="fl">9.652547</span>  <span class="fl">21.696433</span>  <span class="fl">1.391339</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="dv">99</span>   <span class="fl">9.700645</span>  <span class="fl">15.425901</span> <span class="op">-</span><span class="fl">4.975388</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>[<span class="dv">100</span> rows x <span class="dv">3</span> columns]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように、途中の行は省略されていますが、100行×3列の表形式になっており、各列は<code>x</code>、<code>y</code>、<code>e</code>の値を格納していることが分かります。各行は、一つのオブザベーションであることに注意してください。</p>
+<p>なお、上記のように、デフォルトでpandasのデータフレームはオブザベーションが一定行数を超える場合は中間のオブザベーションを省略して表示するようになっています。この表示設定を変更する方法は補遺に記載しておきます。</p>
+</section>
+<section id="データフレームのデータ構造" class="level2">
+<h2 class="anchored" data-anchor-id="データフレームのデータ構造">データフレームのデータ構造</h2>
+<section id="論理的なデータ構造" class="level3">
+<h3 class="anchored" data-anchor-id="論理的なデータ構造">論理的なデータ構造</h3>
+<p>pandasデータフレームは、概念的には、各変数の配列を束にしたものになっています。各変数のデータを配列で取得するには、次のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>x_ser <span class="op">=</span> df.x</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>x_arr <span class="op">=</span> df.x.values</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(x_ser))</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(x_arr))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>前者(<code>x_ser</code>)では<code>Series</code>というpandas特有の配列型オブジェクトが得られますが、後者(<code>x_arr</code>)では<code>ndarray</code>型のNumPy配列が得られます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span><span class="kw">class</span> <span class="st">'pandas.core.series.Series'</span><span class="op">&gt;</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span><span class="kw">class</span> <span class="st">'numpy.ndarray'</span><span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>しばしば、「<code>DataFrame</code>は<code>Series</code>を束にしたものである」という表現がなされることがありますが、これはデータフレームから単一の変数データを取り出すと、往々にして<code>Series</code>型で返されるためです。多くの場合、以下の図のようなイメージを持っていれば十分でしょう。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/dataframe.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>dataframe</figcaption>
+</figure>
+</div>
+<p>NumPyの多次元配列とpandasのデータフレームの違いは、ちょうどRの行列とデータフレームの違いと似ています。NumPy多次元配列がすべての要素に同じ型のデータを持たなければならないのに対して、データフレームは、列ごとに異なる型を持つことができます。</p>
+<p>一つの列の中では、通常は型が統一されますが、オブジェクト型の変数は任意のデータをもつことができます。</p>
+<p>このようにpandasのデータの正体は<code>ndarray</code>オブジェクトですので、pandasのデータ型は基本的にNumPyのデータ型を踏襲していると考えて概ね正しいです。ただし幾つかの例外はあります。</p>
+<p>たとえば、NumPy配列には文字列型が存在しますが、pandasデータフレームでは文字列はオブジェクト型として保存されるという違いがあります。</p>
+<p>また、pandasには、欠測値を表すことができる<code>Int64</code>や<code>Int32</code>といった整数型が存在しますが、これはNumPyには存在しません。(<code>Int</code>という大文字からはじまる型名であることに注意してください。実際には、<code>Int64</code>や<code>Int32</code>は内部で<code>np.int64</code>、<code>np.int32</code>の配列を扱っています。)</p>
+</section>
+<section id="物理的なデータ構造" class="level3">
+<h3 class="anchored" data-anchor-id="物理的なデータ構造">物理的なデータ構造</h3>
+<p>論理的にはデータフレームは<code>Series</code>オブジェクトの束ですが、複数のデータフレームがメモリを共有しているのか否か、あるいはデータフレームを用いた種々の計算の効率性といったことを知る必要がある場合は、実際にどのようにデータが格納されているかを気に掛ける必要があります。</p>
+<p>データフレームの実際のデータは、データフレーム内の<strong>ブロックマネージャ</strong>というオブジェクトによって管理されています。<strong>ブロックマネージャ</strong>の属性名は<code>_data</code>です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>bm <span class="op">=</span> df._data   <span class="co"># ブロックマネージャを取得</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(bm))</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(bm)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span><span class="kw">class</span> <span class="st">'pandas.core.internals.managers.BlockManager'</span><span class="op">&gt;</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>BlockManager</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>Items: Index([<span class="st">'x'</span>, <span class="st">'y'</span>, <span class="st">'e'</span>], dtype<span class="op">=</span><span class="st">'object'</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>Axis <span class="dv">1</span>: RangeIndex(start<span class="op">=</span><span class="dv">0</span>, stop<span class="op">=</span><span class="dv">100</span>, step<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>FloatBlock: <span class="bu">slice</span>(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">1</span>), <span class="dv">3</span> x <span class="dv">100</span>, dtype: float64</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>BlockManager</code>を出力した結果で重要なのは<code>Items</code>と<code>FloatBlock</code>の項目です。<code>Items</code>は、変数のリストを表しています。一方、<code>FloatBlock</code>の欄は次のように解釈します。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>記述</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>slice(0,3,1)</code></td>
+<td>変数リストのスライス<code>[0:3:1]</code>、つまり0,1,2番目の変数は・・・</td>
+</tr>
+<tr class="even">
+<td><code>3 x 100</code></td>
+<td>3行100列の2次元NumPy配列に格納されている</td>
+</tr>
+<tr class="odd">
+<td><code>dtype: float64</code></td>
+<td>そしてその数値型はNumPyの<code>float64</code>型である</td>
+</tr>
+</tbody>
+</table>
+<p>この情報より、実際には、データフレームの数値は単一の2次元NumPy配列に格納されていることが分かります。</p>
+<p>各変数のデータが収められているNumPy配列の実体を取得するには、各変数の<code>values.base</code>属性にアクセスします。もう少し詳しくいうと、<code>values</code>属性はデータのビューですので、その参照元の配列を<code>base</code>で取得します。</p>
+<p>次のコードの出力により、<code>x</code>、<code>y</code>、<code>e</code>のデータが単一の2次元NumPy配列に格納されていることを確認できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>base_array <span class="op">=</span> df.x.values.base</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.y.values.base <span class="kw">is</span> base_array)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.e.values.base <span class="kw">is</span> base_array)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(base_array.shape)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>(<span class="dv">3</span>, <span class="dv">100</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように、<code>pandas</code>のデータフレームは、同じ型を持つ変数を一つのNumPy配列にまとめて格納することによって各種計算の高速化を図っています。</p>
+<p>ここで試しに、<code>df</code>に、整数の変数を加えた新しいデータフレームを作ってみます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>int_var <span class="op">=</span> np.arange(<span class="dv">100</span>,dtype<span class="op">=</span>np.int64)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>data2 <span class="op">=</span> {<span class="st">'x'</span>:x,<span class="st">'y'</span>:y,<span class="st">'e'</span>:e,<span class="st">'int_var'</span>:int_var}</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> pd.DataFrame(data2)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df2.head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>           x          y         e  int_var</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>   <span class="fl">6.021757</span>  <span class="fl">11.496212</span> <span class="op">-</span><span class="fl">1.547303</span>        <span class="dv">0</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>   <span class="fl">7.264427</span>  <span class="fl">20.503193</span>  <span class="fl">4.974340</span>        <span class="dv">1</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="fl">10.575851</span>  <span class="fl">21.259913</span> <span class="op">-</span><span class="fl">0.891788</span>        <span class="dv">2</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>   <span class="fl">8.387949</span>  <span class="fl">13.625766</span> <span class="op">-</span><span class="fl">4.150131</span>        <span class="dv">3</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>   <span class="fl">9.840462</span>  <span class="fl">19.837310</span> <span class="op">-</span><span class="fl">0.843614</span>        <span class="dv">4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>同じようにブロックマネージャを取得してみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>bm2 <span class="op">=</span> df2._data</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(bm2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>BlockManager</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>Items: Index([<span class="st">'x'</span>, <span class="st">'y'</span>, <span class="st">'e'</span>, <span class="st">'int_var'</span>], dtype<span class="op">=</span><span class="st">'object'</span>)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>Axis <span class="dv">1</span>: RangeIndex(start<span class="op">=</span><span class="dv">0</span>, stop<span class="op">=</span><span class="dv">100</span>, step<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>FloatBlock: <span class="bu">slice</span>(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">1</span>), <span class="dv">3</span> x <span class="dv">100</span>, dtype: float64</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>IntBlock: <span class="bu">slice</span>(<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">1</span>), <span class="dv">1</span> x <span class="dv">100</span>, dtype: int64</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>今度は、<code>IntBlock</code>という欄が新たにできました。この欄を読み解くと、第3変数の<code>int_var</code>は１行100列のNumPy配列に格納されており、その数値型は<code>int64</code>であることが分かります。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/blockmanager.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>blockmanager</figcaption>
+</figure>
+</div>
+<p>このように、数値型が異なる変数のデータは異なるNumPy配列に格納されています。実際、次のようにして<code>x</code>と<code>int_var</code>のデータがメモリを異にすることが分かります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>df2.x.values.base <span class="kw">is</span> df2.int_var.values.base</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="va">False</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>同じ数値型のデータが同じブロック(2次元NumPy配列)に格納されていることから、データ型が同じ変数であれば、列方向の計算も、かなりのパフォーマンスで実行できることが分かります。</p>
+</section>
+</section>
+<section id="データのチェック" class="level2">
+<h2 class="anchored" data-anchor-id="データのチェック">データのチェック</h2>
+<p>データフレームを作成したら、本格的な分析にとりかかるまえに、まず始めにデータを精査すべきです。データを精査するプロセスには、様々な作業が含まれますが、例えば以下のような作業は有効でしょう。</p>
+<ol type="1">
+<li>読み込んだデータの閲覧</li>
+<li>各変数の型のチェック</li>
+<li>欠測値の有無のチェック</li>
+<li>各変数の分布のチェック</li>
+<li>各変数の要約統計量の計算</li>
+</ol>
+<p>このうち、欠測値の有無のチェックについては、多少難しい操作になるので、後に回し、ここでは1,2,4,5を説明します。</p>
+<section id="データの閲覧" class="level3">
+<h3 class="anchored" data-anchor-id="データの閲覧">データの閲覧</h3>
+<p>例えば文字列データを読み込んだ際に文字化けが無かったか、などをチェックするのに役立ちます。データの閲覧は、単純に<code>print</code>でデータを出力してみるのが最も簡単な方法です。</p>
+<p>そのほか、以下のようなメソッドも有効でしょう。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>メソッド</th>
+<th>機能</th>
+<th>用例</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>head</code></td>
+<td>先頭の指定した行数だけ表示</td>
+<td><code>df.head(20)</code></td>
+</tr>
+<tr class="even">
+<td><code>tail</code></td>
+<td>末尾の指定した行数だけ表示</td>
+<td><code>df.tail(20)</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>head</code>および<code>tail</code>の行数指定はオプションであり、指定しない場合は5行表示します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.tail())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>df.tail()</code>だけでも良いのですが、そうするとHTML加工されて出力されるので、ここでは書面の都合上<code>print</code>関数を使いました。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>           x          y         e</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="dv">95</span>  <span class="fl">5.555309</span>  <span class="fl">12.561268</span>  <span class="fl">0.450651</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="dv">96</span>  <span class="fl">7.392817</span>  <span class="fl">15.309035</span> <span class="op">-</span><span class="fl">0.476600</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="dv">97</span>  <span class="fl">5.652623</span>   <span class="fl">9.026150</span> <span class="op">-</span><span class="fl">3.279095</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="dv">98</span>  <span class="fl">9.652547</span>  <span class="fl">21.696433</span>  <span class="fl">1.391339</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="dv">99</span>  <span class="fl">9.700645</span>  <span class="fl">15.425901</span> <span class="op">-</span><span class="fl">4.975388</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>また、特定の列だけ取得する方法には、様々な方法があります。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>記法</th>
+<th>機能</th>
+<th>型</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>df['x']</code></td>
+<td><code>x</code>の列だけ取得</td>
+<td><code>Series</code></td>
+</tr>
+<tr class="even">
+<td><code>df[['x']]</code></td>
+<td><code>x</code>の列だけ取得</td>
+<td><code>DataFrame</code></td>
+</tr>
+<tr class="odd">
+<td><code>df[['x','y']]</code></td>
+<td><code>x</code>、<code>y</code>だけのデータを取得</td>
+<td><code>DataFrame</code></td>
+</tr>
+<tr class="even">
+<td><code>df.x</code></td>
+<td><code>x</code>の列だけを取得</td>
+<td><code>Series</code></td>
+</tr>
+<tr class="odd">
+<td><code>df.loc[:,'x']</code></td>
+<td><code>x</code>の列だけを取得</td>
+<td><code>Series</code></td>
+</tr>
+<tr class="even">
+<td><code>df.loc[:,['x']]</code></td>
+<td><code>x</code>の列だけを取得</td>
+<td><code>DataFrame</code></td>
+</tr>
+<tr class="odd">
+<td><code>df.iloc[:,0]</code></td>
+<td>第0列だけを取得</td>
+<td><code>Series</code></td>
+</tr>
+<tr class="even">
+<td><code>df.iloc[:,[0,1]]</code></td>
+<td>第0、1列だけのデータを取得</td>
+<td><code>DataFrame</code></td>
+</tr>
+</tbody>
+</table>
+<p>記法によって、得られるデータが<code>Series</code>型の場合と<code>DataFrame</code>型の場合があるので、多少注意が必要です。</p>
+<p><code>loc</code>や<code>iloc</code>の使い方については、後でインデクシングとスライスの説明を行う際に解説します。</p>
+</section>
+<section id="各変数の型チェック" class="level3">
+<h3 class="anchored" data-anchor-id="各変数の型チェック">各変数の型チェック</h3>
+<p>データフレームに読み込んだ変数のデータ型をチェックするには、データフレームの<code>dtypes</code>属性を表示します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.dtypes)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>x    float64</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>y    float64</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>e    float64</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>dtype: <span class="bu">object</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これを見ると分かるように、意図したように<code>x</code>、<code>y</code>、<code>e</code>が全て64ビット浮動小数点数として格納されていることが分かります。</p>
+<p>このチェックによって、たとえば、<code>x</code>がオブジェクト型(<code>object</code>)などとして読み込まれていたりした場合は、<code>x</code>に数値以外のものがうっかりと混じってしまっていた可能性があります。あるいはデータをファイルから読み込んだ場合は、ファイルのオープンで何らかのトラブルがあった可能性があります。</p>
+</section>
+<section id="各変数の分布のチェック" class="level3">
+<h3 class="anchored" data-anchor-id="各変数の分布のチェック">各変数の分布のチェック</h3>
+<p>各変数の分布のチェックをするには、ヒストグラムをプロットするのが一番分かりやすい方法です。データフレームには、<code>hist</code>という全ての変数のヒストグラムをプロットするメソッドがあります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>df.hist()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>出力は以下のようになります。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/hist.png" class="img-fluid figure-img"></p>
+<figcaption>hist</figcaption>
+</figure>
+</div>
+<p>これにより、分布の形状に際立った特徴がないか、例えば母集団がマルチモーダルになっている可能性はないか、といった考察ができます。</p>
+</section>
+<section id="要約統計量の計算" class="level3">
+<h3 class="anchored" data-anchor-id="要約統計量の計算">要約統計量の計算</h3>
+<p>pandasデータフレームには、要約統計量を計算する便利なメソッドが揃っています。一番最初に試してみるべきメソッドは、<code>describe</code>でしょう。これはRデータフレームの<code>summary</code>メソッドに対応するものです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.describe())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>                x           y           e</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>count  <span class="fl">100.000000</span>  <span class="fl">100.000000</span>  <span class="fl">100.000000</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>mean     <span class="fl">8.163830</span>   <span class="fl">17.621354</span>    <span class="fl">0.293695</span></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>std      <span class="fl">1.799021</span>    <span class="fl">4.655073</span>    <span class="fl">2.761058</span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="bu">min</span>      <span class="fl">3.585058</span>    <span class="fl">5.838924</span>   <span class="op">-</span><span class="fl">8.185457</span></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="dv">25</span><span class="op">%</span>      <span class="fl">6.978835</span>   <span class="fl">13.910635</span>   <span class="op">-</span><span class="fl">1.225525</span></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="dv">50</span><span class="op">%</span>      <span class="fl">8.033164</span>   <span class="fl">17.570366</span>    <span class="fl">0.264505</span></span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a><span class="dv">75</span><span class="op">%</span>      <span class="fl">9.653371</span>   <span class="fl">20.953255</span>    <span class="fl">2.130415</span></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a><span class="bu">max</span>     <span class="fl">12.579820</span>   <span class="fl">27.685974</span>    <span class="fl">6.796562</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>出力された各要約統計量の意味は次の通りです。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>統計量</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>count</code></td>
+<td>オブザベーション数</td>
+</tr>
+<tr class="even">
+<td><code>mean</code></td>
+<td>平均値</td>
+</tr>
+<tr class="odd">
+<td><code>std</code></td>
+<td>標準偏差</td>
+</tr>
+<tr class="even">
+<td><code>min</code></td>
+<td>最小値</td>
+</tr>
+<tr class="odd">
+<td><code>25%</code></td>
+<td>25%分位点</td>
+</tr>
+<tr class="even">
+<td><code>50%</code></td>
+<td>50%分位点</td>
+</tr>
+<tr class="odd">
+<td><code>75%</code></td>
+<td>75%分位点</td>
+</tr>
+<tr class="even">
+<td><code>max</code></td>
+<td>最大値</td>
+</tr>
+</tbody>
+</table>
+<p>なお、こちらの<code>std</code>はNumPyと異なり、自由度のデフォルトは<code>N-1</code>ですのでご注意ください。</p>
+<p>自由度を変えたい場合は、独立に<code>std</code>メソッドや<code>var</code>メソッドを呼び出し、オプション引数<code>ddof</code>を設定する必要があります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co">#%%</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 自由度をNにした分散と標準偏差</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Var:'</span>)</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.var(ddof<span class="op">=</span><span class="dv">0</span>))</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Std:'</span>)</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.std(ddof<span class="op">=</span><span class="dv">0</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>Var:</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>x     <span class="fl">3.204111</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>y    <span class="fl">21.453009</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>e     <span class="fl">7.547206</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>dtype: float64</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>Std:</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>x    <span class="fl">1.790003</span></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>y    <span class="fl">4.631739</span></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>e    <span class="fl">2.747218</span></span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>dtype: float64</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>パーセンタイルをカスタマイズしたい場合は、<code>describe</code>メソッドの<code>percentiles</code>引数にパーセンタイルをリストで渡します。たとえば2.5%、50%、97.5%を出力したいときは、次のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.describe(percentiles<span class="op">=</span>[<span class="fl">0.025</span>,<span class="fl">0.5</span>,<span class="fl">0.975</span>]))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>                x           y           e</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>count  <span class="fl">100.000000</span>  <span class="fl">100.000000</span>  <span class="fl">100.000000</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>mean     <span class="fl">8.163830</span>   <span class="fl">17.621354</span>    <span class="fl">0.293695</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>std      <span class="fl">1.799021</span>    <span class="fl">4.655073</span>    <span class="fl">2.761058</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="bu">min</span>      <span class="fl">3.585058</span>    <span class="fl">5.838924</span>   <span class="op">-</span><span class="fl">8.185457</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a><span class="fl">2.5</span><span class="op">%</span>     <span class="fl">4.984007</span>    <span class="fl">8.015538</span>   <span class="op">-</span><span class="fl">5.119716</span></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a><span class="dv">50</span><span class="op">%</span>      <span class="fl">8.033164</span>   <span class="fl">17.570366</span>    <span class="fl">0.264505</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a><span class="fl">97.5</span><span class="op">%</span>   <span class="fl">11.348816</span>   <span class="fl">26.412084</span>    <span class="fl">5.619012</span></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a><span class="bu">max</span>     <span class="fl">12.579820</span>   <span class="fl">27.685974</span>    <span class="fl">6.796562</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>相関行列を計算するには、<code>corr</code>メソッドが使えます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %% ピアソンの積率相関係数</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.corr(<span class="st">"pearson"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>引数には”pearson”(ピアソン積率相関係数)、“kendall”(ケンドール順位相関係数)、“spearman”(スピアマン順位相関係数)が選べます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>          x         y         e</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>x  <span class="fl">1.000000</span>  <span class="fl">0.805777</span>  <span class="fl">0.055381</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>y  <span class="fl">0.805777</span>  <span class="fl">1.000000</span>  <span class="fl">0.635935</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>e  <span class="fl">0.055381</span>  <span class="fl">0.635935</span>  <span class="fl">1.000000</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>他にも様々なメソッドやオプション引数がありますので、pandasの<a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html">リファレンスマニュアル</a>をチェックしてみてください。</p>
+</section>
+</section>
+<section id="可視化の方法概観" class="level2">
+<h2 class="anchored" data-anchor-id="可視化の方法概観">可視化の方法概観</h2>
+<p>Pythonでデータや分析の結果を可視化するには、<code>matploblib</code>モジュールを使うのが最もポピュラーです。筆者が把握する限り、<code>matplotlib</code>を用いるには、主に3つの方法があります。</p>
+<ol type="1">
+<li><code>matplotlib</code>を直接操作する</li>
+<li><code>pandas</code>データフレームから<code>matploblib</code>を呼び出す</li>
+<li><code>Seaborn</code>から<code>matplotlib</code>を呼び出す</li>
+</ol>
+<p><code>matplotlib</code>は非常に低水準なグラフ描画機能を提供するので、柔軟性は高いですが、綺麗なグラフを<code>matplotlib</code>で手作りするのは中々骨が折れます。</p>
+<p><code>Seaborn</code>は<code>matplotlib</code>のインターフェースを高水準にしたもので(こういうものを<strong>ラッパー</strong>と呼びます)、柔軟性は低いですが、非常に簡単にきれいなグラフを作成できるという特徴があります。しかしながら、詳細なカスタマイズをしようと思うと、最終的には<code>matplotlib</code>をいじらないといけません。細部にこだわらない普段使いには十分であるような気がします。</p>
+<p><code>pandas</code>データフレームから<code>matplotlib</code>を呼び出すのは、<code>matplotlib</code>を直接操作するのと対して変わりありませんが、幾分インターフェースが簡略化されて使いやすくなっています。データフレームのメソッドなので、データにアクセスしやすくなっています。こちらについても、詳細な設定は<code>matplotlib</code>に立ち返らないといけません。</p>
+<p>(なお、PythonでもRの<code>ggplot</code>を使うことはできます。筆者はほとんど使ったことがありませんが、操作感がよいとは言えない印象があります。どなたかレビューお願いします。筆者の場合、そもそも<code>ggplot</code>を使いたいなら、最初からRを使います。)</p>
+<p>このように、Rの可視化部門が実質<code>ggplot2</code>に一元化されているのに対し、Pythonの可視化部門は若干散らかっている印象があります。改めて見ると、<code>ggplot2</code>が優れているのは、非常に高水準なインターフェースと、極めて低水準な操作を両立している点ではないでしょうか。要するに、多少雑で良いなら簡単に様々なグラフが作れるが、頑張ればいくらでも美しく加工できるということです。</p>
+<p>さて、Pythonに話を戻しましょう。筆者としては、グラフの大枠は<code>pandas</code>や<code>Seaborn</code>で作成し、細かい微調整については<code>matplotlib</code>を直接操作するというのが良いのではないかと思います。今回の講義は<code>pandas</code>の説明が中心ですので、データフレームのメソッドを介して可視化する方法を中心に説明します。</p>
+</section>
+<section id="matplotlibのフォント設定" class="level2">
+<h2 class="anchored" data-anchor-id="matplotlibのフォント設定">matplotlibのフォント設定</h2>
+<p><code>matplotlib</code>のデフォルトのフォントでは日本語が文字化けしてしまうため、まずフォントの設定を行う必要があります。</p>
+<p>次のように、<code>matplotlib</code>をインポートしてフォントを日本語フォントに変えましょう。Windowsでは”MS gothic”や”MS mincho”、“Meiryo”がありますが、ここでは”Meiryo”にしておきましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># MS ゴシックに変更</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>matplotlib.rcParams[<span class="st">'font.family'</span>] <span class="op">=</span> <span class="st">'Meiryo'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>また、上記のやり方では、毎回の起動時にフォントを設定する必要があります。起動時のデフォルトのフォントを変更する方法もあります。</p>
+<p>フォント周りの設定は本質的でなくごちゃごちゃした事項になるので、<a href="../programming2025/cheatsheet.html">チートシート</a>を別に作りました。参考にしてください。</p>
+</section>
+<section id="散布図のプロット" class="level2">
+<h2 class="anchored" data-anchor-id="散布図のプロット">散布図のプロット</h2>
+<p>散布図をプロットするには、データフレームの<code>plot.scatter</code>メソッドを使います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>df.plot.scatter(x<span class="op">=</span><span class="st">'x'</span>,y<span class="op">=</span><span class="st">'y'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>出力は以下のようになります。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/scatter1.png" class="img-fluid figure-img"></p>
+<figcaption>scatter1</figcaption>
+</figure>
+</div>
+<p>オプション引数をつけることによって、様々な微調整が可能です。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>オプション引数</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>s</code></td>
+<td>マーカーサイズ</td>
+</tr>
+<tr class="even">
+<td><code>c</code></td>
+<td>マーカー色</td>
+</tr>
+<tr class="odd">
+<td><code>marker</code></td>
+<td>マーカー形状</td>
+</tr>
+<tr class="even">
+<td><code>xlim</code></td>
+<td>横軸範囲</td>
+</tr>
+<tr class="odd">
+<td><code>ylim</code></td>
+<td>縦軸範囲</td>
+</tr>
+<tr class="even">
+<td><code>fontsize</code></td>
+<td>フォントサイズ</td>
+</tr>
+</tbody>
+</table>
+<p>これらのオプション引数は、例えば次のように使用します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>df.plot.scatter(x<span class="op">=</span><span class="st">'x'</span>,y<span class="op">=</span><span class="st">'y'</span>,</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>s<span class="op">=</span><span class="dv">30</span>,                   <span class="co"># マーカーサイズ</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>c<span class="op">=</span><span class="st">'skyblue'</span>,            <span class="co"># マーカーの色</span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>marker<span class="op">=</span><span class="st">'o'</span>,             <span class="co"># マーカーの形</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>xlim<span class="op">=</span>(<span class="dv">3</span>,<span class="dv">13</span>),            <span class="co"># x軸の範囲</span></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>ylim<span class="op">=</span>(<span class="dv">4</span>,<span class="dv">30</span>),            <span class="co"># y軸の範囲</span></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>fontsize<span class="op">=</span><span class="dv">12</span>             <span class="co"># 軸目盛のフォントサイズ</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>軸ラベルを変更するのは、少し手間がかかります。まず<code>matplotlib</code>のサブモジュール<code>pyplot</code>をインポートします(慣習として、<code>plt</code>という名前で読み込みます)。次に、<code>pyplot</code>モジュールの<code>xlabel</code>関数と<code>ylabel</code>関数で軸ラベルとそのサイズを次のように変更できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Xの値'</span>,size<span class="op">=</span><span class="dv">18</span>)</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Yの値'</span>,size<span class="op">=</span><span class="dv">18</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>また、グラフ上下左右のマージンを設定するには、</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>plt.subplots_adjust(left<span class="op">=</span><span class="fl">0.2</span>,bottom<span class="op">=</span><span class="fl">0.2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>のように指定します。</p>
+<p>ここで注意しなくてはならないのは、VS Codeの対話的モードで図を描く場合、図を描く関数の呼び出しと、図を調整する関数<code>plt.xlabel</code>等の呼び出しは、次のように<strong>全て同じセルで行わなくてはならない</strong>ということです(<code>import</code>は別のセルで構いません)。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>df.plot.scatter(x<span class="op">=</span><span class="st">'x'</span>,y<span class="op">=</span><span class="st">'y'</span>,</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>s<span class="op">=</span><span class="dv">30</span>,                   <span class="co"># マーカーサイズ</span></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>c<span class="op">=</span><span class="st">'skyblue'</span>,            <span class="co"># マーカーの色</span></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>marker<span class="op">=</span><span class="st">'o'</span>,             <span class="co"># マーカーの形</span></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>xlim<span class="op">=</span>(<span class="dv">3</span>,<span class="dv">13</span>),            <span class="co"># x軸の範囲</span></span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>ylim<span class="op">=</span>(<span class="dv">4</span>,<span class="dv">30</span>),            <span class="co"># y軸の範囲</span></span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>fontsize<span class="op">=</span><span class="dv">12</span>             <span class="co"># 軸目盛のフォントサイズ</span></span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Xの値'</span>,size<span class="op">=</span><span class="dv">18</span>)</span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Yの値'</span>,size<span class="op">=</span><span class="dv">18</span>)</span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>plt.subplots_adjust(left<span class="op">=</span><span class="fl">0.2</span>,bottom<span class="op">=</span><span class="fl">0.2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>出力は次のようになります。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/scatter2.png" class="img-fluid figure-img"></p>
+<figcaption>scatter2</figcaption>
+</figure>
+</div>
+<p>全てのマーカー形状と全ての色名は以下の<code>matplotlib</code>のサイトにリストアップされています。</p>
+<ul>
+<li><a href="https://matplotlib.org/stable/api/markers_api.html">全てのマーカー形状</a></li>
+<li><a href="https://matplotlib.org/stable/gallery/color/named_colors.html">全ての色名</a></li>
+</ul>
+<p>また、<code>plot.scatter</code>メソッドの詳細な使い方は<a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.plot.scatter.html">pandasのリファレンス</a>を見てください。</p>
+</section>
+<section id="色の微調整" class="level2">
+<h2 class="anchored" data-anchor-id="色の微調整">色の微調整</h2>
+<p>マーカーの色はRGBもしくはRGBAでも指定可能です。RGBは、赤・緑・青の強さを0～1の数値で表したものです(0～255の1バイト整数で表すことも多いです)。三つの数値をタプルで表します。たとえば、</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb38"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span>0,0,1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>は青原色となります。</p>
+<p>また、RGBAは、RGBに加えて、第4の数値が不透明度を0～1で表します。1が最も不透明で、0が透明です。</p>
+<p><code>matplotlib</code>では、<code>colors.to_rgb</code>および<code>colors.to_rgba</code>関数によって色名からRGB値およびRGBA値を取得できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># "coral"のRGBA値を取得</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>rgba_coral <span class="op">=</span> matplotlib.colors.to_rgba(<span class="st">"coral"</span>)</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(rgba_coral)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>(<span class="fl">1.0</span>, <span class="fl">0.4980392156862745</span>, <span class="fl">0.3137254901960784</span>, <span class="fl">1.0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>たとえば、このRGBA値のアルファ値を少し減じてやることによって、透明度のある”coral”を作ることができます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>rgba_coral_tr <span class="op">=</span> rgba_coral[<span class="dv">0</span>:<span class="dv">3</span>] <span class="op">+</span> (<span class="fl">0.6</span>,)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>df.plot.scatter(x<span class="op">=</span><span class="st">'x'</span>,y<span class="op">=</span><span class="st">'y'</span>,</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>s<span class="op">=</span><span class="dv">30</span>,                   <span class="co"># マーカーサイズ</span></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>color<span class="op">=</span>rgba_coral_tr,            <span class="co"># マーカーの色</span></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>marker<span class="op">=</span><span class="st">'o'</span>,             <span class="co"># マーカーの形</span></span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>xlim<span class="op">=</span>(<span class="dv">3</span>,<span class="dv">13</span>),            <span class="co"># x軸の範囲</span></span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>ylim<span class="op">=</span>(<span class="dv">4</span>,<span class="dv">30</span>),            <span class="co"># y軸の範囲</span></span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>fontsize<span class="op">=</span><span class="dv">12</span>             <span class="co"># 軸目盛のフォントサイズ</span></span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Xの値'</span>,size<span class="op">=</span><span class="dv">18</span>)</span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Yの値'</span>,size<span class="op">=</span><span class="dv">18</span>)</span>
+<span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a>plt.subplots_adjust(left<span class="op">=</span><span class="fl">0.2</span>,bottom<span class="op">=</span><span class="fl">0.2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>結果は次のようになります。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/scatter3.png" class="img-fluid figure-img"></p>
+<figcaption>scatter3</figcaption>
+</figure>
+</div>
+<p>ただし、RGB値やRGBA値を渡す場合は、引数名は<code>c</code>ではなく<code>color</code>にしてください。</p>
+</section>
+<section id="回帰直線のプロット" class="level2">
+<h2 class="anchored" data-anchor-id="回帰直線のプロット">回帰直線のプロット</h2>
+<p>それでは次に、単回帰の結果を散布図に重ねましょう。まずは回帰分析を再実行しておきます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 回帰分析</span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>res <span class="op">=</span> stats.linregress(df.x,df.y)</span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(res)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで、データフレーム<code>df</code>の変数<code>x</code>の配列と変数<code>y</code>の配列にアクセスするために、<code>df.x</code>、<code>df.y</code>という表記を用いていることに注意してください。このように、データフレームでは、<code>df.変数名</code>という表記によって、各列を取り出すことができます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>LinregressResult(slope<span class="op">=</span><span class="fl">2.084996965456381</span>, intercept<span class="op">=</span><span class="fl">0.5997940915043358</span>, rvalue<span class="op">=</span><span class="fl">0.8057774353709972</span>, pvalue<span class="op">=</span><span class="fl">5.010945582964262e-24</span>, stderr<span class="op">=</span><span class="fl">0.15479582428347563</span>, intercept_stderr<span class="op">=</span><span class="fl">1.2937470389108192</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>intercept</code>が切片、<code>slope</code>が回帰係数であることに注意してください。</p>
+<p>次に、この結果を用いて、回帰モデルの予測値を与えるデータフレームを用意しましょう。</p>
+<p>まず、<code>x_model</code>を予測用のサンプルデータ点を表すNumPy配列にします。これは、グラフの定義域をカバーしていればどんな配列でもよいのですが、ここでは、3～13の範囲を100分割した数列にしておきましょう。このような操作には、NumPyの<code>linspace</code>関数を使います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>x_model <span class="op">=</span> np.linspace(<span class="dv">3</span>,<span class="dv">13</span>,<span class="dv">100</span>)</span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(x_model))                 <span class="co"># 配列の長さ</span></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(np.<span class="bu">round</span>(x_model[:<span class="dv">3</span>],<span class="dv">3</span>))      <span class="co"># 最初の3要素</span></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(np.<span class="bu">round</span>(x_model[<span class="op">-</span><span class="dv">3</span>:],<span class="dv">3</span>))     <span class="co"># 最後の3要素</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>linspace</code>の引数は、それぞれ、開始数値、終端数値、分割数です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="dv">100</span></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>[<span class="fl">3.</span>    <span class="fl">3.101</span> <span class="fl">3.202</span>]</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>[<span class="fl">12.798</span> <span class="fl">12.899</span> <span class="fl">13.</span>   ]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>次に、<code>y_model</code>を、<code>y</code>の予測値を与える配列とします。これは、回帰分析の結果を用いて次のように計算できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>y_model <span class="op">=</span> res.intercept <span class="op">+</span> res.slope <span class="op">*</span> x_model</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これを用いて、100オブザベーションについての予測値を格納したデータフレーム<code>df_model</code>を次のように作成しておきます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>df_model <span class="op">=</span> pd.DataFrame({<span class="st">'x'</span>:x_model,<span class="st">'y'</span>:y_model})</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_model)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>           x          y</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>    <span class="fl">3.00000</span>   <span class="fl">6.854785</span></span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>    <span class="fl">3.10101</span>   <span class="fl">7.065391</span></span>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>    <span class="fl">3.20202</span>   <span class="fl">7.275996</span></span>
+<span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>    <span class="fl">3.30303</span>   <span class="fl">7.486602</span></span>
+<span id="cb49-8"><a href="#cb49-8" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>    <span class="fl">3.40404</span>   <span class="fl">7.697208</span></span>
+<span id="cb49-9"><a href="#cb49-9" aria-hidden="true" tabindex="-1"></a>..       ...        ...</span>
+<span id="cb49-10"><a href="#cb49-10" aria-hidden="true" tabindex="-1"></a><span class="dv">95</span>  <span class="fl">12.59596</span>  <span class="fl">26.862332</span></span>
+<span id="cb49-11"><a href="#cb49-11" aria-hidden="true" tabindex="-1"></a><span class="dv">96</span>  <span class="fl">12.69697</span>  <span class="fl">27.072937</span></span>
+<span id="cb49-12"><a href="#cb49-12" aria-hidden="true" tabindex="-1"></a><span class="dv">97</span>  <span class="fl">12.79798</span>  <span class="fl">27.283543</span></span>
+<span id="cb49-13"><a href="#cb49-13" aria-hidden="true" tabindex="-1"></a><span class="dv">98</span>  <span class="fl">12.89899</span>  <span class="fl">27.494149</span></span>
+<span id="cb49-14"><a href="#cb49-14" aria-hidden="true" tabindex="-1"></a><span class="dv">99</span>  <span class="fl">13.00000</span>  <span class="fl">27.704755</span></span>
+<span id="cb49-15"><a href="#cb49-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-16"><a href="#cb49-16" aria-hidden="true" tabindex="-1"></a>[<span class="dv">100</span> rows x <span class="dv">2</span> columns]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>この予測値のデータフレームで、<code>x</code>横軸、<code>y</code>縦軸の折れ線グラフを描けば、回帰直線になっているはずです。回帰直線には、データフレームの<code>plot.line</code>メソッドを使います。<code>linestyle</code>引数で線の種類、<code>linewidth</code>で線の太さを設定できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>df_model.plot.line(x<span class="op">=</span><span class="st">'x'</span>,y<span class="op">=</span><span class="st">'y'</span>,</span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>linestyle<span class="op">=</span><span class="st">'dashed'</span>,</span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>color<span class="op">=</span><span class="st">'grey'</span>,</span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>linewidth<span class="op">=</span><span class="dv">3</span></span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>scatter</code>と同じく様々な微調整が可能ですが、ここでは後で散布図と重ねることを考慮して、微調整は行わないことにします。</p>
+<p>出力は以下のようになります。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/linear_pred1.png" class="img-fluid figure-img"></p>
+<figcaption>linear_pred</figcaption>
+</figure>
+</div>
+<p>なお、全ての線の種類のリストは以下で調べることができます。</p>
+<ul>
+<li><a href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/linestyles.html">線の種類一覧</a></li>
+</ul>
+</section>
+<section id="回帰直線と散布図のオーバレイ" class="level2">
+<h2 class="anchored" data-anchor-id="回帰直線と散布図のオーバレイ">回帰直線と散布図のオーバレイ</h2>
+<p>それでは、最後に、上で作成した散布図と回帰直線をオーバレイ(重ね描き)してみましょう。まずは、オーバレイせずにそのまま二つのグラフを打ち出すだけのコードを書いてみます。</p>
+<p>以下のようになりますが、これまで作成したコードを合わせただけなので、特に説明はいらないでしょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>df.plot.scatter(x<span class="op">=</span><span class="st">'x'</span>,y<span class="op">=</span><span class="st">'y'</span>,</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>s<span class="op">=</span><span class="dv">30</span>,                   <span class="co"># マーカーサイズ</span></span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>c<span class="op">=</span><span class="st">'skyblue'</span>,            <span class="co"># マーカーの色</span></span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>marker<span class="op">=</span><span class="st">'o'</span>,             <span class="co"># マーカーの形</span></span>
+<span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a>xlim<span class="op">=</span>(<span class="dv">3</span>,<span class="dv">13</span>),            <span class="co"># x軸の範囲</span></span>
+<span id="cb51-7"><a href="#cb51-7" aria-hidden="true" tabindex="-1"></a>ylim<span class="op">=</span>(<span class="dv">4</span>,<span class="dv">30</span>),            <span class="co"># y軸の範囲</span></span>
+<span id="cb51-8"><a href="#cb51-8" aria-hidden="true" tabindex="-1"></a>fontsize<span class="op">=</span><span class="dv">12</span>             <span class="co"># 軸目盛のフォントサイズ</span></span>
+<span id="cb51-9"><a href="#cb51-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb51-10"><a href="#cb51-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-11"><a href="#cb51-11" aria-hidden="true" tabindex="-1"></a>df_model.plot.line(x<span class="op">=</span><span class="st">'x'</span>,y<span class="op">=</span><span class="st">'y'</span>,</span>
+<span id="cb51-12"><a href="#cb51-12" aria-hidden="true" tabindex="-1"></a>linestyle<span class="op">=</span><span class="st">'dashed'</span>,     <span class="co"># 線種</span></span>
+<span id="cb51-13"><a href="#cb51-13" aria-hidden="true" tabindex="-1"></a>color<span class="op">=</span><span class="st">'grey'</span>,           <span class="co"># 線色</span></span>
+<span id="cb51-14"><a href="#cb51-14" aria-hidden="true" tabindex="-1"></a>linewidth<span class="op">=</span><span class="dv">3</span>             <span class="co"># 線幅</span></span>
+<span id="cb51-15"><a href="#cb51-15" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb51-16"><a href="#cb51-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-17"><a href="#cb51-17" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Xの値'</span>,size<span class="op">=</span><span class="dv">18</span>) <span class="co"># X軸ラベル</span></span>
+<span id="cb51-18"><a href="#cb51-18" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Yの値'</span>,size<span class="op">=</span><span class="dv">18</span>) <span class="co"># Y軸ラベル</span></span>
+<span id="cb51-19"><a href="#cb51-19" aria-hidden="true" tabindex="-1"></a>plt.subplots_adjust(left<span class="op">=</span><span class="fl">0.2</span>,bottom<span class="op">=</span><span class="fl">0.2</span>) <span class="co"># マージン</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ふたつのグラフを重ねるには、以下のように一つ目のグラフの戻り値を、二つ目のグラフの<code>ax</code>引数に渡します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> df.plot.scatter(x<span class="op">=</span><span class="st">'x'</span>,y<span class="op">=</span><span class="st">'y'</span>, <span class="co"># 戻り値をaxに</span></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>s<span class="op">=</span><span class="dv">30</span>,                   <span class="co"># マーカーサイズ</span></span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>c<span class="op">=</span><span class="st">'skyblue'</span>,            <span class="co"># マーカーの色</span></span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a>marker<span class="op">=</span><span class="st">'o'</span>,             <span class="co"># マーカーの形</span></span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a>xlim<span class="op">=</span>(<span class="dv">3</span>,<span class="dv">13</span>),            <span class="co"># x軸の範囲</span></span>
+<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a>ylim<span class="op">=</span>(<span class="dv">4</span>,<span class="dv">30</span>),            <span class="co"># y軸の範囲</span></span>
+<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a>fontsize<span class="op">=</span><span class="dv">12</span>             <span class="co"># 軸目盛のフォントサイズ</span></span>
+<span id="cb52-9"><a href="#cb52-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb52-10"><a href="#cb52-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-11"><a href="#cb52-11" aria-hidden="true" tabindex="-1"></a>df_model.plot.line(x<span class="op">=</span><span class="st">'x'</span>,y<span class="op">=</span><span class="st">'y'</span>,</span>
+<span id="cb52-12"><a href="#cb52-12" aria-hidden="true" tabindex="-1"></a>linestyle<span class="op">=</span><span class="st">'dashed'</span>,     <span class="co"># 線種</span></span>
+<span id="cb52-13"><a href="#cb52-13" aria-hidden="true" tabindex="-1"></a>color<span class="op">=</span><span class="st">'grey'</span>,           <span class="co"># 線色</span></span>
+<span id="cb52-14"><a href="#cb52-14" aria-hidden="true" tabindex="-1"></a>linewidth<span class="op">=</span><span class="dv">3</span>,            <span class="co"># 線幅</span></span>
+<span id="cb52-15"><a href="#cb52-15" aria-hidden="true" tabindex="-1"></a>ax<span class="op">=</span>ax,                  <span class="co"># 一つ目のグラフの戻り値</span></span>
+<span id="cb52-16"><a href="#cb52-16" aria-hidden="true" tabindex="-1"></a>legend<span class="op">=</span><span class="va">False</span>            <span class="co"># レジェンドを削除</span></span>
+<span id="cb52-17"><a href="#cb52-17" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb52-18"><a href="#cb52-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-19"><a href="#cb52-19" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Xの値'</span>,size<span class="op">=</span><span class="dv">18</span>) <span class="co"># X軸ラベル</span></span>
+<span id="cb52-20"><a href="#cb52-20" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Yの値'</span>,size<span class="op">=</span><span class="dv">18</span>) <span class="co"># Y軸ラベル</span></span>
+<span id="cb52-21"><a href="#cb52-21" aria-hidden="true" tabindex="-1"></a>plt.subplots_adjust(left<span class="op">=</span><span class="fl">0.2</span>,bottom<span class="op">=</span><span class="fl">0.2</span>) <span class="co"># マージン</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>出力は次のようになります。ここでは、ついでに二つ目のグラフのレジェンドを削除しておきました。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/regress.png" class="img-fluid figure-img"></p>
+<figcaption>regress</figcaption>
+</figure>
+</div>
+</section>
+<section id="seabornの活用" class="level2">
+<h2 class="anchored" data-anchor-id="seabornの活用">Seabornの活用</h2>
+<p>上記では、まず回帰分析を行ってから、その結果を散布図に重ねるという作業を行いましたが、<code>Seaborn</code>モジュールの<code>regplot</code>メソッドを用いると、回帰直線と信頼区間を自動で挿入してくれます。</p>
+<p>Seabornのモジュール名は<code>seaborn</code>ですが、<code>sns</code>の別名で読み込むのが慣習となっていますので、それに従いましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>sns.regplot(x<span class="op">=</span>df.x,y<span class="op">=</span>df.y,</span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span><span class="st">'black'</span>,</span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="st">'x'</span>,</span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a>    scatter_kws<span class="op">=</span>{<span class="st">'s'</span>:<span class="dv">10</span>})   <span class="co"># マーカーサイズ</span></span>
+<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a>plt.tick_params(labelsize<span class="op">=</span><span class="dv">14</span>)   <span class="co"># 軸数値のサイズ</span></span>
+<span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a>plt.xlim((<span class="dv">3</span>,<span class="dv">13</span>))</span>
+<span id="cb54-9"><a href="#cb54-9" aria-hidden="true" tabindex="-1"></a>plt.ylim((<span class="dv">4</span>,<span class="dv">30</span>))</span>
+<span id="cb54-10"><a href="#cb54-10" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Xの値'</span>,size<span class="op">=</span><span class="dv">18</span>)</span>
+<span id="cb54-11"><a href="#cb54-11" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Yの値'</span>,size<span class="op">=</span><span class="dv">18</span>)</span>
+<span id="cb54-12"><a href="#cb54-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-13"><a href="#cb54-13" aria-hidden="true" tabindex="-1"></a>plt.subplots_adjust(left<span class="op">=</span><span class="fl">0.2</span>,</span>
+<span id="cb54-14"><a href="#cb54-14" aria-hidden="true" tabindex="-1"></a>    bottom<span class="op">=</span><span class="fl">0.2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/regplot.png" class="img-fluid figure-img"></p>
+<figcaption>regplot</figcaption>
+</figure>
+</div>
+<p>本講義では、Seabornの詳しい解説はしませんが、興味がある方は<a href="https://seaborn.pydata.org/api.html">リファレンスマニュアル</a>を参照してください。</p>
+</section>
+<section id="グラフの保存" class="level2">
+<h2 class="anchored" data-anchor-id="グラフの保存">グラフの保存</h2>
+<p>可視化の締めくくりとして、グラフのファイルへの保存について説明しておきます。グラフの保存は、<code>matplotlib.pyplot</code>の<code>savefig</code>関数によって行います。やはり、グラフを描画したセル内部で保存をする必要があります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> df.plot.scatter(x<span class="op">=</span><span class="st">'x'</span>,y<span class="op">=</span><span class="st">'y'</span>, <span class="co"># 戻り値をaxに</span></span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>s<span class="op">=</span><span class="dv">30</span>,                   <span class="co"># マーカーサイズ</span></span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>c<span class="op">=</span><span class="st">'skyblue'</span>,            <span class="co"># マーカーの色</span></span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>marker<span class="op">=</span><span class="st">'o'</span>,             <span class="co"># マーカーの形</span></span>
+<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a>xlim<span class="op">=</span>(<span class="dv">3</span>,<span class="dv">13</span>),            <span class="co"># x軸の範囲</span></span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a>ylim<span class="op">=</span>(<span class="dv">4</span>,<span class="dv">30</span>),            <span class="co"># y軸の範囲</span></span>
+<span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a>fontsize<span class="op">=</span><span class="dv">12</span>             <span class="co"># 軸目盛のフォントサイズ</span></span>
+<span id="cb55-9"><a href="#cb55-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb55-10"><a href="#cb55-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-11"><a href="#cb55-11" aria-hidden="true" tabindex="-1"></a>df_model.plot.line(x<span class="op">=</span><span class="st">'x'</span>,y<span class="op">=</span><span class="st">'y'</span>,</span>
+<span id="cb55-12"><a href="#cb55-12" aria-hidden="true" tabindex="-1"></a>linestyle<span class="op">=</span><span class="st">'dashed'</span>,     <span class="co"># 線種</span></span>
+<span id="cb55-13"><a href="#cb55-13" aria-hidden="true" tabindex="-1"></a>color<span class="op">=</span><span class="st">'grey'</span>,           <span class="co"># 線色</span></span>
+<span id="cb55-14"><a href="#cb55-14" aria-hidden="true" tabindex="-1"></a>linewidth<span class="op">=</span><span class="dv">3</span>,            <span class="co"># 線幅</span></span>
+<span id="cb55-15"><a href="#cb55-15" aria-hidden="true" tabindex="-1"></a>ax<span class="op">=</span>ax,                  <span class="co"># 一つ目のグラフの戻り値</span></span>
+<span id="cb55-16"><a href="#cb55-16" aria-hidden="true" tabindex="-1"></a>legend<span class="op">=</span><span class="va">False</span>            <span class="co"># レジェンドを削除</span></span>
+<span id="cb55-17"><a href="#cb55-17" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb55-18"><a href="#cb55-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-19"><a href="#cb55-19" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Xの値'</span>,size<span class="op">=</span><span class="dv">18</span>) <span class="co"># X軸ラベル</span></span>
+<span id="cb55-20"><a href="#cb55-20" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Yの値'</span>,size<span class="op">=</span><span class="dv">18</span>) <span class="co"># Y軸ラベル</span></span>
+<span id="cb55-21"><a href="#cb55-21" aria-hidden="true" tabindex="-1"></a>plt.subplots_adjust(left<span class="op">=</span><span class="fl">0.2</span>,bottom<span class="op">=</span><span class="fl">0.2</span>) <span class="co"># マージン</span></span>
+<span id="cb55-22"><a href="#cb55-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-23"><a href="#cb55-23" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'linregress.png'</span>,</span>
+<span id="cb55-24"><a href="#cb55-24" aria-hidden="true" tabindex="-1"></a>dpi<span class="op">=</span><span class="dv">300</span>,</span>
+<span id="cb55-25"><a href="#cb55-25" aria-hidden="true" tabindex="-1"></a>facecolor<span class="op">=</span><span class="st">'white'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>最後の一行でグラフを’linregress.png’というPNGファイルに保存しています。ここでは、背景を白色にするために<code>facecolor</code>引数に’white’を指定し、解像度を300dpiに設定しました。</p>
+<p>エクスプローラで’linregress.png’を探して表示できるかどうか試してみてください。</p>
+</section>
+<section id="インデクシングとスライス" class="level2">
+<h2 class="anchored" data-anchor-id="インデクシングとスライス">インデクシングとスライス</h2>
+<p>データフレームの一部を取り出すには、様々な方法があります。</p>
+<ul>
+<li>インデックス番号による参照</li>
+<li>ラベルによる参照</li>
+<li>スライスによる参照</li>
+<li>ブールインデックス参照</li>
+<li>ファンシーインデックス参照</li>
+</ul>
+<p>いずれの方法でも、<code>loc</code>と<code>iloc</code>という二つの<strong>インデクサ</strong>を用いることになります。</p>
+<section id="インデックス番号" class="level3">
+<h3 class="anchored" data-anchor-id="インデックス番号">インデックス番号</h3>
+<p>インデックス番号でデータフレームの要素にアクセスするには、<code>iloc</code>を使います。<code>iloc[i,j]</code>で<code>i</code>行<code>j</code>列の要素を意味します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.head())</span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">df.iloc[2,1]:"</span>)</span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.iloc[<span class="dv">2</span>,<span class="dv">1</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>           x          y         e</span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>   <span class="fl">6.021757</span>  <span class="fl">11.496212</span> <span class="op">-</span><span class="fl">1.547303</span></span>
+<span id="cb57-5"><a href="#cb57-5" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>   <span class="fl">7.264427</span>  <span class="fl">20.503193</span>  <span class="fl">4.974340</span></span>
+<span id="cb57-6"><a href="#cb57-6" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="fl">10.575851</span>  <span class="fl">21.259913</span> <span class="op">-</span><span class="fl">0.891788</span></span>
+<span id="cb57-7"><a href="#cb57-7" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>   <span class="fl">8.387949</span>  <span class="fl">13.625766</span> <span class="op">-</span><span class="fl">4.150131</span></span>
+<span id="cb57-8"><a href="#cb57-8" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>   <span class="fl">9.840462</span>  <span class="fl">19.837310</span> <span class="op">-</span><span class="fl">0.843614</span></span>
+<span id="cb57-9"><a href="#cb57-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-10"><a href="#cb57-10" aria-hidden="true" tabindex="-1"></a>df.iloc[<span class="dv">2</span>,<span class="dv">1</span>]:</span>
+<span id="cb57-11"><a href="#cb57-11" aria-hidden="true" tabindex="-1"></a><span class="fl">21.25991325823923</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="ラベル" class="level3">
+<h3 class="anchored" data-anchor-id="ラベル">ラベル</h3>
+<p>変数ラベルを用いて要素にアクセスしたい場合は、<code>iloc</code>の代わりに<code>loc</code>を使う必要があります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb58"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.head())</span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">df.loc[3,'x']:"</span>)</span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.loc[<span class="dv">3</span>,<span class="st">'x'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>           x          y         e</span>
+<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>   <span class="fl">6.021757</span>  <span class="fl">11.496212</span> <span class="op">-</span><span class="fl">1.547303</span></span>
+<span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>   <span class="fl">7.264427</span>  <span class="fl">20.503193</span>  <span class="fl">4.974340</span></span>
+<span id="cb59-6"><a href="#cb59-6" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="fl">10.575851</span>  <span class="fl">21.259913</span> <span class="op">-</span><span class="fl">0.891788</span></span>
+<span id="cb59-7"><a href="#cb59-7" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>   <span class="fl">8.387949</span>  <span class="fl">13.625766</span> <span class="op">-</span><span class="fl">4.150131</span></span>
+<span id="cb59-8"><a href="#cb59-8" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>   <span class="fl">9.840462</span>  <span class="fl">19.837310</span> <span class="op">-</span><span class="fl">0.843614</span></span>
+<span id="cb59-9"><a href="#cb59-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb59-10"><a href="#cb59-10" aria-hidden="true" tabindex="-1"></a>df.loc[<span class="dv">3</span>,<span class="st">'x'</span>]:</span>
+<span id="cb59-11"><a href="#cb59-11" aria-hidden="true" tabindex="-1"></a><span class="fl">8.387948838265226</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="スライスiloc" class="level3">
+<h3 class="anchored" data-anchor-id="スライスiloc">スライス(<code>iloc</code>)</h3>
+<p><code>iloc</code>にスライス記法を使えば、データフレームの一部をスライスで取り出せます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.head())</span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">df.iloc[0:3,1]:"</span>)</span>
+<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a>data_slice <span class="op">=</span> df.iloc[<span class="dv">0</span>:<span class="dv">3</span>,<span class="dv">1</span>]</span>
+<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(data_slice)</span>
+<span id="cb60-6"><a href="#cb60-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(data_slice))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>           x          y         e</span>
+<span id="cb61-4"><a href="#cb61-4" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>   <span class="fl">6.021757</span>  <span class="fl">11.496212</span> <span class="op">-</span><span class="fl">1.547303</span></span>
+<span id="cb61-5"><a href="#cb61-5" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>   <span class="fl">7.264427</span>  <span class="fl">20.503193</span>  <span class="fl">4.974340</span></span>
+<span id="cb61-6"><a href="#cb61-6" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="fl">10.575851</span>  <span class="fl">21.259913</span> <span class="op">-</span><span class="fl">0.891788</span></span>
+<span id="cb61-7"><a href="#cb61-7" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>   <span class="fl">8.387949</span>  <span class="fl">13.625766</span> <span class="op">-</span><span class="fl">4.150131</span></span>
+<span id="cb61-8"><a href="#cb61-8" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>   <span class="fl">9.840462</span>  <span class="fl">19.837310</span> <span class="op">-</span><span class="fl">0.843614</span></span>
+<span id="cb61-9"><a href="#cb61-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb61-10"><a href="#cb61-10" aria-hidden="true" tabindex="-1"></a>df.iloc[<span class="dv">0</span>:<span class="dv">3</span>,<span class="dv">1</span>]:</span>
+<span id="cb61-11"><a href="#cb61-11" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>    <span class="fl">11.496212</span></span>
+<span id="cb61-12"><a href="#cb61-12" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>    <span class="fl">20.503193</span></span>
+<span id="cb61-13"><a href="#cb61-13" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>    <span class="fl">21.259913</span></span>
+<span id="cb61-14"><a href="#cb61-14" aria-hidden="true" tabindex="-1"></a>Name: y, dtype: float64</span>
+<span id="cb61-15"><a href="#cb61-15" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span><span class="kw">class</span> <span class="st">'pandas.core.series.Series'</span><span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記のように、スライスで気を付けないといけないのは、列番号を単一数値にすると、データフレームではなく<code>Series</code>オブジェクトになって返されるということです。</p>
+<p>データフレームを返して欲しい場合は、以下のように単一要素でもスライスもしくはリストにしてインデクサに渡す必要があります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.head())</span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">df.iloc[0:3,1:2]:"</span>)</span>
+<span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a>data_slice <span class="op">=</span> df.iloc[<span class="dv">0</span>:<span class="dv">3</span>,<span class="dv">1</span>:<span class="dv">2</span>]</span>
+<span id="cb62-5"><a href="#cb62-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(data_slice)</span>
+<span id="cb62-6"><a href="#cb62-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(data_slice))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>           x          y         e</span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>   <span class="fl">6.021757</span>  <span class="fl">11.496212</span> <span class="op">-</span><span class="fl">1.547303</span></span>
+<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>   <span class="fl">7.264427</span>  <span class="fl">20.503193</span>  <span class="fl">4.974340</span></span>
+<span id="cb63-5"><a href="#cb63-5" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="fl">10.575851</span>  <span class="fl">21.259913</span> <span class="op">-</span><span class="fl">0.891788</span></span>
+<span id="cb63-6"><a href="#cb63-6" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>   <span class="fl">8.387949</span>  <span class="fl">13.625766</span> <span class="op">-</span><span class="fl">4.150131</span></span>
+<span id="cb63-7"><a href="#cb63-7" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>   <span class="fl">9.840462</span>  <span class="fl">19.837310</span> <span class="op">-</span><span class="fl">0.843614</span></span>
+<span id="cb63-8"><a href="#cb63-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb63-9"><a href="#cb63-9" aria-hidden="true" tabindex="-1"></a>df.iloc[<span class="dv">0</span>:<span class="dv">3</span>,<span class="dv">1</span>:<span class="dv">2</span>]:</span>
+<span id="cb63-10"><a href="#cb63-10" aria-hidden="true" tabindex="-1"></a>           y</span>
+<span id="cb63-11"><a href="#cb63-11" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>  <span class="fl">11.496212</span></span>
+<span id="cb63-12"><a href="#cb63-12" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>  <span class="fl">20.503193</span></span>
+<span id="cb63-13"><a href="#cb63-13" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="fl">21.259913</span></span>
+<span id="cb63-14"><a href="#cb63-14" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span><span class="kw">class</span> <span class="st">'pandas.core.frame.DataFrame'</span><span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="スライスloc" class="level3">
+<h3 class="anchored" data-anchor-id="スライスloc">スライス(<code>loc</code>)</h3>
+<p><code>loc</code>インデクサを用いれば、列名にもスライスが使用可能です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>df_xy <span class="op">=</span> df.loc[:,<span class="st">'x'</span>:<span class="st">'y'</span>]</span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_xy)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>            x          y</span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>    <span class="fl">6.021757</span>  <span class="fl">11.496212</span></span>
+<span id="cb65-4"><a href="#cb65-4" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>    <span class="fl">7.264427</span>  <span class="fl">20.503193</span></span>
+<span id="cb65-5"><a href="#cb65-5" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>   <span class="fl">10.575851</span>  <span class="fl">21.259913</span></span>
+<span id="cb65-6"><a href="#cb65-6" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>    <span class="fl">8.387949</span>  <span class="fl">13.625766</span></span>
+<span id="cb65-7"><a href="#cb65-7" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>    <span class="fl">9.840462</span>  <span class="fl">19.837310</span></span>
+<span id="cb65-8"><a href="#cb65-8" aria-hidden="true" tabindex="-1"></a>..        ...        ...</span>
+<span id="cb65-9"><a href="#cb65-9" aria-hidden="true" tabindex="-1"></a><span class="dv">95</span>   <span class="fl">5.555309</span>  <span class="fl">12.561268</span></span>
+<span id="cb65-10"><a href="#cb65-10" aria-hidden="true" tabindex="-1"></a><span class="dv">96</span>   <span class="fl">7.392817</span>  <span class="fl">15.309035</span></span>
+<span id="cb65-11"><a href="#cb65-11" aria-hidden="true" tabindex="-1"></a><span class="dv">97</span>   <span class="fl">5.652623</span>   <span class="fl">9.026150</span></span>
+<span id="cb65-12"><a href="#cb65-12" aria-hidden="true" tabindex="-1"></a><span class="dv">98</span>   <span class="fl">9.652547</span>  <span class="fl">21.696433</span></span>
+<span id="cb65-13"><a href="#cb65-13" aria-hidden="true" tabindex="-1"></a><span class="dv">99</span>   <span class="fl">9.700645</span>  <span class="fl">15.425901</span></span>
+<span id="cb65-14"><a href="#cb65-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-15"><a href="#cb65-15" aria-hidden="true" tabindex="-1"></a>[<span class="dv">100</span> rows x <span class="dv">2</span> columns]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで、<code>loc</code>インデクサのスライスは若干記法が特殊であることに注意してください。番号によるスライスとは違って、<code>'x':'y'</code>と書くと、<code>y</code>の列も含まれたデータフレームが得られます。</p>
+<p>これは行インデックスでも同じです。<code>loc</code>インデクサで行をスライスするときは、<code>1:4</code>とかくと、4行目も含まれたデータフレームが得られます。</p>
+</section>
+<section id="ブールインデックス" class="level3">
+<h3 class="anchored" data-anchor-id="ブールインデックス">ブールインデックス</h3>
+<p>ブールインデックス参照とは、行数あるいは列数に等しい長さをもったブール値の配列を用いてデータフレームの一部を取り出すことです。データ分析で非常に頻繁に用いる手法ですので、必ず覚えておきましょう。</p>
+<p>たとえば、<code>x</code>の値が8以上になっているオブザベーションだけを取り出したいとします。このような場合、以下のようなブールインデックス参照が有効です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>df_xgt8 <span class="op">=</span> df.loc[df.x<span class="op">&gt;=</span><span class="dv">8</span>,:]</span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_xgt8.head())</span>
+<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a>np.<span class="bu">all</span>(df_xgt8.x <span class="op">&gt;=</span> <span class="dv">8</span>)       <span class="co"># 全て8以上か確認</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>           x          y         e</span>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="fl">10.575851</span>  <span class="fl">21.259913</span> <span class="op">-</span><span class="fl">0.891788</span></span>
+<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>   <span class="fl">8.387949</span>  <span class="fl">13.625766</span> <span class="op">-</span><span class="fl">4.150131</span></span>
+<span id="cb67-6"><a href="#cb67-6" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>   <span class="fl">9.840462</span>  <span class="fl">19.837310</span> <span class="op">-</span><span class="fl">0.843614</span></span>
+<span id="cb67-7"><a href="#cb67-7" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span>   <span class="fl">9.154208</span>  <span class="fl">20.388477</span>  <span class="fl">1.080062</span></span>
+<span id="cb67-8"><a href="#cb67-8" aria-hidden="true" tabindex="-1"></a><span class="dv">7</span>   <span class="fl">9.083904</span>  <span class="fl">25.964371</span>  <span class="fl">6.796562</span></span>
+<span id="cb67-9"><a href="#cb67-9" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ブールインデックス参照に慣れていないと、これは何をやっているのか分からないでしょう。</p>
+<p>上の記法を理解するため、まずインデクサに渡した<code>df.x&gt;=8</code>が何を意味するのか考えてみます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>df.x <span class="op">&gt;=</span> <span class="dv">8</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>この二項演算において、左辺は<code>Series</code>型配列、右辺は<code>8</code>というスカラですが、ブロードキャストが起きて右辺は左辺と同じ長さ<code>100</code>の<code>Series</code>型配列に変換されます。これはNumPy配列の場合と全く同じです。</p>
+<p>そのあと、項ごとに二項演算<code>&gt;=</code>が実行され、結果は<code>True</code>と<code>False</code>の長さ100の配列になります。</p>
+<p>実際に結果を見てみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.x<span class="op">&gt;=</span><span class="dv">8</span>)</span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(df.x<span class="op">&gt;=</span><span class="dv">8</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb70"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>     <span class="va">False</span></span>
+<span id="cb70-4"><a href="#cb70-4" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>     <span class="va">False</span></span>
+<span id="cb70-5"><a href="#cb70-5" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>      <span class="va">True</span></span>
+<span id="cb70-6"><a href="#cb70-6" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>      <span class="va">True</span></span>
+<span id="cb70-7"><a href="#cb70-7" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>      <span class="va">True</span></span>
+<span id="cb70-8"><a href="#cb70-8" aria-hidden="true" tabindex="-1"></a>      ...  </span>
+<span id="cb70-9"><a href="#cb70-9" aria-hidden="true" tabindex="-1"></a><span class="dv">95</span>    <span class="va">False</span></span>
+<span id="cb70-10"><a href="#cb70-10" aria-hidden="true" tabindex="-1"></a><span class="dv">96</span>    <span class="va">False</span></span>
+<span id="cb70-11"><a href="#cb70-11" aria-hidden="true" tabindex="-1"></a><span class="dv">97</span>    <span class="va">False</span></span>
+<span id="cb70-12"><a href="#cb70-12" aria-hidden="true" tabindex="-1"></a><span class="dv">98</span>     <span class="va">True</span></span>
+<span id="cb70-13"><a href="#cb70-13" aria-hidden="true" tabindex="-1"></a><span class="dv">99</span>     <span class="va">True</span></span>
+<span id="cb70-14"><a href="#cb70-14" aria-hidden="true" tabindex="-1"></a>Name: x, Length: <span class="dv">100</span>, dtype: <span class="bu">bool</span></span>
+<span id="cb70-15"><a href="#cb70-15" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span><span class="kw">class</span> <span class="st">'pandas.core.series.Series'</span><span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>この<code>Series</code>配列では、<code>x&gt;=8</code>が成り立つところでは<code>True</code>、成り立たないところでは<code>False</code>になっていることに注意してください。</p>
+<p><code>pandas</code>のデータフレームは、こうしたブール値配列を<code>loc</code>インデクサに渡すと、<code>True</code>が成り立っている行だけを返してくれるという機能を持っています。こうしたブール値配列を用いた部分データの取得を<strong>ブールインデックス参照</strong>と呼びます。pandasに限らずデータフレームを扱う大抵のツールで提供されている機能です。</p>
+<p>ブールインデックス参照を用いると、複雑な条件を満たすオブザベーションだけを容易に取り出すことができます。</p>
+<p>たとえば、<code>x&gt;=8</code>かつ<code>y&lt;20</code>を満たす行だけを取り出してみましょう。この場合、次のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb71"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a>df_x8y20 <span class="op">=</span> df.loc[(df.x<span class="op">&gt;=</span><span class="dv">8</span>) <span class="op">&amp;</span> (df.y<span class="op">&lt;</span><span class="dv">20</span>),:]</span>
+<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_x8y20.head())</span>
+<span id="cb71-4"><a href="#cb71-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_x8y20.shape)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb72"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a>            x          y         e</span>
+<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>    <span class="fl">8.387949</span>  <span class="fl">13.625766</span> <span class="op">-</span><span class="fl">4.150131</span></span>
+<span id="cb72-5"><a href="#cb72-5" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>    <span class="fl">9.840462</span>  <span class="fl">19.837310</span> <span class="op">-</span><span class="fl">0.843614</span></span>
+<span id="cb72-6"><a href="#cb72-6" aria-hidden="true" tabindex="-1"></a><span class="dv">14</span>  <span class="fl">10.000539</span>  <span class="fl">19.061887</span> <span class="op">-</span><span class="fl">1.939190</span></span>
+<span id="cb72-7"><a href="#cb72-7" aria-hidden="true" tabindex="-1"></a><span class="dv">21</span>   <span class="fl">9.655843</span>  <span class="fl">19.544249</span> <span class="op">-</span><span class="fl">0.767437</span></span>
+<span id="cb72-8"><a href="#cb72-8" aria-hidden="true" tabindex="-1"></a><span class="dv">24</span>   <span class="fl">9.509539</span>  <span class="fl">19.163218</span> <span class="op">-</span><span class="fl">0.855860</span></span>
+<span id="cb72-9"><a href="#cb72-9" aria-hidden="true" tabindex="-1"></a>(<span class="dv">21</span>, <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで重要なポイントが二つあります。</p>
+<ol type="1">
+<li>二つの条件を繋ぐときは、各条件を丸カッコで囲む</li>
+<li>二つのブール値配列のANDは、<code>and</code>ではなく<code>&amp;</code>をつかう</li>
+</ol>
+<p>これらの2点を見落としがちですので気を付けましょう。<code>and</code>はスカラーの間の論理積には使えますが、配列の間の論理積には使えません。代わりに<code>&amp;</code>を使います。</p>
+<p>同様に、論理和ORは<code>|</code>、否定には<code>~</code>を使います。</p>
+</section>
+<section id="ファンシーインデックス" class="level3">
+<h3 class="anchored" data-anchor-id="ファンシーインデックス">ファンシーインデックス</h3>
+<p>最後に<strong>ファンシーインデックス</strong>参照は、取り出したいインデックス番号のリストや配列をインデクサに渡す方法です。たとえば、0、2、4行目だけを取り出したいときは、次のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb73"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a>df_fancy <span class="op">=</span> df.iloc[[<span class="dv">0</span>,<span class="dv">2</span>,<span class="dv">4</span>],:]</span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_fancy.head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb74"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a>           x          y         e</span>
+<span id="cb74-3"><a href="#cb74-3" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>   <span class="fl">6.021757</span>  <span class="fl">11.496212</span> <span class="op">-</span><span class="fl">1.547303</span></span>
+<span id="cb74-4"><a href="#cb74-4" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="fl">10.575851</span>  <span class="fl">21.259913</span> <span class="op">-</span><span class="fl">0.891788</span></span>
+<span id="cb74-5"><a href="#cb74-5" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>   <span class="fl">9.840462</span>  <span class="fl">19.837310</span> <span class="op">-</span><span class="fl">0.843614</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>なお、これまでの様々なインデクシングの記法は、組み合わせて使うことができることに注意しましょう。たとえば変数<code>x</code>と<code>e</code>の1～4行目を取り出したいときは次のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb75"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a>df_comb <span class="op">=</span> df.loc[<span class="dv">1</span>:<span class="dv">4</span>,[<span class="st">'x'</span>,<span class="st">'e'</span>]]</span>
+<span id="cb75-3"><a href="#cb75-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_comb)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb76"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb76-2"><a href="#cb76-2" aria-hidden="true" tabindex="-1"></a>           x         e</span>
+<span id="cb76-3"><a href="#cb76-3" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>   <span class="fl">7.264427</span>  <span class="fl">4.974340</span></span>
+<span id="cb76-4"><a href="#cb76-4" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="fl">10.575851</span> <span class="op">-</span><span class="fl">0.891788</span></span>
+<span id="cb76-5"><a href="#cb76-5" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>   <span class="fl">8.387949</span> <span class="op">-</span><span class="fl">4.150131</span></span>
+<span id="cb76-6"><a href="#cb76-6" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>   <span class="fl">9.840462</span> <span class="op">-</span><span class="fl">0.843614</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="欠測値" class="level2">
+<h2 class="anchored" data-anchor-id="欠測値">欠測値</h2>
+<section id="nan-not-a-number" class="level3">
+<h3 class="anchored" data-anchor-id="nan-not-a-number">NaN (Not a Number)</h3>
+<p>pandasでは、従来欠測値は<code>np.nan</code>オブジェクト(<code>NaN</code>とも表記されます)で表されてきました。<code>np.nan</code>は”Not a Number”を意味しており、NumPy配列における値の欠測を表現するために使われます。<code>NaN</code>は浮動小数点型なので、一つの配列内で<code>int</code>型と混在させることはできません。</p>
+<p>たとえば下記のように、<code>int64</code>型の配列に<code>NaN</code>を代入すると、エラーが出ます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb77"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 整数配列にNaNを入れてみる</span></span>
+<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a>arr <span class="op">=</span> np.arange(<span class="dv">10</span>,dtype<span class="op">=</span>np.int64)</span>
+<span id="cb77-4"><a href="#cb77-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr.dtype)</span>
+<span id="cb77-5"><a href="#cb77-5" aria-hidden="true" tabindex="-1"></a>arr[<span class="dv">0</span>] <span class="op">=</span> np.nan</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb78"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a>int64</span>
+<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a><span class="op">---------------------------------------------------------------------------</span></span>
+<span id="cb78-4"><a href="#cb78-4" aria-hidden="true" tabindex="-1"></a><span class="pp">ValueError</span>                                Traceback (most recent call last)</span>
+<span id="cb78-5"><a href="#cb78-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb78-6"><a href="#cb78-6" aria-hidden="true" tabindex="-1"></a>...(中略)...</span>
+<span id="cb78-7"><a href="#cb78-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb78-8"><a href="#cb78-8" aria-hidden="true" tabindex="-1"></a>      <span class="dv">56</span> arr <span class="op">=</span> np.arange(<span class="dv">10</span>,dtype<span class="op">=</span>np.int64)</span>
+<span id="cb78-9"><a href="#cb78-9" aria-hidden="true" tabindex="-1"></a>      <span class="dv">57</span> <span class="bu">print</span>(arr.dtype)</span>
+<span id="cb78-10"><a href="#cb78-10" aria-hidden="true" tabindex="-1"></a><span class="op">----&gt;</span> <span class="dv">58</span> arr[<span class="dv">0</span>] <span class="op">=</span> np.nan</span>
+<span id="cb78-11"><a href="#cb78-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb78-12"><a href="#cb78-12" aria-hidden="true" tabindex="-1"></a><span class="pp">ValueError</span>: cannot convert <span class="bu">float</span> NaN to integer</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>たとえば、先ほど作成したデータフレーム<code>df2</code>をコピーして<code>df3</code>という新しいデータフレームを作成し、欠測値を挿入してみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb79"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a>df3 <span class="op">=</span> df2.copy()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここでは、変数<code>x</code>の第3オブザベーション(0からカウントして)と変数<code>y</code>の第2オブザベーションに<code>NaN</code>を入れてみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb80"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb80-2"><a href="#cb80-2" aria-hidden="true" tabindex="-1"></a>df3.loc[<span class="dv">3</span>,<span class="st">'x'</span>] <span class="op">=</span> np.nan</span>
+<span id="cb80-3"><a href="#cb80-3" aria-hidden="true" tabindex="-1"></a>df3.loc[<span class="dv">2</span>,<span class="st">'y'</span>] <span class="op">=</span> np.nan</span>
+<span id="cb80-4"><a href="#cb80-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df3.head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb81"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb81-2"><a href="#cb81-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-3"><a href="#cb81-3" aria-hidden="true" tabindex="-1"></a>           x          y         e  int_var</span>
+<span id="cb81-4"><a href="#cb81-4" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>   <span class="fl">6.021757</span>  <span class="fl">11.496212</span> <span class="op">-</span><span class="fl">1.547303</span>        <span class="dv">0</span></span>
+<span id="cb81-5"><a href="#cb81-5" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>   <span class="fl">7.264427</span>  <span class="fl">20.503193</span>  <span class="fl">4.974340</span>        <span class="dv">1</span></span>
+<span id="cb81-6"><a href="#cb81-6" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="fl">10.575851</span>        NaN <span class="op">-</span><span class="fl">0.891788</span>        <span class="dv">2</span></span>
+<span id="cb81-7"><a href="#cb81-7" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>        NaN  <span class="fl">13.625766</span> <span class="op">-</span><span class="fl">4.150131</span>        <span class="dv">3</span></span>
+<span id="cb81-8"><a href="#cb81-8" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>   <span class="fl">9.840462</span>  <span class="fl">19.837310</span> <span class="op">-</span><span class="fl">0.843614</span>        <span class="dv">4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記のとおり<code>NaN</code>は”NaN”と表示されます。</p>
+<p>こういった欠測値をどのように取り扱うかべきかは、場合によりますが、いずれにせよ欠測が存在していることを確認することは重要です。</p>
+</section>
+<section id="欠測の除去" class="level3">
+<h3 class="anchored" data-anchor-id="欠測の除去">欠測の除去</h3>
+<p>欠測が少ない場合は、欠測を含む行を全て除去する対処法が考えられます。これを<strong>リストワイズ除去</strong>と呼び、欠測に対処する方法の中では最も原始的なものです。</p>
+<p>データフレームの<code>dropna</code>メソッドを使うと、リストワイズ除去したデータフレームが返されます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb82"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb82-2"><a href="#cb82-2" aria-hidden="true" tabindex="-1"></a>df3_dropnan <span class="op">=</span> df3.dropna()</span>
+<span id="cb82-3"><a href="#cb82-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df3_dropnan.head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb83"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb83-3"><a href="#cb83-3" aria-hidden="true" tabindex="-1"></a>          x          y         e  int_var</span>
+<span id="cb83-4"><a href="#cb83-4" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>  <span class="fl">6.021757</span>  <span class="fl">11.496212</span> <span class="op">-</span><span class="fl">1.547303</span>        <span class="dv">0</span></span>
+<span id="cb83-5"><a href="#cb83-5" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>  <span class="fl">7.264427</span>  <span class="fl">20.503193</span>  <span class="fl">4.974340</span>        <span class="dv">1</span></span>
+<span id="cb83-6"><a href="#cb83-6" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>  <span class="fl">9.840462</span>  <span class="fl">19.837310</span> <span class="op">-</span><span class="fl">0.843614</span>        <span class="dv">4</span></span>
+<span id="cb83-7"><a href="#cb83-7" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span>  <span class="fl">9.154208</span>  <span class="fl">20.388477</span>  <span class="fl">1.080062</span>        <span class="dv">5</span></span>
+<span id="cb83-8"><a href="#cb83-8" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span>  <span class="fl">6.727073</span>  <span class="fl">13.750969</span> <span class="op">-</span><span class="fl">0.703176</span>        <span class="dv">6</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>なお、逆に欠測に値を代入するときは、<code>fillna</code>メソッドが使えます。たとえば、欠測に平均値を代入する場合は、次のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb84"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a>df3_fillnan <span class="op">=</span> df3.fillna(df3.mean())</span>
+<span id="cb84-3"><a href="#cb84-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df3.mean())</span>
+<span id="cb84-4"><a href="#cb84-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df3_fillnan.head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb85"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-3"><a href="#cb85-3" aria-hidden="true" tabindex="-1"></a>x           <span class="fl">8.161566</span></span>
+<span id="cb85-4"><a href="#cb85-4" aria-hidden="true" tabindex="-1"></a>y          <span class="fl">17.584601</span></span>
+<span id="cb85-5"><a href="#cb85-5" aria-hidden="true" tabindex="-1"></a>e           <span class="fl">0.293695</span></span>
+<span id="cb85-6"><a href="#cb85-6" aria-hidden="true" tabindex="-1"></a>int_var    <span class="fl">49.500000</span></span>
+<span id="cb85-7"><a href="#cb85-7" aria-hidden="true" tabindex="-1"></a>dtype: float64</span>
+<span id="cb85-8"><a href="#cb85-8" aria-hidden="true" tabindex="-1"></a>           x          y         e  int_var</span>
+<span id="cb85-9"><a href="#cb85-9" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>   <span class="fl">6.021757</span>  <span class="fl">11.496212</span> <span class="op">-</span><span class="fl">1.547303</span>        <span class="dv">0</span></span>
+<span id="cb85-10"><a href="#cb85-10" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>   <span class="fl">7.264427</span>  <span class="fl">20.503193</span>  <span class="fl">4.974340</span>        <span class="dv">1</span></span>
+<span id="cb85-11"><a href="#cb85-11" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="fl">10.575851</span>  <span class="fl">17.584601</span> <span class="op">-</span><span class="fl">0.891788</span>        <span class="dv">2</span></span>
+<span id="cb85-12"><a href="#cb85-12" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>   <span class="fl">8.161566</span>  <span class="fl">13.625766</span> <span class="op">-</span><span class="fl">4.150131</span>        <span class="dv">3</span></span>
+<span id="cb85-13"><a href="#cb85-13" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>   <span class="fl">9.840462</span>  <span class="fl">19.837310</span> <span class="op">-</span><span class="fl">0.843614</span>        <span class="dv">4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>なお、pandasには整数の欠測を表現できる<code>pandas.NA</code>という型も存在していますが、こちらについては本講義では割愛します。</p>
+</section>
+</section>
+<section id="csvの読み書き" class="level2">
+<h2 class="anchored" data-anchor-id="csvの読み書き">CSVの読み書き</h2>
+<p>pandasは、CSVとデータフレームの間で直接読み書きができるようになっています。まずは、今回の講義で作成したデータフレーム<code>df</code>をCSVに保存してみましょう。</p>
+<p>CSVへの保存には、<code>to_csv</code>メソッドを使います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb86"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb86-2"><a href="#cb86-2" aria-hidden="true" tabindex="-1"></a>df.to_csv(<span class="st">'pandas.csv'</span>,</span>
+<span id="cb86-3"><a href="#cb86-3" aria-hidden="true" tabindex="-1"></a>    encoding<span class="op">=</span><span class="st">'utf-8'</span>,</span>
+<span id="cb86-4"><a href="#cb86-4" aria-hidden="true" tabindex="-1"></a>    index<span class="op">=</span><span class="va">False</span>)  <span class="co"># 行インデックスなし</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここでは、’pandas.csv’という名前のファイルに、utf-8エンコーディングで保存しました。<code>index</code>オプション引数を<code>False</code>にして、行インデックスはCSVに含めないようにしました。</p>
+<p>VS CodeにCSV関連の拡張機能(Edit CSV、Rainbow CSV等)をインストールしていればCSVが閲覧できるはずですので、ファイルエクスプローラで見つけて開いてみましょう。</p>
+<p>次は逆に、先ほど保存したCSVを別の名前のデータフレームに読み込んでみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb87"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a>df4 <span class="op">=</span> pd.read_csv(<span class="st">'pandas.csv'</span>,</span>
+<span id="cb87-3"><a href="#cb87-3" aria-hidden="true" tabindex="-1"></a>    engine<span class="op">=</span><span class="st">'python'</span>,</span>
+<span id="cb87-4"><a href="#cb87-4" aria-hidden="true" tabindex="-1"></a>    encoding<span class="op">=</span><span class="st">'utf-8'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>engine</code>引数はCSVの解析エンジンを設定するオプションですが、デフォルトで上手く読み込めない場合は、上のように<code>"python"</code>を指定すると上手くいくことが多いです。</p>
+</section>
+<section id="まとめ" class="level2">
+<h2 class="anchored" data-anchor-id="まとめ">まとめ</h2>
+<p>今回の講義では以下の点について学びました。</p>
+<ul>
+<li>データフレームの作成</li>
+<li>データフレームの構造</li>
+<li>データのチェック</li>
+<li>可視化</li>
+<li>様々なインデクシング</li>
+<li>欠測値の取り扱い</li>
+<li>CSVファイルの読み書き</li>
+</ul>
+<p>今回の講義では、非常に高度で豊富なpandasの機能のごく一部しか紹介できませんでした。例えばpandasデータフレームには、データをグループ分けしたり、複数のデータフレームを様々な方法で結合する機能が備わっていますが、こういった高度な話題については一切触れませんでした。可視化についても、ほんの一部の機能しか紹介していません。</p>
+<p>pandasのリファレンスマニュアルやインターネット上の情報を探して、自分が必要な機能が実装されていないか調べてみてください。大抵、自分が期待していいる以上のことができることに気付くと思います。</p>
+</section>
+<section id="参考書" class="level2">
+<h2 class="anchored" data-anchor-id="参考書">参考書</h2>
+<ul>
+<li><a href="https://uwekorn.com/2020/05/24/the-one-pandas-internal.html">BlockManagerに関する記事</a></li>
+<li><a href="https://www.amazon.co.jp/Python%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E5%88%86%E6%9E%90%E5%85%A5%E9%96%80-%E7%AC%AC2%E7%89%88-%E2%80%95NumPy%E3%80%81pandas%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E3%83%87%E3%83%BC%E3%82%BF%E5%87%A6%E7%90%86-Wes-McKinney/dp/487311845X/ref=sr_1_1?adgrpid=103870342466&amp;dchild=1&amp;gclid=CjwKCAjwzMeFBhBwEiwAzwS8zJda-mLMnpel3pcvMcGv8Lgj2LMuXdWfU3zDldDWzHpWTu10bp8nDhoChwEQAvD_BwE&amp;hvadid=448604013349&amp;hvdev=c&amp;hvlocphy=1009706&amp;hvnetw=g&amp;hvqmt=e&amp;hvrand=1539812169160369851&amp;hvtargid=kwd-334918825383&amp;hydadcr=27270_11561194&amp;jp-ad-ap=0&amp;keywords=python+%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E5%88%86%E6%9E%90%E5%85%A5%E9%96%80&amp;qid=1622301042&amp;sr=8-1">『Pythonによるデータ分析入門ーNumPy、pandasを使ったデータ処理』</a>(Wes McKinney著、瀬戸山 雅人(翻訳)、小林 儀匡(翻訳)、滝口 開資(翻訳))(2018) オライリージャパン. ISBN-13 : 978-4873118451.</li>
+</ul>
+<p><code>pandas</code>データフレームのデータ構造についての考察は、上記のBlockManagerに関する記事を大いに参考にしました。</p>
+</section>
+<section id="宿題ホームワーク" class="level2">
+<h2 class="anchored" data-anchor-id="宿題ホームワーク">宿題(ホームワーク)</h2>
+<ol type="1">
+<li><p>データフレーム<code>df</code>のブロックマネージャ<code>df._data</code>には<code>blocks</code>という属性があり、データのブロックがタプル形式で保存されていることを確認してください。各ブロックのデータは、ブロックの<code>values</code>属性に格納されています。これがNumPyの配列であることを以下のようにして確認しなさい。また、これが<code>df.x.values.base</code>によりアクセスできる配列と同じオブジェクトであることを確かめてください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb88"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> block <span class="kw">in</span> df._data.blocks:</span>
+<span id="cb88-3"><a href="#cb88-3" aria-hidden="true" tabindex="-1"></a>    arr <span class="op">=</span> block.values</span>
+<span id="cb88-4"><a href="#cb88-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="bu">type</span>(arr))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p><code>Series</code>型オブジェクトについて研究してください。NumPy配列と同様、<code>Series</code>のスライスは元のオブジェクトのビューであることを確認してください。</p></li>
+<li><p>データフレームのデータを、変数<code>x</code>でソートするには、<code>sort_values</code>メソッドを次のように使います。実際に試してみてください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb89"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb89-2"><a href="#cb89-2" aria-hidden="true" tabindex="-1"></a>x_sorted <span class="op">=</span> df.sort_values(by<span class="op">=</span><span class="st">'x'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>文字列データを含むデータフレームを作成してみてください。たとえば、次のようにすれば、<code>x</code>が8以上のオブザベーションを”High”、8未満を”Low”とする変数が作れます。’High’なオブザベーションだけを抽出して、各種要約統計量を計算してみてください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb90"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'height'</span>] <span class="op">=</span> <span class="st">'Low'</span></span>
+<span id="cb90-2"><a href="#cb90-2" aria-hidden="true" tabindex="-1"></a>df.loc[df.x<span class="op">&gt;=</span><span class="dv">8</span>,<span class="st">'height'</span>] <span class="op">=</span> <span class="st">'High'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p><code>groupby</code>メソッドを使うと、<code>groupby</code>オブジェクトを作成できます。このオブジェクトには、<code>describe</code>、<code>mean</code>、<code>var</code>などの基本統計量を<strong>グループごとに</strong>計算するメソッドが備わっています。以下のように、試してみてください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb91"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a>gpb <span class="op">=</span> df.groupby(<span class="st">'height'</span>)</span>
+<span id="cb91-2"><a href="#cb91-2" aria-hidden="true" tabindex="-1"></a>gpb.describe()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
+</section>
+<section id="補遺" class="level2">
+<h2 class="anchored" data-anchor-id="補遺">補遺</h2>
+<section id="データフレーム表示行数の設定" class="level3">
+<h3 class="anchored" data-anchor-id="データフレーム表示行数の設定">データフレーム表示行数の設定</h3>
+<p>pandasのデータフレームは、デフォルトで一部の行しか表示しないようになっています。表示行数を設定することはできますが、この設定がちょっと分かりにくいので、ここで詳しく説明しておきましょう。</p>
+<p>pandasのオプションは、get_optionメソッドもしくは、options属性から確認できます。表示行数に関連するのは<code>min_rows</code>オプションと<code>max_rows</code>オプションです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb92"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get_optionメソッドによる表示</span></span>
+<span id="cb92-2"><a href="#cb92-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pd.get_option(<span class="st">'display.min_rows'</span>))</span>
+<span id="cb92-3"><a href="#cb92-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pd.get_option(<span class="st">'display.max_rows'</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb93"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a><span class="co"># options属性によるアクセス</span></span>
+<span id="cb93-2"><a href="#cb93-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pd.options.display.min_rows)</span>
+<span id="cb93-3"><a href="#cb93-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pd.options.display.max_rows)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb94"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb94-2"><a href="#cb94-2" aria-hidden="true" tabindex="-1"></a><span class="dv">20</span></span>
+<span id="cb94-3"><a href="#cb94-3" aria-hidden="true" tabindex="-1"></a><span class="dv">60</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>この２つのオプションは分かりにくいですが、「データフレームの行数が<code>display.max_rows</code>を超えた場合は、<code>display.min_rows</code>行だけ表示する」という意味です。従って、上記の場合、60オブザベーション以下のデータフレームは全ての行を表示しますが、61オブザベーション以上のデータフレームについては途中を省略して最初と最後の20オブザベーションだけを表示することになります。</p>
+<p>今の場合ですとデータフレームは100オブザベーションを含んでいますので、<code>display.max_rows</code>を100行以上に設定すると、全ての行が表示されるようになります。</p>
+<p>また、省略された場合の表示行数を増やしたい場合は、<code>display.min_rows</code>を増やせばよいことになります。試しに<code>display.min_rows</code>を30に設定しましょう。オプションの設定は、set_option関数もしくは、options属性を変更することで行います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb95"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb95-2"><a href="#cb95-2" aria-hidden="true" tabindex="-1"></a><span class="co"># set_option関数を用いる場合</span></span>
+<span id="cb95-3"><a href="#cb95-3" aria-hidden="true" tabindex="-1"></a>pd.set_option(<span class="st">"display.min_rows"</span>,<span class="dv">30</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb96"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb96-2"><a href="#cb96-2" aria-hidden="true" tabindex="-1"></a><span class="co"># options属性によるアクセス</span></span>
+<span id="cb96-3"><a href="#cb96-3" aria-hidden="true" tabindex="-1"></a>pd.options.display.max_rows <span class="op">=</span> <span class="dv">60</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb97"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb97-2"><a href="#cb97-2" aria-hidden="true" tabindex="-1"></a><span class="co"># データフレームの再表示</span></span>
+<span id="cb97-3"><a href="#cb97-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb98"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb98-2"><a href="#cb98-2" aria-hidden="true" tabindex="-1"></a>            x          y         e</span>
+<span id="cb98-3"><a href="#cb98-3" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>    <span class="fl">8.013504</span>  <span class="fl">18.317503</span>  <span class="fl">1.290495</span></span>
+<span id="cb98-4"><a href="#cb98-4" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>    <span class="fl">9.896525</span>  <span class="fl">22.444125</span>  <span class="fl">1.651074</span></span>
+<span id="cb98-5"><a href="#cb98-5" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>   <span class="fl">11.326705</span>  <span class="fl">26.724520</span>  <span class="fl">3.071111</span></span>
+<span id="cb98-6"><a href="#cb98-6" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>    <span class="fl">8.938435</span>  <span class="fl">18.402628</span> <span class="op">-</span><span class="fl">0.474241</span></span>
+<span id="cb98-7"><a href="#cb98-7" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>    <span class="fl">6.862927</span>  <span class="fl">16.547593</span>  <span class="fl">1.821740</span></span>
+<span id="cb98-8"><a href="#cb98-8" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span>   <span class="fl">10.850879</span>  <span class="fl">22.979716</span>  <span class="fl">0.277957</span></span>
+<span id="cb98-9"><a href="#cb98-9" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span>    <span class="fl">9.264085</span>  <span class="fl">20.722213</span>  <span class="fl">1.194043</span></span>
+<span id="cb98-10"><a href="#cb98-10" aria-hidden="true" tabindex="-1"></a><span class="dv">7</span>    <span class="fl">6.849750</span>  <span class="fl">13.762926</span> <span class="op">-</span><span class="fl">0.936575</span></span>
+<span id="cb98-11"><a href="#cb98-11" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span>   <span class="fl">11.286648</span>  <span class="fl">22.471414</span> <span class="op">-</span><span class="fl">1.101883</span></span>
+<span id="cb98-12"><a href="#cb98-12" aria-hidden="true" tabindex="-1"></a><span class="dv">9</span>   <span class="fl">10.799512</span>  <span class="fl">22.553242</span> <span class="op">-</span><span class="fl">0.045781</span></span>
+<span id="cb98-13"><a href="#cb98-13" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span>   <span class="fl">4.228583</span>   <span class="fl">7.170566</span> <span class="op">-</span><span class="fl">2.286601</span></span>
+<span id="cb98-14"><a href="#cb98-14" aria-hidden="true" tabindex="-1"></a><span class="dv">11</span>  <span class="fl">11.212478</span>  <span class="fl">23.096968</span> <span class="op">-</span><span class="fl">0.327989</span></span>
+<span id="cb98-15"><a href="#cb98-15" aria-hidden="true" tabindex="-1"></a><span class="dv">12</span>   <span class="fl">8.700634</span>  <span class="fl">17.235308</span> <span class="op">-</span><span class="fl">1.165959</span></span>
+<span id="cb98-16"><a href="#cb98-16" aria-hidden="true" tabindex="-1"></a><span class="dv">13</span>   <span class="fl">6.341005</span>  <span class="fl">20.754819</span>  <span class="fl">7.072809</span></span>
+<span id="cb98-17"><a href="#cb98-17" aria-hidden="true" tabindex="-1"></a><span class="dv">14</span>   <span class="fl">8.717844</span>  <span class="fl">20.486063</span>  <span class="fl">2.050374</span></span>
+<span id="cb98-18"><a href="#cb98-18" aria-hidden="true" tabindex="-1"></a>..        ...        ...       ...</span>
+<span id="cb98-19"><a href="#cb98-19" aria-hidden="true" tabindex="-1"></a><span class="dv">85</span>   <span class="fl">7.623332</span>  <span class="fl">17.575759</span>  <span class="fl">1.329095</span></span>
+<span id="cb98-20"><a href="#cb98-20" aria-hidden="true" tabindex="-1"></a><span class="dv">86</span>   <span class="fl">8.119302</span>  <span class="fl">16.581371</span> <span class="op">-</span><span class="fl">0.657233</span></span>
+<span id="cb98-21"><a href="#cb98-21" aria-hidden="true" tabindex="-1"></a><span class="dv">87</span>   <span class="fl">3.639397</span>   <span class="fl">3.949449</span> <span class="op">-</span><span class="fl">4.329345</span></span>
+<span id="cb98-22"><a href="#cb98-22" aria-hidden="true" tabindex="-1"></a><span class="dv">88</span>   <span class="fl">6.937774</span>  <span class="fl">19.882245</span>  <span class="fl">5.006697</span></span>
+<span id="cb98-23"><a href="#cb98-23" aria-hidden="true" tabindex="-1"></a><span class="dv">89</span>   <span class="fl">3.661514</span>  <span class="fl">11.380440</span>  <span class="fl">3.057411</span></span>
+<span id="cb98-24"><a href="#cb98-24" aria-hidden="true" tabindex="-1"></a><span class="dv">90</span>   <span class="fl">5.775179</span>  <span class="fl">11.460086</span> <span class="op">-</span><span class="fl">1.090272</span></span>
+<span id="cb98-25"><a href="#cb98-25" aria-hidden="true" tabindex="-1"></a><span class="dv">91</span>   <span class="fl">9.078126</span>  <span class="fl">19.656764</span>  <span class="fl">0.500513</span></span>
+<span id="cb98-26"><a href="#cb98-26" aria-hidden="true" tabindex="-1"></a><span class="dv">92</span>   <span class="fl">7.534294</span>  <span class="fl">13.864200</span> <span class="op">-</span><span class="fl">2.204387</span></span>
+<span id="cb98-27"><a href="#cb98-27" aria-hidden="true" tabindex="-1"></a><span class="dv">93</span>   <span class="fl">8.182152</span>  <span class="fl">17.203746</span> <span class="op">-</span><span class="fl">0.160558</span></span>
+<span id="cb98-28"><a href="#cb98-28" aria-hidden="true" tabindex="-1"></a><span class="dv">94</span>  <span class="fl">10.004772</span>  <span class="fl">20.587155</span> <span class="op">-</span><span class="fl">0.422388</span></span>
+<span id="cb98-29"><a href="#cb98-29" aria-hidden="true" tabindex="-1"></a><span class="dv">95</span>   <span class="fl">8.927801</span>  <span class="fl">14.040083</span> <span class="op">-</span><span class="fl">4.815520</span></span>
+<span id="cb98-30"><a href="#cb98-30" aria-hidden="true" tabindex="-1"></a><span class="dv">96</span>   <span class="fl">5.269992</span>  <span class="fl">15.510429</span>  <span class="fl">3.970445</span></span>
+<span id="cb98-31"><a href="#cb98-31" aria-hidden="true" tabindex="-1"></a><span class="dv">97</span>  <span class="fl">10.328037</span>  <span class="fl">20.252442</span> <span class="op">-</span><span class="fl">1.403633</span></span>
+<span id="cb98-32"><a href="#cb98-32" aria-hidden="true" tabindex="-1"></a><span class="dv">98</span>   <span class="fl">8.183177</span>  <span class="fl">18.688349</span>  <span class="fl">1.321994</span></span>
+<span id="cb98-33"><a href="#cb98-33" aria-hidden="true" tabindex="-1"></a><span class="dv">99</span>   <span class="fl">5.729897</span>  <span class="fl">13.355884</span>  <span class="fl">0.896091</span></span>
+<span id="cb98-34"><a href="#cb98-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb98-35"><a href="#cb98-35" aria-hidden="true" tabindex="-1"></a>[<span class="dv">100</span> rows x <span class="dv">3</span> columns]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

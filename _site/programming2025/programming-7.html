@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>programming-7 – Syakaikano-Omochabako</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-43081d808c96cc46af55a3a816ae9eed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Syakaikano-Omochabako</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#第7回-標準ライブラリ2辞書集合" id="toc-第7回-標準ライブラリ2辞書集合" class="nav-link active" data-scroll-target="#第7回-標準ライブラリ2辞書集合">第7回 標準ライブラリ(2)―辞書、集合</a>
+  <ul class="collapse">
+  <li><a href="#辞書dict" id="toc-辞書dict" class="nav-link" data-scroll-target="#辞書dict">辞書(dict)</a></li>
+  <li><a href="#辞書の更新" id="toc-辞書の更新" class="nav-link" data-scroll-target="#辞書の更新">辞書の更新</a></li>
+  <li><a href="#ループでの挙動" id="toc-ループでの挙動" class="nav-link" data-scroll-target="#ループでの挙動">ループでの挙動</a>
+  <ul class="collapse">
+  <li><a href="#練習1" id="toc-練習1" class="nav-link" data-scroll-target="#練習1">練習1</a></li>
+  </ul></li>
+  <li><a href="#ハッシュ可能オブジェクト" id="toc-ハッシュ可能オブジェクト" class="nav-link" data-scroll-target="#ハッシュ可能オブジェクト">ハッシュ可能オブジェクト</a></li>
+  <li><a href="#ハッシュ表" id="toc-ハッシュ表" class="nav-link" data-scroll-target="#ハッシュ表">ハッシュ表</a></li>
+  <li><a href="#ビットマスク" id="toc-ビットマスク" class="nav-link" data-scroll-target="#ビットマスク">ビットマスク</a>
+  <ul class="collapse">
+  <li><a href="#練習2" id="toc-練習2" class="nav-link" data-scroll-target="#練習2">練習2</a></li>
+  </ul></li>
+  <li><a href="#辞書のリサイズ" id="toc-辞書のリサイズ" class="nav-link" data-scroll-target="#辞書のリサイズ">辞書のリサイズ</a></li>
+  <li><a href="#集合" id="toc-集合" class="nav-link" data-scroll-target="#集合">集合</a></li>
+  <li><a href="#集合演算" id="toc-集合演算" class="nav-link" data-scroll-target="#集合演算">集合演算</a>
+  <ul class="collapse">
+  <li><a href="#練習3" id="toc-練習3" class="nav-link" data-scroll-target="#練習3">練習3</a></li>
+  </ul></li>
+  <li><a href="#まとめ" id="toc-まとめ" class="nav-link" data-scroll-target="#まとめ">まとめ</a></li>
+  <li><a href="#参考書" id="toc-参考書" class="nav-link" data-scroll-target="#参考書">参考書</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="第7回-標準ライブラリ2辞書集合" class="level1">
+<h1>第7回 標準ライブラリ(2)―辞書、集合</h1>
+<ul>
+<li><a href="#第7回-標準ライブラリ2辞書集合">第7回 標準ライブラリ(2)―辞書、集合</a>
+<ul>
+<li><a href="#辞書dict">辞書(dict)</a></li>
+<li><a href="#辞書の更新">辞書の更新</a></li>
+<li><a href="#ループでの挙動">ループでの挙動</a>
+<ul>
+<li><a href="#練習1">練習1</a></li>
+</ul></li>
+<li><a href="#ハッシュ可能オブジェクト">ハッシュ可能オブジェクト</a></li>
+<li><a href="#ハッシュ表">ハッシュ表</a></li>
+<li><a href="#ビットマスク">ビットマスク</a>
+<ul>
+<li><a href="#練習2">練習2</a></li>
+</ul></li>
+<li><a href="#辞書のリサイズ">辞書のリサイズ</a></li>
+<li><a href="#集合">集合</a></li>
+<li><a href="#集合演算">集合演算</a>
+<ul>
+<li><a href="#練習3">練習3</a></li>
+</ul></li>
+<li><a href="#まとめ">まとめ</a></li>
+<li><a href="#参考書">参考書</a></li>
+<li><a href="#宿題ホームワーク">宿題(ホームワーク)</a></li>
+<li><a href="#課題アサインメント">課題(アサインメント)</a></li>
+</ul></li>
+</ul>
+<section id="辞書dict" class="level2">
+<h2 class="anchored" data-anchor-id="辞書dict">辞書(dict)</h2>
+<p>辞書(ディクショナリとも呼びます)型はRのリストに似たデータ構造で、次の特徴を持ちます。</p>
+<ul>
+<li>イテラブル</li>
+<li>ミュータブル</li>
+<li>「キーオブジェクト」と「値オブジェクト」のペアを保存する</li>
+<li>ハッシュ可能オブジェクトだけをキーに持てる</li>
+<li>任意のオブジェクトを値に持てる</li>
+<li>キーを指定して値にアクセスする</li>
+<li>インデックス参照やスライス記法は受け付けない</li>
+</ul>
+<p>辞書はPythonにおいて重要であるだけでなく、<strong>ハッシュテーブル</strong>という計算機科学において非常に重要なデータ構造なので、詳しく説明します。</p>
+<p>リストは、要素を列挙したものでした。リストは本質的に<strong>順序集合</strong>です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> [<span class="st">'foo'</span>,<span class="st">'bar'</span>,<span class="st">'baz'</span>]</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(x[<span class="dv">1</span>])</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>bar</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>一方、辞書は要素の順序集合ではなく、オブジェクトのペアの集合です。ペアを構成するオブジェクトは、<strong>キー</strong>および<strong>値</strong>と呼ばれます。</p>
+<p>辞書を説明するには、実際の辞書の例が分かりやすいです。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>英単語</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>yep</td>
+<td>はい</td>
+</tr>
+<tr class="even">
+<td>yes</td>
+<td>はい</td>
+</tr>
+<tr class="odd">
+<td>yet</td>
+<td>しかし</td>
+</tr>
+</tbody>
+</table>
+<p>といった(あまり役に立たない)英和辞書があったとします。この辞書では、英単語から意味を検索できるが、その逆(意味から英単語を検索)はできないとします。</p>
+<p>英単語がキー、意味が値に相当します。キーは一意でなくてはなりませんが、値は重複があっても構いません。</p>
+<p>実際にこの辞書を作るには幾つかのやり方がありますが、そのうち二つを紹介しておきます。他の作成方法については教科書のセクション6.3.1を見てください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> {<span class="st">'yep'</span>:<span class="st">'はい'</span>,<span class="st">'yes'</span>:<span class="st">'はい'</span>,<span class="st">'yet'</span>:<span class="st">'しかし'</span>}</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>{<span class="st">'yep'</span>: <span class="st">'はい'</span>, <span class="st">'yes'</span>: <span class="st">'はい'</span>, <span class="st">'yet'</span>: <span class="st">'しかし'</span>}</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> <span class="bu">dict</span>(yep<span class="op">=</span><span class="st">'はい'</span>,yes<span class="op">=</span><span class="st">'はい'</span>,yet<span class="op">=</span><span class="st">'しかし'</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>{<span class="st">'yep'</span>: <span class="st">'はい'</span>, <span class="st">'yes'</span>: <span class="st">'はい'</span>, <span class="st">'yet'</span>: <span class="st">'しかし'</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>1番目の方法では、中括弧を使って辞書を作っています。中括弧の中にはキーと値のペアをコンマで区切って列挙します。キーと値はコロンで区切ります。</p>
+<p>2番目の方法では、<strong>dict</strong>という関数を明示的に呼び出して辞書を作成しています。関数には、<code>key=value</code>という形式でキーと値のペアを渡します。こちらの形式では、キーにクォーテーションは必要ないので注意してください。</p>
+<p>ちょうどリストにおいてインデックスから要素を取得したように、キーを指定すれば値を取得できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="st">'yep'</span>]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">'はい'</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="st">'yet'</span>]</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">'しかし'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>キーの一覧、値の一覧、キーと値のペアの一覧を取得するには、<code>keys</code>メソッド、<code>values</code>メソッド、<code>items</code>メソッドを使います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x.keys()</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>dict_keys([<span class="st">'yep'</span>, <span class="st">'yes'</span>, <span class="st">'yet'</span>])</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x.values()</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>dict_values([<span class="st">'はい'</span>, <span class="st">'はい'</span>, <span class="st">'しかし'</span>])</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x.items()</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>dict_items([(<span class="st">'yep'</span>, <span class="st">'はい'</span>), (<span class="st">'yes'</span>, <span class="st">'はい'</span>), (<span class="st">'yet'</span>, <span class="st">'しかし'</span>)])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記のようにキーの一覧、値の一覧、ペアの一覧は<code>dict_keys</code>、<code>dict_values</code>、<code>dict_items</code>という特殊な<strong>イテラブル</strong>データ型で返されます。これは、適宜リストや集合、タプルに変換して用いることができます。</p>
+<p>たとえばリストに変換するには、関数<code>list</code>を使います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> <span class="bu">list</span>(x.keys())</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>[<span class="st">'yep'</span>, <span class="st">'yes'</span>, <span class="st">'yet'</span>]</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> z <span class="op">=</span> <span class="bu">list</span>(x.values())</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> z</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>[<span class="st">'はい'</span>, <span class="st">'はい'</span>, <span class="st">'しかし'</span>]</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> a <span class="op">=</span> <span class="bu">list</span>(x.items())</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> a</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>[(<span class="st">'yep'</span>, <span class="st">'はい'</span>), (<span class="st">'yes'</span>, <span class="st">'はい'</span>), (<span class="st">'yet'</span>, <span class="st">'しかし'</span>)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="辞書の更新" class="level2">
+<h2 class="anchored" data-anchor-id="辞書の更新">辞書の更新</h2>
+<p>辞書の内容を更新するもっとも基本的な方法は、代入です。たとえば、<code>x</code>の<code>'yep'</code>の意味を<code>'うっす'</code>に変更したいときは、次のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="st">'yep'</span>] <span class="op">=</span> <span class="st">'うっす'</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>{<span class="st">'yep'</span>: <span class="st">'うっす'</span>, <span class="st">'yes'</span>: <span class="st">'はい'</span>, <span class="st">'yet'</span>: <span class="st">'しかし'</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このような代入操作において、指定されたキーが存在する場合は、上記のように既存の値が更新されます。指定されたキーがまだ存在しない場合は、新たにキー：値ペアが挿入されます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="st">'yeah'</span>] <span class="op">=</span> <span class="st">'うん'</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>{<span class="st">'yep'</span>: <span class="st">'うっす'</span>, <span class="st">'yes'</span>: <span class="st">'はい'</span>, <span class="st">'yet'</span>: <span class="st">'しかし'</span>, <span class="st">'yeah'</span>: <span class="st">'うん'</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>特定のキー：値ペアを削除したいときは、<strong>del</strong>文を用います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="kw">del</span> x[<span class="st">'yeah'</span>]</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>{<span class="st">'yep'</span>: <span class="st">'うっす'</span>, <span class="st">'yes'</span>: <span class="st">'はい'</span>, <span class="st">'yet'</span>: <span class="st">'しかし'</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>複数の値を一挙に更新したい場合は、<code>update</code>メソッドを使います。例えば、辞書<code>x</code>を辞書<code>y</code>で上書き更新するには、次のように<code>update</code>メソッドを用います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>{<span class="st">'yep'</span>: <span class="st">'うっす'</span>, <span class="st">'yes'</span>: <span class="st">'はい'</span>, <span class="st">'yet'</span>: <span class="st">'しかし'</span>}</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> {<span class="st">'yep'</span>:<span class="st">'はーい'</span>,<span class="st">'yet'</span>:<span class="st">'まだ'</span>,<span class="st">'no'</span>:<span class="st">'いいえ'</span>}</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>{<span class="st">'yep'</span>: <span class="st">'はーい'</span>, <span class="st">'yet'</span>: <span class="st">'まだ'</span>, <span class="st">'no'</span>: <span class="st">'いいえ'</span>}</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x.update(y)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>{<span class="st">'yep'</span>: <span class="st">'はーい'</span>, <span class="st">'yes'</span>: <span class="st">'はい'</span>, <span class="st">'yet'</span>: <span class="st">'まだ'</span>, <span class="st">'no'</span>: <span class="st">'いいえ'</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように<code>x.update(y)</code>と書くことにより、<code>y</code>の要素(キー：値ペア)ですでに<code>x</code>に存在するものは置き換えられ、存在しないものは新たに追加されます。</p>
+</section>
+<section id="ループでの挙動" class="level2">
+<h2 class="anchored" data-anchor-id="ループでの挙動">ループでの挙動</h2>
+<p>辞書をリストの代わりにループインデックスの範囲として指定すると、ループインデックスにはキーだけが代入されます。つまり、次の2つのコードは全く同じ意味です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co"># xは辞書</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> x.keys():</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> x:</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>キーと値の両方を使いたいときは、次のようにしなくてはなりません。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> {<span class="st">'yep'</span>:<span class="st">'はい'</span>,<span class="st">'yes'</span>:<span class="st">'はい'</span>,<span class="st">'yet'</span>:<span class="st">'しかし'</span>}</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> x.items():</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように書くと、ループインデックスにはループごとにキーと値のタプルが代入されます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>(<span class="st">'yep'</span>, <span class="st">'はい'</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>(<span class="st">'yes'</span>, <span class="st">'はい'</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>(<span class="st">'yet'</span>, <span class="st">'しかし'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このようループインデックスにタプルを返すイテラブルの場合、次のようなループインデックスへの<strong>アンパック代入</strong>がサポートされています。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> {<span class="st">'yep'</span>:<span class="st">'はい'</span>,<span class="st">'yes'</span>:<span class="st">'はい'</span>,<span class="st">'yet'</span>:<span class="st">'しかし'</span>}</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i,j <span class="kw">in</span> x.items():</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i <span class="op">+</span> <span class="st">' --&gt; '</span> <span class="op">+</span> j)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>yep <span class="op">--&gt;</span> はい</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>yes <span class="op">--&gt;</span> はい</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>yet <span class="op">--&gt;</span> しかし</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="練習1" class="level3">
+<h3 class="anchored" data-anchor-id="練習1">練習1</h3>
+<p>全ての小文字アルファベットをキー、対応する大文字アルファベットを値とする辞書<code>letcap</code>を作成しなさい。また、辞書<code>letcap</code>から、キーと値を入れ替えた辞書、すなわち大文字をキー、小文字を値とする辞書<code>caplet</code>を作成しなさい。</p>
+</section>
+</section>
+<section id="ハッシュ可能オブジェクト" class="level2">
+<h2 class="anchored" data-anchor-id="ハッシュ可能オブジェクト">ハッシュ可能オブジェクト</h2>
+<p>任意のオブジェクトが値になれますが、キーに指定できるのは、<strong>ハッシュ可能な</strong>Pythonオブジェクトのみです。</p>
+<p>あるアルゴリズムによってオブジェクトを整数に変換することを<strong>ハッシュ化</strong>と呼びます。ハッシュ化によって得られる数値を<strong>ハッシュ値</strong>と呼び、当のアルゴリズムを<strong>ハッシュ関数</strong>と呼びます。全てのPythonオブジェクトがハッシュ化できるわけではなく、ハッシュ化できるオブジェクトを<strong>ハッシュ可能</strong>(hashable)であると言います。ビルトインイミュータブル型のオブジェクトはほとんどすべてハッシュ可能ですが、ミュータブル型はハッシュ不可能です。</p>
+<p>ハッシュ化は、ビルトイン関数の<strong>hash</strong>によって行うことができます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">hash</span>(<span class="dv">1</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">hash</span>(<span class="st">"foo"</span>)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="dv">2930000467231731134</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">hash</span>((<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>))</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="dv">529344067295497451</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">hash</span>(<span class="bu">range</span>(<span class="dv">10</span>))</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="op">-</span><span class="dv">7546101314042312252</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">hash</span>([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>])</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>Traceback (most recent call last):</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>  File <span class="st">"&lt;stdin&gt;"</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="pp">TypeError</span>: unhashable <span class="bu">type</span>: <span class="st">'list'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記の例では、リスト<code>[1,2,3]</code>がハッシュ不可能なため、エラーが出ています。</p>
+<p>タプルはイミュータブルですが、全ての要素がハッシュ可能な場合にのみハッシュ可能です。よって、たとえば次のようなタプルはハッシュ不可能です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> (<span class="dv">1</span>,<span class="dv">2</span>,[<span class="dv">3</span>])</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">hash</span>(x)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>Traceback (most recent call last):</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  File <span class="st">"&lt;stdin&gt;"</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="pp">TypeError</span>: unhashable <span class="bu">type</span>: <span class="st">'list'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>したがって、このようなタプルは辞書のキーに指定することができず、エラーが出ます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> {}</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[(<span class="dv">1</span>,<span class="dv">2</span>,[<span class="dv">3</span>])]<span class="op">=</span><span class="dv">123</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>Traceback (most recent call last):</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  File <span class="st">"&lt;stdin&gt;"</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="pp">TypeError</span>: unhashable <span class="bu">type</span>: <span class="st">'list'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ハッシュ関数の特徴は、</p>
+<ul>
+<li><code>==</code>演算子でTrueになる二つのオブジェクトは同じハッシュ値をもつ</li>
+<li>異なるオブジェクトが同じハッシュ値を持ってもよい(ただしその確率は通常小さい)</li>
+</ul>
+<p>ということです。たとえば、Pythonのハッシュ関数は、-1と-2に同じハッシュ値を返します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">hash</span>(<span class="op">-</span><span class="dv">1</span>) <span class="op">==</span> <span class="bu">hash</span>(<span class="op">-</span><span class="dv">2</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このようにハッシュ化は<strong>不可逆変換</strong>です。ハッシュ値からもとのオブジェクトを復元することは通常できません。</p>
+<p>なお、実際には、hash関数が使うアルゴリズムは、ハッシュ化するオブジェクトの型に依存しています。ハッシュ可能なデータ型は、すべて<code>__hash__</code>というハッシュ値を返すメソッドを持っていて、関数hashはこのメソッドを呼び出しているだけです。それは次のようにして確認できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> <span class="st">"foo"</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">hash</span>(x)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="dv">2419985339487190468</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x.<span class="fu">__hash__</span>()</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="dv">2419985339487190468</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">hash</span>(x) <span class="op">==</span> x.<span class="fu">__hash__</span>()</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>また、Pythonのハッシュ関数は、セキュリティー上の理由から、インタープリタを起動するごとに異なるハッシュ値を返すようになっています。値の同じオブジェクトにはいつも同じハッシュ値を返すようにするには、環境変数<code>PYTHONHASHSEED</code>に<code>0～2**32-1</code>の範囲の整数(4バイト符合なし整数)を設定してAnacondaプロンプト(もしくはVS Code)を再起動してください。</p>
+</section>
+<section id="ハッシュ表" class="level2">
+<h2 class="anchored" data-anchor-id="ハッシュ表">ハッシュ表</h2>
+<p>辞書の構造は少し不思議です。というのも、なぜPythonは、<code>x['yep']</code>と書くだけで、すぐにキー<code>'yep'</code>に対応する値を発見することができるのでしょうか？もし辞書がキー：値ペアを順番に格納しているだけだと、Pythonはキー<code>'yep'</code>を見つけるのに、いちいち全てのキー集合のなかから<code>'yep'</code>を検索しなくてはなりません。これだと、辞書が大きくなるに従って、検索に大きな時間を要するようになってしまいます。Pythonはこの問題を、<strong>ハッシュ表</strong>という構造を用いて解決しています。</p>
+<p>それでは、次のコードを例に、辞書を作成する際に何が起きているのかを見ていきましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> {<span class="st">'foo'</span>:<span class="dv">123</span>,<span class="st">'bar'</span>:<span class="dv">456</span>,<span class="st">'baz'</span>:<span class="dv">789</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上のコードを実行すると、筆者の処理系では辞書<code>x</code>のために232バイトのメモリ領域が確保されます（具体的なバイト数は処理系やPythonのバージョンに依存します）。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> sys</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> sys.getsizeof(x)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="dv">232</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>この232バイトのうち、104バイトはオーバーヘッドで、本質的なのは残り128バイトです。この128バイトは、ハッシュ表を格納しています。ハッシュ表の役割は、キーオブジェクトを、値オブジェクトに対応付けることです。</p>
+<p>最近のバージョンのPythonでは、ハッシュ表は<strong>インデックス配列</strong>と<strong>エントリー表</strong>という二つの部分から構成されています。インデックス配列は、1区画1バイトからなる8区画の一続きのメモリ領域で、合計8バイトを占有しています。</p>
+<p>一方エントリー表は、1スロット(区画)24バイトからなる5スロットの一続きのメモリ領域で、合計120バイトを占有しています。さらに一つのスロットは三つの小区画に分かれていて、一つの小区画は8バイト占めています。この三つの小さい区画を<strong>ハッシュ値区画</strong>、<strong>キー区画</strong>、<strong>値区画</strong>と呼ぶことにします。</p>
+<p>エントリー表の各スロットには、<code>x</code>を構成するキーや値の情報が格納されています。以下、Pythonがどのようにそれらの情報をエントリー表に格納していくか説明します。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/dict.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>dict</figcaption>
+</figure>
+</div>
+<p>まず、Pythonは第一のキーオブジェクト<code>'foo'</code>をハッシュ化し、そのハッシュ値を0～7の整数に変換します。この変換は、ハッシュ値の下位3ビットを取り出すことで行っています。3ビットの整数は0～7の範囲をとることに注意してください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> <span class="bu">hash</span>(<span class="st">"foo"</span>)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">bin</span>(x)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="co">'0b111111111111110001101001010101111001010101111011001011001010100'</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">&amp;</span> <span class="bn">0b111</span>   <span class="co"># xの下位3ビットを取得</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>なおここで、<code>&amp; 0b111</code>というのが任意の数の下位3ビットを取り出す操作になっていますが、これについては後で解説します。ここでは、確かに<code>bin(x)</code>の下位3文字が100、つまり2進数で4になっていることを確認してください。</p>
+<p>その後Pythonは、キー<code>'foo'</code>の参照、値123の参照、ハッシュ値(<code>hash("foo")</code>の値)をエントリー表第0スロットのキー区画、値区画、ハッシュ値区画に記録します。キーの参照、値の参照、ハッシュ値はどれも8バイトなので、スロットは24バイト消費します。</p>
+<p>次に、“foo”のハッシュ値の下位3ビットは<code>0b100=4</code>でしたので、Pythonは、インデックス配列の<strong>第4区画</strong>に、エントリー表での<code>'foo'</code>の<strong>スロット番号0</strong>を記録します。</p>
+<p>Pythonは、同じことを、<code>'bar'</code>と<code>'baz'</code>に対しても行います。これらのハッシュ値と下位3ビットを調べてみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">hash</span>(<span class="st">"bar"</span>) <span class="op">&amp;</span> <span class="bn">0b111</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="dv">7</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">hash</span>(<span class="st">"baz"</span>) <span class="op">&amp;</span> <span class="bn">0b111</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>"bar"</code>と<code>"baz"</code>の情報はエントリー表の第1、第2スロットに順番に収められます。また、<code>hash("bar")</code>の下位3ビットが7であったので、インデックス配列の第7区画に<code>"bar"</code>のスロット番号である1をセットします。同様に<code>hash("baz")</code>の下位3ビットが2であったので、インデックス配列の第2区画に”baz”のスロット番号2をセットします。</p>
+<p>このようにして、Pythonは図のようなハッシュテーブルを完成させます。</p>
+<p>Pythonが、完成した辞書からキー<code>'foo'</code>に対応する値123を取り出す際は、それを登録したときとほぼ同じ方法を使います。</p>
+<p>まず、<code>'foo'</code>をハッシュして下位3桁をみます。するとその値は4ですので、インデックス表の4番目を見ます。そこが空っぽであればPythonはエラーを出しますが、番号が書いてあった場合は、その番号に対応するエントリー表のスロットをみます。そのスロットに記録されているキーが、今探しているキーと一致すれば、対応する値を返して作業を終了します。</p>
+<p>上記の作業の作業量は、ハッシュテーブルにエントリーされているキー：値ペアの数に依存せずほぼ一定であるため、辞書の操作は登録されている要素(キー：値ペア)の数が大きくなっても、比較的高速に行うことができるのです。</p>
+<p>なお、ハッシュ化して下3桁をとると、複数のキーが同じインデックスになってしまうことがあります。これを<strong>ハッシュ衝突</strong>と呼びます。二つのキーでハッシュ衝突が起きると、後から登録しようとしているキーに対しては、あるアルゴリズムで別のインデックスを振られます。</p>
+<p>ここから先は専門的な話になりますので詳細は説明しませんが、ここで使われている空きインデックスを探すアルゴリズムはリニアプロービングという単純なアルゴリズムです。関心のある方は参考書の<a href="https://www.amazon.co.jp/High-Performance-Python-Performant-Programming/dp/1492055026">『High Performance Python: Practical Performant Programming for Humans』(Gorelick &amp; Ozsvald, 2020)</a>をご覧ください。ここではハッシュ衝突の概念だけ押さえておきましょう。</p>
+</section>
+<section id="ビットマスク" class="level2">
+<h2 class="anchored" data-anchor-id="ビットマスク">ビットマスク</h2>
+<p>さてここで話が少しそれますが、ハッシュ値から下3桁をとりだした操作は教養の観点から言って重要ですので、少し詳しく説明をしておきます。ハッシュ値のところで行ったように、たとえば整数123から下位3ビットを取り出すには、次のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="dv">123</span> <span class="op">&amp;</span> <span class="bn">0b111</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>まず、<code>0b111</code>は、接頭辞<code>0b</code>がついているので、7を2進数表現したものであることにしてください。<code>&amp;</code>演算子は、<strong>bitwise AND</strong>という<strong>ビット演算子</strong>の一種で、二つのビット配列がともに1になっているビットだけを1にし、残りの全てのビットを0にした数字を返します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> <span class="bn">0b1010</span> <span class="op">&amp;</span> <span class="bn">0b1001</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">bin</span>(x)</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="co">'0b1000'</span></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>したがって、どのような整数でも、<code>0b111</code>とのbitwise ANDをとれば、下位3ビット以外はすべて0になり、下位3ビットだけがとりだせることになります。このように、ビット列との<code>&amp;</code>をとって特定のビットだけを抽出することを、<strong>ビットマスク</strong>をかけるといいます。このとき、ビット抽出に使われる<code>0b111</code>のような数字をビットマスクと呼びます。情報科学で頻繁に使われる概念なので覚えておきましょう。</p>
+<p>なおハッシュ値が負の値の場合、<code>bin</code>関数が表示する2進数表記は、実際にハッシュ値がメモリに記録されるときのビット配列とは異なります。<code>bin(x)</code>が返すのは、<code>x</code>の絶対値の2進数表現にマイナス符合を付けたものであり、<code>x</code>のメモリ上でのビット配列ではありません。ビットマスクは<code>bin</code>関数の戻り値では無く、メモリ上でのビット配列、つまり2の補数表現に対して取られます。たとえば、“bar”を関数hashでハッシュ化すると、筆者の環境では次のように負の値になり、その下3ビットは<code>001</code>、つまり<strong>1</strong>となります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">bin</span>(<span class="bu">hash</span>(<span class="st">'bar'</span>))</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="co">'-0b101111000110111000001100101111000011111100001110110110111001'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ところが、’bar’のハッシュ値と<code>0b111</code>のANDを取ったものは、上で示したように、<strong>7</strong>でした。この食い違いは、ハッシュ値が負である為に置きます。ハッシュ値が負のときのビット演算の結果は、2の補数表現で考えなくてはいけません。</p>
+<p>初回の講義の補遺において紹介した<code>int_to_bits</code>を使ってハッシュ値の2の補数表現を求めておきましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>int_to_bits(<span class="bu">hash</span>(<span class="st">'bar'</span>),<span class="dv">8</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb28"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a># 出力</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>11110100 00111001 00011111 00110100 00111100 00001111 00010010 01000111</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように、確かに下3桁は<code>0b111</code>、つまり7になっていることが分かります。</p>
+<p>bitwise演算子には、AND以外にも様々なものがあり、ビット単位での操作を可能にします。ここでは取り上げませんが、非常に重要ですので、教科書のセクション3.5を良く読んでおきましょう。</p>
+<section id="練習2" class="level3">
+<h3 class="anchored" data-anchor-id="練習2">練習2</h3>
+<p>試作品段階ですが、辞書の内部構造を表示するモジュール<a href="https://github.com/kobayashiyutaka/insdict">insdict</a>を開発中です。興味のある方は仮想環境にインストールして使ってみてください。ただし、インタープリタをコンパイルしたのと同じCコンパイラが必要です。Windowsの場合は、Microsoft Visual Studioが必要です。Linuxの場合はGCCが必要です。</p>
+</section>
+</section>
+<section id="辞書のリサイズ" class="level2">
+<h2 class="anchored" data-anchor-id="辞書のリサイズ">辞書のリサイズ</h2>
+<p>さて、辞書に話を戻します。辞書のエントリーが増えてきて、インデックス表が埋まってくると、だんだんとハッシュ衝突の確率が上がってきます。衝突が多いほど、登録にも検索にも時間がかかるようになります。ですので、衝突を最小限に抑えるために、インデックス配列の区画数はエントリー表よりもすこし大きめに確保してあります。具体的には、エントリー表のスロット数は、インデックス配列の長さの約2/3になっています。</p>
+<p>エントリー表が満杯になった状態で次のキーが登録されると、インデックス配列とエントリー表が同時に拡張されます。このとき、新しくインデックス配列とエントリー表が作成され、既存のインデックス配列とエントリー表の内容がコピーされます。</p>
+<p>新しく作成されたエントリー表のサイズは10区画、インデックス表のサイズは16区画になります。再びエントリー表が一杯になると、再度拡張がおき、今度はエントリー表は21区画、インデックス表は32区画になります。このようにして、エントリー表が一杯になるたびに、おおよそ倍々にインデックス表とエントリー表は拡張されていきます。</p>
+<p>理論的には、辞書の要素が増えるにつれ、オーバヘッドを除く占有バイト数は次のように変化していきます。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>要素数</th>
+<th>スロット数</th>
+<th>配列長</th>
+<th>エントリー表サイズ</th>
+<th>配列サイズ</th>
+<th>合計</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1~5</td>
+<td>5</td>
+<td>8</td>
+<td>24x5=120</td>
+<td>1x8=8</td>
+<td>128</td>
+</tr>
+<tr class="even">
+<td>6~10</td>
+<td>10</td>
+<td>16</td>
+<td>24x10=240</td>
+<td>1x16=16</td>
+<td>256</td>
+</tr>
+<tr class="odd">
+<td>11~21</td>
+<td>21</td>
+<td>32</td>
+<td>24x21=504</td>
+<td>1x32=32</td>
+<td>536</td>
+</tr>
+<tr class="even">
+<td>22~42</td>
+<td>42</td>
+<td>64</td>
+<td>24x42=1008</td>
+<td>1x64=64</td>
+<td>1072</td>
+</tr>
+<tr class="odd">
+<td>43~85</td>
+<td>85</td>
+<td>128</td>
+<td>24x85=2040</td>
+<td>1x128=128</td>
+<td>2168</td>
+</tr>
+<tr class="even">
+<td>86~170</td>
+<td>170</td>
+<td>256</td>
+<td>24x170=4080</td>
+<td>2x256=512</td>
+<td>4592</td>
+</tr>
+<tr class="odd">
+<td>171~341</td>
+<td>341</td>
+<td>512</td>
+<td>24x341=8184</td>
+<td>2x512=1024</td>
+<td>9208</td>
+</tr>
+</tbody>
+</table>
+<p>上記の表で、各列の意味は以下の通りです。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>列</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>スロット数</td>
+<td>エントリー表のスロット数</td>
+</tr>
+<tr class="even">
+<td>配列長</td>
+<td>インデックス配列の区画数</td>
+</tr>
+<tr class="odd">
+<td>エントリー表サイズ</td>
+<td>エントリー表の総バイト数</td>
+</tr>
+<tr class="even">
+<td>配列サイズ</td>
+<td>インデックス配列の総バイト数</td>
+</tr>
+<tr class="odd">
+<td>合計</td>
+<td>エントリー表の総バイト数＋インデックス配列の総バイト数</td>
+</tr>
+</tbody>
+</table>
+<p>ちょっと細かいことですが、上の表でインデックス配列は、辞書が小さい間は、1区画1バイトを占めていますが、エントリー表のスロット数が85から170に増加したときに1区画あたり2バイトに増加します。これは、インデックス配列のそれぞれの区画は、 符号付き1バイト整数(-128～+127)を表すのに使っており、128以上のスロットナンバーを記録できないからです。</p>
+<p>本当に上記のようなことが起きているかを確かめるためのコードを書いてみましょう。からっぽの辞書に一つずつキー：値ペアを追加していき、<code>2**8</code>個までペアを追加することにします。占有バイト数が変化したときだけ出力することにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="bu">dict</span>()</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>prev_size <span class="op">=</span> <span class="dv">0</span>     <span class="co"># 前回のハッシュ表サイズ</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>curr_size <span class="op">=</span> <span class="dv">0</span>     <span class="co"># 今回のハッシュ表サイズ</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>min_size <span class="op">=</span> <span class="dv">128</span>    <span class="co"># 最小のハッシュ表サイズ</span></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>overhead <span class="op">=</span> sys.getsizeof(x) <span class="op">-</span> min_size <span class="co"># オーバーヘッド</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">2</span><span class="op">**</span><span class="dv">8</span><span class="op">+</span><span class="dv">1</span>):</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>    x.update({i:i})</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>    curr_size <span class="op">=</span> sys.getsizeof(x) <span class="op">-</span> overhead</span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> curr_size <span class="op">!=</span> prev_size:</span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="bu">str</span>(i) <span class="op">+</span> <span class="st">' --&gt; '</span> <span class="op">+</span> <span class="bu">str</span>(curr_size))</span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a>    prev_size <span class="op">=</span> curr_size</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="op">--&gt;</span> <span class="dv">128</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span> <span class="op">--&gt;</span> <span class="dv">256</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="dv">11</span> <span class="op">--&gt;</span> <span class="dv">536</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="dv">22</span> <span class="op">--&gt;</span> <span class="dv">1072</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a><span class="dv">43</span> <span class="op">--&gt;</span> <span class="dv">2168</span></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a><span class="dv">86</span> <span class="op">--&gt;</span> <span class="dv">4592</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="dv">171</span> <span class="op">--&gt;</span> <span class="dv">9208</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>1列目は辞書のエントリー数、2列目はオーバーヘッドを除いたハッシュ表の占有バイト数です。</p>
+<p>下の図は、エントリ数とともに辞書の占有メモリがどのように増えていくかを表した図です。オーバーヘッドは含んでいません。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/dict_mem.png" class="img-fluid figure-img"></p>
+<figcaption>dict-mem</figcaption>
+</figure>
+</div>
+<p>具体的なバイト数は処理系(64bitか32bitか)に依存し得ます。64ビットOSなのに結果が上の表と一致しないとすれば、Pythonのバージョンがかなり古いか、あるいはものすごく新しい可能性があります。その場合は、試しに自分の使っている処理系ではどのようにハッシュ表がメモリを使っているのか色々と実験して調べてみてください。</p>
+</section>
+<section id="集合" class="level2">
+<h2 class="anchored" data-anchor-id="集合">集合</h2>
+<p>集合型は、辞書やリストに比べると使う機会が少ないと思いますので、説明は簡単にしておきます。集合は、内部構造をもたないオブジェクトの集まりです。集合は、<strong>値のないキーだけの辞書</strong>と思ってほぼ間違いはありません。以下のような特徴を持ちます。</p>
+<ul>
+<li>イテラブル</li>
+<li>ミュータブル</li>
+<li>インデックス・スライス参照不可</li>
+<li>キー参照不可</li>
+<li>ハッシュ可能オブジェクトだけを要素に持てる</li>
+<li>算術演算不可</li>
+<li>集合演算可</li>
+</ul>
+<p>集合を作るやり方は主に二通りあります。一つは、中かっこ内に要素を列挙する方法、もう一つは、関数setにイテラブルオブジェクトを渡す方法です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> {<span class="st">'foo'</span>,<span class="st">'bar'</span>,<span class="st">'baz'</span>}</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>{<span class="st">'baz'</span>, <span class="st">'foo'</span>, <span class="st">'bar'</span>}</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> <span class="bu">set</span>([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>])</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>{<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>集合は辞書キーと同じで、重複が許されないことに注意してください。これを利用して、文字列などから、文字列に含まれている文字の集合を作成できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 文字の一覧を取得</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> z <span class="op">=</span> <span class="bu">set</span>(<span class="st">"foo bar baz"</span>)</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> z</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>{<span class="st">'a'</span>, <span class="st">'f'</span>, <span class="st">'b'</span>, <span class="st">' '</span>, <span class="st">'r'</span>, <span class="st">'o'</span>, <span class="st">'z'</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>集合の要素は辞書のキーと同じでハッシュ可能でないといけません。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> {[<span class="dv">3</span>],<span class="dv">5</span>}</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>Traceback (most recent call last):</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  File <span class="st">"&lt;stdin&gt;"</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="pp">TypeError</span>: unhashable <span class="bu">type</span>: <span class="st">'list'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ループでの挙動は、辞書と変わりありません。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> {<span class="st">'a'</span>,<span class="st">'b'</span>,<span class="st">'c'</span>}</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>{<span class="st">'b'</span>, <span class="st">'a'</span>, <span class="st">'c'</span>}</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="cf">for</span> i <span class="kw">in</span> x:</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>...     <span class="bu">print</span>(i)</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>b</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>a</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>c</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="集合演算" class="level2">
+<h2 class="anchored" data-anchor-id="集合演算">集合演算</h2>
+<p>リストや辞書でなく、集合を用いるのは、<strong>集合演算</strong>を用いたいときでしょう。集合型には様々な集合演算が定義されています。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>メソッド</th>
+<th>記号</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>x.difference(y)</code></td>
+<td><code>-</code></td>
+<td>xとyの差集合</td>
+</tr>
+<tr class="even">
+<td><code>x.intersection(y)</code></td>
+<td><code>&amp;</code></td>
+<td>xとyの積集合</td>
+</tr>
+<tr class="odd">
+<td><code>x.union(y)</code></td>
+<td>|</td>
+<td>xとyの和集合</td>
+</tr>
+<tr class="even">
+<td><code>x.issubset(y)</code></td>
+<td><code>&lt;=</code></td>
+<td>xがyの部分集合ならTrue</td>
+</tr>
+<tr class="odd">
+<td><code>x.issuperset(y)</code></td>
+<td><code>&gt;=</code></td>
+<td>yがxの部分集合ならTrue</td>
+</tr>
+</tbody>
+</table>
+<p>たとえば、和集合はunionメソッドもしくは<code>|</code>演算子で作成できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> {<span class="st">'a'</span>,<span class="st">'b'</span>,<span class="st">'c'</span>}</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> {<span class="st">'c'</span>,<span class="st">'d'</span>,<span class="st">'e'</span>}</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x.union(y)</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>{<span class="st">'b'</span>, <span class="st">'a'</span>, <span class="st">'d'</span>, <span class="st">'e'</span>, <span class="st">'c'</span>}</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">|</span> y   <span class="co"># 同じ意味</span></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>{<span class="st">'b'</span>, <span class="st">'a'</span>, <span class="st">'d'</span>, <span class="st">'e'</span>, <span class="st">'c'</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記の集合演算を自分で色々と試してみましょう。</p>
+<section id="練習3" class="level3">
+<h3 class="anchored" data-anchor-id="練習3">練習3</h3>
+<p>文字列”pythonlanguage”に含まれる文字のうち、“helloworld”と”foobarbaz”の<strong>どちらか一方にのみ</strong>含まれている文字の集合を求めなさい。</p>
+</section>
+</section>
+<section id="まとめ" class="level2">
+<h2 class="anchored" data-anchor-id="まとめ">まとめ</h2>
+<p>今回の講義では、以下のことを学びました。</p>
+<ul>
+<li>辞書の仕組み</li>
+<li>ハッシュ表</li>
+<li>ビットマスク</li>
+<li>集合型</li>
+<li>集合演算</li>
+</ul>
+<p>辞書はPythonのデータ型の中でも非常に重要な役割を持つものですので、教科書の対応する範囲を良く読み、挙動を理解するようにしましょう。</p>
+</section>
+<section id="参考書" class="level2">
+<h2 class="anchored" data-anchor-id="参考書">参考書</h2>
+<ul>
+<li><a href="https://www.amazon.co.jp/High-Performance-Python-Performant-Programming/dp/1492055026">『High Performance Python: Practical Performant Programming for Humans』</a>(M. Gorelick, I. Ozsvald著) (2020) O’Reilly. ISBN-13 : 978-1492055020.</li>
+<li><a href="https://www.amazon.co.jp/CPython-Internals-Guide-Python-Interpreter/dp/1775093344/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;dchild=1&amp;keywords=CPython+internals&amp;qid=1622045115&amp;sr=8-1">『CPython Internals: Your Guide to The Python 3 Interpreter』</a>(A. Shaw, The real python.com tutorial team)(2021) Real Python. ISBN-13: 978-1775093343.</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
