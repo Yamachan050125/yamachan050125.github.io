@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>programming-8 – Syakaikano-Omochabako</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-43081d808c96cc46af55a3a816ae9eed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Syakaikano-Omochabako</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#第8回-関数とモジュール" id="toc-第8回-関数とモジュール" class="nav-link active" data-scroll-target="#第8回-関数とモジュール">第8回　関数とモジュール</a>
+  <ul class="collapse">
+  <li><a href="#関数" id="toc-関数" class="nav-link" data-scroll-target="#関数">関数</a>
+  <ul class="collapse">
+  <li><a href="#練習1" id="toc-練習1" class="nav-link" data-scroll-target="#練習1">練習1</a></li>
+  </ul></li>
+  <li><a href="#ジェネレータ" id="toc-ジェネレータ" class="nav-link" data-scroll-target="#ジェネレータ">ジェネレータ</a>
+  <ul class="collapse">
+  <li><a href="#練習2" id="toc-練習2" class="nav-link" data-scroll-target="#練習2">練習2</a></li>
+  <li><a href="#練習3" id="toc-練習3" class="nav-link" data-scroll-target="#練習3">練習3</a></li>
+  </ul></li>
+  <li><a href="#内包表記" id="toc-内包表記" class="nav-link" data-scroll-target="#内包表記">内包表記</a>
+  <ul class="collapse">
+  <li><a href="#練習4" id="toc-練習4" class="nav-link" data-scroll-target="#練習4">練習4</a></li>
+  </ul></li>
+  <li><a href="#ifif-elseつき内包表記" id="toc-ifif-elseつき内包表記" class="nav-link" data-scroll-target="#ifif-elseつき内包表記">if/if-elseつき内包表記</a>
+  <ul class="collapse">
+  <li><a href="#練習5" id="toc-練習5" class="nav-link" data-scroll-target="#練習5">練習5</a></li>
+  </ul></li>
+  <li><a href="#モジュールの種類" id="toc-モジュールの種類" class="nav-link" data-scroll-target="#モジュールの種類">モジュールの種類</a>
+  <ul class="collapse">
+  <li><a href="#外部ファイル" id="toc-外部ファイル" class="nav-link" data-scroll-target="#外部ファイル">外部ファイル</a></li>
+  <li><a href="#ビルトインモジュール" id="toc-ビルトインモジュール" class="nav-link" data-scroll-target="#ビルトインモジュール">ビルトインモジュール</a></li>
+  <li><a href="#builtinsモジュール" id="toc-builtinsモジュール" class="nav-link" data-scroll-target="#builtinsモジュール">builtinsモジュール</a></li>
+  <li><a href="#mainモジュール" id="toc-mainモジュール" class="nav-link" data-scroll-target="#mainモジュール">mainモジュール</a></li>
+  </ul></li>
+  <li><a href="#モジュールを作る" id="toc-モジュールを作る" class="nav-link" data-scroll-target="#モジュールを作る">モジュールを作る</a></li>
+  <li><a href="#モジュールのリロード" id="toc-モジュールのリロード" class="nav-link" data-scroll-target="#モジュールのリロード">モジュールのリロード</a></li>
+  <li><a href="#モジュールのバイトコード" id="toc-モジュールのバイトコード" class="nav-link" data-scroll-target="#モジュールのバイトコード">モジュールのバイトコード</a>
+  <ul class="collapse">
+  <li><a href="#練習6" id="toc-練習6" class="nav-link" data-scroll-target="#練習6">練習6</a></li>
+  </ul></li>
+  <li><a href="#名前空間" id="toc-名前空間" class="nav-link" data-scroll-target="#名前空間">名前空間</a>
+  <ul class="collapse">
+  <li><a href="#グローバル名前空間" id="toc-グローバル名前空間" class="nav-link" data-scroll-target="#グローバル名前空間">グローバル名前空間</a></li>
+  <li><a href="#練習7" id="toc-練習7" class="nav-link" data-scroll-target="#練習7">練習7</a></li>
+  <li><a href="#ローカル名前空間" id="toc-ローカル名前空間" class="nav-link" data-scroll-target="#ローカル名前空間">ローカル名前空間</a></li>
+  <li><a href="#ビルトイン名前空間" id="toc-ビルトイン名前空間" class="nav-link" data-scroll-target="#ビルトイン名前空間">ビルトイン名前空間</a></li>
+  <li><a href="#練習8" id="toc-練習8" class="nav-link" data-scroll-target="#練習8">練習8</a></li>
+  </ul></li>
+  <li><a href="#スコープ" id="toc-スコープ" class="nav-link" data-scroll-target="#スコープ">スコープ</a>
+  <ul class="collapse">
+  <li><a href="#グローバルスコープ" id="toc-グローバルスコープ" class="nav-link" data-scroll-target="#グローバルスコープ">グローバルスコープ</a></li>
+  <li><a href="#ローカルスコープ" id="toc-ローカルスコープ" class="nav-link" data-scroll-target="#ローカルスコープ">ローカルスコープ</a></li>
+  <li><a href="#ビルトインスコープ" id="toc-ビルトインスコープ" class="nav-link" data-scroll-target="#ビルトインスコープ">ビルトインスコープ</a></li>
+  </ul></li>
+  <li><a href="#legbルール" id="toc-legbルール" class="nav-link" data-scroll-target="#legbルール">LEGBルール</a>
+  <ul class="collapse">
+  <li><a href="#再帰関数" id="toc-再帰関数" class="nav-link" data-scroll-target="#再帰関数">再帰関数</a></li>
+  </ul></li>
+  <li><a href="#globalnonlocal命令" id="toc-globalnonlocal命令" class="nav-link" data-scroll-target="#globalnonlocal命令">global/nonlocal命令</a>
+  <ul class="collapse">
+  <li><a href="#練習9" id="toc-練習9" class="nav-link" data-scroll-target="#練習9">練習9</a></li>
+  </ul></li>
+  <li><a href="#クロージャ" id="toc-クロージャ" class="nav-link" data-scroll-target="#クロージャ">クロージャ</a>
+  <ul class="collapse">
+  <li><a href="#練習10" id="toc-練習10" class="nav-link" data-scroll-target="#練習10">練習10</a></li>
+  </ul></li>
+  <li><a href="#記号表高度な話題" id="toc-記号表高度な話題" class="nav-link" data-scroll-target="#記号表高度な話題">記号表(高度な話題)</a>
+  <ul class="collapse">
+  <li><a href="#トップレベル記号表の取得" id="toc-トップレベル記号表の取得" class="nav-link" data-scroll-target="#トップレベル記号表の取得">トップレベル記号表の取得</a></li>
+  <li><a href="#トップレベル記号表の精査" id="toc-トップレベル記号表の精査" class="nav-link" data-scroll-target="#トップレベル記号表の精査">トップレベル記号表の精査</a></li>
+  <li><a href="#記号表を精査する関数inspect_tbl" id="toc-記号表を精査する関数inspect_tbl" class="nav-link" data-scroll-target="#記号表を精査する関数inspect_tbl">記号表を精査する関数inspect_tbl</a></li>
+  <li><a href="#ローカル記号表の取得" id="toc-ローカル記号表の取得" class="nav-link" data-scroll-target="#ローカル記号表の取得">ローカル記号表の取得</a></li>
+  <li><a href="#ローカル記号表の精査" id="toc-ローカル記号表の精査" class="nav-link" data-scroll-target="#ローカル記号表の精査">ローカル記号表の精査</a></li>
+  </ul></li>
+  <li><a href="#まとめ" id="toc-まとめ" class="nav-link" data-scroll-target="#まとめ">まとめ</a></li>
+  <li><a href="#参考書" id="toc-参考書" class="nav-link" data-scroll-target="#参考書">参考書</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="第8回-関数とモジュール" class="level1">
+<h1>第8回　関数とモジュール</h1>
+<ul>
+<li><a href="#第8回関数とモジュール">第8回　関数とモジュール</a>
+<ul>
+<li><a href="#関数">関数</a>
+<ul>
+<li><a href="#練習1">練習1</a></li>
+</ul></li>
+<li><a href="#ジェネレータ">ジェネレータ</a>
+<ul>
+<li><a href="#練習2">練習2</a></li>
+<li><a href="#練習3">練習3</a></li>
+</ul></li>
+<li><a href="#内包表記">内包表記</a>
+<ul>
+<li><a href="#練習4">練習4</a></li>
+</ul></li>
+<li><a href="#ifif-elseつき内包表記">if/if-elseつき内包表記</a>
+<ul>
+<li><a href="#練習5">練習5</a></li>
+</ul></li>
+<li><a href="#モジュールの種類">モジュールの種類</a>
+<ul>
+<li><a href="#外部ファイル">外部ファイル</a></li>
+<li><a href="#ビルトインモジュール">ビルトインモジュール</a></li>
+<li><a href="#builtinsモジュール">builtinsモジュール</a></li>
+<li><a href="#mainモジュール">mainモジュール</a></li>
+</ul></li>
+<li><a href="#モジュールを作る">モジュールを作る</a></li>
+<li><a href="#モジュールのリロード">モジュールのリロード</a></li>
+<li><a href="#モジュールのバイトコード">モジュールのバイトコード</a>
+<ul>
+<li><a href="#練習6">練習6</a></li>
+</ul></li>
+<li><a href="#名前空間">名前空間</a>
+<ul>
+<li><a href="#グローバル名前空間">グローバル名前空間</a></li>
+<li><a href="#練習7">練習7</a></li>
+<li><a href="#ローカル名前空間">ローカル名前空間</a></li>
+<li><a href="#ビルトイン名前空間">ビルトイン名前空間</a></li>
+<li><a href="#練習8">練習8</a></li>
+</ul></li>
+<li><a href="#スコープ">スコープ</a>
+<ul>
+<li><a href="#グローバルスコープ">グローバルスコープ</a></li>
+<li><a href="#ローカルスコープ">ローカルスコープ</a></li>
+<li><a href="#ビルトインスコープ">ビルトインスコープ</a></li>
+</ul></li>
+<li><a href="#legbルール">LEGBルール</a>
+<ul>
+<li><a href="#再帰関数">再帰関数</a></li>
+</ul></li>
+<li><a href="#globalnonlocal命令">global/nonlocal命令</a>
+<ul>
+<li><a href="#練習9">練習9</a></li>
+</ul></li>
+<li><a href="#クロージャ">クロージャ</a>
+<ul>
+<li><a href="#練習10">練習10</a></li>
+</ul></li>
+<li><a href="#記号表高度な話題">記号表(高度な話題)</a>
+<ul>
+<li><a href="#トップレベル記号表の取得">トップレベル記号表の取得</a></li>
+<li><a href="#トップレベル記号表の精査">トップレベル記号表の精査</a></li>
+<li><a href="#記号表を精査する関数inspect_tbl">記号表を精査する関数inspect_tbl</a></li>
+<li><a href="#ローカル記号表の取得">ローカル記号表の取得</a></li>
+<li><a href="#ローカル記号表の精査">ローカル記号表の精査</a></li>
+</ul></li>
+<li><a href="#まとめ">まとめ</a></li>
+<li><a href="#参考書">参考書</a></li>
+<li><a href="#宿題ホームワーク">宿題(ホームワーク)</a></li>
+<li><a href="#課題アサインメント">課題(アサインメント)</a></li>
+</ul></li>
+</ul>
+<section id="関数" class="level2">
+<h2 class="anchored" data-anchor-id="関数">関数</h2>
+<p>まずRにおける関数の作成を思い出しましょう。一例として、2つの引数の和を返すだけのmyadd関数を定義するには、次のように書くのでしたね。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>myadd <span class="ot">&lt;-</span> <span class="cf">function</span>(a,b) {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    z <span class="ot">&lt;-</span> a <span class="sc">+</span> b</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(z)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記において、関数の中身(ボディ)は、中括弧の中で与えられます。<code>a</code>、<code>b</code>が引数であり、任意の数値を想定しています。関数<code>return</code>を呼び出すことで関数の実行は終了し、returnの引数が戻り値として返されます。作成された関数は、無名のまま使うこともできますが、通常は何度も再利用するものです。そのため、<code>myadd</code>という名前(<strong>識別子</strong>)に、作成した関数オブジェクトを<code>&lt;-</code>演算子によって付値しています。これにより、識別子<code>myadd</code>に関数オブジェクトが結び付けられ、次のようにこの関数を何度でも呼び出せるようになります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> res <span class="ot">&lt;-</span> <span class="fu">myadd</span>(<span class="dv">2</span>,<span class="dv">8</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">print</span>(res)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">10</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>なお上記では、<code>return(a+b)</code>としても構いませんが、関数のボディの存在をわかりやすくするために、あえて複数行で記述しました。</p>
+<p>一方、Pythonの関数は、以下の<code>def</code>命令を用いて作成し、必ず識別子への代入が行われます。(Pythonにも<strong>lambda式</strong>という無名関数はありますが、全く違う方法で作ります。残念ながら<code>lambda</code>式では複数行ブロックをもつ関数を作ることはできません。<code>lambda</code>式については教科書のセクション8.4.4に詳しく説明がありますのでよく読んでおいてください。)上記のRコードはPythonで書き直すと次のようになります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> myadd(a,b):</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    z <span class="op">=</span> a <span class="op">+</span> b       <span class="co"># 関数ブロック</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> z        <span class="co">#</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(myadd(<span class="dv">5</span>,<span class="dv">4</span>))</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(myadd(<span class="dv">10</span>,<span class="op">-</span><span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="dv">9</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>if</code>ブロックや<code>for</code>ブロックと同じように、関数の内容もまた、インデントを用いたブロックによって表現します。戻り値は<code>return</code>命令で返します。Pythonの<code>def</code>や<code>del</code>とおなじような命令であって、関数ではないことに注意しましょう。したがって、<code>return</code>にはカッコは必要ありません。</p>
+<p><code>return</code>命令を省略すると、関数は<code>None</code>オブジェクトを返します。<code>None</code>は「空っぽ」を意味するオブジェクトであり、メモリ上に常駐していて常に再利用されます。たとえば次の関数<code>hello</code>は、<code>return</code>命令を呼び出しませんので、その戻り値は<code>None</code>となります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> hello():</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'Hello, World!'</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> hello()</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="kw">is</span> <span class="va">None</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>Hello, World<span class="op">!</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>また、関数を終了させたいが、戻り値はいらないという場合は、単に<code>return</code>と書くと、<code>None</code>を返して終了します。何らかの理由で関数の実行を途中で終了したい場合に有用です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> hello(name):</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> name <span class="op">==</span> <span class="st">''</span>:</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">'hello,world!'</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'hello,'</span> <span class="op">+</span> name)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>hello(<span class="st">''</span>)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>hello(<span class="st">'taro'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>hello,world<span class="op">!</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>hello,taro</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>本講義では省略しますが、Pythonの関数は引数のデフォルト値やキーワード引数など、様々な形式の引数を設定することが可能です。教科書のセクション8.3に詳しく説明されているので、良く読んでおきましょう。</p>
+<section id="練習1" class="level3">
+<h3 class="anchored" data-anchor-id="練習1">練習1</h3>
+<p>数値のリストを引数にとり、リストの全ての要素の3乗の和を求める関数sumcubeを作成しなさい。たとえば、次の関数呼び出しの戻り値は36になります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>sumcube([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="ジェネレータ" class="level2">
+<h2 class="anchored" data-anchor-id="ジェネレータ">ジェネレータ</h2>
+<p><code>return</code>命令の代わりに<code>yield</code>命令を使うと、関数は<strong>ジェネレータ関数</strong>という特別な関数になります。ジェネレータ関数は、戻り値として、<strong>ジェネレータオブジェクト</strong>を返します。(ジェネレータ関数とジェネレータオブジェクトのどちらも<strong>ジェネレータ</strong>と呼ぶことがあるので注意してください。)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./img/generator.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>generator</figcaption>
+</figure>
+</div>
+<p>ジェネレータオブジェクトは、イテラブルなオブジェクトであり、主にループ処理で用いることができます。ループ処理でループインデックスに代入されるのは、<code>yield</code>の戻り値です。ただし、注意しなくてはならないのは、<code>yield</code>は作業を中断するだけで、関数ブロックの処理を終了しないということです。</p>
+<p>たとえば、次のようなジェネレータは、19以下の偶数を順番にループインデックスに返します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ジェネレータ関数の定義</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> yield_even():</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">20</span>):</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> i<span class="op">%</span><span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>            <span class="cf">yield</span> i</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="co"># ジェネレータの活用</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> yield_even():</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="dv">12</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="dv">14</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="dv">16</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="dv">18</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>なお、ジェネレータオブジェクトは<strong>イテレータ</strong>でもあります。従って、<code>next</code>関数によって値を取得することができます。</p>
+<p>ジェネレーターオブジェクトはイテラブルであるため、<code>list</code>コンストラクタや<code>set</code>コンストラクタ、<code>tuple</code>コンストラクタに渡すことで、リストや集合、タプルを作ることができます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">list</span>(yield_even()))</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">set</span>(yield_even()))</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">tuple</span>(yield_even()))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">10</span>, <span class="dv">12</span>, <span class="dv">14</span>, <span class="dv">16</span>, <span class="dv">18</span>]</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>{<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">10</span>, <span class="dv">12</span>, <span class="dv">14</span>, <span class="dv">16</span>, <span class="dv">18</span>}</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>(<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">10</span>, <span class="dv">12</span>, <span class="dv">14</span>, <span class="dv">16</span>, <span class="dv">18</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ただし、あくまでも、有限回の呼び出しで<code>StopIteration</code>例外を発生するジェネレータである必要があります。練習2で作ったような、無限回<code>next</code>で呼び出せるジェネレータをこのように使わないよう注意しましょう。</p>
+<p>上記の方法で辞書を作成するには、ジェネレータはキーと値のタプルを返すものでなくてはなりません。たとえば、次の例は、20未満の偶数をキー、その自乗を値としてもつ辞書を作成するコードです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> yield_even():</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">20</span>):</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> i <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>            <span class="cf">yield</span> i,i<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">dict</span>(yield_even()))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>{<span class="dv">0</span>: <span class="dv">0</span>, <span class="dv">2</span>: <span class="dv">4</span>, <span class="dv">4</span>: <span class="dv">16</span>, <span class="dv">6</span>: <span class="dv">36</span>, <span class="dv">8</span>: <span class="dv">64</span>, <span class="dv">10</span>: <span class="dv">100</span>, <span class="dv">12</span>: <span class="dv">144</span>, <span class="dv">14</span>: <span class="dv">196</span>, <span class="dv">16</span>: <span class="dv">256</span>, <span class="dv">18</span>: <span class="dv">324</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ジェネレータから得られた値をそのまま使うのではなく、若干の編集を加えてリストや集合にしたい場合は、次に説明する<strong>内包表記</strong>を用いることができます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> yield_even():</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">20</span>):</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> i<span class="op">%</span><span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>            <span class="cf">yield</span> i</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 内包表記(奇数の列)</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [i <span class="op">+</span> <span class="dv">1</span> <span class="cf">for</span> i <span class="kw">in</span> yield_even()]</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">9</span>, <span class="dv">11</span>, <span class="dv">13</span>, <span class="dv">15</span>, <span class="dv">17</span>, <span class="dv">19</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="練習2" class="level3">
+<h3 class="anchored" data-anchor-id="練習2">練習2</h3>
+<p>呼び出すたびに1のn乗、2のn乗、3のn乗…という風に、正整数のn乗を返すジェネレータオブジェクトを生成するジェネレータ関数<code>genpow</code>を定義しなさい。この関数の引数は、指数<code>n</code>です。</p>
+<p>たとえば、次のように書くと、<code>x</code>は<code>next(x)</code>を実行するたびに正整数の3乗を返すジェネレータオブジェクトになります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> genpow(<span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ヒント: <code>while</code>を用いた無限ループを活用します。</p>
+</section>
+<section id="練習3" class="level3">
+<h3 class="anchored" data-anchor-id="練習3">練習3</h3>
+<p>練習2の応用です。<code>genpow</code>を修正して、指数<code>n</code>に加えて、整数の上限<code>max</code>を引数に加えなさい。たとえば、次のように書くと、<code>x</code>は<code>next(x)</code>の呼び出しによって最大<code>10**3</code>まで返せるジェネレータオブジェクトになります。ただし、<code>max</code>に負の数を与えると、練習2の<code>genpow</code>と同じで上限値はなくなり、<code>next(x)</code>は任意の回数呼び出せるようになるとします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> genpow(<span class="bu">max</span>,n)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="内包表記" class="level2">
+<h2 class="anchored" data-anchor-id="内包表記">内包表記</h2>
+<p>脱線しますが、折角ですので、ここで<strong>内包表記</strong>についてお話ししておきます。内包表記は、ループ処理の結果をリスト、辞書、集合などのコンテナ型オブジェクトにまとめるためのPython特有の構文であり、慣れるとコードをコンパクトに書くのに非常に有用です。以下が、内包表記の基本形です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># リスト内包表記</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>[iを含む表現 <span class="cf">for</span> i <span class="kw">in</span> ループ範囲]</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="co"># セット(集合)内包表記</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>{iを含む表現 <span class="cf">for</span> i <span class="kw">in</span> ループ範囲}</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 辞書内包表記</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>{iを含む表現:iを含む表現 <span class="cf">for</span> i <span class="kw">in</span> ループ範囲}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>例えば、100までの偶数の自乗をすべて収めたリストを作るときは、次のように書きます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> [i<span class="op">**</span><span class="dv">2</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>,<span class="dv">100</span>,<span class="dv">2</span>)]</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">0</span>, <span class="dv">4</span>, <span class="dv">16</span>, <span class="dv">36</span>, <span class="dv">64</span>, <span class="dv">100</span>, <span class="dv">144</span>, <span class="dv">196</span>, <span class="dv">256</span>, <span class="dv">324</span>, <span class="dv">400</span>, <span class="dv">484</span>, <span class="dv">576</span>, <span class="dv">676</span>, <span class="dv">784</span>, <span class="dv">900</span>, <span class="dv">1024</span>, <span class="dv">1156</span>, <span class="dv">1296</span>, <span class="dv">1444</span>, <span class="dv">1600</span>, <span class="dv">1764</span>, <span class="dv">1936</span>, <span class="dv">2116</span>, <span class="dv">2304</span>, <span class="dv">2500</span>, <span class="dv">2704</span>, <span class="dv">2916</span>, <span class="dv">3136</span>, <span class="dv">3364</span>, <span class="dv">3600</span>, <span class="dv">3844</span>, <span class="dv">4096</span>, <span class="dv">4356</span>, <span class="dv">4624</span>, <span class="dv">4900</span>, <span class="dv">5184</span>, <span class="dv">5476</span>, <span class="dv">5776</span>, <span class="dv">6084</span>, <span class="dv">6400</span>, <span class="dv">6724</span>, <span class="dv">7056</span>, <span class="dv">7396</span>, <span class="dv">7744</span>, <span class="dv">8100</span>, <span class="dv">8464</span>, <span class="dv">8836</span>, <span class="dv">9216</span>, <span class="dv">9604</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>同じことをforループでやるとすると、たとえば次のようになります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> []</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>,<span class="dv">100</span>,<span class="dv">2</span>):</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>    x.append(i<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">0</span>, <span class="dv">4</span>, <span class="dv">16</span>, <span class="dv">36</span>, <span class="dv">64</span>, <span class="dv">100</span>, <span class="dv">144</span>, <span class="dv">196</span>, <span class="dv">256</span>, <span class="dv">324</span>, <span class="dv">400</span>, <span class="dv">484</span>, <span class="dv">576</span>, <span class="dv">676</span>, <span class="dv">784</span>, <span class="dv">900</span>, <span class="dv">1024</span>, <span class="dv">1156</span>, <span class="dv">1296</span>, <span class="dv">1444</span>, <span class="dv">1600</span>, <span class="dv">1764</span>, <span class="dv">1936</span>, <span class="dv">2116</span>, <span class="dv">2304</span>, <span class="dv">2500</span>, <span class="dv">2704</span>, <span class="dv">2916</span>, <span class="dv">3136</span>, <span class="dv">3364</span>, <span class="dv">3600</span>, <span class="dv">3844</span>, <span class="dv">4096</span>, <span class="dv">4356</span>, <span class="dv">4624</span>, <span class="dv">4900</span>, <span class="dv">5184</span>, <span class="dv">5476</span>, <span class="dv">5776</span>, <span class="dv">6084</span>, <span class="dv">6400</span>, <span class="dv">6724</span>, <span class="dv">7056</span>, <span class="dv">7396</span>, <span class="dv">7744</span>, <span class="dv">8100</span>, <span class="dv">8464</span>, <span class="dv">8836</span>, <span class="dv">9216</span>, <span class="dv">9604</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>セット内包表記は<code>[]</code>を<code>{}</code>にするだけですが、リストと違い重複を除去できます。次のコードは、100までの偶数の自乗を5で割った余りを集めたリストと集合を計算するためのものです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> [i<span class="op">**</span><span class="dv">2</span> <span class="op">%</span> <span class="dv">5</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>,<span class="dv">100</span>,<span class="dv">2</span>)]</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">0</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">0</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">0</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">0</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">0</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">0</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">0</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">0</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">0</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">0</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">4</span>]</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> {i<span class="op">**</span><span class="dv">2</span> <span class="op">%</span> <span class="dv">5</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>,<span class="dv">100</span>,<span class="dv">2</span>)}</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>{<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">4</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>辞書内包表記は少し特徴的です。たとえば次は、“hello,world!”という文字列のそれぞれの文字をキーとし、キーの大文字を値とする辞書を作成するコードです。やはりこの場合も、キーの重複は取り除かれます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> {c:c.upper() <span class="cf">for</span> c <span class="kw">in</span> <span class="st">"hello,world!"</span>}</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>{<span class="st">'h'</span>: <span class="st">'H'</span>, <span class="st">'e'</span>: <span class="st">'E'</span>, <span class="st">'l'</span>: <span class="st">'L'</span>, <span class="st">'o'</span>: <span class="st">'O'</span>, <span class="st">','</span>: <span class="st">','</span>, <span class="st">'w'</span>: <span class="st">'W'</span>, <span class="st">'r'</span>: <span class="st">'R'</span>, <span class="st">'d'</span>: <span class="st">'D'</span>, <span class="st">'!'</span>: <span class="st">'!'</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>辞書で内包表記でキーの重複が取り除かれる際には、最新の値が採用されるので注意が必要です。たとえば、次のコードは、キーと値を入れ替えた辞書を作るものです。値は一意とは限らないので、重複部分は除去され、最新のペアだけが残ります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> {<span class="st">'foo'</span>:<span class="dv">1</span>,<span class="st">'bar'</span>:<span class="dv">2</span>,<span class="st">'baz'</span>:<span class="dv">1</span>}</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>{j:i <span class="cf">for</span> i,j <span class="kw">in</span> x.items()}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>{<span class="dv">1</span>: <span class="st">'baz'</span>, <span class="dv">2</span>: <span class="st">'bar'</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="練習4" class="level3">
+<h3 class="anchored" data-anchor-id="練習4">練習4</h3>
+<p>文字列’Python’から1文字目を1回、2文字目を2回、…n文字目をn回繰り返した文字列’Pyyttthhhhooooonnnnnn’をリスト内包表記を使って作成しなさい。</p>
+</section>
+</section>
+<section id="ifif-elseつき内包表記" class="level2">
+<h2 class="anchored" data-anchor-id="ifif-elseつき内包表記">if/if-elseつき内包表記</h2>
+<p>先に挙げた、100までの偶数の自乗を含むリストは、次のように<code>if</code>と組み合わせた内包表記によっても作成できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [i<span class="op">**</span><span class="dv">2</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">100</span>) <span class="cf">if</span> i<span class="op">%</span><span class="dv">2</span> <span class="op">==</span><span class="dv">0</span>]</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>[<span class="dv">0</span>, <span class="dv">4</span>, <span class="dv">16</span>, <span class="dv">36</span>, <span class="dv">64</span>, <span class="dv">100</span>, <span class="dv">144</span>, <span class="dv">196</span>, <span class="dv">256</span>, <span class="dv">324</span>, <span class="dv">400</span>, <span class="dv">484</span>, <span class="dv">576</span>, <span class="dv">676</span>, <span class="dv">784</span>, <span class="dv">900</span>, <span class="dv">1024</span>, <span class="dv">1156</span>, <span class="dv">1296</span>, <span class="dv">1444</span>, <span class="dv">1600</span>, <span class="dv">1764</span>, <span class="dv">1936</span>, <span class="dv">2116</span>, <span class="dv">2304</span>, <span class="dv">2500</span>, <span class="dv">2704</span>, <span class="dv">2916</span>, <span class="dv">3136</span>, <span class="dv">3364</span>, <span class="dv">3600</span>, <span class="dv">3844</span>, <span class="dv">4096</span>, <span class="dv">4356</span>, <span class="dv">4624</span>, <span class="dv">4900</span>, <span class="dv">5184</span>, <span class="dv">5476</span>, <span class="dv">5776</span>, <span class="dv">6084</span>, <span class="dv">6400</span>, <span class="dv">6724</span>, <span class="dv">7056</span>, <span class="dv">7396</span>, <span class="dv">7744</span>, <span class="dv">8100</span>, <span class="dv">8464</span>, <span class="dv">8836</span>, <span class="dv">9216</span>, <span class="dv">9604</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記では、<code>i</code>が2で割り切れるときのみ<code>i**2</code>をリストに加える、という意味になります。</p>
+<p>ところが、<code>i</code>が2で割り切れるときは<code>i**2</code>をリストに加え、そうでないときは0を加えよ、という命令にしたいときは、下のようにかなり異なる表現になります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [i<span class="op">**</span><span class="dv">2</span> <span class="cf">if</span> i<span class="op">%</span><span class="dv">2</span><span class="op">==</span><span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">100</span>)]</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>実はこの表現においては、単文の<strong>if-else</strong>構文が使われています。単文のif-elseは次のように用います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>式A <span class="cf">if</span> 条件 <span class="cf">else</span> 式B</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように書くと、「条件が成り立っていれば式A、さもなくば式B」という意味になります。本来内包表記とは直接関係がなく、どこでも用いることができます。たとえばxにiの絶対値を代入したい場合は次のように書くことができます。(実際には<code>abs</code>という絶対値を返すビルトイン関数があります。)</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> i <span class="cf">if</span> i<span class="op">&gt;=</span><span class="dv">0</span> <span class="cf">else</span> <span class="op">-</span>i</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように、ifつき内包表記とif-elseつき内包表記は全く別のものですので、両者を組み合わせることもできます(おすすめはしませんが)。たとえば、「7の倍数のうち、3の倍数は自乗し、3で割り切れない数はそのまま格納したリスト」は次のように表現できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [i<span class="op">**</span><span class="dv">2</span> <span class="cf">if</span> i<span class="op">%</span><span class="dv">3</span><span class="op">==</span><span class="dv">0</span> <span class="cf">else</span> i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">100</span>) <span class="cf">if</span> i<span class="op">%</span><span class="dv">7</span><span class="op">==</span><span class="dv">0</span>]</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>[<span class="dv">0</span>, <span class="dv">7</span>, <span class="dv">14</span>, <span class="dv">441</span>, <span class="dv">28</span>, <span class="dv">35</span>, <span class="dv">1764</span>, <span class="dv">49</span>, <span class="dv">56</span>, <span class="dv">3969</span>, <span class="dv">70</span>, <span class="dv">77</span>, <span class="dv">7056</span>, <span class="dv">91</span>, <span class="dv">98</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように、内包表記は非常に高い表現力をもっています。<code>for</code>ループの結果をリストに格納したい、ということはプログラミングをやっていると頻発しますので、この機会にぜひ覚えておきましょう。</p>
+<section id="練習5" class="level3">
+<h3 class="anchored" data-anchor-id="練習5">練習5</h3>
+<p>文字列”this practice is too difficult for most students”に含まれているアルファベット(空白は含まない)のうち、3回以上用いられているものだけを集めた集合を内包表記で作りなさい。</p>
+</section>
+</section>
+<section id="モジュールの種類" class="level2">
+<h2 class="anchored" data-anchor-id="モジュールの種類">モジュールの種類</h2>
+<p>さて、自作した関数を複数のプログラムで再利用したい場合には、モジュールの仕組みを活用するのが便利です。これまでにも、<code>sys</code>モジュールや<code>copy</code>モジュールを随所で活用してきましたが、ここでモジュールとはどのようなものかを明確にしておきましょう。</p>
+<p>モジュールは、Pythonスクリプトから読み込んで使用できる関数や変数、データ型、Pythonコードの集合のことを広く指します。</p>
+<p>Pythonには以下の4種類のモジュールがあります。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>種類</th>
+<th>説明</th>
+<th>例</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>外部ファイル</td>
+<td>PythonやCで作成され、importで呼び出して使う</td>
+<td><code>copy</code></td>
+</tr>
+<tr class="even">
+<td>ビルトインモジュール</td>
+<td>インタープリタに組み込まれ、importで呼び出して使う(<code>builtins</code>モジュールは例外)</td>
+<td><code>sys</code>、<code>math</code></td>
+</tr>
+<tr class="odd">
+<td><code>builtins</code>モジュール</td>
+<td>ビルトイン関数・定数を定義している特別なビルトインモジュールで、起動時に自動で読み込まれる</td>
+<td><code>builtins</code></td>
+</tr>
+<tr class="even">
+<td><code>main</code>モジュール</td>
+<td>主スクリプトの属するモジュール</td>
+<td>任意のスクリプト</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/module_types.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>module_types</figcaption>
+</figure>
+</div>
+<section id="外部ファイル" class="level3">
+<h3 class="anchored" data-anchor-id="外部ファイル">外部ファイル</h3>
+<p>全てのPythonスクリプトは他のPythonスクリプトに<code>import</code>命令で読み込めるので、モジュールとして機能します。その他にも、たとえばCPythonインタープリタであれば、C言語やCythonと言った言語でモジュールを作成できます。こういった外部ファイルで提供されたモジュールは、import命令によって主プログラムに読み込んで使用することができます。たとえば<code>copy</code>モジュールはcopy.pyというPythonスクリプトとして存在しており、import命令で読み込めます。</p>
+</section>
+<section id="ビルトインモジュール" class="level3">
+<h3 class="anchored" data-anchor-id="ビルトインモジュール">ビルトインモジュール</h3>
+<p>それに対して、ファイルの形では存在していないビルトインモジュールという特別なタイプのモジュールがあります。たとえば<code>sys</code>はビルトインモジュールであり、インタープリタに埋め込まれています。その他、数学関数を収めた<code>math</code>もビルトインモジュールです。こういったものも<code>import</code>文で読み込んで使うことができます。</p>
+<p><code>import</code>したモジュールがビルトインかどうかは単にそのオブジェクトを<code>print</code>してみればわかります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> sys</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(sys)</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>module <span class="st">'sys'</span> (built<span class="op">-</span><span class="kw">in</span>)<span class="op">&gt;</span></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> copy</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(copy)</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>module <span class="st">'copy'</span> <span class="im">from</span> <span class="st">'/usr/lib/python3.8/copy.py'</span><span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ビルトインモジュールの場合は、<code>sys</code>のように<code>(built-in)</code>と表示されます。一方、ファイルの場合は、<code>copy</code>のようにモジュールファイルのある場所が表示されます。</p>
+</section>
+<section id="builtinsモジュール" class="level3">
+<h3 class="anchored" data-anchor-id="builtinsモジュール">builtinsモジュール</h3>
+<p>ビルトインモジュールの中には、ただ一つだけ<code>builtins</code>という特別なモジュールがあります。これは、たとえば<code>print</code>など、ビルトイン関数や<code>True</code>などのビルトイン定数を定義しているモジュールです。builtinsだけは、<code>import</code>を必要とせず、<code>__builtins__</code>という別名でPythonの起動と同時に自動的に読み込まれます。試しに、<code>__builtins__</code>を<code>print</code>してみてください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(__builtins__)</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>module <span class="st">'builtins'</span> (built<span class="op">-</span><span class="kw">in</span>)<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように、<code>__builtins__</code>という名前がすでに定義されていて、その正体は<code>builtins</code>というビルトインモジュールであることがわかります(とてもややこしいので混乱しないように注意してください)。これは、<code>builtins</code>モジュールが<code>__builtins__</code>という別名で読み込まれているということを意味します。モジュールの別名読み込みは一般に次のようなimport-as文で行います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> モジュール名 <span class="im">as</span> 別名</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>つまり、<code>builtins</code>モジュールだけは、起動時に次のように読み込まれたのと同じ状態になるということです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> builtins <span class="im">as</span> __builtins__</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>なぜこのようになっているかというのは、名前空間の節で説明します。</p>
+</section>
+<section id="mainモジュール" class="level3">
+<h3 class="anchored" data-anchor-id="mainモジュール">mainモジュール</h3>
+<p>最後に、<strong>main</strong>というモジュールがあります(正確には<code>__main__</code>)。これは、実行時の主スクリプトの別名です。たとえばコマンドプロンプトで次のようにfile.pyスクリプトを実行したとします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb39"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>python file.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このとき、file.pyに記述された変数、関数、コード、データ型は全て<code>main</code>モジュールに属することになります。</p>
+<p>このように、Pythonスクリプトは全てモジュールとして機能しますが、その逆は必ずしも成り立ちません。モジュールはスクリプトよりも広い概念です。</p>
+</section>
+</section>
+<section id="モジュールを作る" class="level2">
+<h2 class="anchored" data-anchor-id="モジュールを作る">モジュールを作る</h2>
+<p>それでは折角ですので、モジュールを自作してみましょう。といっても、二つのPythonスクリプトを作成し、一方をもう一方から<code>import</code>するだけです。<code>import</code>する側が<code>main</code>モジュールとなります。</p>
+<p>GitHubディレクトリの中に<code>my_first_module</code>というフォルダを作ってVS Codeで開きましょう。そして、mymod1.pyというファイルを作って開きましょう。この中に、次のように記述します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> hello():</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Hello,World!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>記述を終えたら保存します。ここでの目的は、mymod1.pyの中で定義された変数<code>x</code>と関数<code>hello</code>を再利用することです。</p>
+<p>次に、mymain.pyというファイルを作成して開き、次のように記述して<strong>インタラクティブモード</strong>で実行してみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> mymod1</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(mymod1.x)</span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>mymod1.hello()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで、<code>mymod1.x</code>によって、mymod1.pyで定義された変数xにアクセスしていることに注意してください。上手く<code>import</code>できれば、次のように表示されるはずです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>Hello,World<span class="op">!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで2点注意事項があります。</p>
+<ol type="1">
+<li><code>import</code>での読み込みは初回のみ有効であり、モジュールの再読み込み(リロード)には使えない。</li>
+<li>一度読み込まれたモジュールはバイトコンパイルされ、変更がない限り再利用され続ける。</li>
+</ol>
+</section>
+<section id="モジュールのリロード" class="level2">
+<h2 class="anchored" data-anchor-id="モジュールのリロード">モジュールのリロード</h2>
+<p>上記1は、モジュールを変更したら、一旦Pythonを再起動しないと、変更したモジュールを<code>import</code>で読み込み直せないということを意味します。これを覚えておくことは大変重要です。</p>
+<p>たとえば、まずmymain.pyをインタラクティブモードで実行したあと、<strong>インタラクティブモードを起動したまま</strong>で、mymod1.pyを次のように変更して保存してみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">100</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> hello():</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Good bye,World!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>そして、mymain.pyをインタラクティブモードでもう一度実行してみてください。次のように、mymod1.pyの変更が反映されていないはずです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span></span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>Hello,World<span class="op">!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>それでは、一度インタラクティブモードを終了してください(Pythonを停止する)。それからもう一度同じmymain.pyのコードを実行してください。次のように、変更が反映されるはずです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="dv">100</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>Good bye,World<span class="op">!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Pythonを終了せずにモジュールの再読み込みをするには、次のように<code>importlib</code>モジュールの<code>reload</code>関数を使う方法もあります。モジュールの開発中は、一々Pythonを再起動するよりもこちらのほうが便利でしょう。一度読み込まれたmymod1モジュールを再び読み込むには、次のように記述します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> importlib</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>importlib.<span class="bu">reload</span>(mymod1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="モジュールのバイトコード" class="level2">
+<h2 class="anchored" data-anchor-id="モジュールのバイトコード">モジュールのバイトコード</h2>
+<p><code>import</code>文によって読み込まれたPythonスクリプトのモジュールは、通常インタプリタによってバイトコンパイルされ<code>__pycache__</code>というディレクトリに保存されます。<code>__pycache__</code>は<code>main</code>モジュールファイル(主スクリプト)が置かれていた場所に作られます。VS Code上で閲覧できるはずなので、開いてみてください。</p>
+<p>中には、mymod1.cpython-38.pycというバイナリファイルが作られているはずです。これがmymod1.pyをバイトコンパイルして出来たバイトコードです。</p>
+<p>通常、<code>main</code>モジュールとして実行されるファイルは、実行のたびにバイトコンパイルされ、バイトコードがファイルに保存されることはありません(強制的にバイトコードを作ることは可能です)。一方、<code>import</code>されたファイルは(可能な限り)バイトコードを保存し、ファイル内容に変更がない限り再コンパイルしません。</p>
+<p>このようにして、モジュールのバイトコンパイルにかける時間を節約することで、Pythonは実行までの時間を短縮する工夫をしています。通常モジュールのバイトコンパイルを意識する必要はありませんが、教養として知っておきましょう。</p>
+<section id="練習6" class="level3">
+<h3 class="anchored" data-anchor-id="練習6">練習6</h3>
+<p>主スクリプトを強制的にバイトコンパイルするには、コンソール(Anaconda prompt)上で次のように入力します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb47"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> compileall script.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで<code>script.py</code>はスクリプト名です。このようにして作成された主スクリプトのバイトコードは通常のモジュールと同じく<code>__pycache__</code>内に作成され、テキストで書かれたスクリプトと全く同じように実行できます。</p>
+<p>“Hello, World!”と出力するスクリプトを作成してコンパイルし、作成されたバイトコードを見つけてください。また、そのバイトコードを実行してください。</p>
+</section>
+</section>
+<section id="名前空間" class="level2">
+<h2 class="anchored" data-anchor-id="名前空間">名前空間</h2>
+<p>名前空間とは、<code>main</code>を始めとするモジュールの中で定義された記号(識別子)の一覧および、それらの記号が参照するオブジェクトの対応表のことです。一つのモジュールには、次の3種類の名前空間が存在します。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>名前空間</th>
+<th>含まれる記号</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ローカル名前空間</td>
+<td>関数のなかで定義された記号</td>
+</tr>
+<tr class="even">
+<td>グローバル名前空間</td>
+<td>モジュールファイルのトップレベル(関数の外)で定義された記号</td>
+</tr>
+<tr class="odd">
+<td>ビルトイン名前空間</td>
+<td><code>__builtins__</code>で定義されている記号</td>
+</tr>
+</tbody>
+</table>
+<p>記号がどの名前空間に属するかは、それがどこで最初に定義されたかによって決まります。最初から定義されている記号を除き、記号が定義されるのは<strong>代入</strong>が起きるときです。従って、モジュールのトップレベル、つまり関数の外で値を代入された変数はグローバル変数となり、関数の中で値を代入された変数はローカル変数となります。</p>
+<section id="グローバル名前空間" class="level3">
+<h3 class="anchored" data-anchor-id="グローバル名前空間">グローバル名前空間</h3>
+<p>それぞれの名前空間は、具体的に辞書の形で取り出すことができます。グローバル名前空間の辞書はビルトイン関数<code>globals</code>を使って取得できます。</p>
+<p>まず、Pythonを起動してすぐ<code>globals</code>を呼び出すと次のようになります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">globals</span>()</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>{<span class="st">'__builtins__'</span>: <span class="op">&lt;</span>module <span class="st">'__builtin__'</span> (built<span class="op">-</span><span class="kw">in</span>)<span class="op">&gt;</span>, <span class="st">'__name__'</span>: <span class="st">'__main__'</span>, <span class="st">'__doc__'</span>: <span class="va">None</span>, <span class="st">'__package__'</span>: <span class="va">None</span>}</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">len</span>(<span class="bu">globals</span>())</span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように、グローバル名前空間には起動直後にすでに幾つかの変数が定義されていることが分かります。グローバル名前空間で定義されている変数を<strong>グローバル変数</strong>と呼びます。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>グローバル変数</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>__builtins__</code></td>
+<td>ビルトイン名前空間</td>
+</tr>
+<tr class="even">
+<td><code>__name__</code></td>
+<td>モジュールの名前</td>
+</tr>
+</tbody>
+</table>
+<p>このうち重要なのは、<code>__builtins__</code>と<code>__name__</code>です。モジュールがmainモジュールとして直接Pythonによって実行された場合、<code>__name__</code>には<code>"__main__"</code>が設定されますが、他のファイルによって<code>import</code>された場合には<code>__name__</code>にはモジュールのファイル名が設定されます。これにより、モジュールは自分が主スクリプトとして実行されているのか、他のモジュールに<code>import</code>されているのかを見分けることができます。</p>
+<p>一方、<code>__builtins__</code>はビルトイン名前空間を表します。これについては、ビルトイン名前空間のところで解説します。</p>
+<p>モジュールのトップレベルで変数を作成してみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> <span class="st">"I am global."</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="st">'x'</span> <span class="kw">in</span> <span class="bu">globals</span>()</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">globals</span>()[<span class="st">'x'</span>]</span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a><span class="co">'I am global.'</span></span>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように、<code>x</code>をトップレベルで定義すると、<code>globals()</code>辞書に変数<code>x</code>が定義され、グローバル変数となったことが分かります。</p>
+</section>
+<section id="練習7" class="level3">
+<h3 class="anchored" data-anchor-id="練習7">練習7</h3>
+<p>次のような振る舞いをする関数<code>printmod</code>を定義したPythonスクリプト<code>mymod2.py</code>を作成し、挙動をテストしなさい。</p>
+<p><code>printmod</code>は次のような関数とします。<code>mymod2.py</code>がスクリプトから<code>import</code>されているときは、“Script mymod2.py is imported by another script.”と印字し、<code>mymod2.py</code>が主スクリプトとして実行されているときは、“Script mymod2.py is executed as the main module.”と印字します。</p>
+</section>
+<section id="ローカル名前空間" class="level3">
+<h3 class="anchored" data-anchor-id="ローカル名前空間">ローカル名前空間</h3>
+<p>ローカル名前空間は、各関数につき一つずつ存在しており、関数内で定義された記号とそれが参照するオブジェクトの対応を与えます。ローカル名前空間で定義された変数を<strong>ローカル変数</strong>と呼びます。ローカル名前空間を辞書として取り出すには、関数内でビルトイン関数のlocalsを呼び出します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> f(y):</span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>    z <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="bu">locals</span>())</span>
+<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a>f(<span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>{<span class="st">'y'</span>: <span class="dv">2</span>, <span class="st">'z'</span>: <span class="dv">3</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記では、関数<code>f</code>の中で<code>locals</code>を呼び出したので、<code>f</code>の名前空間が辞書として出力されました。この名前空間には、<code>f</code>の中で定義されている変数である<code>y</code>と<code>z</code>が登録されています。</p>
+<p>なお、<a href="https://docs.python.org/3/library/functions.html">Pythonのリファレンスマニュアル</a>にあるように、<code>locals()</code>の戻り値である辞書を<strong>編集してはいけません</strong>。<code>locals()</code>の戻り値は名前空間を辞書にコピーしたものであって名前空間そのものではないため、<code>locals()</code>に加えた変更はローカル名前空間に反映されません。</p>
+</section>
+<section id="ビルトイン名前空間" class="level3">
+<h3 class="anchored" data-anchor-id="ビルトイン名前空間">ビルトイン名前空間</h3>
+<p>ビルトイン名前空間は、<code>True</code>や<code>None</code>といった全ての<strong>ビルトイン定数</strong>と<strong>ビルトイン関数</strong>を定義している名前空間です。ビルトイン名前空間は、<code>builtins</code>モジュールの<code>__dict__</code>属性(変数)に辞書として格納されています。<code>builtins</code>は起動時にすでに<code>__builtins__</code>という別名で読み込まれているため、これを使うことができます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> __builtins__.__dict__</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>{<span class="st">'__name__'</span>: <span class="st">'builtins'</span>, <span class="st">'__doc__'</span>: <span class="st">"Built-in functions, exceptions, and other objects.</span><span class="ch">\n\n</span><span class="st">Noteworthy: None is the `nil' object; Ellipsis represents `...' in slices."</span>, <span class="st">'__package__'</span>: <span class="st">''</span>, <span class="st">'__loader__'</span>: <span class="op">&lt;</span><span class="kw">class</span> <span class="st">'_frozen_importlib.BuiltinImporter'</span><span class="op">&gt;</span>, ...(以下省略)</span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">len</span>(__builtins__.__dict__)</span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a><span class="dv">154</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記のように、150個以上のビルトイン関数・定数・データ型等が定義されていることがわかります(具体的な数はPythonバージョンや処理系に依存しえます。)</p>
+<p>ここで、<code>__builtins__</code>という名前の働きについて説明します。 (<code>__builtins__</code>の働きは、現在のモジュールが<code>main</code>かどうかによって少し違います。以下では、話を単純にするため、現在のモジュールが<code>main</code>であると仮定します。)</p>
+<p>上述のように、モジュールが<code>main</code>として実行されると、<code>builtins</code>モジュールが<code>__builtins__</code>という別名で読み込まれます。Pythonがビルトイン関数の名前を参照するとき、実際には、この<code>__builtins__</code>という名前で読み込まれたモジュールのグローバル名前空間が検索されます。(したがって、研究目的以外では絶対に行うべきではありませんが、別のモジュールを<code>__builtins__</code>という名前で上書きインポートすることにより、Pythonはそのモジュールのグローバル名前空間をビルトイン名前空間と『誤認』することになります。)</p>
+<p><a href="https://docs.python.org/3/reference/executionmodel.html">Pythonのリファレンスマニュアル</a>によると、Pythonが<code>__builtins__</code>という名前をどのように使うかはPythonの実装に依存しているようです。リファレンスマニュアルには、以下のようにこの<code>__builtins__</code>をプログラムの中で使うべきでないと明記されています。</p>
+<blockquote class="blockquote">
+<p>Users should not touch <code>__builtins__</code>; it is strictly an implementation detail. Users wanting to override values in the builtins namespace should import the <strong>builtins</strong> module and modify its attributes appropriately.</p>
+</blockquote>
+<p>上記にあるように、ビルトイン名前空間を操作したいときは、<code>builtins</code>モジュールを別途<code>import</code>してそれを操作するのが正しい方法です。</p>
+<p>たとえば次のようにすると、ビルトイン名前空間に<code>x</code>という変数を追加することができ、<code>print</code>などのビルトイン関数と同じようにプログラムのどこからでも呼び出すことができるようになります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> builtins</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> builtins.x <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> __builtins__.__dict__[<span class="st">'x'</span>]</span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span></span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="練習8" class="level3">
+<h3 class="anchored" data-anchor-id="練習8">練習8</h3>
+<p>ビルトイン名前空間に追加された変数は、プログラム全体から参照可能になることを次のようにして確かめてください。</p>
+<p>次のような3つのスクリプトを作成し、<code>main.py</code>を実行してください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co"># main.py</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> mymod3</span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> mymod4</span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"In main: "</span>,x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="co"># mymod3.py</span></span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> builtins</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>builtins.x <span class="op">=</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="co"># mymod4.py</span></span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"In mymod4: "</span>,x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="スコープ" class="level2">
+<h2 class="anchored" data-anchor-id="スコープ">スコープ</h2>
+<p>Pythonで変数名や関数名がどのように使われるかを理解するには、名前空間だけでなく<strong>スコープ</strong>の概念を理解する必要があります。</p>
+<p><strong>スコープ</strong>とは、モジュールファイルのなかで、ある名前空間の記号が、<strong>記号単体で参照できるコードの範囲</strong>を指します。ここで<strong>記号単体</strong>とは、たとえば<code>x</code>のように書くことです。<code>sys.x</code>のように書くことは記号単体とは言いません。スコープは、それぞれの名前空間に一つずつ存在します。変数<code>x</code>のスコープというと、通常<code>x</code>が属する名前空間のスコープを指します。</p>
+<p>グローバル名前空間のスコープを<strong>グローバルスコープ</strong>、ローカル名前空間のスコープを<strong>ローカルスコープ</strong>、ビルトイン名前空間のスコープを<strong>ビルトインスコープ</strong>と呼びます。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>スコープ名</th>
+<th>対応する名前空間</th>
+<th>範囲</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>グローバルスコープ</td>
+<td>グローバル名前空間</td>
+<td>モジュール全体</td>
+</tr>
+<tr class="even">
+<td>ローカルスコープ</td>
+<td>各関数のローカル名前空間</td>
+<td>関数ブロック</td>
+</tr>
+<tr class="odd">
+<td>ビルトインスコープ</td>
+<td>ビルトイン名前空間</td>
+<td>プログラム全体</td>
+</tr>
+</tbody>
+</table>
+<section id="グローバルスコープ" class="level3">
+<h3 class="anchored" data-anchor-id="グローバルスコープ">グローバルスコープ</h3>
+<p>グローバルスコープは、モジュールのトップレベルで代入された記号を<strong>記号単体</strong>で使うことができるコードの範囲です。トップレベルで代入された変数や関数は、モジュールファイルのどこからでも記号単体で参照できますので、<strong>グローバルスコープはモジュールファイル全体</strong>ということになります。<strong>グローバル</strong>という言葉が紛らわしいですが、グローバル名前空間の記号はモジュールの外からは参照できません。</p>
+</section>
+<section id="ローカルスコープ" class="level3">
+<h3 class="anchored" data-anchor-id="ローカルスコープ">ローカルスコープ</h3>
+<p>一方関数内で定義された記号はその関数の中でしか記号単体で参照できないので、<strong>ローカルスコープ</strong>は対応する関数の関数ブロックに等しくなります。</p>
+</section>
+<section id="ビルトインスコープ" class="level3">
+<h3 class="anchored" data-anchor-id="ビルトインスコープ">ビルトインスコープ</h3>
+<p>ビルトイン名前空間の記号は文字通り、どこからでも記号単体で参照できます。従って<strong>ビルトインスコープ</strong>はプログラム全体を指す最も広いスコープです。</p>
+</section>
+</section>
+<section id="legbルール" class="level2">
+<h2 class="anchored" data-anchor-id="legbルール">LEGBルール</h2>
+<p>一般にスコープは入れ子の関係にあります。たとえば関数のローカルスコープは、モジュールのグローバルスコープに含まれています。内側のスコープでは、両方の名前空間が参照できるので、ある記号が参照されたとき、Pythonはどちらの名前空間を先に検索するのかを決定する必要があります。</p>
+<p>Pythonは、内側から外側へ向かって名前空間を検索します。具体的には、以下のような順番で、名前空間を検索します。</p>
+<ol type="1">
+<li>ローカル名前空間(<strong>L</strong>ocal)</li>
+<li>外側の関数のローカル名前空間(<strong>E</strong>nclosing)</li>
+<li>グローバル名前空間(<strong>G</strong>lobal)</li>
+<li>ビルトイン名前空間(<strong>B</strong>uilt-in)</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/legb.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>legb</figcaption>
+</figure>
+</div>
+<p>1〜4のどの名前空間を参照しても記号が見つからなかったとき、Pythonはエラー(NameError)を出します。この検索パターンを<strong>LEGBルール</strong>と呼びます。</p>
+<p>注意しなくてはならないのは、<strong>関数の内側では、一つの記号は関数ブロックを通して必ず同じ名前空間を参照</strong>するということです。</p>
+<p>たとえば、次のコードのコードは、間違ったコードとして非常に有名なものです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> f():</span>
+<span id="cb57-5"><a href="#cb57-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x)</span>
+<span id="cb57-6"><a href="#cb57-6" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb57-7"><a href="#cb57-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x)</span>
+<span id="cb57-8"><a href="#cb57-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-9"><a href="#cb57-9" aria-hidden="true" tabindex="-1"></a>f()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これを書いたプログラマは、関数<code>f</code>の中で、まず5を出力し、次に3を出力することを意図していますが、これを実行すると、次のようなエラーが出ます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb58"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a><span class="op">---------------------------------------------------------------------------</span></span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a><span class="pp">UnboundLocalError</span>                         Traceback (most recent call last)</span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-6"><a href="#cb58-6" aria-hidden="true" tabindex="-1"></a>...(中略)...</span>
+<span id="cb58-7"><a href="#cb58-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-8"><a href="#cb58-8" aria-hidden="true" tabindex="-1"></a>      <span class="dv">239</span> </span>
+<span id="cb58-9"><a href="#cb58-9" aria-hidden="true" tabindex="-1"></a>      <span class="dv">240</span> <span class="kw">def</span> f():</span>
+<span id="cb58-10"><a href="#cb58-10" aria-hidden="true" tabindex="-1"></a><span class="op">----&gt;</span> <span class="dv">241</span>     <span class="bu">print</span>(x)</span>
+<span id="cb58-11"><a href="#cb58-11" aria-hidden="true" tabindex="-1"></a>      <span class="dv">242</span>     x <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb58-12"><a href="#cb58-12" aria-hidden="true" tabindex="-1"></a>      <span class="dv">243</span>     <span class="bu">print</span>(x)</span>
+<span id="cb58-13"><a href="#cb58-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-14"><a href="#cb58-14" aria-hidden="true" tabindex="-1"></a><span class="pp">UnboundLocalError</span>: local variable <span class="st">'x'</span> referenced before assignment</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>最後の<code>UnboundLocalError</code>の行に注目しましょう。このエラーは、「値が割り当てられる前に<code>x</code>が参照された」というものです。</p>
+<p>なぜこのようなエラーが出たかというと、<code>x=3</code>という<code>x</code>への代入操作が関数内に存在していることにより、<code>x</code>が<code>f</code>のローカル名前空間にエントリーし、関数ブロックの全域でローカル変数とみなされるからです。従って、1回目の<code>print(x)</code>で、<code>x</code>が定義されていない、というエラーが出るわけです。</p>
+<p>同様ですが、もっと分かりにくいコードは次のようなものです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> f():</span>
+<span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a>    x <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb59-6"><a href="#cb59-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x)</span>
+<span id="cb59-7"><a href="#cb59-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb59-8"><a href="#cb59-8" aria-hidden="true" tabindex="-1"></a>f()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>出力は以下の通りです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a><span class="op">---------------------------------------------------------------------------</span></span>
+<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a>...(中略)...</span>
+<span id="cb60-6"><a href="#cb60-6" aria-hidden="true" tabindex="-1"></a>      <span class="dv">249</span> </span>
+<span id="cb60-7"><a href="#cb60-7" aria-hidden="true" tabindex="-1"></a>      <span class="dv">250</span> <span class="kw">def</span> f():</span>
+<span id="cb60-8"><a href="#cb60-8" aria-hidden="true" tabindex="-1"></a><span class="op">----&gt;</span> <span class="dv">251</span>     x <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb60-9"><a href="#cb60-9" aria-hidden="true" tabindex="-1"></a>      <span class="dv">252</span>     <span class="bu">print</span>(x)</span>
+<span id="cb60-10"><a href="#cb60-10" aria-hidden="true" tabindex="-1"></a>      <span class="dv">253</span> </span>
+<span id="cb60-11"><a href="#cb60-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-12"><a href="#cb60-12" aria-hidden="true" tabindex="-1"></a><span class="pp">UnboundLocalError</span>: local variable <span class="st">'x'</span> referenced before assignment</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>x += 1</code>は、<code>x = x + 1</code>と同じ意味です。これは<code>x</code>への代入を伴いますが、その時点で、<code>x</code>は<code>f</code>のローカル名前空間に属するローカル変数とみなされます。<code>x = x + 1</code>の右辺は、<code>x</code>の値を参照していますので、「まだ定義されていないローカル変数が参照された」というエラーが出るわけです。</p>
+<p>しかしながら、次のような操作では、エラーが出ません。なぜなら、関数内部で<code>x</code>が指すオブジェクトへの変更は行われましたが、<code>x</code>の代入は行われていないため、<code>x</code>はグローバル変数のままだからです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb61-4"><a href="#cb61-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb61-5"><a href="#cb61-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> f():</span>
+<span id="cb61-6"><a href="#cb61-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x)</span>
+<span id="cb61-7"><a href="#cb61-7" aria-hidden="true" tabindex="-1"></a>    x.append(<span class="dv">4</span>)</span>
+<span id="cb61-8"><a href="#cb61-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb61-9"><a href="#cb61-9" aria-hidden="true" tabindex="-1"></a>f()</span>
+<span id="cb61-10"><a href="#cb61-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="再帰関数" class="level3">
+<h3 class="anchored" data-anchor-id="再帰関数">再帰関数</h3>
+<p>ローカル名前空間に記号が見当たらないときは、一つ外側の名前空間にアクセスするため、関数の内部で自分自身を参照することが可能になります。</p>
+<p>たとえば、次の関数は、自分自身のデータ型を返すおかしな関数です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> typer():</span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">type</span>(typer)</span>
+<span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-5"><a href="#cb62-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(typer())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span><span class="kw">class</span> <span class="st">'function'</span><span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>もう少し馬鹿々々しくない次の関数は、<code>x</code>が正整数のときに<code>x</code>の階乗<code>x!</code>を返す関数です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> f(x):</span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">type</span>(x) <span class="kw">is</span> <span class="bu">int</span> <span class="kw">and</span> x <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">1</span>:</span>
+<span id="cb64-5"><a href="#cb64-5" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> x<span class="op">*</span>f(x<span class="op">-</span><span class="dv">1</span>)</span>
+<span id="cb64-6"><a href="#cb64-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb64-7"><a href="#cb64-7" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> x</span>
+<span id="cb64-8"><a href="#cb64-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb64-9"><a href="#cb64-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">'x must be a positive integer'</span>)</span>
+<span id="cb64-10"><a href="#cb64-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span></span>
+<span id="cb64-11"><a href="#cb64-11" aria-hidden="true" tabindex="-1"></a>f(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a><span class="dv">120</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="globalnonlocal命令" class="level2">
+<h2 class="anchored" data-anchor-id="globalnonlocal命令">global/nonlocal命令</h2>
+<p>関数の内側で、グローバル変数を編集したり、外側の関数のローカル変数を編集することも可能です。そのためには、<code>global</code>命令と<code>nonlocal</code>命令を使います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> f():</span>
+<span id="cb66-6"><a href="#cb66-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">global</span> x</span>
+<span id="cb66-7"><a href="#cb66-7" aria-hidden="true" tabindex="-1"></a>    x <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb66-8"><a href="#cb66-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-9"><a href="#cb66-9" aria-hidden="true" tabindex="-1"></a>f()</span>
+<span id="cb66-10"><a href="#cb66-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>また、入れ子になった関数で外側の名前空間の変数を編集するには、<code>nonlocal</code>命令を使います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> outer():</span>
+<span id="cb68-5"><a href="#cb68-5" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb68-6"><a href="#cb68-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-7"><a href="#cb68-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> inner():</span>
+<span id="cb68-8"><a href="#cb68-8" aria-hidden="true" tabindex="-1"></a>        <span class="kw">nonlocal</span> x</span>
+<span id="cb68-9"><a href="#cb68-9" aria-hidden="true" tabindex="-1"></a>        x <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb68-10"><a href="#cb68-10" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"At inner:"</span>,x)</span>
+<span id="cb68-11"><a href="#cb68-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-12"><a href="#cb68-12" aria-hidden="true" tabindex="-1"></a>    inner()</span>
+<span id="cb68-13"><a href="#cb68-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"At outer:"</span>,x)</span>
+<span id="cb68-14"><a href="#cb68-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-15"><a href="#cb68-15" aria-hidden="true" tabindex="-1"></a>outer()</span>
+<span id="cb68-16"><a href="#cb68-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"At global:"</span>,x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a>At inner: <span class="dv">1</span></span>
+<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a>At outer: <span class="dv">1</span></span>
+<span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a>At <span class="kw">global</span>: <span class="dv">0</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>残念ながら、関数の入れ子において2つ以上上の階層の名前空間を指定する命令は存在しません。したがって、次の例において、<code>f</code>の名前空間を直接指定する命令はありません。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb70"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-4"><a href="#cb70-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> f():</span>
+<span id="cb70-5"><a href="#cb70-5" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb70-6"><a href="#cb70-6" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb70-7"><a href="#cb70-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> g():</span>
+<span id="cb70-8"><a href="#cb70-8" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb70-9"><a href="#cb70-9" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb70-10"><a href="#cb70-10" aria-hidden="true" tabindex="-1"></a>        <span class="kw">def</span> h():</span>
+<span id="cb70-11"><a href="#cb70-11" aria-hidden="true" tabindex="-1"></a>            <span class="kw">nonlocal</span> x</span>
+<span id="cb70-12"><a href="#cb70-12" aria-hidden="true" tabindex="-1"></a>            x <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb70-13"><a href="#cb70-13" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">"At h:"</span>,x)</span>
+<span id="cb70-14"><a href="#cb70-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-15"><a href="#cb70-15" aria-hidden="true" tabindex="-1"></a>        h()</span>
+<span id="cb70-16"><a href="#cb70-16" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"At g:"</span>,x)</span>
+<span id="cb70-17"><a href="#cb70-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-18"><a href="#cb70-18" aria-hidden="true" tabindex="-1"></a>    g()</span>
+<span id="cb70-19"><a href="#cb70-19" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"At f:"</span>,x)</span>
+<span id="cb70-20"><a href="#cb70-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-21"><a href="#cb70-21" aria-hidden="true" tabindex="-1"></a>f()</span>
+<span id="cb70-22"><a href="#cb70-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"At global:"</span>,x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb71"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a>At h: <span class="dv">1</span></span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a>At g: <span class="dv">1</span></span>
+<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a>At f: <span class="dv">0</span></span>
+<span id="cb71-4"><a href="#cb71-4" aria-hidden="true" tabindex="-1"></a>At <span class="kw">global</span>: <span class="dv">0</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="練習9" class="level3">
+<h3 class="anchored" data-anchor-id="練習9">練習9</h3>
+<p>上記の3重入れ子関数において、<code>nonlocal</code>を<code>global</code>に変えたときにどうなるか予測し、実際に実行して結果を確かめなさい。</p>
+</section>
+</section>
+<section id="クロージャ" class="level2">
+<h2 class="anchored" data-anchor-id="クロージャ">クロージャ</h2>
+<p><code>nonlocal</code>宣言の最も重要な応用が、<strong>クロージャ</strong>と呼ばれる独特のプログラミングテクニックです。ある程度複雑なプログラムになると、関数呼び出しにおいて、呼び出すごとに関数の挙動を変化させたい場合が生じます。そのような場合にクロージャが役に立ちます。</p>
+<p>たとえば、任意のオブジェクトを引数にとり、過去の呼び出しにおいて引数として渡した全てのオブジェクトを格納したリストを戻り値として返す関数を考えてみましょう。これは次のように実現できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb72"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> closure():</span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>    args <span class="op">=</span> []</span>
+<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> inner(arg):</span>
+<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a>        <span class="kw">nonlocal</span> args</span>
+<span id="cb72-5"><a href="#cb72-5" aria-hidden="true" tabindex="-1"></a>        args.append(arg)</span>
+<span id="cb72-6"><a href="#cb72-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> args</span>
+<span id="cb72-7"><a href="#cb72-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> inner</span>
+<span id="cb72-8"><a href="#cb72-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb72-9"><a href="#cb72-9" aria-hidden="true" tabindex="-1"></a>func <span class="op">=</span> closure()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これで<code>func</code>は、呼び出す度にこれまでの引数のリストを返す関数になります。試してみてください。</p>
+<p>通常は、関数のローカル名前空間は、関数の呼び出しが終了した時点で消失します。しかし上の関数<code>closure</code>の場合、内部の関数<code>inner</code>が<code>closure</code>の名前空間を<code>nonlocal</code>宣言によって参照しています。したがって、<code>inner</code>が存在し続ける限り、<code>closure</code>の名前空間も存在し続けなければなりません。<code>closure</code>は自身の名前空間を参照する関数<code>inner</code>を戻り値として変数(<code>func</code>)に代入させて存続させることによって、名前空間の消失を防ぐというトリックを使っています。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./img/closure.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>closure</figcaption>
+</figure>
+</div>
+<p>ジェネレータとクロージャはどちらも履歴をもつ点で一見似ていますが、ジェネレータは始めに与えたルールに従って次々とオブジェクトを生成するに過ぎません。一方、クロージャは呼び出しごとに引数をとって挙動を操作することができるので、より複雑な操作が可能になります。</p>
+<section id="練習10" class="level3">
+<h3 class="anchored" data-anchor-id="練習10">練習10</h3>
+<p>引数を一つとり、これまで引数に与えた数字の中で最大であれば<code>True</code>を、さもなくば<code>False</code>を返すクロージャ<code>clmax</code>を作成しなさい。ただし、一度目の呼び出しは必ず<code>True</code>を返すとする。</p>
+</section>
+</section>
+<section id="記号表高度な話題" class="level2">
+<h2 class="anchored" data-anchor-id="記号表高度な話題">記号表(高度な話題)</h2>
+<p>このように、Pythonでは、入れ子になったスコープのせいで関数内のある記号がどの名前空間を指しているのかがプログラマからみて分かりにくくなるという問題が生じ得ます。</p>
+<p>この問題を研究するにあたって役に立つのが<strong>記号表</strong>(シンボルテーブル)です。記号表は、関数ブロックで使われている各記号と名前空間の関係を表した表であり、各関数ブロックとモジュールのトップレベルに対して一つずつ存在します。ローカル名前空間が、「関数内で<strong>定義</strong>されている記号の一覧」を与えるのに対して、関数の記号表は、「関数内で<strong>使われている</strong>記号の一覧」を与えることに注意してください。したがって、ある関数の記号表には、その関数の名前空間には属さない記号も現れます。</p>
+<p>記号表はPythonコードの構文解析後、バイトコンパイルの直前にインタープリタによって作成され、これを用いてバイトコンパイルが行われます(<a href="https://docs.python.org/3/library/symtable.html">リファレンスマニュアル</a>参照)。</p>
+<section id="トップレベル記号表の取得" class="level3">
+<h3 class="anchored" data-anchor-id="トップレベル記号表の取得">トップレベル記号表の取得</h3>
+<p>PythonにはsymtableというPythonコードの記号表を取得するモジュールがあります(Pythonのバージョンは3.8.8以上を使ってください。それより前だと変な挙動をする可能性があります。)。たとえば次のようなPythonコードにはグローバル名前空間が一つとローカル名前空間が2つあります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb73"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> f():</span>
+<span id="cb73-4"><a href="#cb73-4" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb73-5"><a href="#cb73-5" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb73-6"><a href="#cb73-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb73-7"><a href="#cb73-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> g():</span>
+<span id="cb73-8"><a href="#cb73-8" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> x <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb73-9"><a href="#cb73-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(y)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このコードにおいて、まずトップレベルの記号表を取得するには次のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb74"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> symtable</span>
+<span id="cb74-3"><a href="#cb74-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-4"><a href="#cb74-4" aria-hidden="true" tabindex="-1"></a>code <span class="op">=</span> <span class="st">"""</span></span>
+<span id="cb74-5"><a href="#cb74-5" aria-hidden="true" tabindex="-1"></a><span class="st">x = 1</span></span>
+<span id="cb74-6"><a href="#cb74-6" aria-hidden="true" tabindex="-1"></a><span class="st">def f():</span></span>
+<span id="cb74-7"><a href="#cb74-7" aria-hidden="true" tabindex="-1"></a><span class="st">    x = 2</span></span>
+<span id="cb74-8"><a href="#cb74-8" aria-hidden="true" tabindex="-1"></a><span class="st">    y = 3</span></span>
+<span id="cb74-9"><a href="#cb74-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-10"><a href="#cb74-10" aria-hidden="true" tabindex="-1"></a><span class="st">def g():</span></span>
+<span id="cb74-11"><a href="#cb74-11" aria-hidden="true" tabindex="-1"></a><span class="st">    y = x + 1</span></span>
+<span id="cb74-12"><a href="#cb74-12" aria-hidden="true" tabindex="-1"></a><span class="st">    print(y)</span></span>
+<span id="cb74-13"><a href="#cb74-13" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span></span>
+<span id="cb74-14"><a href="#cb74-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-15"><a href="#cb74-15" aria-hidden="true" tabindex="-1"></a>tbl <span class="op">=</span> symtable.symtable(code,<span class="st">"main.py"</span>,<span class="st">"exec"</span>)</span>
+<span id="cb74-16"><a href="#cb74-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tbl)      <span class="co"># トップレベルの記号表を出力</span></span>
+<span id="cb74-17"><a href="#cb74-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span>
+<span id="cb74-18"><a href="#cb74-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-19"><a href="#cb74-19" aria-hidden="true" tabindex="-1"></a>top_syms <span class="op">=</span> tbl.get_symbols()</span>
+<span id="cb74-20"><a href="#cb74-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(top_syms) <span class="co"># 記号表の中の記号の一覧</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで、<code>symtable</code>モジュールの<code>symtable</code>関数を使っていますが、この関数は第1引数にPythonコード、第2引数に仮想的な主スクリプトの名前を与えます。第3引数は通常”exec”を指定すれば良いです。戻り値は<code>SymbolTable</code>型のオブジェクトですが、これがモジュールmainのトップレベルの記号表です。上記のコードでは変数<code>tbl</code>に代入しています。</p>
+<p>記号表(<code>SymbolTable</code>)オブジェクトは、<code>get_symbols</code>メソッドにより、記号の一覧をリストで取得できます。上記では、このリストを変数<code>top_syms</code>に代入しています。各記号は、<code>Symbol</code>型のオブジェクトです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb75"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb75-3"><a href="#cb75-3" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>SymbolTable <span class="cf">for</span> top <span class="kw">in</span> main.py<span class="op">&gt;</span></span>
+<span id="cb75-4"><a href="#cb75-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb75-5"><a href="#cb75-5" aria-hidden="true" tabindex="-1"></a>[<span class="op">&lt;</span>symbol <span class="st">'x'</span><span class="op">&gt;</span>, <span class="op">&lt;</span>symbol <span class="st">'f'</span><span class="op">&gt;</span>, <span class="op">&lt;</span>symbol <span class="st">'g'</span><span class="op">&gt;</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記のように、トップレベルの記号表は、グローバルで定義された記号<code>x</code>、<code>f</code>、<code>g</code>のエントリーを持っていることが分かります。</p>
+</section>
+<section id="トップレベル記号表の精査" class="level3">
+<h3 class="anchored" data-anchor-id="トップレベル記号表の精査">トップレベル記号表の精査</h3>
+<p>記号オブジェクトがもつ<code>is_global</code>メソッドは、記号がグローバルであればTrueを返します。実際、<code>x</code>、<code>f</code>、<code>g</code>が全てグローバル変数であることが次のようにして確認できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb76"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb76-2"><a href="#cb76-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Symbols in "</span> <span class="op">+</span> tbl.get_name() <span class="op">+</span> <span class="st">':</span><span class="ch">\n</span><span class="st">'</span>)</span>
+<span id="cb76-3"><a href="#cb76-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb76-4"><a href="#cb76-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> sym <span class="kw">in</span> top_syms:</span>
+<span id="cb76-5"><a href="#cb76-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(sym,<span class="st">"global:"</span>,sym.is_global())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで、<code>get_name</code>メソッドは、記号表の名前を取得するためのものです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb77"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a>Symbols <span class="kw">in</span> top:</span>
+<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-4"><a href="#cb77-4" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'x'</span><span class="op">&gt;</span> <span class="kw">global</span>: <span class="va">True</span></span>
+<span id="cb77-5"><a href="#cb77-5" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'f'</span><span class="op">&gt;</span> <span class="kw">global</span>: <span class="va">True</span></span>
+<span id="cb77-6"><a href="#cb77-6" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'g'</span><span class="op">&gt;</span> <span class="kw">global</span>: <span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>次に、各グローバル変数が、それ自身の記号表をもっているかどうか調べることにします。変数が関数の識別子であるならば、記号表をもっているはずですので、<code>f</code>と<code>g</code>は記号表をもっているはずです。記号表をもっているかどうか確認するには、<code>is_namespace</code>メソッドを使います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb78"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Symbols in "</span> <span class="op">+</span> tbl.get_name() <span class="op">+</span> <span class="st">':</span><span class="ch">\n</span><span class="st">'</span>)</span>
+<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb78-4"><a href="#cb78-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> sym <span class="kw">in</span> top_syms:</span>
+<span id="cb78-5"><a href="#cb78-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(sym,<span class="st">"has table:"</span>,sym.is_namespace())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb79"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb79-3"><a href="#cb79-3" aria-hidden="true" tabindex="-1"></a>Symbols <span class="kw">in</span> top:</span>
+<span id="cb79-4"><a href="#cb79-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb79-5"><a href="#cb79-5" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'x'</span><span class="op">&gt;</span> has table: <span class="va">False</span></span>
+<span id="cb79-6"><a href="#cb79-6" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'f'</span><span class="op">&gt;</span> has table: <span class="va">True</span></span>
+<span id="cb79-7"><a href="#cb79-7" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'g'</span><span class="op">&gt;</span> has table: <span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>予想されたように、<code>f</code>と<code>g</code>は記号表を持ちます。</p>
+<p>同様に、<code>is_local</code>メソッドは、記号が、<strong>その記号表のある場所で定義されていればTrueを返します</strong>。従って、少々紛らわしいですが、<code>x</code>、<code>f</code>、<code>g</code>は全てグローバル変数ですが、<code>is_local</code>メソッドはTrueを返します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb80"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb80-2"><a href="#cb80-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Symbols in "</span> <span class="op">+</span> tbl.get_name() <span class="op">+</span> <span class="st">':</span><span class="ch">\n</span><span class="st">'</span>)</span>
+<span id="cb80-3"><a href="#cb80-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-4"><a href="#cb80-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> sym <span class="kw">in</span> top_syms:</span>
+<span id="cb80-5"><a href="#cb80-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(sym,<span class="st">"is defined here:"</span>,sym.is_local())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb81"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb81-2"><a href="#cb81-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-3"><a href="#cb81-3" aria-hidden="true" tabindex="-1"></a>Symbols <span class="kw">in</span> top:</span>
+<span id="cb81-4"><a href="#cb81-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-5"><a href="#cb81-5" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'x'</span><span class="op">&gt;</span> <span class="kw">is</span> defined here: <span class="va">True</span></span>
+<span id="cb81-6"><a href="#cb81-6" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'f'</span><span class="op">&gt;</span> <span class="kw">is</span> defined here: <span class="va">True</span></span>
+<span id="cb81-7"><a href="#cb81-7" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'g'</span><span class="op">&gt;</span> <span class="kw">is</span> defined here: <span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="記号表を精査する関数inspect_tbl" class="level3">
+<h3 class="anchored" data-anchor-id="記号表を精査する関数inspect_tbl">記号表を精査する関数inspect_tbl</h3>
+<p>上記のコードは今後再利用することになりますので、この時点で関数にしてしまいましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb82"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb82-2"><a href="#cb82-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 記号表内の記号を調べる関数</span></span>
+<span id="cb82-3"><a href="#cb82-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb82-4"><a href="#cb82-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> inspect_tbl(tbl):</span>
+<span id="cb82-5"><a href="#cb82-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Symbols in "</span> <span class="op">+</span> tbl.get_name() <span class="op">+</span> <span class="st">":</span><span class="ch">\n</span><span class="st">"</span>)</span>
+<span id="cb82-6"><a href="#cb82-6" aria-hidden="true" tabindex="-1"></a>    methods <span class="op">=</span> [<span class="st">"is_global()"</span>,<span class="st">"is_local()"</span>,<span class="st">"is_namespace()"</span>]</span>
+<span id="cb82-7"><a href="#cb82-7" aria-hidden="true" tabindex="-1"></a>    phrases <span class="op">=</span> [<span class="st">"is global:"</span>,<span class="st">"is local:"</span>,<span class="st">"has table:"</span>]</span>
+<span id="cb82-8"><a href="#cb82-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> method,phrase <span class="kw">in</span> <span class="bu">zip</span>(methods,phrases):</span>
+<span id="cb82-9"><a href="#cb82-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> sym <span class="kw">in</span> tbl.get_symbols():</span>
+<span id="cb82-10"><a href="#cb82-10" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(sym,phrase,<span class="bu">eval</span>(<span class="st">"sym."</span> <span class="op">+</span> method))</span>
+<span id="cb82-11"><a href="#cb82-11" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで、二つばかり新しいテクニックが使われています。一つは、<code>eval</code>という関数で、これは引数に与えた文字列をコードとして評価し、その戻り値を返す関数です。</p>
+<p>もう一つは、<code>zip</code>関数で、これは複数のイテラブルを結合して一つのイテラブルを作る関数です。出来上がったイテラブルは、もとのイテラブルをタプルにしてループインデックスに渡します。したがって、</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb83"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> method,phrase <span class="kw">in</span> <span class="bu">zip</span>(methods,phrases):</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>と書くことによって、第<code>i</code>回目のループでは、<code>methods</code>の第<code>i</code>要素が<code>method</code>に、<code>phrases</code>の第<code>i</code>要素が<code>phrase</code>に代入されます。</p>
+<p>さて、<code>inspect_tbl</code>関数を、トップレベルの記号表<code>tbl</code>に適用してみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb84"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a>inspect_tbl(tbl)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb85"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-3"><a href="#cb85-3" aria-hidden="true" tabindex="-1"></a>Symbols <span class="kw">in</span> top:</span>
+<span id="cb85-4"><a href="#cb85-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-5"><a href="#cb85-5" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'x'</span><span class="op">&gt;</span> <span class="kw">is</span> <span class="kw">global</span>: <span class="va">True</span></span>
+<span id="cb85-6"><a href="#cb85-6" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'f'</span><span class="op">&gt;</span> <span class="kw">is</span> <span class="kw">global</span>: <span class="va">True</span></span>
+<span id="cb85-7"><a href="#cb85-7" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'g'</span><span class="op">&gt;</span> <span class="kw">is</span> <span class="kw">global</span>: <span class="va">True</span></span>
+<span id="cb85-8"><a href="#cb85-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-9"><a href="#cb85-9" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'x'</span><span class="op">&gt;</span> <span class="kw">is</span> local: <span class="va">True</span></span>
+<span id="cb85-10"><a href="#cb85-10" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'f'</span><span class="op">&gt;</span> <span class="kw">is</span> local: <span class="va">True</span></span>
+<span id="cb85-11"><a href="#cb85-11" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'g'</span><span class="op">&gt;</span> <span class="kw">is</span> local: <span class="va">True</span></span>
+<span id="cb85-12"><a href="#cb85-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-13"><a href="#cb85-13" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'x'</span><span class="op">&gt;</span> has table: <span class="va">False</span></span>
+<span id="cb85-14"><a href="#cb85-14" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'f'</span><span class="op">&gt;</span> has table: <span class="va">True</span></span>
+<span id="cb85-15"><a href="#cb85-15" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'g'</span><span class="op">&gt;</span> has table: <span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="ローカル記号表の取得" class="level3">
+<h3 class="anchored" data-anchor-id="ローカル記号表の取得">ローカル記号表の取得</h3>
+<p>記号が記号表を持つ場合(つまり関数である場合)、<code>get_namespaces</code>メソッドもしくは<code>get_namespace</code>メソッドのどちらかで記号表を取得できます。この二つのメソッドの違いは以下の通りです。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>メソッド</th>
+<th>記号表をもつ場合</th>
+<th>記号表を持たない場合</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>get_namespace</td>
+<td>記号表を返す</td>
+<td>エラーを出す</td>
+</tr>
+<tr class="even">
+<td>get_namespaces</td>
+<td>記号表のリストを返す</td>
+<td>空のタプルを返す</td>
+</tr>
+</tbody>
+</table>
+<p>従って、エラーへの対処が面倒な場合は<code>get_namespaces</code>のほうが便利です。(なお実際にはほとんど無いと思いますが、一つの名前空間で同じ名前の関数が複数回定義されれば、一つの記号が複数の記号表を持ちます。このような場合、やはり<code>get_namespace</code>はエラーを出します。)</p>
+<p>いま扱っている<code>tbl</code>トップレベル記号表には、<code>f</code>と<code>g</code>という二つの関数を表す記号がありますので、これらの記号表を取得してみましょう。<code>f</code>、<code>g</code>はそれぞれ<code>top_syms</code>リストの第2、3要素であったことに注意してください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb86"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb86-2"><a href="#cb86-2" aria-hidden="true" tabindex="-1"></a>f_tbl <span class="op">=</span> top_syms[<span class="dv">1</span>].get_namespace()</span>
+<span id="cb86-3"><a href="#cb86-3" aria-hidden="true" tabindex="-1"></a>g_tbl <span class="op">=</span> top_syms[<span class="dv">2</span>].get_namespace()</span>
+<span id="cb86-4"><a href="#cb86-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(f_tbl)</span>
+<span id="cb86-5"><a href="#cb86-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(g_tbl)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb87"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb87-3"><a href="#cb87-3" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>Function SymbolTable <span class="cf">for</span> f <span class="kw">in</span> main.py<span class="op">&gt;</span></span>
+<span id="cb87-4"><a href="#cb87-4" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>Function SymbolTable <span class="cf">for</span> g <span class="kw">in</span> main.py<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="ローカル記号表の精査" class="level3">
+<h3 class="anchored" data-anchor-id="ローカル記号表の精査">ローカル記号表の精査</h3>
+<p>それでは<code>f</code>と<code>g</code>のローカル記号表が取得できましたので、これらを<code>inspect_tbl</code>で精査します。まずは<code>f</code>の記号表からです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb88"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a>inspect_tbl(f_tbl)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb89"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb89-2"><a href="#cb89-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb89-3"><a href="#cb89-3" aria-hidden="true" tabindex="-1"></a>Symbols <span class="kw">in</span> f:</span>
+<span id="cb89-4"><a href="#cb89-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb89-5"><a href="#cb89-5" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'x'</span><span class="op">&gt;</span> <span class="kw">is</span> <span class="kw">global</span>: <span class="va">False</span></span>
+<span id="cb89-6"><a href="#cb89-6" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'y'</span><span class="op">&gt;</span> <span class="kw">is</span> <span class="kw">global</span>: <span class="va">False</span></span>
+<span id="cb89-7"><a href="#cb89-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb89-8"><a href="#cb89-8" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'x'</span><span class="op">&gt;</span> <span class="kw">is</span> local: <span class="va">True</span></span>
+<span id="cb89-9"><a href="#cb89-9" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'y'</span><span class="op">&gt;</span> <span class="kw">is</span> local: <span class="va">True</span></span>
+<span id="cb89-10"><a href="#cb89-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb89-11"><a href="#cb89-11" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'x'</span><span class="op">&gt;</span> has table: <span class="va">False</span></span>
+<span id="cb89-12"><a href="#cb89-12" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'y'</span><span class="op">&gt;</span> has table: <span class="va">False</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これを見ると分かるように、<code>f</code>の記号表には、記号<code>x</code>と<code>y</code>が存在しますが、どちらもローカル変数で、記号表を持たないことが分かります。</p>
+<p>次に<code>g_tbl</code>記号表を精査しましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb90"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb90-2"><a href="#cb90-2" aria-hidden="true" tabindex="-1"></a>inspect_tbl(g_tbl)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb91"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb91-2"><a href="#cb91-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb91-3"><a href="#cb91-3" aria-hidden="true" tabindex="-1"></a>Symbols <span class="kw">in</span> g:</span>
+<span id="cb91-4"><a href="#cb91-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb91-5"><a href="#cb91-5" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'y'</span><span class="op">&gt;</span> <span class="kw">is</span> <span class="kw">global</span>: <span class="va">False</span></span>
+<span id="cb91-6"><a href="#cb91-6" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'x'</span><span class="op">&gt;</span> <span class="kw">is</span> <span class="kw">global</span>: <span class="va">True</span></span>
+<span id="cb91-7"><a href="#cb91-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb91-8"><a href="#cb91-8" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'y'</span><span class="op">&gt;</span> <span class="kw">is</span> local: <span class="va">True</span></span>
+<span id="cb91-9"><a href="#cb91-9" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'x'</span><span class="op">&gt;</span> <span class="kw">is</span> local: <span class="va">False</span></span>
+<span id="cb91-10"><a href="#cb91-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb91-11"><a href="#cb91-11" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'y'</span><span class="op">&gt;</span> has table: <span class="va">False</span></span>
+<span id="cb91-12"><a href="#cb91-12" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>symbol <span class="st">'x'</span><span class="op">&gt;</span> has table: <span class="va">False</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これを見ると分かるように、<code>g</code>のなかで参照はされているが代入はされていない記号<code>x</code>はグローバル変数であることが分かります。一方、<code>y</code>には値が代入されているので、ローカル変数になっています。このように、記号表を用いれば、関数ブロックにおいて、ある記号がどの名前空間を参照しているのかを特定することができます。</p>
+<p>上記のコードのような単純な例だと、記号表の恩恵はあまり感じられないかもしれません。そこで、記号表の役割を実感できる例を、ホームワークで出題することにします。</p>
+<p>最後に、<code>is_local</code>や<code>is_global</code>以外にも<code>Symbol</code>型はたくさんのメソッドを持っていて、名前解決の研究に非常に有用であることを述べておきます。以下、上に用いたメソッドとその他幾つかをまとめておきます。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>メソッド</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>is_local</code></td>
+<td>記号がそのブロックで定義されていればTrue</td>
+</tr>
+<tr class="even">
+<td><code>is_global</code></td>
+<td>記号がグローバルならばTrue(ただしトップに定義が無くてもTrueになる)</td>
+</tr>
+<tr class="odd">
+<td><code>is_referenced</code></td>
+<td>記号がそのブロックで使われていればTrue</td>
+</tr>
+<tr class="even">
+<td><code>is_nonlocal</code></td>
+<td>記号がnonlocalならTrue</td>
+</tr>
+<tr class="odd">
+<td><code>is_namespace</code></td>
+<td>記号が記号テーブルを持つならばTrue</td>
+</tr>
+<tr class="even">
+<td><code>get_namespaces</code></td>
+<td>記号がもつ記号テーブルのリストを返す</td>
+</tr>
+</tbody>
+</table>
+<p>他にもたくさんの興味深いメソッドがありますので<a href="https://docs.python.org/ja/3/library/symtable.html">リファレンスマニュアル</a>を参照してください。</p>
+</section>
+</section>
+<section id="まとめ" class="level2">
+<h2 class="anchored" data-anchor-id="まとめ">まとめ</h2>
+<p>今回の講義では、以下の点について学びました。</p>
+<ul>
+<li>関数</li>
+<li>ジェネレータ</li>
+<li>内包表記</li>
+<li>モジュール</li>
+<li>名前空間</li>
+<li>スコープ</li>
+<li>LEGBルール</li>
+<li>記号表</li>
+</ul>
+<p>名前空間やスコープはPythonの中核をなす概念なのでしっかり把握しておきましょう。</p>
+</section>
+<section id="参考書" class="level2">
+<h2 class="anchored" data-anchor-id="参考書">参考書</h2>
+<ol type="1">
+<li><a href="https://www.amazon.co.jp/%E5%88%9D%E3%82%81%E3%81%A6%E3%81%AEPython-%E7%AC%AC3%E7%89%88-Mark-Lutz/dp/4873113938/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;dchild=1&amp;keywords=%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AEPython&amp;qid=1622042001&amp;sr=8-1">『はじめてのPython』</a>(Mark Lutz著、夏目 大 訳)(2009) オライリージャパン(第3版) ISBN-13: 978-4873113937.</li>
+<li><a href="https://www.amazon.co.jp/CPython-Internals-Guide-Python-Interpreter/dp/1775093344/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;dchild=1&amp;keywords=cpython+internals&amp;qid=1622041957&amp;sr=8-1">『CPython Internals: Your Guide to The Python 3 Interpreter』</a>(A. Shaw, The real python.com tutorial team)(2021) Real Python. ISBN-13: 978-1775093343.</li>
+<li><a href="https://docs.python.org/ja/3/library/symtable.html">Pythonリファレンスマニュアル(symtable)</a></li>
+</ol>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/Yamachan050125\.github\.io\/yamachan050125\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

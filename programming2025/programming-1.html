@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>programming-1 – Syakaikano-Omochabako</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-43081d808c96cc46af55a3a816ae9eed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Syakaikano-Omochabako</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#第1回-プログラミング概論" id="toc-第1回-プログラミング概論" class="nav-link active" data-scroll-target="#第1回-プログラミング概論">第1回 プログラミング概論</a>
+  <ul class="collapse">
+  <li><a href="#pythonの実行方法" id="toc-pythonの実行方法" class="nav-link" data-scroll-target="#pythonの実行方法">Pythonの実行方法</a></li>
+  <li><a href="#replによる対話的実行" id="toc-replによる対話的実行" class="nav-link" data-scroll-target="#replによる対話的実行">REPLによる対話的実行</a>
+  <ul class="collapse">
+  <li><a href="#練習1" id="toc-練習1" class="nav-link" data-scroll-target="#練習1">練習1</a></li>
+  </ul></li>
+  <li><a href="#コマンドラインによる実行" id="toc-コマンドラインによる実行" class="nav-link" data-scroll-target="#コマンドラインによる実行">コマンドラインによる実行</a>
+  <ul class="collapse">
+  <li><a href="#練習2" id="toc-練習2" class="nav-link" data-scroll-target="#練習2">練習2</a></li>
+  </ul></li>
+  <li><a href="#進数と16進数" id="toc-進数と16進数" class="nav-link" data-scroll-target="#進数と16進数">2進数と16進数</a></li>
+  <li><a href="#コンピューターの仕組み" id="toc-コンピューターの仕組み" class="nav-link" data-scroll-target="#コンピューターの仕組み">コンピューターの仕組み</a></li>
+  <li><a href="#メモリの仕組み" id="toc-メモリの仕組み" class="nav-link" data-scroll-target="#メモリの仕組み">メモリの仕組み</a></li>
+  <li><a href="#cpuの働き" id="toc-cpuの働き" class="nav-link" data-scroll-target="#cpuの働き">CPUの働き</a></li>
+  <li><a href="#マシン語" id="toc-マシン語" class="nav-link" data-scroll-target="#マシン語">マシン語</a></li>
+  <li><a href="#プログラミング言語の種類" id="toc-プログラミング言語の種類" class="nav-link" data-scroll-target="#プログラミング言語の種類">プログラミング言語の種類</a>
+  <ul class="collapse">
+  <li><a href="#コンパイル型言語" id="toc-コンパイル型言語" class="nav-link" data-scroll-target="#コンパイル型言語">コンパイル型言語</a></li>
+  <li><a href="#インタープリタ型言語" id="toc-インタープリタ型言語" class="nav-link" data-scroll-target="#インタープリタ型言語">インタープリタ型言語</a></li>
+  <li><a href="#アセンブリ言語" id="toc-アセンブリ言語" class="nav-link" data-scroll-target="#アセンブリ言語">アセンブリ言語</a></li>
+  </ul></li>
+  <li><a href="#抽象度" id="toc-抽象度" class="nav-link" data-scroll-target="#抽象度">抽象度</a></li>
+  <li><a href="#プログラミング上達のコツ" id="toc-プログラミング上達のコツ" class="nav-link" data-scroll-target="#プログラミング上達のコツ">プログラミング上達のコツ</a>
+  <ul class="collapse">
+  <li><a href="#正しいタイピング" id="toc-正しいタイピング" class="nav-link" data-scroll-target="#正しいタイピング">正しいタイピング</a></li>
+  <li><a href="#キーバインド" id="toc-キーバインド" class="nav-link" data-scroll-target="#キーバインド">キーバインド</a></li>
+  <li><a href="#写経" id="toc-写経" class="nav-link" data-scroll-target="#写経">写経</a></li>
+  </ul></li>
+  <li><a href="#まとめ" id="toc-まとめ" class="nav-link" data-scroll-target="#まとめ">まとめ</a></li>
+  <li><a href="#参考書" id="toc-参考書" class="nav-link" data-scroll-target="#参考書">参考書</a></li>
+  <li><a href="#補遺メモリ上での数の表現" id="toc-補遺メモリ上での数の表現" class="nav-link" data-scroll-target="#補遺メモリ上での数の表現">補遺(メモリ上での数の表現)</a>
+  <ul class="collapse">
+  <li><a href="#符号なし整数" id="toc-符号なし整数" class="nav-link" data-scroll-target="#符号なし整数">符号なし整数</a></li>
+  <li><a href="#符号つき整数" id="toc-符号つき整数" class="nav-link" data-scroll-target="#符号つき整数">符号つき整数</a></li>
+  <li><a href="#小数" id="toc-小数" class="nav-link" data-scroll-target="#小数">小数</a></li>
+  <li><a href="#エンディアン" id="toc-エンディアン" class="nav-link" data-scroll-target="#エンディアン">エンディアン</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="第1回-プログラミング概論" class="level1">
+<h1>第1回 プログラミング概論</h1>
+<ul>
+<li><a href="#第1回-プログラミング概論">第1回 プログラミング概論</a>
+<ul>
+<li><a href="#pythonの実行方法">Pythonの実行方法</a></li>
+<li><a href="#replによる対話的実行">REPLによる対話的実行</a>
+<ul>
+<li><a href="#練習1">練習1</a></li>
+</ul></li>
+<li><a href="#コマンドラインによる実行">コマンドラインによる実行</a>
+<ul>
+<li><a href="#練習2">練習2</a></li>
+</ul></li>
+<li><a href="#2進数と16進数">2進数と16進数</a></li>
+<li><a href="#コンピューターの仕組み">コンピューターの仕組み</a></li>
+<li><a href="#メモリの仕組み">メモリの仕組み</a></li>
+<li><a href="#cpuの働き">CPUの働き</a></li>
+<li><a href="#マシン語">マシン語</a></li>
+<li><a href="#プログラミング言語の種類">プログラミング言語の種類</a>
+<ul>
+<li><a href="#コンパイル型言語">コンパイル型言語</a></li>
+<li><a href="#インタープリタ型言語">インタープリタ型言語</a></li>
+<li><a href="#アセンブリ言語">アセンブリ言語</a></li>
+</ul></li>
+<li><a href="#抽象度">抽象度</a></li>
+<li><a href="#プログラミング上達のコツ">プログラミング上達のコツ</a>
+<ul>
+<li><a href="#正しいタイピング">正しいタイピング</a></li>
+<li><a href="#キーバインド">キーバインド</a></li>
+<li><a href="#写経">写経</a></li>
+</ul></li>
+<li><a href="#まとめ">まとめ</a></li>
+<li><a href="#参考書">参考書</a></li>
+<li><a href="#補遺メモリ上での数の表現">補遺(メモリ上での数の表現)</a>
+<ul>
+<li><a href="#符号なし整数">符号なし整数</a></li>
+<li><a href="#符号つき整数">符号つき整数</a></li>
+<li><a href="#小数">小数</a></li>
+<li><a href="#エンディアン">エンディアン</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="pythonの実行方法" class="level2">
+<h2 class="anchored" data-anchor-id="pythonの実行方法">Pythonの実行方法</h2>
+<p>まずはPythonを動かしてみましょう。Pythonを動かすには、様々な方法がありますが、そのうち、代表的なものは次の3つです。</p>
+<ol type="1">
+<li>REPLで一行ずつ対話的(インターラクティブ)に実行</li>
+<li>Pythonスクリプトを作成してコマンドラインから実行</li>
+<li>VSCode内でセル(コードブロック)ごとに対話的に実行(<a href="../programming2025/programming-2.html">第2回講義参照</a>)</li>
+</ol>
+</section>
+<section id="replによる対話的実行" class="level2">
+<h2 class="anchored" data-anchor-id="replによる対話的実行">REPLによる対話的実行</h2>
+<p>まずはREPL(Read-Eval-Print Loop)を用いた対話的実行を行ってみましょう。</p>
+<p>ウィンドウズを起動して、画面の左下の検索ウィンドウにAnacondaと打ち込んで、Anaconda Promptを起動しましょう（Anaconda Powershell Promptでも構いません）。Anacondaを起動したら、pythonと入力し、pythonの対話的インタープリタREPLを起動しましょう。プロンプトと呼ばれる<code>"&gt;&gt;&gt;"</code>記号が現れて、入力待ちの状態になります。</p>
+<p>REPLは、Pythonのコードを1行ごとに評価し、即時にその結果を表示してくれるシステムです。小さなコード断片の挙動を確かめる際などに便利です。</p>
+<p>Pythonには、整数や計算式などはそれ自体がPythonのコードと見なされるという特徴があります。そのおかげで、PythonのREPLを計算機として用いることができます。たとえば、何でも良いので、簡単な足し算や引き算をREPLに入力してみましょう。（入力の最後にはEnterキーを押します。）</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="dv">1</span> <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="dv">10</span> <span class="op">-</span> <span class="dv">5</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="dv">3</span> <span class="op">*</span> <span class="dv">2</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="dv">8</span> <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fl">4.0</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="dv">11</span> <span class="op">//</span> <span class="dv">3</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="dv">11</span> <span class="op">%</span> <span class="dv">3</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="dv">5</span> <span class="op">**</span> <span class="dv">3</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="dv">125</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように、REPLは簡単な計算機として用いることができます。なお、Pythonにおける2項算術演算子は以下の通りです。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>演算子</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>+</td>
+<td>可算</td>
+</tr>
+<tr class="even">
+<td>-</td>
+<td>減算</td>
+</tr>
+<tr class="odd">
+<td>*</td>
+<td>乗算</td>
+</tr>
+<tr class="even">
+<td>**</td>
+<td>べき乗</td>
+</tr>
+<tr class="odd">
+<td>/</td>
+<td>除算</td>
+</tr>
+<tr class="even">
+<td>//</td>
+<td>整数除算（余りを切り捨て）</td>
+</tr>
+<tr class="odd">
+<td>%</td>
+<td>剰余</td>
+</tr>
+</tbody>
+</table>
+<p>上記の表は教科書のセクション3.1にもありますので確認しておいてください。</p>
+<p>なお3つ以上の数の演算を行うには、演算子の優先順位に気を付けなければならないのはRと同じです。たとえば</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="dv">2</span> <span class="op">+</span> <span class="dv">3</span> <span class="op">*</span> <span class="dv">5</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dv">17</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>のように掛け算は足し算よりも先に評価されます。演算子の評価順序を明確にしたいときは、丸カッコを使います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> (<span class="dv">2</span> <span class="op">+</span> <span class="dv">3</span>) <span class="op">*</span> <span class="dv">5</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="dv">25</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>演算子の優先順位については教科書のセクション3.6(pp.&nbsp;107)に解説がありますので、読んでおいてください。ただし、計算式においては、演算子の評価順序には頼り過ぎると読みにくいコードになってしまうので、むしろ丸カッコを積極的に使うことが望ましいです。</p>
+<section id="練習1" class="level3">
+<h3 class="anchored" data-anchor-id="練習1">練習1</h3>
+<p>次の計算をPythonで実行したらどのような結果が得られるかを予測しなさい。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Q1</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span>(<span class="dv">5</span> <span class="op">%</span> <span class="dv">3</span>) <span class="op">**</span> (<span class="dv">7</span> <span class="op">//</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Q2</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span>(<span class="fl">5.5</span> <span class="op">-</span> <span class="fl">2.5</span> <span class="op">+</span> <span class="fl">3.0</span>) <span class="op">*</span> <span class="fl">2.0</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記Q1, Q2の予測をREPLで確かめられたら、同じように様々な計算を自分で考えてREPLで実行し、予測と一致するか確かめなさい。</p>
+<hr>
+<p>それでは、次にもう少し高度なことをしてみます。以下のように入力して、変数xに整数1を代入し、xの値を表示してみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように、‘=’記号を使うと左辺の変数に右辺の値を代入できます。(Rでは、同様の操作に’&lt;-’という矢印演算子を用います。)</p>
+<p>それでは、さらに変数を用いて色々な演算をしてみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">+</span> y <span class="op">+</span> <span class="dv">3</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> z <span class="op">=</span> y <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">-</span> z</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="op">-</span><span class="dv">2</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> z <span class="op">**</span> y</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="dv">9</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> x <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように、変数は演算の中で用いることができます。</p>
+<p>最後に”Hello, World!“を出力しておきましょう。これについても、Rと全く同じですので、説明はほとんど要らないでしょう。(実際、Rのコードと見分けがつきません。)</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="st">"Hello, World!"</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>Hello, World<span class="op">!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Rと同じように、ダブルクォーテーションでくくられた部分は、Pythonにより文字列と解釈されます。printは、引数に与えられた文字列や数を画面に出力するだけの関数です。</p>
+<p>REPLを終了してAnaconda promptに戻るときは、次のように入力します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span>exit()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="コマンドラインによる実行" class="level2">
+<h2 class="anchored" data-anchor-id="コマンドラインによる実行">コマンドラインによる実行</h2>
+<p>それでは次に、Pythonのコードをファイルに保存してコマンドラインから実行する方法を試してみましょう。Anaconda promptで次のように入力し、メモ帳を起動してください。</p>
+<pre class="anaconda"><code>(base) C:\Users\hogehoge&gt;notepad</code></pre>
+<p>メモ帳が起動したら、次のように記述して、保存しましょう。保存する際、ファイル名は<code>hello</code>にしてください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, World!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>次にファイルを保存して閉じ、Anaconda promptで次のように入力すると、ファイルに記述したPythonコードを実行することができます。</p>
+<pre class="anaconda"><code>(base) C:\Users\hogehoge&gt;python hello.txt
+Hello, World!
+</code></pre>
+<p>なお、Pythonコードを記述するファイル（スクリプトと呼ぶ）の名前には<code>.txt</code>ではなく拡張子<code>.py</code>を付けるのが普通ですので、覚えておきましょう。</p>
+<p>それではもう一度同じファイルを開いて、もう少し中身を豪華にしてみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, World!"</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> x <span class="op">+</span> y</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(z)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これを実行すると、以下のようになります。</p>
+<pre class="anaconda"><code>(base) C:\Users\Kobayashi&gt;python hello.txt
+Hello, World!
+1
+2
+3
+</code></pre>
+<p>このように、Pythonでは、<strong>文</strong>を改行で区切って並べることにより、上から順番に文が実行されていきます。文については教科書のセクション1.5.2に詳しい説明があるので良く読んでおいてください。</p>
+<section id="練習2" class="level3">
+<h3 class="anchored" data-anchor-id="練習2">練習2</h3>
+<p>5の5乗を計算して画面に出力するpower5_5.pyというファイルを作成し、実行しなさい。</p>
+</section>
+</section>
+<section id="進数と16進数" class="level2">
+<h2 class="anchored" data-anchor-id="進数と16進数">2進数と16進数</h2>
+<p>2進数や16進数については、多くの方が高校や大学で学んだことがあることでしょう。しかしながら、以降の説明で非常に重要ですので、ここでこれらの概念を簡単に復習しましょう。</p>
+<p>ご存じの通り、私たちが普段使っている10で桁上がりする数字は、10進数と呼ばれます。一方、2で桁上がりする数を2進数、16で桁上がりする数を16進数と呼び、情報科学では10進数と並んで良く用いられる数の表し方です。</p>
+<p>2進数では、2で桁上がりするため、10進数における2～9の数字は現れません。また、16進数では、10進数における0～9だけでは1桁を表すのに足りないため、a～fのアルファベットを用います。具体的には、3つの数表記には、以下のような関係があります。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">10進数</th>
+<th style="text-align: right;">2進数</th>
+<th style="text-align: right;">16進数</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">111</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1001</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">1010</td>
+<td style="text-align: right;">a</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1011</td>
+<td style="text-align: right;">b</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">1100</td>
+<td style="text-align: right;">c</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">1101</td>
+<td style="text-align: right;">d</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">1110</td>
+<td style="text-align: right;">e</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">1111</td>
+<td style="text-align: right;">f</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">10000</td>
+<td style="text-align: right;">10</td>
+</tr>
+</tbody>
+</table>
+<p>ある数が2進数で表記されていることを明確にするため、2進数の先頭に0bという接頭辞を付けることがあります(bはbinaryより)。同様に16進数には接頭辞0xをつけます(xはhexadecimalより)。たとえば、0x1eは0b11110すなわち10進数での30を表します（分かりましたか？）。</p>
+<p>10進数、2進数、16進数の間の変換に慣れておきましょう。とくに2進数と16進数の間の変換は重要です。これは全く難しくありません。インターネットなどにいくらでも情報がありますので、練習しておきましょう。</p>
+<p>10進数、2進数、16進数の間の変換は、Pythonを用いても行うことができます。次のPythonコードは、それぞれ、10進数の123を2進数、16進数に変換するものです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">bin</span>(<span class="dv">123</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co">'0b1111011'</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">hex</span>(<span class="dv">123</span>)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co">'0x7b'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように関数binとhexを使えば10進数をそれぞれ2進数、16進数に変換することができます。</p>
+<p>また、逆の変換をするときは、次のように数字を入力するだけです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bn">0b1111011</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="dv">123</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bn">0x7b</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="dv">123</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="コンピューターの仕組み" class="level2">
+<h2 class="anchored" data-anchor-id="コンピューターの仕組み">コンピューターの仕組み</h2>
+<p>パソコンは、様々な部品から構成されていますが、プログラミングの初心者がまず知っておかなければならないのが、CPUとメインメモリの働きです。メインメモリはランダムアクセスメモリ(Random Access Memory)とも呼ばれるので、RAMと表記されることもあります。</p>
+<p>CPUとメモリ(メインメモリ)は、記憶装置です。パソコンにはいくつもの記憶装置が内臓されていますが、どの記憶装置も、文字や整数や小数だけでなく、プログラムなど、すべての情報を0と1の配列に変換して記憶しています。</p>
+<p>CPUとメモリはどちらもトランジスタで構成された集積回路(IC, Integrated Circuit)ですが、次のような性質の違いがあります。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>CPU</th>
+<th>メモリ</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>記憶容量</td>
+<td>非常に小さい</td>
+<td>大きい</td>
+</tr>
+<tr class="even">
+<td>演算能力</td>
+<td>有り</td>
+<td>無し</td>
+</tr>
+</tbody>
+</table>
+<p>ここで言う演算とは、足し算や引き算を含む様々な計算のことです。CPUは演算機能をもっていますが、ほんの少しの情報しか記憶できないので、CPUだけではちょっとしたプログラムも動かせません。そこで、まず容量の大きいメモリにプログラム全体を読み込ませます。プログラムは、CPUに対する命令の集まりです（と思って大体間違いありません）。CPUは、メモリに読み込んだ命令を１つずつ読み取って実行していきます。それでは、次に、プログラムなどの情報がどのようにメモリに保存されているのかを見ていきましょう。</p>
+</section>
+<section id="メモリの仕組み" class="level2">
+<h2 class="anchored" data-anchor-id="メモリの仕組み">メモリの仕組み</h2>
+<p>メモリは、たとえば001011010110001101011…のように、全ての情報を0と1の並びに変換して記憶しています。この0と1の並びは、8桁ずつの区画に区切られています。それぞれの区画には、<strong>アドレス</strong>と呼ばれる数字が振られていて、数字によってメモリ上の位置が指定できるようになっています。</p>
+<p>それぞれの区画には、8桁の0と1が格納されているので、1つの区画は00000000から11111111までの256通りの状態を記憶することができます。この記憶容量のことを<strong>バイト</strong>(Byte)といいます。一方、1桁の0と1で記憶できる容量のことを<strong>ビット</strong>(bit)と呼びます。よって、</p>
+<p>1バイト = 8ビット</p>
+<p>の関係が成り立ちます。</p>
+<p>メモリへの情報の読み書きは、必ずバイトを単位として行われます。ビットを単位として読み書きすることはできません。このように、バイトはパソコンにおける最も重要な情報量の単位です。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/memory.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>memory</figcaption>
+</figure>
+</div>
+<p>メモリについて考えるときは、上図のように、バイト単位のデータが積み重なったものと考えると良いです。上図では、合計128バイトの容量をもつメモリのイメージを図示しています。なお、バイトよりも大きい情報量の単位には、キロバイトやメガバイト、ギガバイトなどがあります。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>情報量の単位</th>
+<th>バイト換算</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>キロバイト(KB)</td>
+<td>10の3乗=1,000バイト</td>
+</tr>
+<tr class="even">
+<td>メガバイト(MB)</td>
+<td>10の6乗=1,000,000バイト</td>
+</tr>
+<tr class="odd">
+<td>ギガバイト(GB)</td>
+<td>10の9乗=1,000,000,000バイト</td>
+</tr>
+<tr class="even">
+<td>テラバイト(TB)</td>
+<td>10の12乗バイト</td>
+</tr>
+<tr class="odd">
+<td>ペタバイト(PB)</td>
+<td>10の15乗バイト</td>
+</tr>
+<tr class="even">
+<td>エクサバイト(EB)</td>
+<td>10の18乗バイト</td>
+</tr>
+<tr class="odd">
+<td>キビバイト(KiB)</td>
+<td>2の10乗=1,024バイト</td>
+</tr>
+<tr class="even">
+<td>メビバイト(MiB)</td>
+<td>2の20乗=1,048,576バイト</td>
+</tr>
+<tr class="odd">
+<td>ギビバイト(GiB)</td>
+<td>2の30乗=1,073,741,824バイト</td>
+</tr>
+<tr class="even">
+<td>テビバイト(TiB)</td>
+<td>2の40乗バイト</td>
+</tr>
+<tr class="odd">
+<td>ペビバイト(PiB)</td>
+<td>2の50乗バイト</td>
+</tr>
+<tr class="even">
+<td>エクスビバイト(EiB)</td>
+<td>2の60乗バイト</td>
+</tr>
+</tbody>
+</table>
+<p>なお、キロバイト、メガバイト、ギガバイトという言葉が使われている場合でも、実際にはキビバイト(KiB)、メビバイト(MiB)、ギビバイト(GiB)を指す場合があるので、多少の注意が必要です。本講義でも、キビバイトやメビバイトは余り親しみのない言葉ですので、KiBやMiBと書いてキロバイト、メガバイトと発音しても良いことにします。ご注意ください。なおキビバイトとキロバイトの容量差は2%しかありませんので、通常この違いに神経質になる必要はありません。ギガバイトとギビバイトになると、7%の違いがありますので、ちょっと無視できないかもしれません。</p>
+</section>
+<section id="cpuの働き" class="level2">
+<h2 class="anchored" data-anchor-id="cpuの働き">CPUの働き</h2>
+<p>一方、CPUは<strong>レジスタ</strong>と呼ばれる記憶装置を複数内臓しています。レジスタは、プログラム内の<strong>命令</strong>やデータ、メモリのアドレスなどを格納することができます。CPUはメモリに読み込まれたプログラムの中の命令をレジスタに読み込こんで実行したり、メモリのなかのデータをレジスタに読み込んで演算をほどこしたり、演算の結果をメモリに書き込んだりすることでコンピュータを動かしています。</p>
+<p>レジスタにはプログラマがプログラムから直接操作できるもの(数十個ある)と操作できないものがあります。プログラマが意識しなくてはならないのは前者の操作できるレジスタだけです。具体的にどのようなレジスタがいくつあるのかについては、CPUによって違ってきます。</p>
+<p>レジスタは、メモリと全く同じように0と1の情報を格納できます。レジスタには、64ビットコンピュータでは64ビット=8バイトの情報を格納することができます。32ビットコンピュータでは4バイトです。したがって、プログラムが一つのレジスタを使って一度に処理できるデータの量は64ビットコンピュータなら最大8バイト、32ビットコンピュータなら最大4バイトです。</p>
+<p>ただし64ビットレジスタは下位の32ビットを使って32ビットレジスタとしても動作できるようになっています。従って、64ビットコンピュータでも、32ビット仕様のOSやアプリケーションが動作します。</p>
+<p>32ビットレジスタのサイズが4バイトであることに合わせて、32ビットOSはメモリのアドレスを4バイトで表現します。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 23%">
+<col style="width: 17%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">2進数表記</th>
+<th style="text-align: right;">16進数表記</th>
+<th style="text-align: right;">10進数表記</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>最小の数字</td>
+<td style="text-align: right;"><code>0b0</code></td>
+<td style="text-align: right;"><code>0x0</code></td>
+<td style="text-align: right;"><code>0</code></td>
+</tr>
+<tr class="even">
+<td>最大の数字</td>
+<td style="text-align: right;"><code>0b1111...1111</code></td>
+<td style="text-align: right;"><code>0xffffffff</code></td>
+<td style="text-align: right;"><code>4,294,967,295=2の32乗-1</code></td>
+</tr>
+</tbody>
+</table>
+<p>0xffffffff=4,294,967,295=0b1111…1111であることはPythonで簡単に確かめることができます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bn">0xffffffff</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="dv">4294967295</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">bin</span>(<span class="bn">0xffffffff</span>)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co">'0b11111111111111111111111111111111'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>4バイトの数値が表現できるメモリアドレスの範囲は、上記の表にあるように0～2の32乗-1=4×2の30乗-1です。メモリは1区画あたり1バイトの容量をもつので、32ビットOSでは、4×2の30乗バイト、すなわち4GiBまでしか扱うことができません。したがって、それ以上のメモリを物理的に搭載しても、4GiBを超える部分はOSによって認識してもらえません。</p>
+<p>一方、64ビット対応したOSでは、メモリアドレスの表現に8バイト数値を使用します。したがって(少なくとも理論上は)0～2の64乗-1までのアドレス(16EiB=約18エクサバイト)を表現できます。これは極めて巨大な数ですので、64ビットOSではメモリの上限が問題になることは通常ありません。</p>
+</section>
+<section id="マシン語" class="level2">
+<h2 class="anchored" data-anchor-id="マシン語">マシン語</h2>
+<p>プログラムがメモリに読み込まれたあと、プログラムを構成する命令は、一つずつCPUに読みだされて実行されていきます。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/register.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>register</figcaption>
+</figure>
+</div>
+<p>レジスタは0と1しか格納できないので、命令と命令からなるプログラムもまた、0と1の列でなくてはなりません。(当然、列の長さは8の倍数です。)こうした、CPUが理解できる、0と1で構成された命令を<strong>マシン語</strong>(機械語)と呼びます。大昔、コンピュータができたばかりでプログラミング言語がまだ存在していなかったころは、プログラマはマシン語を直接編集することでプログラムを作っていました。</p>
+<p>試しに、プログラムが実際にどのようなマシン語になっているかをディスプレイに打ち出してみることができます。これを<strong>ダンプ</strong>(dump)と言います。たとえば、画面に”Hello, World!“と打ち出すプログラムをダンプしてみると、該当箇所は以下のようになります。</p>
+<pre class="dump"><code>...(前略)...
+00000060: 00100000 00000000 01010000 01100000 01001000 01100101   .P`He
+00000066: 01101100 01101100 01101111 00101100 00100000 01010111  llo, W
+0000006c: 01101111 01110010 01101100 01100100 00100001 00000000  orld!.
+00000072: 01001000 10111001 00000000 00000000 00000000 00000000  H.....
+00000078: 00000000 00000000 00000000 00000000 01001000 10000011  ....H.
+0000007e: 11101100 00100000 11101000 00000000 00000000 00000000  . ....
+00000084: 00000000 01001000 10000011 11000100 00100000 11001001  .H.. .
+0000008a: 11000011 00000010 00000000 00000000 00000000 00000010
+...(後略)...</code></pre>
+<p>ここで、1列目はファイルの先頭からのバイト数を16進数で表したものです。<code>0x64</code>バイトから<code>0x70</code>バイトまでが<code>Hello, World!</code>という文字列を表し、<code>0x72</code>バイトから<code>0x8a</code>バイトまでが命令です。</p>
+<p>このように、マシン語は人間にとっては非常に分かりづらいので、マシン語を直接操作しなくてもプログラムが作れるように、C言語などのプログラミング言語が作られました。</p>
+<p>なお、64ビット版のWindows 10にはダンプをするためのツールが標準搭載されていませんが、Gitをインストールするとbashターミナルで<code>xxd</code>コマンドが使えるようになります。一方Linuxには<code>xxd</code>コマンドが標準で搭載されています。いずれのOSでも、ターミナルで次のように入力すれば実行可能ファイルを2進数にダンプできます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="ex">xxd</span> <span class="at">-b</span> a.out</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここでa.outが実行可能ファイルの名前です(Windowsの場合<code>a.exe</code>などになります)。-bは2進数でダンプするオプションです。このオプションを付けないと、結果は16進数で表示されます。</p>
+</section>
+<section id="プログラミング言語の種類" class="level2">
+<h2 class="anchored" data-anchor-id="プログラミング言語の種類">プログラミング言語の種類</h2>
+<p>プログラミング言語を分類する方法は色々ありますが、まず覚えた方が良いのが、コンパイル型言語とインタープリタ型言語の違いです。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 35%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>コンパイル型</th>
+<th>インタープリタ型</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>実行速度</td>
+<td>高速</td>
+<td>低速</td>
+</tr>
+<tr class="even">
+<td>コンパイル</td>
+<td>必要</td>
+<td>不要</td>
+</tr>
+<tr class="odd">
+<td>例</td>
+<td>C言語、C++、FORTRAN、RUSTなど</td>
+<td>Python、R、Ruby、Perl、JavaScriptなど</td>
+</tr>
+</tbody>
+</table>
+<section id="コンパイル型言語" class="level3">
+<h3 class="anchored" data-anchor-id="コンパイル型言語">コンパイル型言語</h3>
+<p>たとえばC言語のようなコンパイル型言語で”Hello, World!“を出力するプログラムについて考えましょう。その場合、まず次のようなプログラミング言語で書かれたテキストファイル（<strong>ソースファイル</strong>あるいは<strong>ソースコード</strong>という）を準備します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> main<span class="op">(</span><span class="dt">void</span><span class="op">){</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  printf<span class="op">(</span><span class="st">"Hello, World!</span><span class="sc">\n</span><span class="st">"</span><span class="op">);</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このファイル名をhello.cとしましょう。その後、<strong>コンパイル</strong>という操作により、このファイルを機械語に変換します。この操作を実行するソフトウェアのことを<strong>コンパイラ</strong>と呼びます。たとえばLinuxには通常GCC(GNU Compiler Collection)というコンパイラがインストールされています。</p>
+<p>コンパイルを行うと、マシン語で書かれた別のファイルが作成されます。これを<strong>実行可能ファイル</strong>と呼びます。厳密には、hello.cをマシン語にコンパイルしただけでは実行ファイルにはならず、<strong>オブジェクトファイル</strong>と呼ばれるマシン語で書かれたファイルが出来上がります。コンパイラはさらに<strong>リンク</strong>という作業を行い、出来上がったオブジェクトファイルに必要な付属品を色々とくっつけて実行可能ファイルを作ります。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/compile.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>compile</figcaption>
+</figure>
+</div>
+<p>Anaconda仮想環境(<a href="../programming2025/programming-2.html">第2回の講義資料</a>参照)にGCCがインストール出来ている人は、実際にコンパイルしてみることができます。(GCCがインストール出来ていない人は、手順だけ追っておきましょう。)Anaconda PromptでGCCがインストールされた仮想環境を起動し、次のように入力してメモ帳を起動しましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>notepad hello.c</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>メモ帳が起動したら、上記の<code>Hello, World!</code>のCのソースコードをコピー＆ペーストして、保存し、閉じましょう。</p>
+<p>上記のようにしてソースファイルが作成できたら、以下のようにしてコンパイルします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>gcc <span class="at">-Wall</span> hello.c <span class="at">-o</span> hello.exe</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>-Wall</code>は、コードに不適切な点があれば警告を発してくれるオプションです。また、<code>-o hello.exe</code>は、<code>hello.exe</code>という名前のファイルにコンパイルせよという意味です。</p>
+<p><code>hello.exe</code>が正しく作成されていれば、Anaconda Promptで次のように入力することで実行できるはずです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>hello.exe</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>出力は以下の通りです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>Hello, World!</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>コンパイル型の言語で書かれたソースファイルは直接実行することはできず、かならずコンパイルして実行可能ファイルを作る必要があります。</p>
+<p>実行可能ファイルは、CPUが直接解釈可能なマシン語で書かれているため、非常に高速に動作します。一方で、大きなプログラムはコンパイルに大変時間がかかるという欠点があります。また実行可能ファイルを構成するマシン語は、CPUのレジスタを直接操作する命令の集まりですので、CPUの異なるコンピュータでは動作しません。従って、プログラムを他のコンピュータに移植するときは、移植先のコンピュータでソースコードを再コンパイルする必要があります。</p>
+<p>なお、コンパイルとリンクを分けて行うには次のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>gcc <span class="at">-c</span> hello.c</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>gcc hello.o <span class="at">-o</span> hello.exe</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>一つめのコマンドがコンパイルを実行してオブジェクトファイル<code>hello.o</code>を作ります。二つ目のコマンドは、さらにリンクを行って実行可能ファイル<code>hello.exe</code>を作っています。</p>
+<p>オブジェクトファイルや実行可能ファイルを16進ダンプしてみることもできます。<code>hello.c</code>が置かれているフォルダで<code>Git bash</code>(<a href="../programming2025/programming-3.html">第3回講義資料</a>を参照)を開き、次のように入力してみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>xxd hello.o</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>筆者の環境では、出力は以下のようになります。</p>
+<pre class="dump"><code>...(前略)...
+00000100: 4000 3040 2f34 0000 0000 0000 0000 0000  @.0@/4..........
+00000110: 0000 0000 3000 0000 8401 0000 0000 0000  ....0...........
+00000120: 0000 0000 0000 0000 4000 5040 5548 89e5  ........@.P@UH..
+00000130: 4883 ec20 e800 0000 0048 8d0d 0000 0000  H.. .....H......
+00000140: e800 0000 00b8 0000 0000 4883 c420 5dc3  ..........H.. ].
+00000150: 9090 9090 9090 9090 9090 9090 4865 6c6c  ............Hell
+00000160: 6f2c 2057 6f72 6c64 2100 0000 0108 0305  o, World!.......
+00000170: 0832 0403 0150 0000 0000 0000 2400 0000  .2...P......$...
+...(後略)...</code></pre>
+<p>ここで、一番左の列がファイル先頭からの位置をバイト数(16進数)で表したものですが、プログラムの命令が書かれているのは、<code>0x12c</code>バイト地点の<code>5548 89e5 ...</code>のところから、<code>0x14f</code>バイト地点の<code>... c420 5dc3</code>までです。そのあとマシン語で「命令なし」を意味する<code>90</code>が12個続いたあと、<code>4865 6c6c 6f2c 2057 6f72 6c64 21</code>と13バイトの数字が続いていますが、これは、ASCIIコードで<code>Hello, World!</code>の13文字を意味します。このように、命令コードの直後に、必要なデータが添付されていることが分かります。</p>
+</section>
+<section id="インタープリタ型言語" class="level3">
+<h3 class="anchored" data-anchor-id="インタープリタ型言語">インタープリタ型言語</h3>
+<p>一方、Pythonのようなインタープリタ型言語では、実行にコンパイルを必要としません。インタープリタ型言語では、ソースファイルは実行可能ファイルの源（ソース）ではないので、ソースファイルのことを<strong>スクリプト</strong>と呼ぶことがあります。また、インタープリタ型言語のことを<strong>スクリプト言語</strong>ということもあります。スクリプト言語では、スクリプトに記述されたコードは<strong>インタープリタ</strong>と呼ばれるプログラム(アプリケーション)によって一つずつ読み取られ、実行されていきます。</p>
+<p>実際にはスクリプトファイルのテキスト文をそのまま読み取っていくのはインタープリタにとって不便なので、まずスクリプトはバイトコードと呼ばれるマシン語に似たものに変換されます。そのあと、バイトコードの中の命令が1行ずつ読み取られながらインタープリタによって実行されていくわけです。インタープリタはスクリプトからバイトコードを生成する作業と、バイトコードの命令を読み取って実行する作業を両方担当しています。Pythonインタープリタのうち、バイトコード実行を行う部分だけを指して、<strong>Pythonヴァーチャルマシン</strong>(PVM)と呼びます。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/python_image.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>pvm</figcaption>
+</figure>
+</div>
+<p>Pythonがバイトコードを生成するプロセスのことを<strong>コンパイル</strong>もしくは<strong>バイトコンパイル</strong>と呼ぶことがあるので注意が必要です。コンパイル言語でのコンパイルと違い、Pythonのバイトコンパイルは<strong>マシン語を生成しません</strong>。</p>
+<p>試しに”Hello world!“と印字するPythonのプログラムをバイトコンパイルしてみましょう。まず、このプログラムのPythonスクリプトは次のようになります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello world!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このコードをバイトコンパイルして出来たバイトコードをダンプすると、以下のようになります。</p>
+<pre class="dump"><code>00000000: 550d 0d0a 0000 0000 7a7f bb60 1600 0000  U.......z..`....
+00000010: e300 0000 0000 0000 0000 0000 0000 0000  ................
+00000020: 0002 0000 0040 0000 0073 0c00 0000 6500  .....@...s....e.
+00000030: 6400 8301 0100 6401 5300 2902 7a0d 4865  d.....d.S.).z.He
+00000040: 6c6c 6f2c 2057 6f72 6c64 214e 2901 da05  llo, World!N)...
+00000050: 7072 696e 74a9 0072 0200 0000 7202 0000  print..r....r...
+00000060: 00fa 0868 656c 6c6f 2e70 79da 083c 6d6f  ...hello.py..&lt;mo
+00000070: 6475 6c65 3e01 0000 00f3 0000 0000       dule&gt;.........</code></pre>
+<p><code>Hello, World!</code>の文字列は<code>0x3e</code>バイトの位置(<code>4865 6400...</code>)から<code>0x4a</code>(<code>...6c64 21</code>)までにあります。よく似ていますが、これはバイトコードであり、マシン語ではありません。Pythonヴァーチャルマシンは、このバイトコードを実行していきます。</p>
+<p>バイトコードの特徴は、マシン語で記述されたコンパイル言語の実行可能ファイルと違って、CPUの仕様に依存していないことです。したがって、バイトコードはそのまま他のコンピュータで実行することができます。一方で、直接レジスタに命令を送り込むコンパイル言語に比べると、ヴァーチャルマシンを介さなくてはならないスクリプト言語はかなり低速になり、往々にして100倍くらいの実行時の速度差が出てしまいます。</p>
+<p>しかしながら、コンパイルの必要がないので、インタープリタ言語による開発時間はコンパイル言語よりもはるかに早いのが普通です。(C言語で書かれた非常に大きなプログラムですと、コンパイルだけで数時間かかってしまうこともあります。たとえばnode.jsというjavascriptのインタープリタをコンパイルすると半日くらいかかります。)</p>
+<p>このコンパイル型言語とインタープリタ型言語の違いを利用して、Python等のインタープリタ型言語でスピーディにプロトタイプを作成し、その後、少しずつコンパイル型言語に置き換えていくという開発上の作戦が取られることも良くあります。</p>
+<p>もう一つ、皆さんに覚えておいて欲しいのは、インタープリタそれ自体がプログラムであり、これは通常コンパイル型言語で作成(実装)されているということです(ただし<a href="https://ja.wikipedia.org/wiki/PyPy">PyPy</a>のような例外はあります)。たとえばPythonのインタープリタで最も一般的なのはC言語で実装されたCPythonというインタープリタで、ほとんどの方が使っているPythonはこれです。CPythonのソースコードは公開されているので誰でも読むことができ、C言語を知っていれば内容を理解できます。他にもJavaで実装されたJythonというインタープリタもあります。</p>
+<p>注)最近では、<a href="https://ja.wikipedia.org/wiki/%E5%AE%9F%E8%A1%8C%E6%99%82%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%A9#:~:text=%E5%AE%9F%E8%A1%8C%E6%99%82%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%A9%EF%BC%88%E3%81%98%E3%81%A3%E3%81%93%E3%81%86%E3%81%98,%E3%82%92%E5%9B%B3%E3%82%8B%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%A9%E3%81%AE%E3%81%93%E3%81%A8%E3%80%82">JITコンパイル</a>という技術が発展し、Juliaのような双方の利点を取り入れた次世代型の言語が複数現れてきました。これにより、インタープリタ型言語とコンパイル型言語の境界線は不明瞭になりつつあります。</p>
+</section>
+<section id="アセンブリ言語" class="level3">
+<h3 class="anchored" data-anchor-id="アセンブリ言語">アセンブリ言語</h3>
+<p>なおプログラミング言語の中には、<strong>アセンブリ言語</strong>という特別なタイプの言語があります。アセンブリ言語は、01の並びであるマシン語を分かりやすい記号の列に「直訳」したものです。直訳したものですので、マシン語とアセンブリ言語はどちらの方向にでも変換可能です。アセンブリ言語からマシン語を生成する作業を<strong>アセンブル</strong>、その逆を<strong>逆アセンブル</strong>と言います。アセンブルを行うためのソフトウェアを<strong>アセンブラ</strong>と呼びます。アセンブリ言語の特徴の一つは、マシン語の直訳であるため、レジスタの操作をプログラマが明示的に行う必要があるということです。</p>
+<p>たとえば、次のC言語のプログラムは、aという変数に1を代入し(正確には1という値で初期化し)、そのあとaに2を足すというだけのプログラムです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb31"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> MyAdd<span class="op">(</span><span class="dt">void</span><span class="op">){</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> a <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  a <span class="op">=</span> a <span class="op">+</span> <span class="dv">2</span><span class="op">;</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> a<span class="op">;</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これをコンパイルして出来たオブジェクトファイルを逆アセンブルすると、次のようなアセンブリ言語のコードが得られます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb32"><pre class="sourceCode nasm code-with-copy"><code class="sourceCode nasm"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">myadd.o:</span>     file format pe<span class="op">-</span>x86<span class="op">-</span><span class="dv">64</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>Disassembly of <span class="kw">section</span> <span class="fu">.text</span><span class="op">:</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>0000000000000000 &lt;MyAdd<span class="op">&gt;:</span></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>   0:   55                      <span class="kw">push</span>   <span class="kw">rbp</span></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>   1:   48 89 e5                mov    <span class="kw">rbp</span><span class="op">,</span><span class="kw">rsp</span></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>   4:   48 83 ec <span class="dv">10</span>             sub    <span class="kw">rsp</span><span class="op">,</span><span class="bn">0x10</span></span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>   8:   c7 <span class="dv">45</span> fc <span class="dv">01</span> <span class="dv">00</span> <span class="dv">00</span> <span class="dv">00</span>    mov    <span class="dt">DWORD</span> <span class="dt">PTR</span> <span class="op">[</span><span class="kw">rbp</span><span class="op">-</span><span class="bn">0x4</span><span class="op">],</span><span class="bn">0x1</span></span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>   <span class="fu">f:</span>   83 45 fc <span class="dv">02</span>             add    <span class="dt">DWORD</span> <span class="dt">PTR</span> <span class="op">[</span><span class="kw">rbp</span><span class="op">-</span><span class="bn">0x4</span><span class="op">],</span><span class="bn">0x2</span></span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>  13:   8b 45 fc                mov    <span class="kw">eax</span><span class="op">,</span><span class="dt">DWORD</span> <span class="dt">PTR</span> <span class="op">[</span><span class="kw">rbp</span><span class="op">-</span><span class="bn">0x4</span><span class="op">]</span></span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>  16:   48 83 c4 <span class="dv">10</span>             add    <span class="kw">rsp</span><span class="op">,</span><span class="bn">0x10</span></span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a>  1a:   5d                      <span class="kw">pop</span>    <span class="kw">rbp</span></span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a>  1b:   c3                      ret</span>
+<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a>  1c:   90                      <span class="kw">nop</span></span>
+<span id="cb32-17"><a href="#cb32-17" aria-hidden="true" tabindex="-1"></a>  1d:   90                      <span class="kw">nop</span></span>
+<span id="cb32-18"><a href="#cb32-18" aria-hidden="true" tabindex="-1"></a>  1e:   90                      <span class="kw">nop</span></span>
+<span id="cb32-19"><a href="#cb32-19" aria-hidden="true" tabindex="-1"></a>  1f:   90                      <span class="kw">nop</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/assemble.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>assembly</figcaption>
+</figure>
+</div>
+<p>ここでは詳しく説明できませんが、上のコードにおいて、rbpやrsp、eaxは全てレジスタの名前を表します。このように、アセンブリ言語では、レジスタを直接操作することが必要になってきます。(ちなみに”DWORD PTR [RBP-0X4]“などはメモリの領域を表します。)</p>
+<p>アセンブルと違って<strong>コンパイルは不可逆変換</strong>なので、実行可能ファイルからコンパイル前のソースコードを復元することはできません。従って実行可能ファイルを分析するときは、通常、逆アセンブルを行ってアセンブリ言語に翻訳し、これを読解していきます。例えば、コンピュータウィルスの性質を解析する際にこういったスキルが必要になります。</p>
+<p>Linuxを使っている人は次のようにしてコンパイルと逆アセンブルを行うことができます。上のソースファイル名をmyadd.cとします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb33"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">gcc</span> <span class="at">-c</span> myadd.c</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="ex">objdump</span> <span class="at">-d</span> <span class="at">-M</span> x86-64,intel myadd.o</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここでmyadd.oはコンパイルによって生成されたオブジェクトファイルです。</p>
+<p>Anaconda仮想環境にNASM(Netwide Assembler)をインストール済みの人は、アセンブリ言語のソースを書いてアセンブルしてみることもできます(NASMをインストールしていない人は、手順だけ追っておきましょう。)</p>
+<p>次のコードは、x86-64系PCのWindowsでしか動作しないNASMのコードで、<code>Hello, World!</code>を出力するものです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb34"><pre class="sourceCode nasm code-with-copy"><code class="sourceCode nasm"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co">;hello.asm</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="kw">extern</span> printf</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="kw">section</span> <span class="fu">.data</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>    msg <span class="dt">db</span>  <span class="st">"Hello,World!"</span><span class="op">,</span><span class="dv">0</span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a><span class="kw">section</span> <span class="fu">.text</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">global</span> main</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a><span class="fu">main:</span></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">mov</span> <span class="kw">rcx</span><span class="op">,</span>msg</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">sub</span> <span class="kw">rsp</span><span class="op">,</span><span class="dv">32</span></span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">call</span> printf</span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">add</span> <span class="kw">rsp</span><span class="op">,</span><span class="dv">32</span></span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a><span class="kw">leave</span></span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a><span class="cf">ret</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これを<code>hello.asm</code>という名前のファイルにノートパッド等を使ってコピー＆ペーストして保存します。</p>
+<p>アセンブルはAnaconda Promptで以下のように行います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb35"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>nasm <span class="at">-f</span> win64 hello.asm <span class="at">-l</span> hello.lst</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>アセンブルされたオブジェクトファイルは<code>hello.obj</code>という名前で保存されます(<code>hello.o</code>ではないので注意)。また、<code>hello.lst</code>ファイルには、ソースコードの各命令とマシン語の対応表が出力されます。</p>
+<pre class="lst"><code>     1                                  ;hello.asm
+     2                                  extern printf
+     3                                  section .data
+     4 00000000 48656C6C6F2C20576F-         msg db  "Hello, World!",0
+     4 00000009 726C642100
+     5                                  section .text
+     6                                      global main
+     7                                  main:
+     8 00000000 48B9-                       mov rcx,msg
+     8 00000002 [0000000000000000]
+     9 0000000A 4883EC20                    sub rsp,32
+    10 0000000E E8(00000000)                call printf
+    11 00000013 4883C420                    add rsp,32
+    12 00000017 C9                      leave
+    13 00000018 C3                      ret</code></pre>
+<p>1列目はメモリに配置されるときの相対的な位置をバイト数で表したもの、2列目は機械語の命令もしくはデータ、3列目は対応するアセンブリコードです。</p>
+<p>これをみると分かるように、アセンブルされたマシン語の命令は、ソースコードの命令と全く同じ順序で並んでいることが分かります。</p>
+<p><code>hello.obj</code>をダンプしてみることにより、これらが実際に近接して配置されていることを確かめることができます。<code>Git bash</code>ターミナルで<code>hello.obj</code>を16進ダンプしてみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb37"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="ex">xxd</span> hello.obj</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="dump"><code>...(前略)...
+00000040: 7400 0000 0000 0000 0000 0000 1900 0000  t...............
+00000050: 7200 0000 8b00 0000 0000 0000 0200 0000  r...............
+00000060: 2000 5060 4865 6c6c 6f2c 2057 6f72 6c64   .P`Hello, World
+00000070: 2100 48b9 0000 0000 0000 0000 4883 ec20  !.H.........H..
+00000080: e800 0000 0048 83c4 20c9 c302 0000 0002  .....H.. .......
+00000090: 0000 0001 000f 0000 0007 0000 0004 002e  ................
+...(後略)...</code></pre>
+<p>第<code>0x64</code>バイト位置の<code>4865 6c6c ...</code>から<code>0x70</code>バイト位置の<code>6c64 21</code>までの13バイトが<code>Hello, World!</code>です。また、その直後<code>0x72</code>位置の<code>48b9 0000...</code>から<code>0x8a</code>バイト位置<code>...20c9 c3</code>までが命令コードです。</p>
+</section>
+</section>
+<section id="抽象度" class="level2">
+<h2 class="anchored" data-anchor-id="抽象度">抽象度</h2>
+<p>アセンブリ言語のように、レジスタやメモリといったハードウェアを直接操作する言語を<strong>低水準言語</strong>と呼びます。低水準言語は、<strong>抽象度が低い言語</strong>と表現されることもあります。一方、Pythonのように、レジスタやメモリと言ったものをプログラマが直接意識することなくプログラミングできるような言語は、<strong>高水準言語</strong>と呼ばれ、<strong>抽象度が高い</strong>と言われます。一般に、インタープリタ型言語のほうがコンパイル型言語よりも抽象度が高い傾向があります。また、時代が進むにしたがって、より高水準で抽象度の高い言語が登場してきたと言えます。</p>
+<p>高水準言語や低水準言語というのは、相対的なものであるととらえた方が良いでしょう。たとえば、従来C言語はアセンブリ言語と比較して高水準言語であると言われてきましたが、言語の高水準化が進むにつれ、たとえばPython等に比べると低水準言語であると言われるようにもなってきました。というのも、C言語ではレジスタを意識することはほとんどありませんが、メモリはかなり意識しないとコードが書けないからです。一方、Pythonでは、C言語よりも抽象度が高く、比較的メモリを意識しなくてもプログラミングができるようになっています。それでも、以降の講義で論じるように、メモリをある程度意識することはPythonを正しく使う上で重要であると言えます。</p>
+</section>
+<section id="プログラミング上達のコツ" class="level2">
+<h2 class="anchored" data-anchor-id="プログラミング上達のコツ">プログラミング上達のコツ</h2>
+<p>当たり前ですが、プログラミングの上達において最も大切なことは、「プログラミングを楽しむ」ことだと思います。そのために大切なことは、「ストレスなくコーディングする」ということに尽きると思います。そして、そのためには、以下の2点が重要であると筆者は考えます。</p>
+<ul>
+<li>正しいタイピングをする</li>
+<li>エディターのキーバインドをマスターする</li>
+</ul>
+<p>もう一つコツを挙げるとすれば、誰もが言うことですが、コードを試すときは、<strong>写経</strong>するということです。写経とは、コードをコピー＆ペーストしたり、すでに他人が入力したコードを実行するのではなく、自分でタイピングして書き写すことです。</p>
+<section id="正しいタイピング" class="level3">
+<h3 class="anchored" data-anchor-id="正しいタイピング">正しいタイピング</h3>
+<p>正しいタイピングとは、タッチタイピング（いわゆるブラインドタッチ）のことです。タッチタイピングを解説したサイトはインターネットにたくさんありますので、ここでは改めて解説しません。以下の項目に注意して練習を重ねてください。</p>
+<ul>
+<li>最初は決して速く打とうとしてはいけない</li>
+<li>同じキーはいつも同じ指で叩く</li>
+<li>キーを叩くときは、基本そのキーに最も近い指で叩く</li>
+<li>キーボードを見ないでタイプするトレーニングをする</li>
+<li>人差し指～小指すべて使う</li>
+</ul>
+<p>数字や記号はつらいので、まずはアルファベットだけキーボードを見ないで打てるようになるように練習しましょう。そのうち見ないで打てるキーの数が増えてきます。タイピングソフトなどは必要ありません。ゆっくりで良いので、タッチタイピングの基本を守りつつプログラミングや文書作成をしていれば、自然に上達していきます。</p>
+<p>上達につれてタイプの速度は上がってきますが、目安として大体1分間に200タイプくらいでスピード的には十分ではないでしょうか。重要なのはストレスを無くすことであって、速度を上げることではありません。ゆっくりでもキーボードを見ずに正確に打てるようになれば、視線の移動がほとんど必要なくなるので、コーディング中に感じるストレスは圧倒的に小さくなります。</p>
+</section>
+<section id="キーバインド" class="level3">
+<h3 class="anchored" data-anchor-id="キーバインド">キーバインド</h3>
+<p>コーディングのストレスを軽減するには、正しいタイピングを心がけるだけでなく、キーバインドを覚えることが重要です。本講義で言うキーバインドとは、編集中に文書の中を移動したり、編集に関連する様々な機能を呼び出したりするためのキーボードショートカットのことです。</p>
+<p>プログラミングの世界には大きく分けて、2種類のメジャーなキーバインドがあります。1つは<strong>Emacsキーバインド</strong>、もう一つは<strong>viキーバインド</strong>です。これらは、それぞれ、Emacs、viというエディターで用いられているキーバインドですが、多くのエディターでこれらの2つのキーバインドを使用することができるようになっています。</p>
+<p><strong>Emacsキーバインド</strong>は直観的で覚えやすいのが特徴で、<strong>viキーバインド</strong>は「速い」のが特徴です。筆者はプログラミングにEmacs、設定ファイルなどの編集にviを使うという風に使い分けていますので、本講義でもプログラミングのためにはEmacsキーバインドを用いることを推奨したいと思います。Emacsキーバインドについては次回VS Codeを操作するときに詳しく説明します。</p>
+</section>
+<section id="写経" class="level3">
+<h3 class="anchored" data-anchor-id="写経">写経</h3>
+<p>コードを写経することにより、自分で書いてみると、そっくりそのまま書き写したはずがうまく動作しないということが往々にして生じます。その度に、「どこが間違っていたのか」考えさせられることになり、細部に目が行くことになります。また、単純にタイピングの練習にもなります。</p>
+<p>写経は、最初のうちは苦行かもしれません。前時代的なトレーニングと思われるかもしれません。なかなか先に進めないのでじれったい気持ちになるかもしれませんが、これは必要なプロセスです。どれだけプログラミングが上手になっても、皆さん写経をしておられます。逆に写経がストレスなくできるようになったら、一人前だと考えてください。</p>
+<p>したがって、本講義では、<strong>入力済みのコードを配布しない</strong>ことにします。どうしてもコピー＆ペーストが必要なときは、このサイトから行えばよいでしょう。</p>
+</section>
+</section>
+<section id="まとめ" class="level2">
+<h2 class="anchored" data-anchor-id="まとめ">まとめ</h2>
+<p>今回は、以下の事項について学びました。</p>
+<ul>
+<li>Pythonを学ぶ意義</li>
+<li>Pythonを動かす2種類の基本的な方法</li>
+<li>本講義の目標</li>
+<li>プログラムがどのように動いているか</li>
+<li>プログラミング言語にはどのようなものがあるか</li>
+<li>プログラミング上達のコツ</li>
+</ul>
+<p>今回の講義でPythonのプログラムがどのように動いているか、大体分かったと思います。一方で、一つ一つのPythonの文がどのように動作しているのかまでは説明しませんでした。そういった詳細については今後の講義で解き明かして行くことにしましょう。</p>
+<p>基本的なプログラミングの練習は、基本的に独学でも可能なものです。自宅や研究室のパソコンにもPythonをインストールし、教科書を参照しながらPythonの操作をしっかりと練習しておいてください。</p>
+</section>
+<section id="参考書" class="level2">
+<h2 class="anchored" data-anchor-id="参考書">参考書</h2>
+<ol type="1">
+<li><a href="https://www.amazon.co.jp/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%AF%E3%81%AA%E3%81%9C%E5%8B%95%E3%81%8F%E3%81%AE%E3%81%8B-%E7%AC%AC%EF%BC%92%E7%89%88-%E7%9F%A5%E3%81%A3%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%AE%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98-%E7%9F%A2%E6%B2%A2%E4%B9%85%E9%9B%84/dp/4822283151/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;qid=1618632158&amp;sr=8-1">『プログラムはなぜ動くのか(第2版)』</a>(矢沢久雄 著/日経ソフトウェア監修) (2007) 日経BP社. ISBN 978-4-8222-8315-5.</li>
+<li><a href="https://www.amazon.co.jp/Beginning-x64-Assembly-Programming-Professional/dp/1484250753/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;dchild=1&amp;keywords=beginning+x64+assembly&amp;qid=1622904457&amp;s=english-books&amp;sr=1-1">『Beginning x64 Assembly Programming』</a>(Jo Van Hoey 著)(2019) Apress. ISBN-13: 978-1484250754.</li>
+</ol>
+<p>どちらも読み易い名著です。特に2は非常に英語が平易です。1はBorland C++/Windowsを仮定していますが、2はNASM/Ubuntu 18.04を仮定しています。</p>
+<!--
+## 宿題（ホームワーク）
+
+本講義では提出しなくてよい宿題のことを「宿題」または「ホームワーク」と呼ぶことにします。今回はホームワークとして、以下を出題します。
+
+1. 『独習Python』の第1章『イントロダクション』を読みなさい。
+2. そこに書かれている手順に従って、AnacondaとVS Codeを自分のパソコンもしくは研究室のパソコンにインストールしなさい。
+3. AnacondaをインストールしたパソコンでREPLを起動し、様々な計算式を打ち込んでみなさい。
+4. REPLに様々なPythonコードを打ち込み、期待された結果が得られるか試してみなさい。
+5. 『2の補数表現』や『浮動小数点数』、『エンディアン』といった言葉に聞き覚えがない人は、本ページ末尾の補遺を読んでおいてください。
+
+なお、LinuxユーザーはAnacondaを**インストールしない**ことをお勧めします。X Windowシステムが壊れて再起不能になることがあります。
+
+Anacondaはある程度スペックを要求します。CPUはIntel Core i5以上、メモリは最低でも8GBは必要かと思います(16GB推奨)。
+-->
+</section>
+<section id="補遺メモリ上での数の表現" class="level2">
+<h2 class="anchored" data-anchor-id="補遺メモリ上での数の表現">補遺(メモリ上での数の表現)</h2>
+<p>ここでは、メモリの上で整数や小数がどのように表現されているかを説明します。</p>
+<section id="符号なし整数" class="level3">
+<h3 class="anchored" data-anchor-id="符号なし整数">符号なし整数</h3>
+<p>符号なし整数とは、正整数のみを表すことができるデータ型のことです。符号なし整数がメモリ上に記録される方法は特に難しいことはありません。単に正整数の2進数表現がそのまま格納されているだけです。例えば、2バイト=16ビットの領域に14という整数が格納されるときは、</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb39"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>00000000 00001110</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>のように格納されます。</p>
+</section>
+<section id="符号つき整数" class="level3">
+<h3 class="anchored" data-anchor-id="符号つき整数">符号つき整数</h3>
+<p>符号つき整数では、負の数と正の数を表すことができます。符号付き整数では、最も桁の大きいビットを符号を表すために用います。この符号ビットが0ならば0か正の整数を、1ならば負の整数を表します。残りの桁は、正整数ならば、符号なし整数と同じで、元の正数の2進数表現になっています。</p>
+<p>一方、負の数の場合は、元の数の絶対値の<strong>2の補数</strong>になっています。数<code>n</code>の2の補数とは、<code>n</code>のビット(0と1)を反転して、1をプラスしたものです。</p>
+<p>たとえば、14は上記のように表されますので、そのビットを反転したものは、</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb40"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>11111111 11110001</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>となりますので、これに1を足したものは、</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb41"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>11111111 11110010</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>になります。これが-14の2の補数表現であり、メモリ上で-14という負数はこのように格納されています。</p>
+<p>実際、14と-14を足すと0になることが次のようになります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb42"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>  00000000 00001110</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>+ 11111111 11110010</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>-------------------</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>1 00000000 00000000</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>一番左のあふれた一桁は無視されるので、和は0になることが分かります。</p>
+<p>符号つき整数の絶対値の上限は、符号なし整数の約半分になります。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">バイト数</th>
+<th style="text-align: right;">符号つき整数</th>
+<th style="text-align: right;">符号なし整数</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">-128 ～　127</td>
+<td style="text-align: right;">0 ～ 255</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">-32,768 ～ 32,767</td>
+<td style="text-align: right;">0 ～ 65,535</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">-2,147,483,648 ～ 2,147,483,647</td>
+<td style="text-align: right;">0 ～ 4,294,967,295</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;"><code>-2**63</code> ～ <code>2**63-1</code></td>
+<td style="text-align: right;">0 ～ <code>2**64-1</code></td>
+</tr>
+</tbody>
+</table>
+<p>即席ですが、任意の整数を2の補数表現に変換するPython関数を作りましたので参考にしてください(バグを見つけたら教えてください。)関数についてはまだ学んでいないので、現時点でこの関数を使える必要はありません。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 整数を2の補数表現に変換する関数</span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> int_to_bits(num,length,endian<span class="op">=</span><span class="st">'big'</span>):</span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">type</span>(num) <span class="kw">is</span> <span class="bu">int</span>:</span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>        num_bytes <span class="op">=</span> num.to_bytes(length,endian,signed<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>        num_bin <span class="op">=</span> <span class="bu">bin</span>(<span class="bu">int</span>(num_bytes.<span class="bu">hex</span>(),<span class="dv">16</span>))</span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(num_bin)<span class="op">-</span><span class="dv">2</span> <span class="op">&lt;</span> length <span class="op">*</span> <span class="dv">8</span>:</span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a>            bit_str <span class="op">=</span> (<span class="st">"0"</span><span class="op">*</span>(length<span class="op">*</span><span class="dv">8</span><span class="op">-</span><span class="bu">len</span>(num_bin)<span class="op">+</span><span class="dv">2</span>)) <span class="op">+</span> num_bin[<span class="dv">2</span>:]</span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a>            bit_str <span class="op">=</span> num_bin[<span class="dv">2</span>:]</span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a>        byte_list <span class="op">=</span> [bit_str[<span class="dv">8</span><span class="op">*</span>i:<span class="dv">8</span><span class="op">*</span>i<span class="op">+</span><span class="dv">8</span>] <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(length)]</span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">" "</span>.join(byte_list))</span>
+<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"The first argument must be an integer."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>この関数は次のように使います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>int_to_bits(整数,バイト数,エンディアン)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>エンディアンは指定しなくても構いません。指定しない場合はビッグエンディアンになります(エンディアンについては下で説明しています)。</p>
+<p>たとえば、4バイト符号つき整数の-255を2の補数表現にするには、次のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>int_to_bits(<span class="op">-</span><span class="dv">255</span>,<span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb46"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a># 出力</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>11111111 11111111 11111111 00000001</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>リトルエンディアンにするときは、第3引数を’little’に指定してください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>int_to_bits(<span class="op">-</span><span class="dv">255</span>,<span class="dv">4</span>,<span class="st">'little'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb48"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a># 出力</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>00000001 11111111 11111111 11111111</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="小数" class="level3">
+<h3 class="anchored" data-anchor-id="小数">小数</h3>
+<p>小数は、<strong>浮動小数点数</strong>というデータ型でメモリに格納されます。浮動小数点数には<strong>単精度</strong>浮動小数点数と<strong>倍精度</strong>浮動小数点数があります。単精度では一つの数値に32ビット(4バイト)、倍精度では64ビット(8バイト)を使います。</p>
+<p>浮動小数点数がどのように小数をメモリ上で表現するのか、単精度の場合を例にとって説明します。</p>
+<p>まず、全ての実数は次のように表現できることに注意しましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb49"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>[符号] (m<span class="kw">)</span>×(10のn乗)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ただし、<code>m</code>は<code>0.xxx...</code>という形式の10進数小数です。たとえば、-123.45は、次のように表すことができます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb50"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>- (0.12345<span class="kw">)</span>×(10の3乗)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>m</code>を<strong>仮数</strong>、<code>n</code>を<strong>指数</strong>と呼びます。</p>
+<p>全く同様に、全ての実数は次のように表現できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb51"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>[符号] (m<span class="kw">)</span> * <span class="kw">(</span>2のn乗)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ただし、<code>m</code>は<code>1.xxx...</code>という形式の2進数小数です。たとえば、2進数小数<code>101.1011</code>は、次のように表すことができます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb52"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>+ (1.011011<span class="kw">)</span>×(2の2乗)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>そこで単精度浮動小数点では、下図のように32ビットを上の桁から順に1ビット、8ビット、23ビットに区切り、それぞれ<strong>符号</strong>、<strong>指数</strong>、<strong>仮数</strong>を表すのに使います。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/float.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>float</figcaption>
+</figure>
+</div>
+<p>ただし、仮数は常に<code>1.xxx...</code>という形をしているので、<code>"1."</code>を省略し、<code>xxx...</code>の部分だけを23ビットに記憶します。たとえば、仮数が<code>1.011011</code>であれば、浮動小数点数の仮数部分23ビットは</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb53"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>01101100 00000000 0000000</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>のようになります。また、指数部分は、正負どちらの値でもありえますが、ここでは負の数を表すのに補数は使いません。代わりに<strong>イクセス表現</strong>を使います。イクセス表現では、指数部分8ビットを0～255の符号なし整数と見なしたとき、そこから、ちょうど中間の値127を引いたものを実際の指数とする表現方法です。</p>
+<p>たとえば、指数部分に記憶されているビット列が次のようになっていたとします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb54"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>10000001</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これは10進数符号なし整数に読み替えると129です。ここから127を引くと2ですので、実際の指数は2ということになります。</p>
+<p>まとめると、符号部分のビット、指数部分のビット列、仮数部分のビット列がそれぞれ</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb55"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a># 符号ビット</span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb56"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a># 指数部分8ビット</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>10000001</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb57"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a># 仮数部分23ビット</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>01101100 00000000 0000000</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>のようになっているとき、この単精度浮動小数点数は、</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb58"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>[-] (1.011011<span class="kw">)</span>×(2の2乗) = <span class="at">-101</span>.1011</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>を表すことになります。これを10進数で表すと、-5.6875になります。言い換えると、-5.6875という小数は、浮動小数点数によって</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb59"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>1-10000001-01101100 00000000 0000000</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>という32ビットでメモリ上に記憶されていることになります。</p>
+<p>さて、上記の仮数部分を16進数で表し、指数部分をイクセス表現でなく実際の指数(10進数)に書き換えると、次のようになります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb60"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>1-(+2)-6c 00 00</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ただし右端の0だけは3ビットしかありませんので注意してください。</p>
+<p>倍精度の浮動小数点数ですと、仮数部分は52ビット=6バイト+4ビットありますので、-5.6875はメモリ上で、</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb61"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>1-(+2)-6c 00 00 00 00 00 0</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>と記憶されます。“6c”に続いて0が11個あることに注意してください。Pythonでは、この表現を次のようにして出力することができます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> (<span class="op">-</span><span class="fl">5.6875</span>).<span class="bu">hex</span>()</span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a><span class="co">'-0x1.6c00000000000p+2'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで、<code>p</code>のあとの<code>+2</code>が指数、<code>0x1.</code>のあとの<code>6c00000000000</code>が指数部分に記録されているビット列を表します。</p>
+</section>
+<section id="エンディアン" class="level3">
+<h3 class="anchored" data-anchor-id="エンディアン">エンディアン</h3>
+<p><strong>エンディアン</strong>は、複数バイトを使う数値や文字が、どのバイトから先にメモリに格納されるかを表します。下の桁のバイトから順に格納されていく方式を<strong>リトルエンディアン</strong>、上の桁のバイトから順に格納されていく方式を<strong>ビッグエンディアン</strong>と呼びます。エンディアンはCPUに依存しますが、現在パソコンで使われているCPUの多くはリトルエンディアン方式です。</p>
+<p>リトルエンディアンでは、下の桁のバイトのほうが上の桁よりもメモリ上で若いアドレスに格納されますので、例えば16ビット整数型としてメモリに保存された整数14をダンプすると、次のように、バイトが入れ替わって画面に表示されます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb63"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a># 14はリトルエンディアンではこう見える</span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>00001110 00000000</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>一方、ビッグエンディアンでは、上の桁のバイトのほうが下の桁よりも若いアドレスのメモリに格納されますので、14が格納されたメモリ領域をダンプすると、次のように画面に表示されます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb64"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a># 14はビッグエンディアンではこう見える</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>00000000 00001110</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように、下の桁から若いアドレスに順番に格納していくリトルエンディアン方式は、発想において自然ですが、ダンプしたときにひっくり返って表示されるので、読みにくいという難点があります。一方ビッグエンディアンでは表示された順そのままで読むことができます。</p>
+<p>エンディアンは普段はほとんど意識する必要がありませんが、文字や数値のバイト列表現を扱うときに、どうしても避けられない話題となってきますので、頭の片隅においておく必要があります。</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/Yamachan050125\.github\.io\/yamachan050125\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

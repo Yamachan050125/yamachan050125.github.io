@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>programming-9 – Syakaikano-Omochabako</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-43081d808c96cc46af55a3a816ae9eed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Syakaikano-Omochabako</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#第9回-numpyscipy入門" id="toc-第9回-numpyscipy入門" class="nav-link active" data-scroll-target="#第9回-numpyscipy入門">第9回 NumPy/SciPy入門</a>
+  <ul class="collapse">
+  <li><a href="#numpyscipyとは" id="toc-numpyscipyとは" class="nav-link" data-scroll-target="#numpyscipyとは">NumPy/SciPyとは</a></li>
+  <li><a href="#numpyの利点" id="toc-numpyの利点" class="nav-link" data-scroll-target="#numpyの利点">NumPyの利点</a></li>
+  <li><a href="#目標" id="toc-目標" class="nav-link" data-scroll-target="#目標">目標</a></li>
+  <li><a href="#インストールとインポート" id="toc-インストールとインポート" class="nav-link" data-scroll-target="#インストールとインポート">インストールとインポート</a></li>
+  <li><a href="#次元配列の作成" id="toc-次元配列の作成" class="nav-link" data-scroll-target="#次元配列の作成">1次元配列の作成</a></li>
+  <li><a href="#ベクトル演算" id="toc-ベクトル演算" class="nav-link" data-scroll-target="#ベクトル演算">ベクトル演算</a></li>
+  <li><a href="#インデクシングスライス" id="toc-インデクシングスライス" class="nav-link" data-scroll-target="#インデクシングスライス">インデクシング・スライス</a></li>
+  <li><a href="#ビュー" id="toc-ビュー" class="nav-link" data-scroll-target="#ビュー">ビュー</a></li>
+  <li><a href="#乱数の生成" id="toc-乱数の生成" class="nav-link" data-scroll-target="#乱数の生成">乱数の生成</a></li>
+  <li><a href="#記述統計量" id="toc-記述統計量" class="nav-link" data-scroll-target="#記述統計量">記述統計量</a></li>
+  <li><a href="#線形モデルからのサンプリング" id="toc-線形モデルからのサンプリング" class="nav-link" data-scroll-target="#線形モデルからのサンプリング">線形モデルからのサンプリング</a></li>
+  <li><a href="#単回帰分析" id="toc-単回帰分析" class="nav-link" data-scroll-target="#単回帰分析">単回帰分析</a></li>
+  <li><a href="#行列の作成" id="toc-行列の作成" class="nav-link" data-scroll-target="#行列の作成">行列の作成</a></li>
+  <li><a href="#行列のインデクシング" id="toc-行列のインデクシング" class="nav-link" data-scroll-target="#行列のインデクシング">行列のインデクシング</a></li>
+  <li><a href="#行列演算" id="toc-行列演算" class="nav-link" data-scroll-target="#行列演算">行列演算</a></li>
+  <li><a href="#行列の記述統計量" id="toc-行列の記述統計量" class="nav-link" data-scroll-target="#行列の記述統計量">行列の記述統計量</a></li>
+  <li><a href="#行列のブロードキャスト" id="toc-行列のブロードキャスト" class="nav-link" data-scroll-target="#行列のブロードキャスト">行列のブロードキャスト</a></li>
+  <li><a href="#行列のデータ構造" id="toc-行列のデータ構造" class="nav-link" data-scroll-target="#行列のデータ構造">行列のデータ構造</a></li>
+  <li><a href="#配列を作る様々な方法" id="toc-配列を作る様々な方法" class="nav-link" data-scroll-target="#配列を作る様々な方法">配列を作る様々な方法</a></li>
+  <li><a href="#まとめ" id="toc-まとめ" class="nav-link" data-scroll-target="#まとめ">まとめ</a></li>
+  <li><a href="#参考書" id="toc-参考書" class="nav-link" data-scroll-target="#参考書">参考書</a></li>
+  <li><a href="#補遺" id="toc-補遺" class="nav-link" data-scroll-target="#補遺">補遺</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="第9回-numpyscipy入門" class="level1">
+<h1>第9回 NumPy/SciPy入門</h1>
+<ul>
+<li><a href="#第9回-numpyscipy入門">第9回 NumPy/SciPy入門</a>
+<ul>
+<li><a href="#numpyscipyとは">NumPy/SciPyとは</a></li>
+<li><a href="#numpyの利点">NumPyの利点</a></li>
+<li><a href="#目標">目標</a></li>
+<li><a href="#インストールとインポート">インストールとインポート</a></li>
+<li><a href="#1次元配列の作成">1次元配列の作成</a></li>
+<li><a href="#ベクトル演算">ベクトル演算</a></li>
+<li><a href="#インデクシングスライス">インデクシング・スライス</a></li>
+<li><a href="#ビュー">ビュー</a></li>
+<li><a href="#乱数の生成">乱数の生成</a></li>
+<li><a href="#記述統計量">記述統計量</a></li>
+<li><a href="#線形モデルからのサンプリング">線形モデルからのサンプリング</a></li>
+<li><a href="#単回帰分析">単回帰分析</a></li>
+<li><a href="#行列の作成">行列の作成</a></li>
+<li><a href="#行列のインデクシング">行列のインデクシング</a></li>
+<li><a href="#行列演算">行列演算</a></li>
+<li><a href="#行列の記述統計量">行列の記述統計量</a></li>
+<li><a href="#行列のブロードキャスト">行列のブロードキャスト</a></li>
+<li><a href="#行列のデータ構造">行列のデータ構造</a></li>
+<li><a href="#配列を作る様々な方法">配列を作る様々な方法</a></li>
+<li><a href="#まとめ">まとめ</a></li>
+<li><a href="#参考書">参考書</a></li>
+<li><a href="#宿題ホームワーク">宿題(ホームワーク)</a></li>
+<li><a href="#課題アサインメント">課題(アサインメント)</a></li>
+</ul></li>
+</ul>
+<section id="numpyscipyとは" class="level2">
+<h2 class="anchored" data-anchor-id="numpyscipyとは">NumPy/SciPyとは</h2>
+<p>これまで見てきたように、Pythonには、Rのベクトルのような数値計算に適したデータ型が標準で備わっていません。それはPythonが<strong>汎用プログラミング言語</strong>だからです。Pythonは、一つの仕事に特化した機能を標準で提供するのではなく、標準機能は柔軟性が高く、汎用性の高いものだけを提供し、専門的な機能については、全てモジュールあるいはパッケージの形で、拡張機能として提供する仕組みを採用しています。そのおかげで、世界中の有志のプログラマによって、Pythonの様々な拡張機能が提供され、機械学習、ウェブアプリケーション、GIS、経済実験など、多様な分野で成功を収めて来ました。</p>
+<p>今回取り上げる<strong>NumPy</strong>はPythonに高度な数値計算ライブラリを提供するモジュールで、他の様々なライブラリがNumPyに依存しています。Pythonでデータ解析をするならば、NumPyは絶対に避けて通れませんので、今回の講義でしっかりと基礎を押さえましょう。</p>
+<p>また、NumPyをベースにした科学計算ライブラリである<strong>SciPy</strong>についても簡単に取り上げます。NumPyの機能は非常に高度で強力ですが、科学の個別の分野には適応していません。統計や物理計算などの個別の分野に特化した計算は、NumPyをベースにした<strong>SciPy</strong>モジュールが提供します。</p>
+<p>なお、NumPyやSciPyのような複数のモジュールを集めて作ったモジュールは<strong>パッケージ</strong>と呼ばれます。<a href="https://docs.python.org/3/reference/import.html#packages">リファレンスマニュアル</a>にあるように、全てのパッケージはモジュールですが、モジュールは必ずしもパッケージではありません。</p>
+<p>使う側からすると、あるモジュールがパッケージかどうかということは通常問題になりません。従って、本講義では、区別する必要が生じないかぎり、パッケージのことをモジュールと呼ぶことにします。</p>
+</section>
+<section id="numpyの利点" class="level2">
+<h2 class="anchored" data-anchor-id="numpyの利点">NumPyの利点</h2>
+<p>NumPyを使う利点は、主に以下のようなものでしょう。</p>
+<ul>
+<li>ベクトルや高次元の配列を扱うことができる</li>
+<li>種々のベクトル・行列演算が可能</li>
+<li>標準機能に比べ、演算が高速</li>
+</ul>
+<p>中でも<strong>速度</strong>の問題は科学技術計算において重大です。特にPythonのforループによる処理が遅いことはPythonユーザーの間でも有名です。常識的な時間内に、本格的な科学計算を終わらせたいのなら、Pythonのリストやforループ、内包表記と言ったものをコードの主要な部分で使おうとは考えないことです。</p>
+<p>NumPyでのベクトル演算が高速な主な理由は、C言語でのプログラミングと同じように、メモリ上で連続した配列(各要素のバイト数は固定)に直接数値を格納し、しかも一つの配列には「整数」や「浮動小数点数」など決まったデータ型の数値しか格納しないからです。</p>
+<p>一方、これまで学んできたように、リストを始め、Pythonのコンテナは全て数値そのものではなく、オブジェクトへの参照を格納しています。しかも、オブジェクトのデータ型は、実際にオブジェクトが参照されるまでわかりません。</p>
+<p>より具体的にPythonが遅い理由を考えるため、「リストAの要素とリストBの要素を要素ごとに足して、一つのリストを作る」という操作をPythonが処理するときの手順について考えてみるとよいでしょう。第1要素を足し合わせるだけで、以下のプロセスが必要になります。</p>
+<ol type="1">
+<li>リストA、Bの第1要素に格納されている参照(アドレス)を取得</li>
+<li>それらの参照をたどって、2つのオブジェクトを取得</li>
+<li>2つのオブジェクトの型を調べる</li>
+<li><code>+</code>演算子が2つの型の間で定義されているか調べる</li>
+<li>定義されていなければエラーを返す</li>
+<li>定義されていれば2つのオブジェクトから数値を取り出して足す</li>
+<li>演算結果の数値をPythonの数値オブジェクトに加工する</li>
+</ol>
+<p>少なくともこれだけの操作が、<strong>それぞれの要素</strong>について必要になるはずです。</p>
+<p>一方NumPyのベクトルの場合は、一つのベクトルが複数のデータ型を混在させることは通常ありません(注；<a href="https://numpy.org/doc/stable/user/basics.rec.html">Structured array</a>という高度な方法でデータ型を混在させることができますが、リストのような、型が動的に決まるタイプの柔軟性のある混在ではありません)。従って要素ごとに演算がどのように定義されているか調べる必要はありません。しかもベクトルは参照ではなく数値そのものを格納しているため、参照をたどる時間も必要ありませんし、計算結果を要素ごとにオブジェクト化する時間も必要ありません。これが主な高速化の理由ですが、他にも内部で諸々の効率性のよいアルゴリズムを使っているということがあるでしょう。</p>
+</section>
+<section id="目標" class="level2">
+<h2 class="anchored" data-anchor-id="目標">目標</h2>
+<p>NumPyやSciPyの様々な機能を1回の講義で幅広く説明することは困難です。そこで、今回は的を絞り、以下の2点の達成を目標とします。</p>
+<ul>
+<li>NumPyで線形モデルに従って疑似データを作成する</li>
+<li>そのデータに対してSciPyで線形回帰を行う</li>
+</ul>
+<p>上記の作業を自分でできるようになれば、NumPy/SciPyのマニュアルはインターネット上や書籍で豊富に提供されていますので、他の作業は容易に独学で学ぶことができると思います。</p>
+<p>独学の際に有用な資料を以下にリストアップしておきます。</p>
+<ul>
+<li><a href="https://numpy.org/doc/stable/reference/">NumPyリファレンス</a></li>
+<li><a href="https://docs.scipy.org/doc/scipy/reference/">SciPyリファレンス</a></li>
+<li><a href="https://www.amazon.co.jp/NumPy%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E5%88%86%E6%9E%90%E5%85%A5%E9%96%80-%E2%80%95%E9%85%8D%E5%88%97%E6%93%8D%E4%BD%9C%E3%80%81%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E3%80%81%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEPython%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0-Umit-Mert-Cakmak/dp/4873118875">NumPyによるデータ分析入門</a></li>
+</ul>
+</section>
+<section id="インストールとインポート" class="level2">
+<h2 class="anchored" data-anchor-id="インストールとインポート">インストールとインポート</h2>
+<p>それでは、早速NumPyを使ってみましょう。まず準備として、Anacondaの<code>base</code>以外の環境を使っている方は、<code>numpy</code>モジュールをインストールする必要があります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>conda install numpy</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>NumPyのモジュール名は<code>numpy</code>です。ルールではありませんが、<code>numpy</code>は<code>np</code>という別名で<code>import</code>するのが慣習ですので、特に理由がないかぎりそうしましょう。</p>
+<p>したがって、次のように<code>import</code>してください。以降、<code>numpy</code>は<code>np</code>の名前で使うことができるようになります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>NumPyの主要なデータ型は<code>ndarray</code>という配列型です。NumPyは、配列オブジェクトを作成し、配列オブジェクトを操作するためのモジュールであると考えて概ね間違いはありません。よって、配列を極めることがNumPyを極めることでもあります。</p>
+</section>
+<section id="次元配列の作成" class="level2">
+<h2 class="anchored" data-anchor-id="次元配列の作成">1次元配列の作成</h2>
+<p>本講義では、まず1次元の配列を作る方法に限定して説明し、多次元については必要に応じて随時説明することにします。1次元の配列とは、数値が一列にならんだだけのものであり、<strong>ベクトル</strong>とも呼ばれます。</p>
+<p>1次元配列を作る方法は色々とありますが、最も基本的なのは、<code>array</code>関数を用いてリスト、タプル、あるいはレンジから作る方法です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>])   <span class="co"># リストから作成</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>])</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> np.array((<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>))   <span class="co"># タプルから作成</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>])</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> np.array(<span class="bu">range</span>(<span class="dv">10</span>))     <span class="co"># レンジから作成</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>])</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(x)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span><span class="kw">class</span> <span class="st">'numpy.ndarray'</span><span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように、配列を出力すると、<code>array([...])</code>という表記で出力されますが、内側の<code>[]</code>はPythonのリストとは何の関係もありません。</p>
+<p>なお、レンジから配列を作る場合は、以下のような<code>arange</code>という関数が別に用意されているので、こちらから作っても良いでしょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> np.arange(<span class="dv">10</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>])</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(x)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span><span class="kw">class</span> <span class="st">'numpy.ndarray'</span><span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>x</code>のデータ型は<code>ndarray</code>ですが、<code>x</code>が内部にもっている数値データの配列もまた『型』を持ちます。データの型は、<code>ndarray</code>オブジェクトの<code>dtype</code>属性に収められています。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x.dtype</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>dtype(<span class="st">'int64'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>この出力は、<code>x</code>内部の要素配列が<code>int64</code>というNumPyモジュール内で定義されたデータ型を有することを示しています。</p>
+<p><code>int64</code>型の数値は、64ビット、つまり8バイトのメモリ領域に格納される整数です。8バイト整数は仮に非負の整数だけに用いれば<code>0〜2**64-1</code>の範囲の整数を表すことができますが、<code>int64</code>は符号つき整数ですので、<code>-2**63〜2**63-1</code>、つまり下が<code>-9223372036854775808</code>から上が<code>9223372036854775807</code>までの整数を表現することができます。</p>
+<p>一つの数値で8バイト占有しますので、<code>x</code>の配列全体では80バイト消費しているはずですが、これを確認することができます。<code>ndarray</code>型オブジェクトは、属性<code>nbytes</code>にオーバーヘッドを除いた占有メモリ量を格納しています。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> np.arange(<span class="dv">10</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>])</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(x)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span><span class="kw">class</span> <span class="st">'numpy.ndarray'</span><span class="op">&gt;</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> np.arange(<span class="dv">10</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x.nbytes</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="dv">80</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> sys</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> sys.getsizeof(x)</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="dv">184</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記のように、筆者の環境では<code>x</code>全体が184バイト占有していますのでオーバーヘッドは104バイトということになります(オーバーヘッドはNumPyのバージョンや環境に依存しえます)。</p>
+<p><code>ndarray</code>オブジェクト内部の数値型は、配列オブジェクトを作成するときに適当なものが自動的に選択されます。上記で数値型が自動的に<code>int64</code>になったのは、筆者の環境が64ビット処理系であることに関連しています。</p>
+<p>数値型を明示的に指定したい場合は、<code>array</code>関数の<code>dtype</code>引数に数値型を指定します。たとえば、小さな正整数しか扱わないことが分かっている場合は、メモリを節約するために、数値型を符号なし16ビット整数に設定したいということがあるかもしれません。その場合は、<code>array</code>関数の<code>dtype</code>引数に数値型を指定します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># arrayを使う場合</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> np.array(<span class="bu">range</span>(<span class="dv">10</span>),dtype<span class="op">=</span>np.uint16)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>], dtype<span class="op">=</span>uint16)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x.nbytes</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="dv">20</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># arangeを使っても同じ</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> np.arange(<span class="dv">10</span>,dtype<span class="op">=</span>np.uint16)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>], dtype<span class="op">=</span>uint16)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x.nbytes</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="dv">20</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これで使用メモリを<code>1/4</code>まで削減できました(ただしオーバーヘッド除く)。ここで<code>uint16</code>は”unsigned integer 16 bits”(符号なし16ビット整数)を表すデータ型であり、NumPyモジュール内で<code>uint16</code>という名前で定義されています。</p>
+<p>NumPyには、主に以下のようなデータ型があります。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>数値型</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>int8</code></td>
+<td>8ビット符号付き整数</td>
+</tr>
+<tr class="even">
+<td><code>int16</code></td>
+<td>16ビット符号付き整数</td>
+</tr>
+<tr class="odd">
+<td><code>int32</code></td>
+<td>32ビット符号付き整数</td>
+</tr>
+<tr class="even">
+<td><code>int64</code></td>
+<td>64ビット符号付き整数</td>
+</tr>
+<tr class="odd">
+<td><code>uint8</code></td>
+<td>8ビット符号なし整数</td>
+</tr>
+<tr class="even">
+<td><code>uint16</code></td>
+<td>16ビット符号なし整数</td>
+</tr>
+<tr class="odd">
+<td><code>uint32</code></td>
+<td>32ビット符号なし整数</td>
+</tr>
+<tr class="even">
+<td><code>uint64</code></td>
+<td>64ビット符号なし整数</td>
+</tr>
+<tr class="odd">
+<td><code>float16</code></td>
+<td>16ビット浮動小数点数</td>
+</tr>
+<tr class="even">
+<td><code>float32</code></td>
+<td>32ビット浮動小数点数</td>
+</tr>
+<tr class="odd">
+<td><code>float64</code></td>
+<td>浮動小数点数(通常64ビット、処理系依存)</td>
+</tr>
+<tr class="even">
+<td><code>complex64</code></td>
+<td>64ビット複素数</td>
+</tr>
+<tr class="odd">
+<td><code>complex128</code></td>
+<td>複素数(通常128ビット、処理系依存)</td>
+</tr>
+<tr class="even">
+<td><code>bool</code></td>
+<td>ブール値(1バイト)</td>
+</tr>
+<tr class="odd">
+<td><code>unicode</code></td>
+<td>固定長文字列</td>
+</tr>
+<tr class="even">
+<td><code>object</code></td>
+<td>オブジェクトの参照(通常8バイト、処理系依存)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ベクトル演算" class="level2">
+<h2 class="anchored" data-anchor-id="ベクトル演算">ベクトル演算</h2>
+<p>NumPy配列は、Rのベクトルによく似たベクトル演算をサポートしています。つまり、同じサイズの２つの配列に二項演算子を施すと、要素ごとの演算を実行します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> np.array([<span class="dv">0</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>,<span class="dv">8</span>])</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>])</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">+</span> y</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>array([ <span class="dv">1</span>,  <span class="dv">4</span>,  <span class="dv">6</span>,  <span class="dv">9</span>, <span class="dv">12</span>])</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">-</span> y </span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>array([<span class="op">-</span><span class="dv">1</span>,  <span class="dv">0</span>,  <span class="dv">2</span>,  <span class="dv">3</span>,  <span class="dv">4</span>])</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">*</span> y</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>array([ <span class="dv">0</span>,  <span class="dv">4</span>,  <span class="dv">8</span>, <span class="dv">18</span>, <span class="dv">32</span>])</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">/</span> y</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>array([<span class="fl">0.</span>, <span class="fl">1.</span>, <span class="fl">2.</span>, <span class="fl">2.</span>, <span class="fl">2.</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>四則演算だけでなく、比較演算子もベクトル化されます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> np.array([<span class="dv">0</span>,<span class="dv">5</span>,<span class="dv">10</span>])</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> np.array([<span class="dv">3</span>,<span class="dv">2</span>,<span class="dv">10</span>])</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">&gt;</span> y</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>array([<span class="va">False</span>,  <span class="va">True</span>, <span class="va">False</span>])</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">&gt;=</span> y</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>array([<span class="va">False</span>,  <span class="va">True</span>,  <span class="va">True</span>])</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">==</span> y</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>array([<span class="va">False</span>, <span class="va">False</span>,  <span class="va">True</span>])</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">!=</span> y</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>array([ <span class="va">True</span>,  <span class="va">True</span>, <span class="va">False</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ベクトルとスカラーの二項演算もサポートされています。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> np.arange(<span class="dv">10</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>])</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">+</span> <span class="dv">3</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>array([ <span class="dv">3</span>,  <span class="dv">4</span>,  <span class="dv">5</span>,  <span class="dv">6</span>,  <span class="dv">7</span>,  <span class="dv">8</span>,  <span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">12</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記の場合、NumPyは、<code>x</code>と同じで全ての要素が3であるNumPy配列を作成し、それと<code>x</code>のベクトル演算を行います。つまり、本質的に次の演算が行われます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">+</span> np.array([<span class="dv">3</span>] <span class="op">*</span> <span class="dv">10</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>array([ <span class="dv">3</span>,  <span class="dv">4</span>,  <span class="dv">5</span>,  <span class="dv">6</span>,  <span class="dv">7</span>,  <span class="dv">8</span>,  <span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">12</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>より一般に、NumPyは、形状の異なる配列同士のベクトル演算を行うとき、小さい方の配列を変形して大きい方に形状を合わせてから演算を行います。これを<strong>ブロードキャスト</strong>と言います。</p>
+<p>1次元配列においてブロードキャストが可能なのは、一方がスカラーもしくは要素が一つしかないリストや配列の場合だけです。それ以外の場合はエラー(ValueError)が出ます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>])</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">+</span> np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>])</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>Traceback (most recent call last):</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  File <span class="st">"&lt;stdin&gt;"</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="pp">ValueError</span>: operands could <span class="kw">not</span> be broadcast together <span class="cf">with</span> shapes (<span class="dv">10</span>,) (<span class="dv">3</span>,) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>多次元配列のブロードキャストルールはもう少し複雑です。これについては、あとで行列を扱うときに説明します。</p>
+</section>
+<section id="インデクシングスライス" class="level2">
+<h2 class="anchored" data-anchor-id="インデクシングスライス">インデクシング・スライス</h2>
+<p>NumPyの配列は、Pythonのリストと同じように、インデックス参照およびスライス記法によって要素を取得したり、部分配列を取得できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>])</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="dv">5</span>]</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="dv">9</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="dv">3</span>:<span class="dv">7</span>]</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>])</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[:<span class="dv">6</span>]</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>])</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="dv">4</span>:]</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>])</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[::<span class="dv">2</span>]</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>])</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>代入文の左辺にインデックス参照やスライス記法を用いることもできますが、左辺と右辺の形状が違う場合はブロードキャストのルールが適用されます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>])</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="dv">4</span>] <span class="op">=</span> <span class="dv">100</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>array([  <span class="dv">0</span>,   <span class="dv">1</span>,   <span class="dv">2</span>,   <span class="dv">3</span>, <span class="dv">100</span>,   <span class="dv">5</span>,   <span class="dv">6</span>,   <span class="dv">7</span>,   <span class="dv">8</span>,   <span class="dv">9</span>])</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="dv">3</span>:<span class="dv">6</span>] <span class="op">=</span> [<span class="dv">300</span>,<span class="dv">400</span>,<span class="dv">500</span>]</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>array([  <span class="dv">0</span>,   <span class="dv">1</span>,   <span class="dv">2</span>, <span class="dv">300</span>, <span class="dv">400</span>, <span class="dv">500</span>,   <span class="dv">6</span>,   <span class="dv">7</span>,   <span class="dv">8</span>,   <span class="dv">9</span>])</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="dv">3</span>:<span class="dv">6</span>] <span class="op">=</span> np.array([<span class="dv">10</span>,<span class="dv">10</span>])</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>Traceback (most recent call last):</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>  File <span class="st">"&lt;stdin&gt;"</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="pp">ValueError</span>: could <span class="kw">not</span> broadcast <span class="bu">input</span> array <span class="im">from</span> shape (<span class="dv">2</span>,) into shape (<span class="dv">3</span>,)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記の最後の例では、3つの要素をもつスライスに2つしか要素を持たないベクトルを代入しようとしたため、エラーが出ました。</p>
+</section>
+<section id="ビュー" class="level2">
+<h2 class="anchored" data-anchor-id="ビュー">ビュー</h2>
+<p>実は、配列のスライスによって得られるものは、<strong>ビュー</strong>(view)というNumPy特有のオブジェクトです。ビューは始めて現れる概念だけでなく、理解していないと意図しないデータ操作をしてしまうことになりますので、少し丁寧に解説しておきます。</p>
+<p>たとえば次のようにして<code>x</code>のスライスを作って<code>y</code>に代入したとしましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> np.arange(<span class="dv">10</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> x[<span class="dv">2</span>:<span class="dv">8</span>:<span class="dv">2</span>]</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>])</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>NumPy配列は内部に、生の数値データが収められた配列を持っていることを思い出しましょう。上記のようにスライス記法で<code>y</code>を作成すると、<code>y</code>は<code>x</code>と異なるオブジェクトでありながら、数値データの配列は<code>x</code>と共有した状態になります。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/view.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>view</figcaption>
+</figure>
+</div>
+<p>これは次のようにして確かめることが出来ます。まず、<code>x</code>と<code>y</code>が異なるオブジェクトであることを確かめておきましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="dv">10</span>)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> x[<span class="dv">2</span>:<span class="dv">8</span>:<span class="dv">2</span>]</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"x:"</span>,x)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"y:"</span>,y)</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"x is y:"</span>,x <span class="kw">is</span> y)         <span class="co"># x is y?</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"x is at"</span>,<span class="bu">hex</span>(<span class="bu">id</span>(x)))     <span class="co"># xのアドレス</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"y is at"</span>,<span class="bu">hex</span>(<span class="bu">id</span>(y)))     <span class="co"># yのアドレス</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>x: [<span class="dv">0</span> <span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span> <span class="dv">4</span> <span class="dv">5</span> <span class="dv">6</span> <span class="dv">7</span> <span class="dv">8</span> <span class="dv">9</span>]</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>y: [<span class="dv">2</span> <span class="dv">4</span> <span class="dv">6</span>]</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>x <span class="kw">is</span> y: <span class="va">False</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>x <span class="kw">is</span> at <span class="bn">0x7f04b60c5e70</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>y <span class="kw">is</span> at <span class="bn">0x7f04fc0a8cf0</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>NumPy配列は、内部の数値データ配列の情報を直接取得することができるようになっています。この情報は、<code>__array_interface__</code>という属性に辞書の形で収められています。これを出力してみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"x:"</span>)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key,value <span class="kw">in</span> x.__array_interface__.items():</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">' '</span>,key,value)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"y:"</span>)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key,value <span class="kw">in</span> y.__array_interface__.items():</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">' '</span>,key,value)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"x:"</span>)...</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>x:</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  data (<span class="dv">38235568</span>, <span class="va">False</span>)</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>  strides <span class="va">None</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>  descr [(<span class="st">''</span>, <span class="st">'&lt;i8'</span>)]</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>  typestr <span class="op">&lt;</span>i8</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>  shape (<span class="dv">10</span>,)</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>  version <span class="dv">3</span></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>y:</span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>  data (<span class="dv">38235584</span>, <span class="va">False</span>)</span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>  strides (<span class="dv">16</span>,)</span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>  descr [(<span class="st">''</span>, <span class="st">'&lt;i8'</span>)]</span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>  typestr <span class="op">&lt;</span>i8</span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>  shape (<span class="dv">3</span>,)</span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>  version <span class="dv">3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記のように<code>__array_interface__</code>属性は6個のエントリーをもつ辞書ですが、特に重要なのは以下のエントリーです。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>キー</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>data</code></td>
+<td><code>(データのアドレス,読み出し属性)</code></td>
+</tr>
+<tr class="even">
+<td><code>strides</code></td>
+<td>ストライド</td>
+</tr>
+<tr class="odd">
+<td><code>typestr</code></td>
+<td>数値データの型</td>
+</tr>
+<tr class="even">
+<td><code>shape</code></td>
+<td>配列の形状</td>
+</tr>
+</tbody>
+</table>
+<p><code>data</code>はタプルですが、その１つめの要素はデータ配列のアドレスであり、<code>x</code>と<code>y</code>のアドレスがきっかり16バイト違うことに注目してください。読み出し属性は、<code>True</code>なら読み出し専用、<code>False</code>なら書き込みもできます。</p>
+<p><code>np.int64</code>型のデータは一つの数値で8バイト占有しますので、上記の結果は、<code>y</code>のデータは、<code>x</code>のデータの2区画先から始まっていることを表しています。</p>
+<p>次に<code>strides</code>ですが、これは、<strong>ストライド</strong>(歩幅)と言って、ビューにおいて隣り合う数値データの間のアドレスの間隔をバイトで表したものです。<code>x</code>のほうはビューではないので<code>None</code>になっています(数値データは隙間なくメモリ上にならんでいます)。一方<code>y</code>のほうは、ストライドが16バイトですので、数値データの間隔は2区画分、つまり一つとばしで並んでいることが分かります。</p>
+<p><code>typestr</code>は数値の型を表す文字列ですが、最初の文字<code>&lt;</code>は、リトルエンディアンを表します。もしここが<code>&gt;</code>になっていればビッグエンディアンです。<code>i8</code>は、8バイト(64ビット)整数(integer)を表します。もし浮動小数点数ならば<code>i</code>の代わりに<code>f</code>(floating point number)と表示されます。</p>
+<p>最後に<code>shape</code>ですが、これは要素の数ですので、特に説明はいらないでしょう。</p>
+<p>このように、<code>x</code>と<code>y</code>は違うNumPy配列オブジェクトでありながら、データを共有していることが分かります。２つの配列オブジェクトがメモリを共有しているかどうかは、<code>numpy</code>モジュールの<code>shares_memory</code>関数で調べることができます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> np.shares_memory(x,y)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように、<code>x</code>とそのビューである<code>y</code>はデータを共有しているので、<code>y</code>の変更は<code>x</code>に影響を及ぼします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y[<span class="dv">0</span>] <span class="op">=</span> <span class="dv">100</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>array([  <span class="dv">0</span>,   <span class="dv">1</span>, <span class="dv">100</span>,   <span class="dv">3</span>,   <span class="dv">4</span>,   <span class="dv">5</span>,   <span class="dv">6</span>,   <span class="dv">7</span>,   <span class="dv">8</span>,   <span class="dv">9</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>なお、ビューの親となっている元のオブジェクトはビューの<code>base</code>という属性に格納されています。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y.base</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>array([  <span class="dv">0</span>,   <span class="dv">1</span>, <span class="dv">100</span>,   <span class="dv">3</span>,   <span class="dv">4</span>,   <span class="dv">5</span>,   <span class="dv">6</span>,   <span class="dv">7</span>,   <span class="dv">8</span>,   <span class="dv">9</span>])</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y.base <span class="kw">is</span> x</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>またビューのストライドは、<code>strides</code>という属性にも格納されています。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> np.arange(<span class="dv">10</span>)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> x[<span class="dv">2</span>:<span class="dv">8</span>:<span class="dv">2</span>]</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y.strides</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>(<span class="dv">16</span>,)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="乱数の生成" class="level2">
+<h2 class="anchored" data-anchor-id="乱数の生成">乱数の生成</h2>
+<p>NumPyには<code>random</code>という乱数発生用のモジュールが含まれています。<code>random</code>には、正規乱数や一様乱数など、様々な種類の乱数を生成する関数が定義されており、シミュレーションに重宝しますので、是非活用できるようになってください。以下、それらのごく一部を紹介します。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>関数</th>
+<th>分布</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>normal</code></td>
+<td>正規分布</td>
+</tr>
+<tr class="even">
+<td><code>random</code></td>
+<td>区間<code>[0,1)</code>の一様分布</td>
+</tr>
+<tr class="odd">
+<td><code>uniform</code></td>
+<td>任意区間の一様分布</td>
+</tr>
+<tr class="even">
+<td><code>poisson</code></td>
+<td>ポワソン分布</td>
+</tr>
+<tr class="odd">
+<td><code>randint</code></td>
+<td>離散一様分布</td>
+</tr>
+<tr class="even">
+<td><code>gumbel</code></td>
+<td>ガンベル分布</td>
+</tr>
+</tbody>
+</table>
+<p>その他の乱数生成関数や個々の関数の詳しい使い方については、NumPy<a href="https://numpy.org/doc/stable/reference/random/index.html?highlight=random#module-numpy.random">リファレンス</a>を参照してください。</p>
+<p>例えば、標準正規分布からサイズ20のサンプルを取得するには、次のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> np.random.normal(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">20</span>)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>array([ <span class="fl">0.09725553</span>,  <span class="fl">2.00971439</span>, <span class="op">-</span><span class="fl">0.58210648</span>,  <span class="fl">1.54395503</span>,  <span class="fl">0.45286862</span>,  <span class="fl">1.11726181</span>, <span class="op">-</span><span class="fl">0.4284753</span>,  <span class="fl">0.54515861</span>, <span class="op">-</span><span class="fl">0.87370196</span>,  <span class="fl">0.01872232</span>, <span class="op">-</span><span class="fl">0.71166122</span>, <span class="op">-</span><span class="fl">0.91043368</span>, <span class="fl">1.03194197</span>,  <span class="fl">1.17382845</span>, <span class="op">-</span><span class="fl">0.11945387</span>, <span class="op">-</span><span class="fl">0.6825217</span> , <span class="fl">0.62068263</span>,  <span class="fl">0.22084924</span>, <span class="op">-</span><span class="fl">0.74841417</span>, <span class="op">-</span><span class="fl">0.65386876</span>])</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">len</span>(x)</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="dv">20</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>normal</code>の第1引数は期待値、第2引数は標準偏差、第3引数はサンプルサイズです。</p>
+<p>なお、<strong>乱数のシード値</strong>を具体的に与えない場合は、Pythonを起動するごとに異なった乱数列が得られます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> np.random.normal(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">5</span>)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>array([<span class="op">-</span><span class="fl">1.16956415</span>, <span class="op">-</span><span class="fl">1.10909057</span>,  <span class="fl">1.11722481</span>,  <span class="fl">0.65070696</span>,  <span class="fl">0.66218606</span>])</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> np.random.normal(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">5</span>)</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>array([ <span class="fl">0.81478851</span>, <span class="op">-</span><span class="fl">1.3194389</span> ,  <span class="fl">0.91750309</span>, <span class="op">-</span><span class="fl">0.41069239</span>, <span class="op">-</span><span class="fl">0.52968867</span>])</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> np.random.normal(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">5</span>)</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>array([<span class="op">-</span><span class="fl">0.29362213</span>, <span class="op">-</span><span class="fl">0.82283927</span>,  <span class="fl">1.99318359</span>, <span class="op">-</span><span class="fl">0.62032484</span>,  <span class="fl">0.12263955</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>毎回必ず決まった乱数列がほしい場合は、以下のようにして<a href="https://numpy.org/doc/stable/reference/random/generator.html"><code>default_rng</code>関数</a>を用いて新しい<strong>乱数ジェネレータオブジェクト</strong>を作成します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> rng <span class="op">=</span> np.random.default_rng(<span class="dv">123</span>)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(rng)</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span><span class="kw">class</span> <span class="st">'numpy.random._generator.Generator'</span><span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>default_rng</code>に与える引数は整数ならば何でも構いません。戻り値は乱数ジェネレータオブジェクトであり、これは<code>random</code>モジュールと同じように使うことができます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> rng.normal(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">10</span>)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>array([<span class="op">-</span><span class="fl">0.98912135</span>, <span class="op">-</span><span class="fl">0.36778665</span>,  <span class="fl">1.28792526</span>,  <span class="fl">0.19397442</span>,  <span class="fl">0.9202309</span>, <span class="fl">0.57710379</span>, <span class="op">-</span><span class="fl">0.63646365</span>,  <span class="fl">0.54195222</span>, <span class="op">-</span><span class="fl">0.31659545</span>, <span class="op">-</span><span class="fl">0.32238912</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>なお、配列には<code>round</code>という<strong>丸め</strong>のためのメソッドが備わっています。引数には小数点以下に残す桁数を指定します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> rng.normal(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">10</span>)</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>array([ <span class="fl">0.09716732</span>, <span class="op">-</span><span class="fl">1.52593041</span>,  <span class="fl">1.1921661</span> , <span class="op">-</span><span class="fl">0.67108968</span>,  <span class="fl">1.00026942</span>, <span class="fl">0.13632112</span>,  <span class="fl">1.53203308</span>, <span class="op">-</span><span class="fl">0.65996941</span>, <span class="op">-</span><span class="fl">0.31179486</span>,  <span class="fl">0.33776913</span>])</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x.<span class="bu">round</span>(<span class="dv">3</span>)    <span class="co"># 小数点以下3桁に丸める</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>array([ <span class="fl">0.097</span>, <span class="op">-</span><span class="fl">1.526</span>,  <span class="fl">1.192</span>, <span class="op">-</span><span class="fl">0.671</span>,  <span class="fl">1.</span>   ,  <span class="fl">0.136</span>,  <span class="fl">1.532</span>, <span class="op">-</span><span class="fl">0.66</span>, <span class="op">-</span><span class="fl">0.312</span>,  <span class="fl">0.338</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="記述統計量" class="level2">
+<h2 class="anchored" data-anchor-id="記述統計量">記述統計量</h2>
+<p>NumPy配列には、要素の平均や分散などの記述統計量を計算する関数やメソッドが標準で備わっています。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>メソッド</th>
+<th>統計量</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>mean</code></td>
+<td>平均</td>
+</tr>
+<tr class="even">
+<td><code>var</code></td>
+<td>分散</td>
+</tr>
+<tr class="odd">
+<td><code>std</code></td>
+<td>標準偏差</td>
+</tr>
+<tr class="even">
+<td><code>sum</code></td>
+<td>総和</td>
+</tr>
+</tbody>
+</table>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> np.random.normal(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">10</span>)</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x.mean().<span class="bu">round</span>(<span class="dv">3</span>)</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="fl">0.049</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x.<span class="bu">sum</span>().<span class="bu">round</span>(<span class="dv">3</span>)</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="fl">0.495</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x.var().<span class="bu">round</span>(<span class="dv">3</span>)</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a><span class="fl">1.292</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x.std().<span class="bu">round</span>(<span class="dv">3</span>)</span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a><span class="fl">1.137</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ただし、<code>arr</code>を配列とすると、<code>arr.var()</code>はデフォルトでは平均との差の二乗和をサンプルサイズ<code>len(arr)</code>で割ったものになるので注意してください(<a href="https://numpy.org/doc/stable/reference/generated/numpy.var.html#numpy.var">varのマニュアル</a>)。不偏分散がほしいときは、オプション引数<code>ddof</code>に1を設定する必要があります。<code>ddof</code>はDelta Degrees of Freedom(自由度の差分)であり、自由度は<code>len(arr)-ddof</code>に設定されます(分散=平均との差の二乗和/自由度です)。標準偏差を計算する<code>std</code>についても同様です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x.var(ddof<span class="op">=</span><span class="dv">1</span>).<span class="bu">round</span>(<span class="dv">3</span>)  <span class="co"># 不偏分散</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="fl">1.435</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x.std(ddof<span class="op">=</span><span class="dv">1</span>).<span class="bu">round</span>(<span class="dv">3</span>)  <span class="co"># 不偏分散の平方根</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="fl">1.198</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> np.sqrt(x.var(ddof<span class="op">=</span><span class="dv">1</span>)).<span class="bu">round</span>(<span class="dv">3</span>)</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="fl">1.198</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>なお、<code>sqrt</code>関数は平方根を計算するNumPyの関数です。</p>
+</section>
+<section id="線形モデルからのサンプリング" class="level2">
+<h2 class="anchored" data-anchor-id="線形モデルからのサンプリング">線形モデルからのサンプリング</h2>
+<p>それではいよいよ、線形モデルからサンプリングを行います。この線形モデルでは、<code>x</code>という独立変数と、<code>y</code>という従属変数があるとします。次のようなモデルを考えましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> b0 <span class="op">+</span> b1 <span class="op">*</span> x <span class="op">+</span> e</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで<code>b0</code>が定数項(切片)、<code>b1</code>は傾き、<code>e</code>は正規分布に従う期待値0の乱数とします。以下では、このモデルからサンプリングによって得られた擬似的データに単回帰分析を行い、<code>b0</code>および<code>b1</code>の推定値を求めます。なお、<code>b1</code>の推定値がいわゆる回帰係数となります。</p>
+<p>回帰分析において独立変数は定数として扱われますので、分布は何でも構いませんが、ここでは期待値8、標準偏差2の正規分布を仮定しましょう。また、乱数項の標準偏差は3であると仮定します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.random.normal(<span class="dv">8</span>,<span class="dv">2</span>,<span class="dv">100</span>)</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>e <span class="op">=</span> np.random.normal(<span class="dv">0</span>,<span class="dv">3</span>,<span class="dv">100</span>)</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> x <span class="op">+</span> e</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これで独立変数値の列<code>x</code>、乱数項の列<code>e</code>、従属変数値の列<code>y</code>が全て配列として得られました。<code>y</code>を求めるときにブロードキャストを利用して定数項とベクトルの演算を行ったことに注意してください。</p>
+</section>
+<section id="単回帰分析" class="level2">
+<h2 class="anchored" data-anchor-id="単回帰分析">単回帰分析</h2>
+<p>単回帰分析には、SciPyモジュールを使います。SciPyには<code>stats</code>という統計モジュールが含まれていますので、それをインポートしましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記の<code>from-import</code>命令では、<code>scipy</code>モジュールの<code>stats</code>というサブモジュールだけを読み込んでいます。なお、一般に次のように書くことで、モジュールから、特定のサブモジュールや関数、属性(モジュール内のグローバル名前空間で定義されている変数)だけを読み込むことができます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> module <span class="im">import</span> sub</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで<code>sub</code>はサブモジュールあるいは関数名や属性名です。</p>
+<p>単回帰分析には、<code>stats</code>モジュール内の<code>linregress</code>関数を使います。第1引数が独立変数で、第2引数が従属変数です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>res <span class="op">=</span> stats.linregress(x,y)</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="bu">type</span>(res)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>scipy.stats._stats_mstats_common.LinregressResult</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記のように、結果は<code>LinregressionResult</code>型のオブジェクトとして返されます。このオブジェクトは、以下の属性を持っています。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>属性</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>slope</code></td>
+<td>回帰係数のOLS推定値</td>
+</tr>
+<tr class="even">
+<td><code>stderr</code></td>
+<td><code>slope</code>の標準誤差</td>
+</tr>
+<tr class="odd">
+<td><code>pvalue</code></td>
+<td><code>slope</code>のP値(両側t検定)</td>
+</tr>
+<tr class="even">
+<td><code>rvalue</code></td>
+<td>相関係数R</td>
+</tr>
+<tr class="odd">
+<td><code>intercept</code></td>
+<td>切片のOLS推定値</td>
+</tr>
+<tr class="even">
+<td><code>intercept_stderr</code></td>
+<td><code>intercept</code>の標準誤差</td>
+</tr>
+</tbody>
+</table>
+<p>これらを順番に表示してみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>coeffs <span class="op">=</span> [<span class="st">'slope'</span>,<span class="st">'stderr'</span>,<span class="st">'pvalue'</span>,<span class="st">'rvalue'</span>,<span class="st">'intercept'</span>,<span class="st">'intercept_stderr'</span>]</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> cf <span class="kw">in</span> coeffs:</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>    value <span class="op">=</span> <span class="bu">round</span>(<span class="bu">eval</span>(<span class="st">"res."</span> <span class="op">+</span> cf),<span class="dv">3</span>)</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(cf <span class="op">+</span> <span class="st">": "</span>,value)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>slope:  <span class="fl">2.083</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>stderr:  <span class="fl">0.177</span></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>pvalue:  <span class="fl">0.0</span></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>rvalue:  <span class="fl">0.765</span></span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>intercept:  <span class="fl">1.058</span></span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>intercept_stderr:  <span class="fl">1.425</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記のように、傾きや切片が概ね正しく推定されています。また傾きのP値はほぼ0ですので、傾きが統計的に有意に0から離れていることが分かります。</p>
+<p>なお、linregressが計算するP値は両側検定のP値ですので、片側検定の場合はその半分の値となります。</p>
+<p>なお、上記のモデル、疑似データ、回帰直線をプロットすると、以下の図のようになります。オレンジの線が真のモデル、灰色の線が推定された回帰直線です。</p>
+<p>こうした図を作成する方法については、次回の講義で取り扱います。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/linregress.png" class="img-fluid figure-img"></p>
+<figcaption>linregress</figcaption>
+</figure>
+</div>
+</section>
+<section id="行列の作成" class="level2">
+<h2 class="anchored" data-anchor-id="行列の作成">行列の作成</h2>
+<p>初歩的なデータ解析においても重要になる2次元配列について、少し取り扱っておきたいと思います。</p>
+<p>1次元配列をベクトルであるとすれば、2次元配列は行列です。(<code>matrix</code>という行列を表す特別な型もありますが、本稿では扱いません。)行列を作るには、まず行列のもとになる入れ子になったリストを作成します。</p>
+<p>下図のような行列を作成するとします。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/matrix.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>matrix</figcaption>
+</figure>
+</div>
+<p>この場合、次のような入れ子のリストを作成します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>arr_like <span class="op">=</span> [[<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>],[<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>],[<span class="dv">6</span>,<span class="dv">7</span>,<span class="dv">8</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このリストにおいて、第1要素が行列の1行目、第2要素が2行目、第3要素が3行目に相当します。この<code>arr_like</code>リストをNumPyの<code>array</code>関数に渡すことにより、行列が作成されます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>arr2d <span class="op">=</span> np.array(arr_like)</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>arr2d</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>array([[<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>],</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>       [<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>],</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>       [<span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>]])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>もう一つの作り方は、1次元配列を作ってから<code>reshape</code>メソッドによって行列化することです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>arr_nums <span class="op">=</span> np.arange(<span class="dv">9</span>).reshape((<span class="dv">3</span>,<span class="dv">3</span>))</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>arr_nums</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで<code>reshape</code>の引数には、<code>(行数、列数)</code>のタプルを与えます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>array([[<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>],</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>       [<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>],</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>       [<span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>]])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="行列のインデクシング" class="level2">
+<h2 class="anchored" data-anchor-id="行列のインデクシング">行列のインデクシング</h2>
+<p>配列の要素にアクセスするときは、行・列のインデックスをコンマでつないで指定します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 1行2列の要素</span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr2d[<span class="dv">1</span>,<span class="dv">2</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>1次元のときと同じように、スライス記法も使用可能です。たとえば、0～1行目、1～2列目の部分行列を取り出したいときは、次のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>arr2d[<span class="dv">0</span>:<span class="dv">2</span>,<span class="dv">1</span>:<span class="dv">3</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>array([[<span class="dv">1</span>, <span class="dv">2</span>],</span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>       [<span class="dv">4</span>, <span class="dv">5</span>]])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ただし、スライスで得られるのは、1次元配列の場合と同様コピーではなくビューであることに注意してください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>arr2d_view <span class="op">=</span> arr2d[<span class="dv">0</span>:<span class="dv">2</span>,<span class="dv">1</span>:<span class="dv">3</span>]</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>np.shares_memory(arr2d_view,arr2d)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>インデックスを1つだけ指定すると、特定の行を取得できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>arr2d[<span class="dv">1</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>列を取得するときは行をスライスする必要があります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>arr2d[:,<span class="dv">1</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>array([<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">7</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ただしこのようにすると、戻されるビューは次元が落ちてしまいます。もとの配列の次元を維持するには、列もスライスにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>arr2d[:,<span class="dv">1</span>:<span class="dv">2</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>array([[<span class="dv">1</span>],</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>       [<span class="dv">4</span>],</span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>       [<span class="dv">7</span>]])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="行列演算" class="level2">
+<h2 class="anchored" data-anchor-id="行列演算">行列演算</h2>
+<p>NumPyの行列には、通常の線形代数で用いるような行列演算がサポートされています。</p>
+<p>二つの行列の積をとるときは、演算子<code>@</code>を使います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>arr1 <span class="op">=</span> np.array([[<span class="dv">1</span>,<span class="dv">2</span>],[<span class="dv">3</span>,<span class="dv">4</span>]])</span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>arr2 <span class="op">=</span> np.array([[<span class="dv">1</span>,<span class="dv">3</span>],[<span class="dv">2</span>,<span class="dv">4</span>]])</span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a>arr3 <span class="op">=</span> arr1 <span class="op">@</span> arr2</span>
+<span id="cb57-5"><a href="#cb57-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"arr1:"</span>)</span>
+<span id="cb57-6"><a href="#cb57-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr1)</span>
+<span id="cb57-7"><a href="#cb57-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">arr2:"</span>)</span>
+<span id="cb57-8"><a href="#cb57-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr2)</span>
+<span id="cb57-9"><a href="#cb57-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">arr1 @ arr2:"</span>)</span>
+<span id="cb57-10"><a href="#cb57-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr3)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb58"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>arr1:</span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">1</span> <span class="dv">2</span>]</span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a> [<span class="dv">3</span> <span class="dv">4</span>]]</span>
+<span id="cb58-6"><a href="#cb58-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-7"><a href="#cb58-7" aria-hidden="true" tabindex="-1"></a>arr2:</span>
+<span id="cb58-8"><a href="#cb58-8" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">1</span> <span class="dv">3</span>]</span>
+<span id="cb58-9"><a href="#cb58-9" aria-hidden="true" tabindex="-1"></a> [<span class="dv">2</span> <span class="dv">4</span>]]</span>
+<span id="cb58-10"><a href="#cb58-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-11"><a href="#cb58-11" aria-hidden="true" tabindex="-1"></a>arr1 <span class="op">@</span> arr2:</span>
+<span id="cb58-12"><a href="#cb58-12" aria-hidden="true" tabindex="-1"></a>[[ <span class="dv">5</span> <span class="dv">11</span>]</span>
+<span id="cb58-13"><a href="#cb58-13" aria-hidden="true" tabindex="-1"></a> [<span class="dv">11</span> <span class="dv">25</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>行列とベクトルの間の積についても、<code>@</code>が使えます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>vec1 <span class="op">=</span> np.array([<span class="op">-</span><span class="dv">1</span>,<span class="dv">5</span>])</span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>vec2 <span class="op">=</span> arr1 <span class="op">@</span> vec1</span>
+<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"arr1:"</span>)</span>
+<span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr1)</span>
+<span id="cb59-6"><a href="#cb59-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">vec1:"</span>)</span>
+<span id="cb59-7"><a href="#cb59-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(vec1)</span>
+<span id="cb59-8"><a href="#cb59-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">arr1 @ vec2:"</span>)</span>
+<span id="cb59-9"><a href="#cb59-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(vec2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>arr1:</span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">1</span> <span class="dv">2</span>]</span>
+<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a> [<span class="dv">3</span> <span class="dv">4</span>]]</span>
+<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-6"><a href="#cb60-6" aria-hidden="true" tabindex="-1"></a>vec1:</span>
+<span id="cb60-7"><a href="#cb60-7" aria-hidden="true" tabindex="-1"></a>[<span class="op">-</span><span class="dv">1</span>  <span class="dv">5</span>]</span>
+<span id="cb60-8"><a href="#cb60-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-9"><a href="#cb60-9" aria-hidden="true" tabindex="-1"></a>arr1 <span class="op">@</span> vec2:</span>
+<span id="cb60-10"><a href="#cb60-10" aria-hidden="true" tabindex="-1"></a>[ <span class="dv">9</span> <span class="dv">17</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>行列の転置は、<code>transpose</code>メソッドもしくは<code>T</code>属性を用いることができます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"arr1:"</span>)</span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr1)</span>
+<span id="cb61-4"><a href="#cb61-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">arr1.T"</span>)</span>
+<span id="cb61-5"><a href="#cb61-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr1.T)</span>
+<span id="cb61-6"><a href="#cb61-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">arr1.transpose()"</span>)</span>
+<span id="cb61-7"><a href="#cb61-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr1.transpose())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>arr1:</span>
+<span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">1</span> <span class="dv">2</span>]</span>
+<span id="cb62-5"><a href="#cb62-5" aria-hidden="true" tabindex="-1"></a> [<span class="dv">3</span> <span class="dv">4</span>]]</span>
+<span id="cb62-6"><a href="#cb62-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-7"><a href="#cb62-7" aria-hidden="true" tabindex="-1"></a>arr1.T</span>
+<span id="cb62-8"><a href="#cb62-8" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">1</span> <span class="dv">3</span>]</span>
+<span id="cb62-9"><a href="#cb62-9" aria-hidden="true" tabindex="-1"></a> [<span class="dv">2</span> <span class="dv">4</span>]]</span>
+<span id="cb62-10"><a href="#cb62-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-11"><a href="#cb62-11" aria-hidden="true" tabindex="-1"></a>arr1.transpose()</span>
+<span id="cb62-12"><a href="#cb62-12" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">1</span> <span class="dv">3</span>]</span>
+<span id="cb62-13"><a href="#cb62-13" aria-hidden="true" tabindex="-1"></a> [<span class="dv">2</span> <span class="dv">4</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="行列の記述統計量" class="level2">
+<h2 class="anchored" data-anchor-id="行列の記述統計量">行列の記述統計量</h2>
+<p>行列についても、記述統計量を計算するメソッドをそのまま使うことができます。たとえば、全ての要素の平均は<code>mean</code>メソッドによって得られます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>arr <span class="op">=</span> np.arange(<span class="dv">9</span>).reshape((<span class="dv">3</span>,<span class="dv">3</span>))</span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"arr:"</span>)</span>
+<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr)</span>
+<span id="cb63-5"><a href="#cb63-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">arr.mean():"</span>)</span>
+<span id="cb63-6"><a href="#cb63-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr.mean())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>行ごとの平均、列ごとの平均をとるときは、<code>axis</code>引数を設定します。このとき、<code>axis=0</code>で行方向の平均(つまり列ごとの平均)、<code>axis=1</code>で列方向の平均(つまり行ごとの平均)を計算できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>arr <span class="op">=</span> np.arange(<span class="dv">9</span>).reshape((<span class="dv">3</span>,<span class="dv">3</span>))</span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"arr:"</span>)</span>
+<span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr)</span>
+<span id="cb64-5"><a href="#cb64-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">arr.mean(axis=0):"</span>)</span>
+<span id="cb64-6"><a href="#cb64-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr.mean(axis<span class="op">=</span><span class="dv">0</span>))</span>
+<span id="cb64-7"><a href="#cb64-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">arr.mean(axis=1):"</span>)</span>
+<span id="cb64-8"><a href="#cb64-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr.mean(axis<span class="op">=</span><span class="dv">1</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>arr:</span>
+<span id="cb65-4"><a href="#cb65-4" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">0</span> <span class="dv">1</span> <span class="dv">2</span>]</span>
+<span id="cb65-5"><a href="#cb65-5" aria-hidden="true" tabindex="-1"></a> [<span class="dv">3</span> <span class="dv">4</span> <span class="dv">5</span>]</span>
+<span id="cb65-6"><a href="#cb65-6" aria-hidden="true" tabindex="-1"></a> [<span class="dv">6</span> <span class="dv">7</span> <span class="dv">8</span>]]</span>
+<span id="cb65-7"><a href="#cb65-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-8"><a href="#cb65-8" aria-hidden="true" tabindex="-1"></a>arr.mean(axis<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb65-9"><a href="#cb65-9" aria-hidden="true" tabindex="-1"></a>[<span class="fl">3.</span> <span class="fl">4.</span> <span class="fl">5.</span>]</span>
+<span id="cb65-10"><a href="#cb65-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-11"><a href="#cb65-11" aria-hidden="true" tabindex="-1"></a>arr.mean(axis<span class="op">=</span><span class="dv">1</span>):</span>
+<span id="cb65-12"><a href="#cb65-12" aria-hidden="true" tabindex="-1"></a>[<span class="fl">1.</span> <span class="fl">4.</span> <span class="fl">7.</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>axis</code>の指定の仕方がRの<code>margin</code>とは逆なので気を付けてください。Rの<code>margin=1</code>がNumPy行列の<code>axis=1</code>、<code>margin=2</code>が<code>axis=0</code>に相当します。</p>
+<p><code>axis</code>引数は、他の統計量関連のメソッド(<code>sum</code>、<code>var</code>、<code>std</code>など)でも利用可能ですので、調べてみてください。</p>
+</section>
+<section id="行列のブロードキャスト" class="level2">
+<h2 class="anchored" data-anchor-id="行列のブロードキャスト">行列のブロードキャスト</h2>
+<p>行列においては、ブロードキャストにより、行列とベクトル、行列とスカラーの演算が可能になります。</p>
+<p>行列とスカラーの演算については、ベクトルの場合と同じで、スカラーの方が行列と同じ形状に変換されます。</p>
+<p>一方、行列とベクトルの演算については、ベクトルは、行列の行と同じ形状もしくは列と同じ形状をもつ必要があります。</p>
+<p>たとえば、次のように、ベクトルが行列の行と同じ形状をもつ場合、NumPyは当のベクトルを行方向に複製して行列にキャスト(型変換)します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>arr <span class="op">=</span> np.array([[<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>],[<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>]])</span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a>vec <span class="op">=</span> np.array([<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>])</span>
+<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"arr:"</span>)</span>
+<span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr)</span>
+<span id="cb66-6"><a href="#cb66-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">vec:"</span>)</span>
+<span id="cb66-7"><a href="#cb66-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(vec)</span>
+<span id="cb66-8"><a href="#cb66-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">arr + vec:"</span>)</span>
+<span id="cb66-9"><a href="#cb66-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr <span class="op">+</span> vec)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>同様に、ベクトルが行列の列と同じ形状を持つ場合は、列方向に複製することで行列にキャストされます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>arr <span class="op">=</span> np.array([[<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>],[<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>]])</span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>vec <span class="op">=</span> np.array([[<span class="dv">2</span>],[<span class="dv">2</span>]])</span>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"arr:"</span>)</span>
+<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr)</span>
+<span id="cb67-6"><a href="#cb67-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">vec:"</span>)</span>
+<span id="cb67-7"><a href="#cb67-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(vec)</span>
+<span id="cb67-8"><a href="#cb67-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">arr + vec:"</span>)</span>
+<span id="cb67-9"><a href="#cb67-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr <span class="op">+</span> vec)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>arr:</span>
+<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]</span>
+<span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a> [<span class="dv">4</span> <span class="dv">5</span> <span class="dv">6</span>]]</span>
+<span id="cb68-5"><a href="#cb68-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-6"><a href="#cb68-6" aria-hidden="true" tabindex="-1"></a>vec:</span>
+<span id="cb68-7"><a href="#cb68-7" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">2</span>], [<span class="dv">2</span>]]</span>
+<span id="cb68-8"><a href="#cb68-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-9"><a href="#cb68-9" aria-hidden="true" tabindex="-1"></a>arr <span class="op">+</span> vec:</span>
+<span id="cb68-10"><a href="#cb68-10" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">3</span> <span class="dv">4</span> <span class="dv">5</span>]</span>
+<span id="cb68-11"><a href="#cb68-11" aria-hidden="true" tabindex="-1"></a> [<span class="dv">6</span> <span class="dv">7</span> <span class="dv">8</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="行列のデータ構造" class="level2">
+<h2 class="anchored" data-anchor-id="行列のデータ構造">行列のデータ構造</h2>
+<p>行列は、概念的には表の形をしていますが、メモリに物理的に格納される際には、1次元の配列として格納されています。</p>
+<p>この事実は、行列のスライスをとってビューを作成してみると良く分かります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>arr_like <span class="op">=</span> [[<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>],[<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>],[<span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">9</span>]]</span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a>arr <span class="op">=</span> np.array(arr_like)</span>
+<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a>arr2 <span class="op">=</span> arr[<span class="dv">0</span>:<span class="dv">2</span>,<span class="dv">0</span>:<span class="dv">2</span>]</span>
+<span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-6"><a href="#cb69-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Original:"</span>)</span>
+<span id="cb69-7"><a href="#cb69-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr)</span>
+<span id="cb69-8"><a href="#cb69-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span>
+<span id="cb69-9"><a href="#cb69-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-10"><a href="#cb69-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key,value <span class="kw">in</span> arr.__array_interface__.items():</span>
+<span id="cb69-11"><a href="#cb69-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(key,value)</span>
+<span id="cb69-12"><a href="#cb69-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-13"><a href="#cb69-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">View:"</span>)</span>
+<span id="cb69-14"><a href="#cb69-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(arr2)</span>
+<span id="cb69-15"><a href="#cb69-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span>
+<span id="cb69-16"><a href="#cb69-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-17"><a href="#cb69-17" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key,value <span class="kw">in</span> arr2.__array_interface__.items():</span>
+<span id="cb69-18"><a href="#cb69-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(key,value)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb70"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>Original:</span>
+<span id="cb70-4"><a href="#cb70-4" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">0</span> <span class="dv">1</span> <span class="dv">2</span>]</span>
+<span id="cb70-5"><a href="#cb70-5" aria-hidden="true" tabindex="-1"></a> [<span class="dv">3</span> <span class="dv">4</span> <span class="dv">5</span>]</span>
+<span id="cb70-6"><a href="#cb70-6" aria-hidden="true" tabindex="-1"></a> [<span class="dv">6</span> <span class="dv">7</span> <span class="dv">8</span>]]</span>
+<span id="cb70-7"><a href="#cb70-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-8"><a href="#cb70-8" aria-hidden="true" tabindex="-1"></a>data (<span class="dv">1882324077584</span>, <span class="va">False</span>)</span>
+<span id="cb70-9"><a href="#cb70-9" aria-hidden="true" tabindex="-1"></a>strides <span class="va">None</span></span>
+<span id="cb70-10"><a href="#cb70-10" aria-hidden="true" tabindex="-1"></a>descr [(<span class="st">''</span>, <span class="st">'&lt;i4'</span>)]</span>
+<span id="cb70-11"><a href="#cb70-11" aria-hidden="true" tabindex="-1"></a>typestr <span class="op">&lt;</span>i4</span>
+<span id="cb70-12"><a href="#cb70-12" aria-hidden="true" tabindex="-1"></a>shape (<span class="dv">3</span>, <span class="dv">3</span>)</span>
+<span id="cb70-13"><a href="#cb70-13" aria-hidden="true" tabindex="-1"></a>version <span class="dv">3</span></span>
+<span id="cb70-14"><a href="#cb70-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-15"><a href="#cb70-15" aria-hidden="true" tabindex="-1"></a>View:</span>
+<span id="cb70-16"><a href="#cb70-16" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">0</span> <span class="dv">1</span>]</span>
+<span id="cb70-17"><a href="#cb70-17" aria-hidden="true" tabindex="-1"></a> [<span class="dv">3</span> <span class="dv">4</span>]]</span>
+<span id="cb70-18"><a href="#cb70-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-19"><a href="#cb70-19" aria-hidden="true" tabindex="-1"></a>data (<span class="dv">1882324077584</span>, <span class="va">False</span>)</span>
+<span id="cb70-20"><a href="#cb70-20" aria-hidden="true" tabindex="-1"></a>strides (<span class="dv">12</span>, <span class="dv">4</span>)</span>
+<span id="cb70-21"><a href="#cb70-21" aria-hidden="true" tabindex="-1"></a>descr [(<span class="st">''</span>, <span class="st">'&lt;i4'</span>)]</span>
+<span id="cb70-22"><a href="#cb70-22" aria-hidden="true" tabindex="-1"></a>typestr <span class="op">&lt;</span>i4</span>
+<span id="cb70-23"><a href="#cb70-23" aria-hidden="true" tabindex="-1"></a>shape (<span class="dv">2</span>, <span class="dv">2</span>)</span>
+<span id="cb70-24"><a href="#cb70-24" aria-hidden="true" tabindex="-1"></a>version <span class="dv">3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>重要なのは、ビューのストライドが<code>(12,4)</code>になっていることです。これは、</p>
+<ul>
+<li>次の行へ進むときは、12バイト先へ飛んでください</li>
+<li>次の列へ進むときは、4バイト先へ飛んでください</li>
+</ul>
+<p>という意味です。また、データの型は<code>&lt;i4</code>ですので、4バイト整数であることが分かります。すなわち、一つの数値で4バイトメモリを占有します。</p>
+<p>これらを総合すると、データは実際には数のように直線的に格納されていて、それを行列の形に見せているだけだということが分かります。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/matrixdata.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>matrixdata</figcaption>
+</figure>
+</div>
+<p>このように、多次元配列構造を1次元的にメモリに保存することは計算機科学ではありふれたことですので、覚えておきましょう。</p>
+<p>(余談ですが、Rでは、FORTRAN型の行列を継承しており、データは列ごとにメモリに格納されますが、NumPyでは、C型の行列を継承しており、データは行ごとにメモリに格納されます。データ解析においては、列を変数、行をオブザベーションとすることがほとんどですので、FORTRAN型行列のほうが自然です。次回紹介するpandasのデータフレームでは、内部でNumPy行列を用いてデータを格納していますが、その際、<strong>NumPy行列の行をデータフレームの列として使う</strong>ことで、FORTRAN型のデータフレームを実現しています。RとPythonがそれぞれ、FOTRANとCからどれだけ多くの物を受け継いでいるか調べてみてください。)</p>
+</section>
+<section id="配列を作る様々な方法" class="level2">
+<h2 class="anchored" data-anchor-id="配列を作る様々な方法">配列を作る様々な方法</h2>
+<p>配列は様々な方法で作ることができます。配列を作成するNumPy関数の一部を以下に列挙しておきます。全ての配列作成関数については<a href="https://numpy.org/doc/stable/reference/routines.array-creation.html">NumPyのリファレンスマニュアル</a>を参照してください。</p>
+<p>まずは、形状を<code>(行数、列数)</code>のようにタプルで与える関数です。スカラーを与えると1次元配列になります。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>関数</th>
+<th>意味</th>
+<th>用例</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>ones</code></td>
+<td>全てが1の配列を作る</td>
+<td><code>np.ones((2,3))</code></td>
+</tr>
+<tr class="even">
+<td><code>zeros</code></td>
+<td>全てが0の配列を作る</td>
+<td><code>np.zeros((2,3))</code></td>
+</tr>
+<tr class="odd">
+<td><code>full</code></td>
+<td>全てが同じ値の配列を作る</td>
+<td><code>np.full((2,3),5)</code></td>
+</tr>
+</tbody>
+</table>
+<p>次に、<code>_like</code>系の関数です。これらについては、ある既存の配列を引数に与えて、それと同じ形状の配列を作ります。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>関数</th>
+<th>意味</th>
+<th>用例</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>ones_like</code></td>
+<td>全てが1の配列を作る</td>
+<td><code>np.ones_like(arr)</code></td>
+</tr>
+<tr class="even">
+<td><code>zeros_like</code></td>
+<td>全てが0の配列を作る</td>
+<td><code>np.zeros(arr)</code></td>
+</tr>
+<tr class="odd">
+<td><code>full_like</code></td>
+<td>全てが同じ値の配列を作る</td>
+<td><code>np.full(arr,5)</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="まとめ" class="level2">
+<h2 class="anchored" data-anchor-id="まとめ">まとめ</h2>
+<p>今回の講義では、以下のことを学びました。</p>
+<ul>
+<li>NumPy1次元配列の作成</li>
+<li>ベクトル演算</li>
+<li>配列のスライスとビュー</li>
+<li>乱数の生成</li>
+<li>線形モデルのシミュレーション</li>
+<li>SciPyの単回帰分析</li>
+<li>行列の作成・操作</li>
+<li>行列のデータ構造</li>
+<li>記述統計量の計算</li>
+</ul>
+<p>分量の都合上、NumPy配列の機能のごく一部しか紹介できませんでした。NumPyのマスターはデータ分析において非常に重要ですので、参考書やNumPyのリファレンスマニュアルを読んで勉強しておいてください。</p>
+<p>また、SciPyには、<a href="https://docs.scipy.org/doc/scipy/reference/linalg.html"><code>linalg</code></a>というモジュールがあり、NumPy配列のための線形代数ライブラリを提供しています。例えば特異値分解(関数<code>svd</code>)など、多変量解析で不可欠になる機能が多数実装されているので、是非試していただきたいと思います。</p>
+<p>今回、3次元以上のNumPy配列については扱いませんでしたが、深層学習などの分野においては中心的な役割を演じる重要なデータ構造ですので、機会があれば資料に足していきたいと思います。</p>
+</section>
+<section id="参考書" class="level2">
+<h2 class="anchored" data-anchor-id="参考書">参考書</h2>
+<p>以下の参考書が、薄くて読みやすくかつ内容も大変充実しています。</p>
+<ul>
+<li><a href="https://www.amazon.co.jp/NumPy%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E5%88%86%E6%9E%90%E5%85%A5%E9%96%80-%E2%80%95%E9%85%8D%E5%88%97%E6%93%8D%E4%BD%9C%E3%80%81%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E3%80%81%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEPython%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0-Umit-Mert-Cakmak/dp/4873118875">『NumPyによるデータ分析入門』</a>(Umit Mert Cakmak, Mert Cuhadaroglu著、山崎 邦子 (翻訳), 山崎 康宏 (翻訳))(2019) オライリージャパン. ISBN-13: 978-4873118871.</li>
+</ul>
+</section>
+<section id="補遺" class="level2">
+<h2 class="anchored" data-anchor-id="補遺">補遺</h2>
+<ol type="1">
+<li><p>スライスの代わりに、取り出したい行あるいは列を明示的にリストによって指定するインデクシングの方法を<strong>ファンシーインデックス</strong>参照と言います。たとえば、<code>arr2d</code>から0行目と2行目だけを取り出したい場合は次のようにします。ファンシーインデックス参照を試してみなさい。そのうえで、それが元の配列のビューではなくコピーを作ることを確認し、なぜそのようになっているのか、ストライドの概念を用いて考察してみなさい。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb71"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %% </span></span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ファンシーインデックス参照</span></span>
+<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a><span class="co"># コピーを作る</span></span>
+<span id="cb71-4"><a href="#cb71-4" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> arr2d[[<span class="dv">0</span>,<span class="dv">2</span>],:]</span>
+<span id="cb71-5"><a href="#cb71-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span>
+<span id="cb71-6"><a href="#cb71-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-7"><a href="#cb71-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 見かけ上同じだがスライス記法</span></span>
+<span id="cb71-8"><a href="#cb71-8" aria-hidden="true" tabindex="-1"></a><span class="co"># ビューを作る </span></span>
+<span id="cb71-9"><a href="#cb71-9" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> arr2d[<span class="dv">0</span>::<span class="dv">2</span>,:]</span>
+<span id="cb71-10"><a href="#cb71-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>SciPyの<code>linalg</code>モジュールを用いて、行列の固有値・固有ベクトルを計算してみなさい。</p></li>
+<li><p>以下のように3次元NumPy配列を作成し、それがどのように表示されるか確認しなさい。<code>sum</code>メソッドでAxis0、Axis1、Axis2方向に和をとり、何が起きているのか考察しなさい。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb72"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>arr3d <span class="op">=</span> np.arange(<span class="dv">27</span>).reshape((<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">3</span>))</span>
+<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a>sum0 <span class="op">=</span> arr3d.<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a>sum1 <span class="op">=</span> arr3d.<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb72-5"><a href="#cb72-5" aria-hidden="true" tabindex="-1"></a>sum2 <span class="op">=</span> arr3d.<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p><code>ndarray</code>の<code>view</code>メソッドを用いると、データ型を変えたビューを作成することができます。以下では、<code>array</code>関数の引数<code>dtype='&lt;i2'</code>でリトルエンディアン2バイト整数型の配列<code>x</code>を作った後、<code>view</code>メソッドの<code>dtype='i1'</code>引数で1バイト整数型のビュー<code>y</code>を作っています。なぜ<code>y</code>の出力がこのようになるのか、考察してみてください。さらに、<code>y</code>に何らかの演算を施して、<code>x</code>がどのように変化するか観察してみてください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb73"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.array([<span class="dv">256</span>,<span class="dv">256</span>],dtype<span class="op">=</span><span class="st">'&lt;i2'</span>)</span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> x.view(dtype<span class="op">=</span><span class="st">'i1'</span>)</span>
+<span id="cb73-4"><a href="#cb73-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb74"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">0</span> <span class="dv">1</span> <span class="dv">0</span> <span class="dv">1</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/Yamachan050125\.github\.io\/yamachan050125\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

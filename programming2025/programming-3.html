@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>programming-3 – Syakaikano-Omochabako</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-43081d808c96cc46af55a3a816ae9eed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Syakaikano-Omochabako</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#第3回-バージョン管理入門" id="toc-第3回-バージョン管理入門" class="nav-link active" data-scroll-target="#第3回-バージョン管理入門">第3回 バージョン管理入門</a>
+  <ul class="collapse">
+  <li><a href="#バージョン管理とは" id="toc-バージョン管理とは" class="nav-link" data-scroll-target="#バージョン管理とは">バージョン管理とは</a></li>
+  <li><a href="#ローカルとリモート" id="toc-ローカルとリモート" class="nav-link" data-scroll-target="#ローカルとリモート">ローカルとリモート</a></li>
+  <li><a href="#githubアカウントの作成" id="toc-githubアカウントの作成" class="nav-link" data-scroll-target="#githubアカウントの作成">GitHubアカウントの作成</a></li>
+  <li><a href="#emailアドレスのprivate設定" id="toc-emailアドレスのprivate設定" class="nav-link" data-scroll-target="#emailアドレスのprivate設定">EmailアドレスのPrivate設定</a></li>
+  <li><a href="#リモート課題レポジトリの作成" id="toc-リモート課題レポジトリの作成" class="nav-link" data-scroll-target="#リモート課題レポジトリの作成">リモート課題レポジトリの作成</a></li>
+  <li><a href="#gitの初期設定" id="toc-gitの初期設定" class="nav-link" data-scroll-target="#gitの初期設定">Gitの初期設定</a></li>
+  <li><a href="#sshの設定" id="toc-sshの設定" class="nav-link" data-scroll-target="#sshの設定">sshの設定</a>
+  <ul class="collapse">
+  <li><a href="#鍵の作成" id="toc-鍵の作成" class="nav-link" data-scroll-target="#鍵の作成">鍵の作成</a></li>
+  <li><a href="#秘密鍵の登録" id="toc-秘密鍵の登録" class="nav-link" data-scroll-target="#秘密鍵の登録">秘密鍵の登録</a></li>
+  <li><a href="#公開鍵の登録" id="toc-公開鍵の登録" class="nav-link" data-scroll-target="#公開鍵の登録">公開鍵の登録</a></li>
+  </ul></li>
+  <li><a href="#ホストの登録" id="toc-ホストの登録" class="nav-link" data-scroll-target="#ホストの登録">ホストの登録</a></li>
+  <li><a href="#ローカル課題リポジトリの作成ダウンロード" id="toc-ローカル課題リポジトリの作成ダウンロード" class="nav-link" data-scroll-target="#ローカル課題リポジトリの作成ダウンロード">ローカル課題リポジトリの作成(ダウンロード)</a></li>
+  <li><a href="#ローカル課題リポジトリの編集" id="toc-ローカル課題リポジトリの編集" class="nav-link" data-scroll-target="#ローカル課題リポジトリの編集">ローカル課題リポジトリの編集</a></li>
+  <li><a href="#変更のステージング" id="toc-変更のステージング" class="nav-link" data-scroll-target="#変更のステージング">変更のステージング</a></li>
+  <li><a href="#変更のコミット" id="toc-変更のコミット" class="nav-link" data-scroll-target="#変更のコミット">変更のコミット</a></li>
+  <li><a href="#リモートをローカルに同期プッシュ" id="toc-リモートをローカルに同期プッシュ" class="nav-link" data-scroll-target="#リモートをローカルに同期プッシュ">リモートをローカルに同期(プッシュ)</a></li>
+  <li><a href="#ローカルをリモートに同期プル" id="toc-ローカルをリモートに同期プル" class="nav-link" data-scroll-target="#ローカルをリモートに同期プル">ローカルをリモートに同期(プル)</a></li>
+  <li><a href="#その他の操作" id="toc-その他の操作" class="nav-link" data-scroll-target="#その他の操作">その他の操作</a></li>
+  <li><a href="#主なgitコマンドまとめ" id="toc-主なgitコマンドまとめ" class="nav-link" data-scroll-target="#主なgitコマンドまとめ">主なGitコマンドまとめ</a></li>
+  <li><a href="#まとめ" id="toc-まとめ" class="nav-link" data-scroll-target="#まとめ">まとめ</a></li>
+  <li><a href="#参考書" id="toc-参考書" class="nav-link" data-scroll-target="#参考書">参考書</a></li>
+  <li><a href="#補遺" id="toc-補遺" class="nav-link" data-scroll-target="#補遺">補遺</a>
+  <ul class="collapse">
+  <li><a href="#sshポートの設定" id="toc-sshポートの設定" class="nav-link" data-scroll-target="#sshポートの設定">sshポートの設定</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="第3回-バージョン管理入門" class="level1">
+<h1>第3回 バージョン管理入門</h1>
+<ul>
+<li><a href="#第3回-バージョン管理入門">第3回 バージョン管理入門</a>
+<ul>
+<li><a href="#バージョン管理とは">バージョン管理とは</a></li>
+<li><a href="#ローカルとリモート">ローカルとリモート</a></li>
+<li><a href="#githubアカウントの作成">GitHubアカウントの作成</a></li>
+<li><a href="#emailアドレスのprivate設定">EmailアドレスのPrivate設定</a></li>
+<li><a href="#リモート課題レポジトリの作成">リモート課題レポジトリの作成</a></li>
+<li><a href="#gitの初期設定">Gitの初期設定</a></li>
+<li><a href="#sshの設定">sshの設定</a>
+<ul>
+<li><a href="#鍵の作成">鍵の作成</a></li>
+<li><a href="#秘密鍵の登録">秘密鍵の登録</a></li>
+<li><a href="#公開鍵の登録">公開鍵の登録</a></li>
+</ul></li>
+<li><a href="#ホストの登録">ホストの登録</a></li>
+<li><a href="#ローカル課題リポジトリの作成ダウンロード">ローカル課題リポジトリの作成(ダウンロード)</a></li>
+<li><a href="#ローカル課題リポジトリの編集">ローカル課題リポジトリの編集</a></li>
+<li><a href="#変更のステージング">変更のステージング</a></li>
+<li><a href="#変更のコミット">変更のコミット</a></li>
+<li><a href="#リモートをローカルに同期プッシュ">リモートをローカルに同期(プッシュ)</a></li>
+<li><a href="#ローカルをリモートに同期プル">ローカルをリモートに同期(プル)</a></li>
+<li><a href="#その他の操作">その他の操作</a></li>
+<li><a href="#主なgitコマンドまとめ">主なGitコマンドまとめ</a></li>
+<li><a href="#まとめ">まとめ</a></li>
+<li><a href="#参考書">参考書</a></li>
+<li><a href="#補遺">補遺</a>
+<ul>
+<li><a href="#sshポートの設定">sshポートの設定</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="バージョン管理とは" class="level2">
+<h2 class="anchored" data-anchor-id="バージョン管理とは">バージョン管理とは</h2>
+<p>プログラミングをしていると、しばしば、以前の状態に戻したいということがあります。これを実現する最も単純な方法は、ときどきファイルにバージョン入りで別名をつけ、別ファイルとして保存しておくことでしょう。</p>
+<p>たとえば、code.pyというソースコードを編集している開発者がいるとします。ある時点で機能が安定したら、さらに機能を追加する前に、開発者はいつでもこのバージョンに戻ってこられるようにするために、code_ver1.pyという別名を付けてバージョン1として保存しておけば良いでしょう。同様に、code_ver2.py、code_ver3.pyというファイルが次々と出来上がっていくでしょう。</p>
+<p>開発期間が短ければ、これでも何とかなるかもしれません。しかし、比較的小さなプロジェクトでも、時間が経つにつれてファイルの数は膨大になるのが普通です。そうすると、どのバージョンがどんな状態だったかすぐに分からなくなります。</p>
+<p>これを解決するために、開発者は、たとえばエクセルのようなスプレッドシードに、バージョン名とその内容、作成者の氏名、作成日時を記録していくかもしれません。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/versions.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>version</figcaption>
+</figure>
+</div>
+<p>これはある種のバージョン管理であると言えます。これに、さらに以下のような機能を追加すればもっと便利でしょう。</p>
+<ul>
+<li>関連する複数のファイルのバージョンを一括して管理できる</li>
+<li>バージョン間の親子関係を表示できる</li>
+<li>異なるバージョンの内容を比較できる</li>
+<li>複数人が独立に作業できる</li>
+</ul>
+<p>Gitはこうした機能を実現する仕組みです。Gitは、Linuxの開発者であるLinus TorvaldsがLinuxの共同開発を進めるために開発したツールです。Gitでは、アプリケーション開発など、一つのプロジェクトに関わる全てのファイルを<strong>リポジトリ</strong>という特別な装置によって管理します。</p>
+<p>リポジトリは、通常、<strong>作業ディレクトリ</strong>とよばれる一つのディレクトリの中に収められた状態で存在し、作業ディレクトリの中にあるファイルの現在の状態や過去のバージョンを管理しています。リポジトリの正体は、作業ディレクトリの中にある.gitという隠しフォルダです。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/repository.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>repository</figcaption>
+</figure>
+</div>
+</section>
+<section id="ローカルとリモート" class="level2">
+<h2 class="anchored" data-anchor-id="ローカルとリモート">ローカルとリモート</h2>
+<p>一方GitHubはインターネット上にリポジトリを置くためのサービスです。インターネット上のリポジトリを<strong>リモートリポジトリ</strong>と呼びます。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/git_image.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>git_image</figcaption>
+</figure>
+</div>
+<p><strong>リモートリポジトリ</strong>に対して、開発者のパソコン上に存在するリポジトリを<strong>ローカルリポジトリ</strong>と呼びます。GitHubを用いると、複数の開発者が共通のリモートリポジトリを介して共同開発を行うことができます。</p>
+<p>Gitを用いると、リモートリポジトリとローカルリポジトリを同期させることができます。リモートリポジトリをローカルと同じ状態に同期させることを<strong>プッシュ</strong>、その逆を<strong>プル</strong>と言います。共同開発者は、プルによってローカルの状態を最新にしたあと、自分の担当部分の作業を進め、作業が終わったらプッシュによって作業の結果をリモートにアップロードすることができます。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>おもなGit用語</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>プッシュ</td>
+<td>リモートの状態をローカルの状態に同期</td>
+</tr>
+<tr class="even">
+<td>プル</td>
+<td>ローカルの状態をリモートの状態に同期</td>
+</tr>
+<tr class="odd">
+<td>コミット</td>
+<td>作業をリポジトリの履歴に記録する</td>
+</tr>
+</tbody>
+</table>
+<p>GitHubのリモートリポジトリには、プライベートリポジトリとパブリックリポジトリがあります。パブリックリポジトリは誰でも見ることができ、パッケージ公開などに用いられます。一方パブリックリポジトリは自分と共同開発者だけが閲覧できるので、個人的な用途や、グループでの研究開発などに用いられます。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>リポジトリの種類</th>
+<th>書き込み権限</th>
+<th>閲覧権限</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>プライベート</td>
+<td>自分と共同開発者</td>
+<td>自分と共同開発者</td>
+</tr>
+<tr class="even">
+<td>パブリック</td>
+<td>自分と共同開発者</td>
+<td>誰でも</td>
+</tr>
+</tbody>
+</table>
+<p>本講義では、課題の提出にGitHub classroomというGitHubの教育用サービスを活用します。GitHubは、課題をリモートリポジトリとして学生に配布する機能を提供します。本講義では、課題リポジトリはプライベートリポジトリにしますので、学生個人と担当教員だけが閲覧できます。</p>
+</section>
+<section id="githubアカウントの作成" class="level2">
+<h2 class="anchored" data-anchor-id="githubアカウントの作成">GitHubアカウントの作成</h2>
+<p>Gitは今すぐにでも使うことができますが、GitHubを利用するには、まずGitHubのサイトでユーザー登録をしてアカウントを作成する必要があります。すでにアカウントをお持ちの方は本節を読み飛ばして構いません。</p>
+<p>インターネットブラウザで<a href="https://github.com/">GitHub</a>のサイトに行き、画面右上の”Sign up”をクリックします。</p>
+<p>“Create your account”という画面になりますので、以下の項目を入力します。</p>
+<ol type="1">
+<li>Emailアドレス(原則として大学のアドレスを入力)</li>
+<li>パスワード(紛失しないよう厳重に管理すること)</li>
+<li>ユーザー名</li>
+<li>広告の受け取りの可否(不要ならチェックしない)</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/receive_announcements.png" class="img-fluid figure-img"></p>
+<figcaption>signup2modified.PNG</figcaption>
+</figure>
+</div>
+<p>ユーザーネームを作成するときは、以下の点にご注意ください。</p>
+<ul>
+<li>一度アカウントを作成したらユーザー名は(少なくとも在学中は)変更しないでください。</li>
+<li>長く使うものなので、よく考えて命名してください。</li>
+<li>他人の名前を使わないでください。</li>
+<li>生年月日などの個人情報は含めないでください。</li>
+<li>すべて<strong>英数字</strong>にしてください。</li>
+<li>アルファベットは小文字にすることをお勧めします。</li>
+<li>途中に連続しない<strong>ハイフン</strong>を使うことができます。</li>
+</ul>
+<p>パスワードを決めるときは、以下の点にご注意ください。</p>
+<ul>
+<li>全て半角の英数字もしくは記号で構成してください。</li>
+<li>次の条件の少なくともどちらかを満たしてください。
+<ul>
+<li>15文字以上。</li>
+<li>8文字以上で数字と小文字アルファベットを両方含む。</li>
+</ul></li>
+<li>パスワードは紛失しないように管理してください。</li>
+</ul>
+<p>ユーザー名等の入力を終えたら、“Verify your account”の項目でロボットでないことを証明してください。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/signup3.PNG" class="img-fluid figure-img"></p>
+<figcaption>signup3.PNG</figcaption>
+</figure>
+</div>
+<p>“Create account”をクリックします。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/signup4.PNG" class="img-fluid figure-img"></p>
+<figcaption>signup4.PNG</figcaption>
+</figure>
+</div>
+<p>登録に用いたアドレスに8桁の検証コードが送信されるので、メールボックスを確認してコードを入力してください。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/signup5_modified.png" class="img-fluid figure-img"></p>
+<figcaption>signup5modified.PNG</figcaption>
+</figure>
+</div>
+<p>これでアカウントが作成されました。ユーザー名とパスワードを求められますので、入力してください。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/snapshot_login.png" class="img-fluid figure-img"></p>
+<figcaption>snapshot.PNG</figcaption>
+</figure>
+</div>
+<p>次に”How many…“などパーソナライゼーションのための質問を幾つかされますが、画面下部の<code>skip personalization</code>をクリックすれば全てスキップできます。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/skip_personalization.png" class="img-fluid figure-img"></p>
+<figcaption>skip_personalization.PNG</figcaption>
+</figure>
+</div>
+<!--
+![signup6.PNG](img/signup6.PNG)
+
+"What specific features...?"と聞かれますが、何もチェックせずにcontinueボタンをクリックしてください。
+
+![signup7.PNG](img/signup7.PNG)
+
+FreeかProかを聞いてくるので、Freeを選択してください。
+
+![signup8.PNG](img/signup8.PNG)
+
+これでアカウント作成完了です。今後GitHubにログインするときは、GitHubのページの右上の"Sign in"をクリックしてユーザー名とパスワードを入力してください。
+-->
+</section>
+<section id="emailアドレスのprivate設定" class="level2">
+<h2 class="anchored" data-anchor-id="emailアドレスのprivate設定">EmailアドレスのPrivate設定</h2>
+<p>アカウントを作成したら、Emailの公開設定をします。GitHubにログインして、<a href="https://github.com/settings/emails">GitHubのemail設定</a>を開き、<strong>Keep my email address private</strong>をONにしてください。これにより、Emailアドレスは非公開になります。Primary email addressの欄に次のように表示されていることを確認してください。</p>
+<blockquote class="blockquote">
+<p>Because you have email privacy enabled, xxxx@xxxx.xx.xx will be used for account-related notifications as well as password resets. ????????+kouka-taro@users.noreply.github.com will be used for web-based Git operations, e.g., edits and merges.</p>
+</blockquote>
+<p>ここで、xxxx@xxxx.xx.xxは大学のメールアドレスで、各種認証やGitHubからの連絡に用いられます。一方、????????+kouka-taro@users.noreply.github.comは、Gitのemailアドレスに設定するためのものです。</p>
+<p>なお、授業では非公開設定を推奨しますが、公開する必要がある場合は自己責任で行ってください。</p>
+</section>
+<section id="リモート課題レポジトリの作成" class="level2">
+<h2 class="anchored" data-anchor-id="リモート課題レポジトリの作成">リモート課題レポジトリの作成</h2>
+<p>GitHub classroomの課題を行うに当たっては、まず課題の招待を受け入れ、自分専用の課題リポジトリをGitHub上に作成する必要があります。Moodleに記載されている「課題0の招待リンク」をクリックしましょう。</p>
+<p>以下のような画面になり、GitHub ClassroomがあなたのGitHubアカウントにアクセスする許可を求めてきますので、Authorize Classroomをクリックして許可します。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/github_classroom_permission.png" class="img-fluid figure-img"></p>
+<figcaption>github_classroom_permission</figcaption>
+</figure>
+</div>
+<p>“Join the classroom”という画面に切り替わりますので、“Identifiers”の一覧から自分の名前を選択します。(万が一自分の名前がない場合はご連絡ください。Moodleにユーザー登録されていない可能性があります。)<strong>ここで間違った名前を選択すると、教員による取り消し操作が必要になりますのでご注意ください</strong>。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/join_classroom.png" class="img-fluid figure-img"></p>
+<figcaption>join_classroom</figcaption>
+</figure>
+</div>
+<p>画面が切り替わりますので、“Accept this assignment”をクリックして課題を受け入れます。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/accept_assignment.png" class="img-fluid figure-img"></p>
+<figcaption>accept_assignment</figcaption>
+</figure>
+</div>
+<p>これであなた専用の課題のリモートリポジトリが作成されました。リモートリポジトリの名前は、アカウント名がkouka-taroならば、</p>
+<pre class="none"><code>assignment-pr21-0-kouka-taro</code></pre>
+<p>のようになっているはずです。 <a href="https://github.com/kut-econ">KUT Econ Programming Course</a>にアクセスして、自分の課題リポジトリが出来ているか確認してください。</p>
+</section>
+<section id="gitの初期設定" class="level2">
+<h2 class="anchored" data-anchor-id="gitの初期設定">Gitの初期設定</h2>
+<p>次は、GitHubのアカウント上に作成したリモートのリポジトリをパソコン(ローカル)にダウンロードしましょう。これ以降は、Gitというアプリケーションを使っていくことになります。</p>
+<p>以前作成した<strong>GitHubディレクトリを右クリック</strong>し、“Git bash here”を選びます。すると、真っ暗なコンソールが開きます。bashというのは元々Linuxのコンソールで用いられているコマンド入力システム(<a href="https://ja.wikipedia.org/wiki/%E3%82%B7%E3%82%A7%E3%83%AB">コマンドラインシェル</a>と呼ばれます)であり、Git bashはgitをWindows上で使いやすくするためにWindowsに移植されたWindows版bashです。Gitには色んな操作方法がありますが、Git bashのようなコンソールからコマンドを打ち込んで操作するのが最も基本的な操作方法ですので、ここではそれに従います。(使える機能は限定されていますが、VS Code上でGitの操作を行うこともできます)</p>
+<p>Gitは使用前に以下の項目に関する初期設定が必要です。</p>
+<ul>
+<li>ユーザー名</li>
+<li>Emailアドレス（GitHubのダミーemail）</li>
+<li>エディタにVSCodeを指定する</li>
+<li>sshの設定</li>
+</ul>
+<p>ユーザー名を設定するには、次のようにコンソールに打ち込みます。注意: <code>Taro Kouka</code>のところは、自分の本名をアルファベット半角で入力してください!また、<code>#</code>記号に続く行は単なる説明なので、入力する必要はありません!</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ユーザー名設定</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Taro Kouka"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Emailアドレスを設定するには、次のようにコンソールに打ち込みます。注意: <code>????????+kouka-taro@users.noreply.github.com</code>のところには、githubが作成したダミーのemailアドレスを入力してください!</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Email設定</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="pp">????????</span>+kouka-taro@users.noreply.github.com</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Gitでは、「コミット」という操作を行う際にエディタを起動する必要があります。その際に用いるエディタをcodeにしておきましょう。<strong>ただし、Gitをインストールする際にVSCodeをエディターに設定した人は、この操作は必要ありませんのでスキップしてください。</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># エディタの設定</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> core.editor <span class="st">"code --wait"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>“–wait”オプションをつけないとうまく動作しないので気を付けてください。</p>
+<p>なお、<strong>VS Codeのパス</strong>を通していない人は、この設定も必要です。パスが通っているかどうか調べるには、git bash上で、次のように入力してみてください。バージョン番号が出力されれば、パスが通っています。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># パスの確認</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">code</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>バージョン番号が出力されずエラーが出る人はパスが通っていませんので、以下のようにしてパスを設定してください。VS Codeのショートカットを右クリックして、プロパティを選択し、「リンク先」に書いてあるパスを<strong>ユーザー環境変数</strong>の<strong>PATH</strong>に追加します(システム環境変数ではありません)。実行ファイル名”Code.exe”はパスに含めないでください。これによってGitからも起動できるようになります。</p>
+<p>設定がうまく行ったか次のコマンドを入力して調べておきましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 設定項目をリストアップ</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> <span class="at">--list</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>出力が次のようになっていれば設定完了です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">user.name=Taro</span> Kouka</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">user.email=????????-kouka-taro@users.noreply.github.com</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ex">core.editor=code</span> <span class="at">--wait</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="sshの設定" class="level2">
+<h2 class="anchored" data-anchor-id="sshの設定">sshの設定</h2>
+<section id="鍵の作成" class="level3">
+<h3 class="anchored" data-anchor-id="鍵の作成">鍵の作成</h3>
+<p>githubはhttpsとsshという２つの方法で接続できますが、ここではssh接続を解説することにします。まず、git bashのコンソールで、次のように入力してください。注意: <code>kouka.taro@*****.ac.jp</code>は、<strong>Githubに登録したあなたの真のEmailアドレス</strong>に設定します。オプション<code>-C</code>は<strong>大文字</strong>なので注意。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> rsa <span class="at">-b</span> 4096 <span class="at">-C</span> <span class="st">"kouka.taro@*****.ac.jp"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>秘密鍵ファイルの名前やパスフレーズなどを尋ねられますが、今回初めてSSHを使う人は全て空欄のまま<code>Enter</code>キーを押して大丈夫です。(SSHを普段から使っていて詳しい人は、適切に設定してください。)合計3回<code>Enter</code>キーを押せば鍵が作られます。</p>
+<p>これにより<strong>ホームパス</strong>の下の<code>.ssh</code>というフォルダの中に秘密鍵と公開鍵が作られます。ホームパスがわからない人は、gitで</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">$HOMEPATH</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>もしくはコマンドプロンプトで</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="pp">%</span><span class="va">HOMEPATH</span><span class="pp">%</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>と入力すれば出てきます。</p>
+<p><code>.ssh</code>フォルダの中にあるファイルは次の4つになります。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>ファイル名</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>id_rsa</td>
+<td>秘密鍵</td>
+</tr>
+<tr class="even">
+<td>id_rsa.pub</td>
+<td>公開鍵</td>
+</tr>
+<tr class="odd">
+<td>config</td>
+<td>設定ファイル</td>
+</tr>
+<tr class="even">
+<td>known_hosts</td>
+<td>アクセスを許可する接続先のリスト</td>
+</tr>
+</tbody>
+</table>
+<p>このうち、<code>id_rsa</code>と<code>id_rsa.pub</code>がすでに存在していれば無事に秘密鍵と公開鍵が作成できています。他のファイルはまだ無いかもしれません。</p>
+</section>
+<section id="秘密鍵の登録" class="level3">
+<h3 class="anchored" data-anchor-id="秘密鍵の登録">秘密鍵の登録</h3>
+<p>鍵をつくったら、秘密鍵をパソコンに登録する必要があります。bashで次のように入力して、<code>ssh-agent</code>を起動してください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">eval</span> <span class="st">"</span><span class="va">$(</span><span class="fu">ssh-agent</span><span class="va">)</span><span class="st">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>Pid ...</code>というようにプロセスIDが出力されればOKです。</p>
+<p>次に、秘密鍵の登録は次のように入力してください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-add</span> ~/.ssh/id_rsa</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これで秘密鍵がローカルのパソコンに登録されました。秘密鍵を登録するときは、必ず毎回<code>ssh-agent</code>を起動しないと駄目なので注意してください。</p>
+</section>
+<section id="公開鍵の登録" class="level3">
+<h3 class="anchored" data-anchor-id="公開鍵の登録">公開鍵の登録</h3>
+<p>次は、Githubに公開鍵を登録する必要があります。<a href="https://github.com/settings/keys">こちら</a>にアクセスして、<code>New SSH key</code>をクリックしてください。</p>
+<p><code>Title</code>は分かりやすい名前なら何でも構いませんが、たとえば<code>class</code>,<code>university</code>,<code>campus</code>などといったものにしておけば、どこで作った鍵だったか分かりやすくて良いかと思います。 <code>Key</code>の欄に、<code>id_rsa.pub</code>(公開鍵)ファイルの中身をまるごとコピー＆ペーストしてください。</p>
+<p>ファイルの中身をコピーするには、メモ帳やVS Codeで開いて全て選択してコピーする方法と、コマンドラインからクリップボードに貼り付ける方法があります。</p>
+<p>Windowsの場合、コマンドラインでやるときは、bashのコンソールで</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">clip</span> <span class="op">&lt;</span> ~/.ssh/id_rsa.pub</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>と入力すればクリップボードに貼り付けられます。一文字でも欠けると接続できませんので、コピー＆ペーストは慎重にしてください。</p>
+<p><code>Title</code>と<code>Key</code>が入力できたら、<code>Add SSH Key</code>をクリックして登録完了です。</p>
+</section>
+</section>
+<section id="ホストの登録" class="level2">
+<h2 class="anchored" data-anchor-id="ホストの登録">ホストの登録</h2>
+<p>bashにて、</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="at">-T</span> git@github.com</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>と入力してください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>The authenticity of host 'github.com (52.69.186.44<span class="kw">)</span>' can't be established.</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>RSA key fingerprint is ...</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>Are you sure you want to continue connecting (yes<span class="at">/no</span><span class="kw">)</span>? </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>と出たら、yesと入力します。これでGitHubが<code>knownhosts</code>ファイルに登録されます。そのあと、</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>Hi kouka<span class="at">-taro</span>! You've successfully authenticated, but ...</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>と出たらssh接続成功です。</p>
+</section>
+<section id="ローカル課題リポジトリの作成ダウンロード" class="level2">
+<h2 class="anchored" data-anchor-id="ローカル課題リポジトリの作成ダウンロード">ローカル課題リポジトリの作成(ダウンロード)</h2>
+<p>基本設定が完了したら、先ほど作成したリモート課題リポジトリをローカルにコピーしましょう。先程の手順で、<strong>Githubディレクトリでgit bashを開いてください</strong>。課題リポジトリをリモートからローカルにコピーするにはbashコンソールに次のように入力します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone git@github.com:kut-econ/assignment-pr21-0-kouka-taro.git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>kouka-taroのところはご自身のGitHubアカウント名にしてください。これによってリモートのリポジトリが、ローカルのGitHubディレクトリ下にコピーされますので、エクスプローラで確認してみましょう。GitHubディレクトリの下に、assignment-…という名前のディレクトリが作成されていれば成功です。</p>
+<p>このように、リモートリポジトリをローカルにコピーする操作を<strong>クローン</strong>と呼びますので覚えておきましょう。クローンするコマンドの一般形は次のようになります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone repository_url</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>repository_urlはリモートリポジトリのurlです。このurlは、自分のリモート課題リポジトリにインターネットブラウザでアクセスすることにより調べることができます。<a href="https://github.com/kut-econ">KUT Econ Programming Course</a>のサイトで自分のリモート課題リポジトリのリンクを見つけ、クリックしてください。以下のようにリポジトリの内容が表示されます。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/remote-repo.png" class="img-fluid figure-img"></p>
+<figcaption>remote_repo</figcaption>
+</figure>
+</div>
+<p>右上の緑色の”Code”というボタンから、クローンのためのリポジトリのurlをコピーできます。(sshリンクを選んでください。https接続している人は、httpsリンクで構いません。)</p>
+</section>
+<section id="ローカル課題リポジトリの編集" class="level2">
+<h2 class="anchored" data-anchor-id="ローカル課題リポジトリの編集">ローカル課題リポジトリの編集</h2>
+<p>ローカルにリポジトリをクローンできたら、編集してみましょう。一度git bashを閉じてください(exitと入力します)。Windowsエクスプローラでローカルにコピーした課題リポジトリのフォルダを開いてください。以下三つのファイルがあるはずです。</p>
+<ul>
+<li>README.md</li>
+<li>assignment-text-0.md</li>
+<li>assignment-code-0.py</li>
+</ul>
+<p>エクスプローラ上で右クリックして「Codeで開く」を選択し、VS Codeを起動しましょう。上記3つのファイルをVS Codeで開いて内容を確認してみましょう。</p>
+<p>さて、これから、これらのファイルに編集を加えて、リモートリポジトリに変更をアップロードするという作業を行いますが、Gitの挙動を理解するために、慎重におこなってください。</p>
+<p>ここでリポジトリの構造を説明しておきます。クローンによって作成されたディレクトリは<strong>作業ディレクトリ</strong>と呼ばれ、リポジトリの本体はその中にあります。実際には、リポジトリの本体は.gitという隠しフォルダとして存在しています。リポジトリは、作業ディレクトリ内のファイルの過去の状態を記録しており、現在の状態と過去の状態を比較したり、作業ディレクトリの内容を過去の状態に戻したりする機能を提供します。この意味で、作業ディレクトリは、リポジトリの<strong>管理下にある</strong>と表現されることがあります。</p>
+<p>リポジトリの管理下にある作業ディレクトリの内部は、次の三つの領域から構成されています。</p>
+<ul>
+<li>作業エリア</li>
+<li>ステージングエリア</li>
+<li>コミット履歴</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/three_areas.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>three_areas</figcaption>
+</figure>
+</div>
+<p>Windowsエクスプローラによって閲覧できる作業ディレクトリ内のファイルは、(隠しフォルダ.gitを除き)すべて<strong>作業エリア</strong>内に存在します。ステージングエリアとコミット履歴は、gitコマンドによってのみ内容を確かめることができます。</p>
+<p>上記のうち、<strong>コミット履歴</strong>がリポジトリの中核部分であり、過去に記録したファイルの状態を全て収めています。</p>
+<p>一方ステージングエリアは作業エリアとコミット履歴を結ぶ中間的な領域であり、しばしば<strong>インデックス</strong>と(いう若干分かりにくい名前で)呼ばれることもあるので注意してください。ステージングエリアは、ファイルの変更をコミット履歴に記録するまえに、一時的に待機させる役割を持ちます。</p>
+</section>
+<section id="変更のステージング" class="level2">
+<h2 class="anchored" data-anchor-id="変更のステージング">変更のステージング</h2>
+<p>それでは、作業エリア内のファイルを修正して、ステージングエリアに入れてみましょう。現在皆さんは、ローカル課題リポジトリの作業ディレクトリの中でVS Codeを起動ている状態にあるかと思います。assignment-0-code.pyを開いて、若干の修正を加えます。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/assignment-0-code-py.png" class="img-fluid figure-img"></p>
+<figcaption>assignment-0-code-py</figcaption>
+</figure>
+</div>
+<p>これは変数xに1を代入してその値を画面に出力するだけのコードです。x=1の下にy=2という行を挿入してみましょう。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/assignment-0-code-py-modified.png" class="img-fluid figure-img"></p>
+<figcaption>assignment-0-code-py-modified</figcaption>
+</figure>
+</div>
+<p>すると、画面左のサイドバーにある三つ目のボタンが変化して、1というマークがつきます。これは、変更箇所が1箇所存在するということを表します。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/diff-button.png" class="img-fluid figure-img"></p>
+<figcaption>diff-button</figcaption>
+</figure>
+</div>
+<p>このボタンをクリックしましょう。すると、エクスプローラに変更のあったファイルの一覧が表示されますので、assignment-0-code.pyを選択します。すると、ウィンドウが二つに分かれて、変更前と変更後を比較する画面になります。このように、リポジトリの管理下にある作業ディレクトリで追跡管理されているファイルを変更すると、どこに変化があったのかいつもチェックすることができます。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/diff.png" class="img-fluid figure-img"></p>
+<figcaption>diff</figcaption>
+</figure>
+</div>
+<p>それでは、この変更をステージングエリアに登録しましょう。bashコンソールで次のように入力してみてください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git status</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="ex">On</span> branch master</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Changes</span> not staged for commit:</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">(</span><span class="ex">use</span> <span class="st">"git add &lt;file&gt;..."</span> to update what will be committed<span class="kw">)</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">(</span><span class="ex">use</span> <span class="st">"git restore &lt;file&gt;..."</span> to discard changes in working directory<span class="kw">)</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>        <span class="ex">modified:</span>   assignment-0-code.py</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a><span class="ex">no</span> changes added to commit <span class="er">(</span><span class="ex">use</span> <span class="st">"git add"</span> and/or <span class="st">"git commit -a"</span><span class="kw">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>“Changes not staged for commit”と表示されていますが、これは、「まだステージングされていない変更」という意味です。modified:の行には、変更があったファイル名(assignment-0-code.py)が表示されます。</p>
+<p>ステージングするファイルは個別に選択することもできますが、ここでは変更の有ったファイルを全てステージングすることにしましょう。そのためには、次のように入力します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="at">-A</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これでステージング完了です。ためしにgit statusしてみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git status</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="ex">On</span> branch master</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Changes</span> to be committed:</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">(</span><span class="ex">use</span> <span class="st">"git restore --staged &lt;file&gt;..."</span> to unstage<span class="kw">)</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>        <span class="ex">modified:</span>   assignment-0-code.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記のように表示が”Changes to be comitted”に変わっています。これは、「ステージングされたけど、まだコミットされていない変更」という意味です。</p>
+<p>この時点で、assignment-0-code.pyの変更は、作業ディレクトリからステージングエリアに入れられました。この状態では、まだ変更はリポジトリに記録されていません。記録する変更の候補としてノミネートされただけです。ステージングエリアに入れられた変更をリポジトリに記録するには、コミットという作業によって変更をコミット履歴に登録する必要があります。</p>
+<p>ステージングエリアに入ったがまだコミットされていない変更は次のようにリセット(アンステージ)することができます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git reset</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Unstaged</span> changes after reset:</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="ex">M</span>       assignment-0-code.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ためしに<code>git status</code>して、状態がもとに戻っていることを確認してください。確認をおえたら、もう一度<code>git add -A</code>によりステージングしておきましょう。</p>
+<p>なお、新しく作成したファイルは、作業エリア内にのみ存在しますが、一度もステージングしていないと、リポジトリはこのファイルに関する記録を何も持たないことになります(それが存在するということを除いて)。従って、新規ファイルはステージングして初めて内容の変更を追跡管理されることを覚えておいてください。</p>
+</section>
+<section id="変更のコミット" class="level2">
+<h2 class="anchored" data-anchor-id="変更のコミット">変更のコミット</h2>
+<p>ステージングエリアに入れた変更をリポジトリに記録するには、コミットする必要があります。コミットには、常に1行以上のメッセージを付ける必要があります。1行だけのメッセージをつけるときは、次のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"My first commit"</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[master</span> c70dbc9] My first commit</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">1</span> file changed, 1 insertion<span class="er">(</span><span class="ex">+</span><span class="kw">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで”My first commit”がメッセージです。メッセージは、後からコミット履歴を調べたときに、個々のコミットが何のためのコミットであったか分かりやすくするためのものです。</p>
+<p>では状態がどのように変化したか、git statusで調べてみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git status</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="ex">On</span> branch master</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="ex">nothing</span> to commit, working tree clean</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>“nothing to commit”、つまり、コミットすべきものはもう何もない、と表示されています。これにより、ステージングエリア、コミット履歴が全て最新の状態、すなわち作業スペースと同じ状態になったことが分かります。</p>
+<p>コミットを取り消してコミット前(ステージングした状態)に戻すには、次のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git reset <span class="at">--soft</span> HEAD^</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Unstaged</span> changes after reset:</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="ex">M</span>       assignment-0-code.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで”–soft”は、「コミット履歴だけ戻すけど、ステージングエリアまでは元にもどさない」という意味です。HEAD^は大雑把に言うと「現在地点より一つ前」という意味です。ステージングエリアも元に戻したい場合はさらに<code>git reset</code>すれば良いでしょう。</p>
+<p>それではせっかくもとに戻したので、別の方法でコミットしてみます。メッセージなしでgit commitしてみてください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>すると、(Gitの初期設定とVS Codeのパス設定を正しくしていれば)VS Codeが起動して、コミットメッセージの入力を求められます。この状態では、複数行のメッセージをつけることができます。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/commit-message.png" class="img-fluid figure-img"></p>
+<figcaption>commit-message</figcaption>
+</figure>
+</div>
+<p>その際、最初の1行にはシンプルなメッセージを書き、1行あけてより詳しいメッセージを書くようにしてください。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/commit-code.png" class="img-fluid figure-img"></p>
+<figcaption>commit-code</figcaption>
+</figure>
+</div>
+<p>メッセージを書き終わったら、保存してVS Codeを終了すると、bashに戻ります。git statusしてコミット履歴とステージングエリアがともに最新になっているか確かめておいてください。</p>
+<p>なお、「面倒くさいのでステージングとコミットをまとめてやってしまいたい」という場合は、次のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-a</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>同様に、1行メッセージで済ませるときは、</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb28"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-a</span> <span class="at">-m</span> <span class="st">"My message"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>です。</p>
+</section>
+<section id="リモートをローカルに同期プッシュ" class="level2">
+<h2 class="anchored" data-anchor-id="リモートをローカルに同期プッシュ">リモートをローカルに同期(プッシュ)</h2>
+<p>リポジトリの変更をコミットしたら、次はこれをリモートリポジトリにアップロードして課題提出完了となります。この作業を<strong>プッシュ</strong>といいます。言い変えると、リモートの状態をローカルに同期させる作業ということになります。</p>
+<p>プッシュする前に、次のコマンドを実行しておくと便利です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb29"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git branch <span class="at">--set-upstream-to</span><span class="op">=</span>origin/master</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Branch</span> <span class="st">'master'</span> set up to track remote branch <span class="st">'master'</span> from <span class="st">'origin'</span>.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このコマンドを正確に説明するのは難しいですが、ごく大雑把にいうとoriginはリモートリポジトリを、masterはリモートの最新のコミットを表します。上記のコマンドは、(大雑把に言うと)「このリポジトリは、リモートリポジトリoriginのmasterと繋げてくださいね」といった意味合いになります。ちょっと不正確ですが、正しく説明しようとすると<strong>ブランチ</strong>の概念が必要になってきます(本講義ではブランチを詳しく説明することはしません)。</p>
+<p><code>origin/master</code>を<strong>上流ブランチ</strong>といいます。上流ブランチが正しく設定されているかを確認するには、次のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb30"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git status <span class="at">-sb</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="co">## master...origin/master</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記のように<code>## master...origin/master</code>と出ていれば成功です。</p>
+<p>プッシュは次のコマンドでおこないます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb31"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git push</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Enumerating</span> objects: 5, done.</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Counting</span> objects: 100% <span class="er">(</span><span class="ex">5/5</span><span class="kw">)</span><span class="ex">,</span> done.</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Delta</span> compression using up to 4 threads</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Compressing</span> objects: 100% <span class="er">(</span><span class="ex">2/2</span><span class="kw">)</span><span class="ex">,</span> done.</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="ex">Writing</span> objects: 100% <span class="er">(</span><span class="ex">3/3</span><span class="kw">)</span><span class="ex">,</span> 379 bytes <span class="kw">|</span> <span class="ex">379.00</span> KiB/s, done.</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Total</span> 3 <span class="er">(</span><span class="ex">delta</span> 0<span class="kw">)</span><span class="ex">,</span> reused 0 <span class="er">(</span><span class="ex">delta</span> 0<span class="kw">)</span><span class="ex">,</span> pack-reused 0</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a><span class="ex">To</span> https://github.com/kut-econ/assignment-pr21-0-kouka-taro.git</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>   <span class="ex">cb907d6..16ae7e9</span>  master <span class="at">-</span><span class="op">&gt;</span> master</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>なお”–set-upstream-to”の設定を行わなかった場合は、代わりに</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb32"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin master</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>もしくは</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb33"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin master</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>と入力する必要があります。前者は上流ブランチの設定をしませんが、後者は<code>push</code>と同時に上流ブランチを<code>origin/master</code>に設定します。</p>
+<p>プッシュの際にパスワードを尋ねられた場合は、GitHubのパスワードを入力してください。</p>
+<p>上記で、originはリモートリポジトリを表します。masterはリモートリポジトリの最新のコミットを表します。“git push origin master”は、リモートリポジトリ(origin)に保存されている最新のコミット(master)に、ローカルリポジトリの最新版をプッシュして上乗せ更新せよ、という意味になります。</p>
+<p>プッシュが完了すれば、課題提出成功となります。ちゃんとプッシュできたか確認するには、GitHubのサイトで確認するのが最も確実です。全ての課題リポジトリが保存されている<a href="https://github.com/kut-econ">KUT Econ Programming Course</a>のサイトにアクセスして、目当ての課題リポジトリ名を見つけましょう。課題リポジトリ名をクリックすると、リモートの中身を閲覧できますので、ちゃんとプッシュが成功しているか確かめておいてください。</p>
+</section>
+<section id="ローカルをリモートに同期プル" class="level2">
+<h2 class="anchored" data-anchor-id="ローカルをリモートに同期プル">ローカルをリモートに同期(プル)</h2>
+<p>2台以上のパソコン(たとえば家と大学など)で同じ課題を行う場合、両方のパソコンで同じリモートリポジトリをクローンし、2台の作業を同期させたい場合があります。そのためには、プッシュするだけではなく、ローカルの状態をリモートの状態に同期させる逆の作業が必要になります。これをプルといいます。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/pull.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>pull</figcaption>
+</figure>
+</div>
+<p>2台目に初めてローカルリポジトリを作る時は、単にクローンすれば良いだけです。そのあとは、リモートに変更があるたびに、<strong>プル</strong>して同期します。プルは非常に簡単で、次のように入力するだけです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb34"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これだけです。<code>fetch</code>はリモートの状態を確かめるコマンドです。<code>git fetch</code>のあとに<code>git status</code>すれば、ローカルが何コミット分遅れているかが表示されますので、確かに<strong>ローカルの方がリモートより遅れている</strong>ことを確認しましょう。</p>
+<p>確かにリモートのほうが新しければ、git pullによってローカルをリモートに同期させることができます。</p>
+</section>
+<section id="その他の操作" class="level2">
+<h2 class="anchored" data-anchor-id="その他の操作">その他の操作</h2>
+<p>次は、Gitのさらに発展的な操作について学んでいきましょう。次のパブリックリポジトリを<code>GitHub</code>ディレクトリの下にクローンしてください。</p>
+<p><a href="https://github.com/kut-econ/practice-pr21-0">practice-pr21-0</a></p>
+<p>ここから先は、VS CodeでリポジトリのREADMEを読んでください。</p>
+</section>
+<section id="主なgitコマンドまとめ" class="level2">
+<h2 class="anchored" data-anchor-id="主なgitコマンドまとめ">主なGitコマンドまとめ</h2>
+<p>最後に主要なGitコマンドをリストアップしておきましょう。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>コマンド</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>git clone</code></td>
+<td>リモートリポジトリをローカルにコピー</td>
+</tr>
+<tr class="even">
+<td><code>git status</code></td>
+<td>リポジトリの状態をチェック</td>
+</tr>
+<tr class="odd">
+<td><code>git add -A</code></td>
+<td>作業エリアの変更をすべてステージ</td>
+</tr>
+<tr class="even">
+<td><code>git add filename</code></td>
+<td>ファイルfilenameの変更をステージ</td>
+</tr>
+<tr class="odd">
+<td><code>git commit -m "Message"</code></td>
+<td>メッセージ”Message”をつけてコミット</td>
+</tr>
+<tr class="even">
+<td><code>git commit</code></td>
+<td>コミット(メッセージはエディタで入力)</td>
+</tr>
+<tr class="odd">
+<td><code>git branch --set-upstream-to=origin/master</code></td>
+<td>ローカルと同期させるリモートを設定</td>
+</tr>
+<tr class="even">
+<td><code>git push</code></td>
+<td>リモートをローカルに同期</td>
+</tr>
+<tr class="odd">
+<td><code>git pull</code></td>
+<td>ローカルをリモートに同期</td>
+</tr>
+<tr class="even">
+<td><code>git reset</code></td>
+<td>ステージングエリアをコミットせずに破棄</td>
+</tr>
+<tr class="odd">
+<td><code>git reset --hard HEAD</code></td>
+<td>作業エリアとステージングエリアをコミットせずに共に破棄</td>
+</tr>
+<tr class="even">
+<td><code>git reset --soft HEAD^</code></td>
+<td>コミット履歴だけ一つ前に戻す</td>
+</tr>
+<tr class="odd">
+<td><code>git reset --mixed HEAD^</code></td>
+<td>コミット履歴を一つ前に戻してステージングエリアもそれに合わせる</td>
+</tr>
+<tr class="even">
+<td><code>git reset --hard HEAD^</code></td>
+<td>コミット履歴を一つ前に戻して作業エリアとステージングエリアもそれに合わせる</td>
+</tr>
+<tr class="odd">
+<td><code>git log</code></td>
+<td>コミット履歴を閲覧する</td>
+</tr>
+</tbody>
+</table>
+<p>Gitには便利なコマンドが無数に存在しますので、インターネット等で調べ、少しずつGitの構造を理解していきましょう。</p>
+</section>
+<section id="まとめ" class="level2">
+<h2 class="anchored" data-anchor-id="まとめ">まとめ</h2>
+<p>本講義では、以下のことを学びました。</p>
+<ul>
+<li>バージョン管理の意義</li>
+<li>GitHubの登録</li>
+<li>リポジトリの操作
+<ul>
+<li>クローン</li>
+<li>ステージング</li>
+<li>コミット</li>
+<li>プッシュ</li>
+<li>プル</li>
+<li>各種リセット</li>
+</ul></li>
+</ul>
+<p>今回の講義では、課題を提出するために必要最低限のGitコマンドだけ学びました。本格的な開発にGitを使うためには、参考書を手に入れてより深く学ぶことをお勧めします(『独習Git』がお勧めです)。</p>
+</section>
+<section id="参考書" class="level2">
+<h2 class="anchored" data-anchor-id="参考書">参考書</h2>
+<ul>
+<li><a href="https://www.amazon.co.jp/%E3%81%9F%E3%81%A3%E3%81%9F1%E6%97%A5%E3%81%A7%E5%9F%BA%E6%9C%AC%E3%81%8C%E8%BA%AB%E3%81%AB%E4%BB%98%E3%81%8F-Git%E8%B6%85%E5%85%A5%E9%96%80-%E3%83%AA%E3%83%96%E3%83%AD%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9/dp/4297114402">『1日で基本が身に付く!Git超入門』</a> (リブロワークス著) (2020) 技術評論社. ISBN-13 : 978-4297114404.</li>
+<li><a href="https://www.amazon.co.jp/%E7%8B%AC%E7%BF%92Git-%E3%83%AA%E3%83%83%E3%82%AF%E3%83%BB%E3%82%A6%E3%83%9E%E3%83%AA/dp/4798144614/ref=tmm_other_meta_binding_swatch_0?_encoding=UTF8&amp;qid=1621179493&amp;sr=8-1">『独習Git』</a> (Rick Umali著、吉川邦夫 訳) (2016) 翔泳社. ISBN-13 : 978-4798144610.</li>
+</ul>
+<!--
+## 宿題(ホームワーク)
+
+1. GitHubを研究し、新しいリモートリポジトリを作ってみなさい。また、新しく作成したリモートリポジトリをローカルにクローンし、変更を加えてプッシュしてみなさい。
+2. 自作したリモートリポジトリを別のパソコンでクローンし、2台のパソコンで相互にプッシュ・プルを試してみなさい。
+3. リポジトリの状態を特定時点のコミットに戻す方法を調べなさい。
+4. リポジトリ内のファイル名を変更する方法について調べなさい。すなわち、ファイルの内容ではなく「ファイル名の変更」をステージするにはどうすればいいか？
+5. リポジトリ内のファイルを削除する方法について調べなさい。すなわち、「ファイルの削除」をステージするにはどうすればいいか？
+6. `git log`コマンドについて研究しなさい。これは過去のコミット履歴を表示するものです。
+7. `git checkout`コマンドについて調べなさい。`HEAD`と`master`が分離する(detach)とはどのような状態を表すか？
+8. Gitの「ブランチ」について調べなさい。それはどのようなものか？
+-->
+<!--[def]: img/signup5_modified.PNG-->
+</section>
+<section id="補遺" class="level2">
+<h2 class="anchored" data-anchor-id="補遺">補遺</h2>
+<section id="sshポートの設定" class="level3">
+<h3 class="anchored" data-anchor-id="sshポートの設定">sshポートの設定</h3>
+<p>大学の<strong>有線LAN</strong>に繋がっているパソコンの場合は、sshのポートを正しく設定する必要があります。ただし、コンピュータールームのパソコンは、講義の中で自動プログラムにより設定を行ないますので、本項目の作業は不必要です。</p>
+<p><code>.ssh</code>フォルダの中に、<code>config</code>という名前のテキストファイルを作って、中に次のように記述して保存してください(コピペして整形し、プロキシの情報を正しく編集してください)。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb35"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>Host github.com</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  User git</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  HostName ssh.github.com</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>  Port 443</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>  IdentityFile ~/.ssh<span class="at">/id_rsa</span></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>  ProxyCommand connect <span class="at">-H</span> http:/<span class="at">/proxy</span>.addr:0000 %h %p</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで、<code>http://proxy.addr:0000</code>は適切なプロキシサーバーのアドレスとポート番号です。</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/Yamachan050125\.github\.io\/yamachan050125\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>programming-4 – Syakaikano-Omochabako</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-43081d808c96cc46af55a3a816ae9eed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Syakaikano-Omochabako</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#第4回-変数とメモリ" id="toc-第4回-変数とメモリ" class="nav-link active" data-scroll-target="#第4回-変数とメモリ">第4回 変数とメモリ</a>
+  <ul class="collapse">
+  <li><a href="#代入付値とは何か" id="toc-代入付値とは何か" class="nav-link" data-scroll-target="#代入付値とは何か">代入(付値)とは何か</a></li>
+  <li><a href="#ハコ型代入" id="toc-ハコ型代入" class="nav-link" data-scroll-target="#ハコ型代入">ハコ型代入</a></li>
+  <li><a href="#ラベル型代入" id="toc-ラベル型代入" class="nav-link" data-scroll-target="#ラベル型代入">ラベル型代入</a></li>
+  <li><a href="#参照カウンタ" id="toc-参照カウンタ" class="nav-link" data-scroll-target="#参照カウンタ">参照カウンタ</a></li>
+  <li><a href="#copy-on-modifyメカニズム" id="toc-copy-on-modifyメカニズム" class="nav-link" data-scroll-target="#copy-on-modifyメカニズム">Copy on modifyメカニズム</a>
+  <ul class="collapse">
+  <li><a href="#練習1" id="toc-練習1" class="nav-link" data-scroll-target="#練習1">練習1</a></li>
+  </ul></li>
+  <li><a href="#pythonの挙動" id="toc-pythonの挙動" class="nav-link" data-scroll-target="#pythonの挙動">Pythonの挙動</a></li>
+  <li><a href="#デバッグモードの活用" id="toc-デバッグモードの活用" class="nav-link" data-scroll-target="#デバッグモードの活用">デバッグモードの活用</a></li>
+  <li><a href="#ステップイン" id="toc-ステップイン" class="nav-link" data-scroll-target="#ステップイン">ステップイン</a></li>
+  <li><a href="#変更と代入の違い" id="toc-変更と代入の違い" class="nav-link" data-scroll-target="#変更と代入の違い">変更と代入の違い</a>
+  <ul class="collapse">
+  <li><a href="#練習2" id="toc-練習2" class="nav-link" data-scroll-target="#練習2">練習2</a></li>
+  <li><a href="#練習3" id="toc-練習3" class="nav-link" data-scroll-target="#練習3">練習3</a></li>
+  </ul></li>
+  <li><a href="#ミュータブルとイミュータブル" id="toc-ミュータブルとイミュータブル" class="nav-link" data-scroll-target="#ミュータブルとイミュータブル">ミュータブルとイミュータブル</a></li>
+  <li><a href="#イミュータブルオブジェクトの再利用" id="toc-イミュータブルオブジェクトの再利用" class="nav-link" data-scroll-target="#イミュータブルオブジェクトの再利用">イミュータブルオブジェクトの再利用</a></li>
+  <li><a href="#動的型付け" id="toc-動的型付け" class="nav-link" data-scroll-target="#動的型付け">動的型付け</a></li>
+  <li><a href="#変数にまつわる用語" id="toc-変数にまつわる用語" class="nav-link" data-scroll-target="#変数にまつわる用語">変数にまつわる用語</a></li>
+  <li><a href="#まとめ" id="toc-まとめ" class="nav-link" data-scroll-target="#まとめ">まとめ</a></li>
+  <li><a href="#参考書" id="toc-参考書" class="nav-link" data-scroll-target="#参考書">参考書</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="第4回-変数とメモリ" class="level1">
+<h1>第4回 変数とメモリ</h1>
+<ul>
+<li><a href="#第4回-変数とメモリ">第4回 変数とメモリ</a>
+<ul>
+<li><a href="#代入付値とは何か">代入(付値)とは何か</a></li>
+<li><a href="#ハコ型代入">ハコ型代入</a></li>
+<li><a href="#ラベル型代入">ラベル型代入</a></li>
+<li><a href="#参照カウンタ">参照カウンタ</a></li>
+<li><a href="#copy-on-modifyメカニズム">Copy on modifyメカニズム</a>
+<ul>
+<li><a href="#練習1">練習1</a></li>
+</ul></li>
+<li><a href="#pythonの挙動">Pythonの挙動</a></li>
+<li><a href="#デバッグモードの活用">デバッグモードの活用</a></li>
+<li><a href="#ステップイン">ステップイン</a></li>
+<li><a href="#変更と代入の違い">変更と代入の違い</a>
+<ul>
+<li><a href="#練習2">練習2</a></li>
+<li><a href="#練習3">練習3</a></li>
+</ul></li>
+<li><a href="#ミュータブルとイミュータブル">ミュータブルとイミュータブル</a></li>
+<li><a href="#イミュータブルオブジェクトの再利用">イミュータブルオブジェクトの再利用</a></li>
+<li><a href="#動的型付け">動的型付け</a></li>
+<li><a href="#変数にまつわる用語">変数にまつわる用語</a></li>
+<li><a href="#まとめ">まとめ</a></li>
+<li><a href="#参考書">参考書</a></li>
+</ul></li>
+</ul>
+<section id="代入付値とは何か" class="level2">
+<h2 class="anchored" data-anchor-id="代入付値とは何か">代入(付値)とは何か</h2>
+<p>本講義の受講者にとって、Rの次のような操作は至極ありふれたものだと思います。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># コード1</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> x</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>x[<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(y)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記のコマンドを実行したときに、どのような結果が出力されるかを答えられない人はいないでしょう。実際にRの対話的インタープリタを起動するか、VS Code上で実行してみれば良いでしょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">print</span>(x)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">1</span> <span class="dv">5</span> <span class="dv">3</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">print</span>(y)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>しかし、コード1で実際に何が起きているのかを正しく説明できる人はあまり多くないと思います。多くの人が次のように考えているのではないでしょうか？</p>
+<ol type="1">
+<li>変数xにベクトル(1,2,3)が代入される</li>
+<li>変数yに変数xの値、つまり(1,2,3)がコピーされる</li>
+<li>変数xの第2要素が5に書き換えられる</li>
+<li>変数xの値が出力される</li>
+<li>変数yの値が出力される</li>
+</ol>
+<p>しかし、実際に起きていることは、上記と少し違います。今回の目標はこれを理解することとします。今回の講義で、変数に値を代入するときRやPythonでは何が起きているのかが、ある程度分かるようになります。第1回で学んだメモリやアドレスの概念が必須になります。</p>
+</section>
+<section id="ハコ型代入" class="level2">
+<h2 class="anchored" data-anchor-id="ハコ型代入">ハコ型代入</h2>
+<p>上記の説明がどのように間違っているかを説明する前に、初学者向けの書籍に良く見られる「箱の比喩」を用いた代入の説明について解説しておきます。</p>
+<p>箱を用いた説明とは、次のようなものです。</p>
+<blockquote class="blockquote">
+<p>下図のように、変数<code>x</code>に<code>1</code>を代入するということは、<code>x</code>という箱に<code>1</code>という値を入れることであり、<code>y</code>に<code>x</code>を代入するということは、<code>x</code>に入っている値<code>1</code>をコピーして<code>y</code>という箱に入れることである。</p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/box_explanation.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>box-type substitution</figcaption>
+</figure>
+</div>
+<p>このような説明は、C言語のようなプログラミング言語では正しい比喩ですが、RやPythonでは正しくありません。特にPythonでは正しい理解を妨げる説明です。</p>
+<p>C言語では、次のようにして、予めxやyが整数であることを変数の作成時に宣言します</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> x<span class="op">,</span>y<span class="op">;</span> <span class="co">// x,yが整数であることを宣言</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ソースファイルにこの宣言を見つけたCのコンパイラは、マシン語に変換する際に、xやyといった変数名をメモリのアドレス(実際にはメモリ領域)あるいはレジスタ名といったもので置き換えてしまいます。</p>
+<p>したがって、</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> x<span class="op">;</span>  <span class="co">// xの値をyに代入</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>という代入操作は、あるアドレスのメモリ領域に格納されている値を別のメモリ領域にコピーすることを意味します。したがって、メモリ領域を箱と考えれば、箱の比喩は正しく実際に起こっていることを表しています。</p>
+</section>
+<section id="ラベル型代入" class="level2">
+<h2 class="anchored" data-anchor-id="ラベル型代入">ラベル型代入</h2>
+<p>プログラミングの世界では、124や”c”のような具体的な数値や文字だけではなく、それを操作するための付属的な情報を合わせもつものを<strong>オブジェクト</strong>と呼びます。</p>
+<p>オブジェクトは、表面的には数値や文字ですが、実際には数値や文字を格納する領域以外にもメモリ領域を占有しています。C言語の整数や文字列は、値を格納する分だけのメモリ領域しか占有しないので、オブジェクトではありません。一方、PythonやRの数値や文字列はすべてオブジェクトです。</p>
+<p>RやPythonでの代入の説明でより現実に近いのは以下のような比喩です。</p>
+<blockquote class="blockquote">
+<p>下図のように、変数<code>x</code>に1を代入するということは、1という<a href="https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88_(%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0)"><strong>オブジェクト</strong></a>に<code>x</code>というラベルを貼り付けることであり、変数<code>y</code>に<code>x</code>を代入するという操作は、ラベル<code>x</code>がついているオブジェクトにもう一つ<code>y</code>という別のラベルを貼り付けることである。</p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/label_explanation.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>label-type substitution</figcaption>
+</figure>
+</div>
+<p>この正しい見方では、1という一つのオブジェクトに<code>x</code>、<code>y</code>という二つのラベルが貼り付けられています。このようなラベルのことを<strong>参照</strong>(reference)と呼ぶことがあります。また、変数<code>x</code>や<code>y</code>はオブジェクト<code>1</code>を<strong>参照している</strong>ということもあります。</p>
+<p>それでは、Rでの代入操作(y &lt;- x)がこのような「ラベル張り」であるということを確かめてみましょう。そのために、<a href="http://hadley.nz/">Hadley Wickham</a>が作った<a href="https://cran.r-project.org/web/packages/pryr/index.html">pryr</a>パッケージをインストールしましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'pryr'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>pryrを読み込むと関数addressを使うことができるようになります。addressは、引数として与えた変数(参照)が指し示しているオブジェクトのアドレスを返す関数です。実際に使ってみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pryr)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">address</span>(x)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> x</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">address</span>(y)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上のように対話的インタープリタで入力すると、次のような出力が得られます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">address</span>(x)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"0x183f3110"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> y <span class="ot">&lt;-</span> x</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">address</span>(y)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"0x183f3110"</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>出力が二つ得られていますが、一つ目の値<strong>0x183f3110</strong>は、<code>x</code>というラベルが貼り付けられているベクトル<code>(1,2,3)</code>というオブジェクトが格納されているメモリのアドレスを16進数で表したものです（具体的なアドレスの値は、実行時ごとに異なります）。また、二つ目の出力は、<code>y</code>というラベルが貼り付けられているオブジェクトのメモリ上のアドレスですが、これも<strong>0x183f3110</strong>となっており、<code>x</code>と同じオブジェクトにyが貼り付けられているということが分かります。</p>
+<p>このように、C言語とは違って<code>x</code>、<code>y</code>という別個のメモリアドレスが存在するわけではないことが分かります。</p>
+</section>
+<section id="参照カウンタ" class="level2">
+<h2 class="anchored" data-anchor-id="参照カウンタ">参照カウンタ</h2>
+<p>ところが、Rは<strong>Copy on modify</strong>という機構を備えていて、ラベル張りであることを余り意識させない作りになっています。Copy on modify機構について説明するために、まずは<strong>参照カウンタ</strong>(リファレンスカウンタ）について説明しましょう。以下、Rのヴァージョン3系列(3.5,3.6等)を仮定して話を進めますが、出力はヴァージョン4でも同じになるはずです。(ヴァージョン3と4の違いは課題で取り扱います。)</p>
+<p>ベクトルのようなRのオブジェクトは、自分に何枚のラベルがついているかに関する情報を内部に格納しています。換言すると、Rオブジェクトは、自分がいくつの変数(xやy)に<strong>参照されているか</strong>を知っています。オブジェクトを参照している変数の数の事を<strong>参照カウント</strong>と呼びます。Rオブジェクトは、内部に自分自身の参照カウントを記憶する<strong>参照カウンタ</strong>を持っています。</p>
+<p>参照カウンタの値は、関数<code>pryr::refs</code>によって調べることができます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>()) <span class="co">#一応全変数を削除</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">refs</span>(x)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">1</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> y <span class="ot">&lt;-</span> x</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">refs</span>(x)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">2</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">refs</span>(y)</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">2</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="copy-on-modifyメカニズム" class="level2">
+<h2 class="anchored" data-anchor-id="copy-on-modifyメカニズム">Copy on modifyメカニズム</h2>
+<p>さて、次のようにxに代入したベクトル(1,2,3)の内容を書き換えようとするとき、参照カウントが1の場合と2以上の場合では、Rは異なる挙動を示します。</p>
+<p>まずxの参照カウントが1の場合です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>()) <span class="co">#全変数を削除</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">address</span>(x)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>x[<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">address</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記を実行すると、次のような出力が得られます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">address</span>(x)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"0x17f14dd8"</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> x[<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">address</span>(x)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"0x17f14dd8"</span> <span class="co">#xのアドレスは変わらない</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記のように、<code>x</code>の内容を書き換える前後で、<code>x</code>は同じオブジェクトを参照しています。</p>
+<p>ところが、<code>x</code>の参照カウントが2以上のとき、つまり<code>x</code>と同じオブジェクトを参照する変数<code>y</code>が存在するとき、異なる挙動が起きます。次を実行してみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>()) <span class="co">#全変数を削除</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> x</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">address</span>(x)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">address</span>(y)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>x[<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="fu">address</span>(x)</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="fu">address</span>(y)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記を実行すると、次のような出力が得られます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>()) <span class="co">#全変数を削除</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> y <span class="ot">&lt;-</span> x</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">address</span>(x)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"0x17ecbc78"</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">address</span>(y)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"0x17ecbc78"</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> x[<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">address</span>(x)</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"0x17ecb598"</span>  <span class="co">#xのアドレスが変わった</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">address</span>(y)</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"0x17ecbc78"</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記のように、参照カウントが2以上になると、オブジェクトの内容を変更する際に、あらたなメモリ領域が確保され、オブジェクトがコピーされてから変更が行われることが分かります。このメカニズムを<strong>Copy on modify</strong>と呼びます。</p>
+<p>Copy on modify機構のおかげで、Rのプログラマは、オブジェクトがいくつの変数に参照されているかをあまり意識する必要がありません。xの内容を修正したときに、うっかりyの内容まで修正してしまう危険がないわけです。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/copy_on_modify.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>copy_on_modify</figcaption>
+</figure>
+</div>
+<section id="練習1" class="level3">
+<h3 class="anchored" data-anchor-id="練習1">練習1</h3>
+<ol type="1">
+<li><p>次のRコードは、二つの参照を持つリストオブジェクトの内容を変更するものである。<code>pryr::address</code>関数を用いて、上記のコードでCopy on modify機構が働いているかどうか確かめなさい。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>()) <span class="co"># 全変数を削除</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">a=</span><span class="st">'A'</span>,<span class="at">b=</span><span class="st">'B'</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> x</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>x[[<span class="st">'a'</span>]] <span class="ot">&lt;-</span> <span class="st">'AA'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>次はさらに複雑な例である。<code>x</code>はリストを要素にもつリストである。この入れ子になった内側のリストに変更を加えたとき、Copy on modifyは働くか？確かめなさい。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>())</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">a=</span><span class="fu">list</span>(<span class="at">b=</span><span class="st">'B'</span>,<span class="at">d=</span><span class="st">'D'</span>))</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> x</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>x[[<span class="st">'a'</span>]][[<span class="st">'b'</span>]] <span class="ot">&lt;-</span> <span class="st">'BB'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
+</section>
+</section>
+<section id="pythonの挙動" class="level2">
+<h2 class="anchored" data-anchor-id="pythonの挙動">Pythonの挙動</h2>
+<p>ところが、PythonにはCopy on modify機構がありません。どういうことかというと、オブジェクトがいくつの変数に参照されているかにかからわず、オブジェクトの内容変更に伴うコピーは自動的には起きません。</p>
+<p>これを実際に確かめてみましょう。 Pythonにはベクトル型は存在しないので、代わりにリストを使いましょう。たとえば1,2,3という三つの整数を要素にもつリストは次のように作成します。(リストについては、次回詳しく取り上げます。)</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Rのベクトルでは最初の要素にアクセスするには<code>x[1]</code>と書きますが、pythonのリストでは<code>x[0]</code>と書きます。つまり、インデックスは0からはじまります。それを除けばインデクシングのルールはRのベクトルと非常によく似ています。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="dv">0</span>]</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="dv">1</span>]</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="dv">2</span>]</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>さてそれでは準備が出来たので実験を開始しましょう。 PythonにおけるRの<code>pryr::address</code>に対応する関数はビルトイン関数の<code>id</code>です。<code>id</code>は、変数が参照するオブジェクトのアドレスを10進数で返します。まずはpythonの変数が参照であることを確認しましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> x</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">id</span>(x)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="dv">2080340453760</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">id</span>(y)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="dv">2080340453760</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">id</span>(x) <span class="op">==</span> <span class="bu">id</span>(y)</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>最後の<code>id(x) == id(y)</code>という式は、Rと同じで、左辺と右辺が正しければ<code>True</code>、違っていれば<code>False</code>を返す二項演算です。上記より、確かにpythonの代入がラベル型であることが分かります。なお、<code>id(x) == id(y)</code>は、次のように書くこともできます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> x</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="kw">is</span> y</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>“<code>x is y</code>”は、xとyが同じオブジェクトを指しているときに<code>True</code>、そうでないときに<code>False</code>となります。</p>
+<p>それでは次に、Copy on modifyが働かないことを確かめましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> x</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="kw">is</span> y</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="dv">1</span>] <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>, <span class="dv">5</span>, <span class="dv">3</span>]</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y   <span class="co"># yまで変化した</span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>, <span class="dv">5</span>, <span class="dv">3</span>]</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="kw">is</span> y <span class="co"># Copy on modifyは起きていない</span></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記のように、複数の参照をもつオブジェクトの内容を変更すると、それを参照する全ての変数の内容が変わってしまいます。下図のように、Rとは違ってPythonはCopy on modifyを行わないからです。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/not_copy_on_modify.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>not_copy_on_modify</figcaption>
+</figure>
+</div>
+</section>
+<section id="デバッグモードの活用" class="level2">
+<h2 class="anchored" data-anchor-id="デバッグモードの活用">デバッグモードの活用</h2>
+<p>オブジェクトのメモリアドレスやオブジェクトの同一性がプログラムの中でどのように変化していくかを観察するには、VS Codeのデバッグモードを用いると分かりやすいです(<strong>condaコマンドのパスを通している必要があります</strong>)。</p>
+<p>GitHubディレクトリの下に、<code>vars</code>というディレクトリを作成し、VS Codeで開きましょう。<code>debug.py</code>というファイルを作成し、次のように記述してください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> x</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>x[<span class="dv">1</span>] <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="cf">pass</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>pass</code>は、『何もしない』を意味します。</p>
+<p>次に、VS Codeの画面左側の虫のマークをクリックしてください。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/bug.png" class="img-fluid figure-img"></p>
+<figcaption>bug</figcaption>
+</figure>
+</div>
+<p>『実行とデバッグ』というボタンが現れますが、そのすぐ下の、『launch.jsonファイルを作成します』をクリックしてください。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/launch_json.png" class="img-fluid figure-img"></p>
+<figcaption>launch_json</figcaption>
+</figure>
+</div>
+<p><code>Debug Configuration</code>というパレットが立ち上がりますので、一番上の、<code>Python File Debug the currently active Python file</code>を選択してください。これで、今選択しているPythonコードをデバッグすることができるようになります。<code>launch.json</code>という設定ファイルが作成されますが、閉じてください。</p>
+<p>開いている<code>debug.py</code>ファイルの1行目の左がわをクリックして、赤い印をつけましょう。これを<strong>ブレークポイント</strong>と呼びます。デバッグをするときは、このブレークポイントを一つ以上設定します。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/break_point.png" class="img-fluid figure-img"></p>
+<figcaption>break_point</figcaption>
+</figure>
+</div>
+<p>次に、『ウォッチ式』を定義します。画面左側中程にある『ウォッチ式』ペインの『＋』マークをクリックして、ウォッチ式を入力しましょう。ここでは次の3つのウォッチ式を入力してください。</p>
+<ul>
+<li>id(x)</li>
+<li>id(y)</li>
+<li>x is y</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/watch_eq.png" class="img-fluid figure-img"></p>
+<figcaption>watch_eq</figcaption>
+</figure>
+</div>
+<p>ウォッチ式とは、デバッグ中にリアルタイムで『ウォッチ』したい式のことです。</p>
+<p>以上でデバッグの準備が整いました。</p>
+</section>
+<section id="ステップイン" class="level2">
+<h2 class="anchored" data-anchor-id="ステップイン">ステップイン</h2>
+<p>デバッグを起動するには、左上の緑色の三角マークをクリックします。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/debug_button.png" class="img-fluid figure-img"></p>
+<figcaption>debug_button</figcaption>
+</figure>
+</div>
+<p>デバッグが起動すると、プログラムが実行され、ブレークポイントの行を実行する直前でストップします。また、画面上に6個のボタンが現れることに注意してください。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/stepin.png" class="img-fluid figure-img"></p>
+<figcaption>stepin</figcaption>
+</figure>
+</div>
+<p>これらのボタンは、左から順番に</p>
+<ul>
+<li>次のブレークポイントまで実行</li>
+<li>ステップオーバー</li>
+<li>ステップイン</li>
+<li>ステップアウト</li>
+<li>再起動</li>
+<li>停止</li>
+</ul>
+<p>を表します。ステップオーバーとステップアウトは関数に関係があるので、今は説明を保留します。</p>
+<p>ここから、<strong>ステップイン</strong>という操作によって、1行ずつコードを評価しながら、ウォッチ式の値がどのように変化していくか観察していきます。</p>
+<p>ステップインを表す下向きのやじるしをクリックしてください。すると、ブレークポイントの行が実行され、次の行へとフォーカスが移ります。</p>
+<p>左上の『変数』ペインの<code>Locals</code>欄と<code>Globals</code>欄の両方に<code>x: [1,2,3]</code>というのが現れるはずです。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/variable_pane.png" class="img-fluid figure-img"></p>
+<figcaption>variable_pane</figcaption>
+</figure>
+</div>
+<p>これは、変数<code>x</code>に<code>[1,2,3]</code>という値(オブジェクト)が付値されたということを表します。</p>
+<p>同時に、ウォッチ式のペインでは、<code>id(x)</code>の値に数字が現れるはずです。この値は、<code>id(x)</code>の値、すなわちオブジェクト<code>[1,2,3]</code>が位置するメモリのアドレスを表しています。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/watch_eq_assigned.PNG" class="img-fluid figure-img"></p>
+<figcaption>watch_eq_assigned</figcaption>
+</figure>
+</div>
+<p><code>y</code>のほうはまだ代入が起きていないため、ウォッチ式<code>id(y)</code>の値は<code>NameError</code>となっています。</p>
+<p>次に、もう一度ステップインしてください。次は、ウォッチ式<code>id(y)</code>の値が表示され、ウォッチ式<code>x is y</code>が<code>True</code>になるはずです。<code>id(x)</code>と<code>id(y)</code>の値が同じであることに注意してください。これは、<code>x</code>と<code>y</code>が同じオブジェクトを参照していることを表します。このことは、<code>x is y</code>が<code>True</code>になっていることからも分かります。</p>
+<p>もう一度ステップインすると、変数ペインの<code>x</code>と<code>y</code>の第2要素が同時に変化することに注意してください。これは、<code>x is y</code>が<code>True</code>だったので、予測できたことですね。</p>
+<p>最後にもう一度ステップインして<code>pass</code>の行を実行し、デバッグを終了しておきましょう。</p>
+</section>
+<section id="変更と代入の違い" class="level2">
+<h2 class="anchored" data-anchor-id="変更と代入の違い">変更と代入の違い</h2>
+<p>Pythonの初学者にとってちょっと分かりにくいのが、<strong>変数xが参照するオブジェクト自体の内容を修正する</strong>ということと、<strong>変数xに別のオブジェクトを代入する・参照させる</strong>(参照を付け直す)という二つの操作の違いです。<strong>変更</strong>では、変数が参照するオブジェクトのアドレスは変化しませんが、<strong>代入では変化します</strong>。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>操作</th>
+<th>参照先のアドレス</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>xが参照するオブジェクト自体の内容を変更</td>
+<td>変化しない</td>
+</tr>
+<tr class="even">
+<td>xに別のオブジェクトを代入</td>
+<td>変化する</td>
+</tr>
+</tbody>
+</table>
+<p>たとえば、次の例では、xとyが同じオブジェクトを参照している状態でxに別のオブジェクトを代入しましたが、yは変化していません。代入操作では、単にxが別のオブジェクトを参照するようになるだけで、もとのオブジェクトには何の影響も与えないからです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> x <span class="co"># xとyは同じオブジェクトを参照</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> [<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>] <span class="co"># xに異なるオブジェクトを代入</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>[<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y   <span class="co"># yは変化していない</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="kw">is</span> y  <span class="co"># xとyは違うオブジェクトを指している</span></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a><span class="va">False</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/substitution.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>substituion</figcaption>
+</figure>
+</div>
+<p>しかしながら、ほんの少しだけコードを変えて次のようにすると、xへの操作は<strong>代入</strong>ではなく<strong>変更</strong>になります。yの内容まで変わってしまいますので注意してください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> x</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[:] <span class="op">=</span> [<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>]  <span class="co"># スライス記法でxの内容を変更</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>[<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y   <span class="co"># yも変わってしまった</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>[<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="kw">is</span> y  <span class="co"># xとyは同じオブジェクトを参照</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/slice.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>slice</figcaption>
+</figure>
+</div>
+<p>変更したのは1行だけです。ここで用いた<code>x[:]</code>は<strong>スライス記法</strong>というもので、コロン<code>:</code>は「<strong>最初から最後まで、リストの全ての要素</strong>」を意味します。スライス記法については、教科書のセクション6.1.2に詳しく説明されているので読んでおきましょう。</p>
+<p>スライス記法がどのように機能しているのかを解説するついでに、Pythonに特有の<strong>アンパック代入</strong>も導入しておきましょう。Pythonでは、次のようにして、複数の変数に一挙に値を代入できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x,y,z <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> z</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これを<strong>アンパック代入</strong>と呼びます。アンパック代入については、教科書のセクション3.2.4に詳しいので読んでおいてください。</p>
+<p>上述のスライス記法の構文は、次のようにアンパック代入するのと実質的に同じことをやっていることになります。(実際には少し違います。)</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> x</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="dv">0</span>],x[<span class="dv">1</span>],x[<span class="dv">2</span>] <span class="op">=</span> [<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>]</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>[<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>[<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="kw">is</span> y</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これを見れば、スライス記法による代入が、実際にはxが指すリストオブジェクトの内容を変更してしまっているのが分かるでしょう。</p>
+<p>実際にはスライス記法による代入は、アンパック代入とは少し違って、左辺の要素数と右辺の要素数が違っても構いません。従って、いままで<code>[1,2,3]</code>があった<strong>ところ</strong>に<code>[1,2,3,4]</code>を代入することができます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> x</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[:] <span class="op">=</span> [<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>]</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>[<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>]</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>[<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>]</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="kw">is</span> y</span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>この操作では、一見、数字3個分のメモリ領域に4個めの数字を詰め込んでいるように見えます。ここでは種明かししませんが、このような一見無理のある代入をしたときにメモリ上で何が起きているのか、想像してみてください。そのような想像が、プログラミングのための思考能力を鍛えることになります。</p>
+<section id="練習2" class="level3">
+<h3 class="anchored" data-anchor-id="練習2">練習2</h3>
+<p>ここでは、スライス記法の働きを、VS Codeのデバッグモードで確かめてみましょう。ウォッチ式を<code>id(x)</code>、<code>id(y)</code>、<code>x is y</code>の3つに設定し、次の２つのコードをステップイン実行し、ウォッチ式の変化がどのように異なるか観察してください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> x</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>x[:] <span class="op">=</span> [<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>]  <span class="co"># スライス記法でxの内容を変更</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="cf">pass</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> x</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>]  <span class="co"># スライス記法でxの内容を変更</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="cf">pass</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="練習3" class="level3">
+<h3 class="anchored" data-anchor-id="練習3">練習3</h3>
+<p>次のコードにおいて、<code>x[1]</code>の変更が<code>y</code>の値に影響を与えるかどうか予想してから、実行して確かめてください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> [<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>]</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> x[<span class="dv">1</span>]</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="dv">1</span>] <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(y)   <span class="co"># いくつになるか?</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> [<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>]</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> x[:]</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="dv">1</span>] <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(y)   <span class="co"># 変わっているか?</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="ミュータブルとイミュータブル" class="level2">
+<h2 class="anchored" data-anchor-id="ミュータブルとイミュータブル">ミュータブルとイミュータブル</h2>
+<p>Pythonでは、代入と変更の違いに関連して、初学者を混乱させる<strong>ミュータブル</strong>なオブジェクトと<strong>イミュータブル</strong>なオブジェクトという概念があります。ミュータブルなオブジェクトは内容の書き換えが可能なオブジェクトであり、イミュータブルなオブジェクトとは、書き換え不可能なオブジェクトです。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>分類</th>
+<th>データ型</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ミュータブル</td>
+<td>リスト(<code>list</code>)、辞書(<code>dict</code>)、集合(<code>set</code>)</td>
+</tr>
+<tr class="even">
+<td>イミュータブル</td>
+<td>整数(<code>int</code>)、浮動小数点数(<code>float</code>)、文字列(<code>str</code>)、ブール値(<code>bool</code>)、タプル(<code>tuple</code>)</td>
+</tr>
+</tbody>
+</table>
+<p>ミュータブルとイミュータブルが紛らわしい概念であるのは、それが<strong>変数</strong>と<strong>定数</strong>の概念に、一見似ているからです。</p>
+<p><strong>定数</strong>という概念はC言語などに現れる概念で、<strong>値の変更を禁止された変数</strong>のことです。しかしながら、PythonにはC言語のような定数は存在しません(<code>True</code>や<code>False</code>、<code>None</code>といった特殊な<strong>ビルトイン(組込み)定数</strong>が存在するのみです)。</p>
+<p>Pythonの変数は、いつでも好きなオブジェクトに貼り付けられる<strong>ラベル</strong>です(箱ではありません)。箱ではなくラベルですから、イミュータブルなオブジェクトからイミュータブルなオブジェクトに付け替えられますし、イミュータブルなオブジェクトからミュータブルなオブジェクトに付け替えることも可能です。</p>
+<p>実際、文字列はイミュータブルですが、次のコードは全く正常であり、何のエラーも起きません。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">"First"</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">"Second"</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">"Third"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>一方、イミュータブルやミュータブルは、ラベルが参照しているオブジェクトの性質であり、定数や変数とは異なる概念です。文字列はイミュータブルなので、その内容を変更することはできません。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">"Immutable"</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>x[<span class="dv">0</span>] <span class="op">=</span> <span class="st">"i"</span> <span class="co">#エラーが起きる</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記2行目は、“Immutable”という文字列オブジェクトの最初の要素”I”を”i”に入れ替えよ、という許されない命令です。したがってエラーが出ます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>Traceback (most recent call last):</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>  File <span class="st">"test.py"</span>, line <span class="dv">2</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>    x[<span class="dv">0</span>] <span class="op">=</span> <span class="st">"i"</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="pp">TypeError</span>: <span class="st">'str'</span> <span class="bu">object</span> does <span class="kw">not</span> support item assignment</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>よくある初学者のミスは、次のように、文字列の一部をスライスで変更しようというものです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> <span class="st">"This is Python."</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="dv">0</span>:<span class="dv">4</span>] <span class="op">=</span> <span class="st">"It"</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>Traceback (most recent call last):</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  File <span class="st">"&lt;stdin&gt;"</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a><span class="pp">TypeError</span>: <span class="st">'str'</span> <span class="bu">object</span> does <span class="kw">not</span> support item assignment</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>しかし同じことをリストで行うのは、全く正しい操作です。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>]</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x[<span class="dv">0</span>:<span class="dv">4</span>] <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>]</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>このように、イミュータブルやミュータブルは、オブジェクトの性質であって、変数そのものの性質ではないことに注意しておきましょう。</p>
+</section>
+<section id="イミュータブルオブジェクトの再利用" class="level2">
+<h2 class="anchored" data-anchor-id="イミュータブルオブジェクトの再利用">イミュータブルオブジェクトの再利用</h2>
+<p>最後に、イミュータブルオブジェクトとメモリ利用に関連して、一つ注意事項を述べます。これは、Pythonプログラミング上はほとんど問題になりませんが、Pythonのメモリ利用を研究をする上で留意しておくべきことです。</p>
+<p>同じオブジェクトを二つ以上の変数が参照しているときに問題が生じるのは、オブジェクトに変更が加えられたときだけであることに注意してください。従って、オブジェクトがイミュータブルである場合は、いくつの変数がそのオブジェクトを参照しているかということは、Pythonのプログラマにとって全く問題になりません。</p>
+<p>この事実を利用して、Pythonは、シンプルなイミュータブルオブジェクトに関しては、自動的に再利用するようになっています。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="kw">is</span> y</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> <span class="st">'a'</span></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> <span class="st">'a'</span></span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="kw">is</span> y</span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記では、<code>x</code>と<code>y</code>に独立に<code>1</code>を代入したはずが、<code>x</code>と<code>y</code>は同じオブジェクトを参照していることが分かります。整数オブジェクトはイミュータブルなので、これは全く問題になりません。xが指し示す整数オブジェクト1の内容をうっかり変更してしまって、予期せずyの変更を招く危険がないからです。文字列オブジェクト<code>'a'</code>についても同様です。また、<code>True</code>や<code>False</code>の<strong>ブール型オブジェクト</strong>、「からっぽ」を意味する<strong>Noneオブジェクト</strong>等も必ず再利用されます。</p>
+<p>一方で、どれだけシンプルであろうとも、ミュータブルなオブジェクトは再利用されず、代入のたびに新たなメモリ領域が確保されます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> [<span class="dv">0</span>]</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> [<span class="dv">0</span>]</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="kw">is</span> y</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="va">False</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>また、イミュータブルであっても、そもそも利用される確率の小さいオブジェクトは、再利用されません。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> <span class="dv">100000</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> <span class="dv">100000</span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> x <span class="kw">is</span> y</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="va">False</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>これは、利用頻度の小さいオブジェクトをメモリ上に確保したままにすると、メモリの利用効率が悪くなるからです。</p>
+<p>こういった事柄は一見些細な事柄ですが、Pythonのメモリ利用を研究する上でつまづくポイントになるので、知っておいて損はないでしょう。</p>
+</section>
+<section id="動的型付け" class="level2">
+<h2 class="anchored" data-anchor-id="動的型付け">動的型付け</h2>
+<p>今回の講義を通して、『変数』という言葉を特に断りもなく使って来ました。そして、変数へ何らかの値を代入するということは、ラベルをオブジェクトに貼り付けることなのだと説明しました。ラベルが変数名であり、オブジェクトが値です。</p>
+<p>Pythonのような言語では、変数名はラベルでしかなく、一つの変数名を、基本的にいつでもどのようなオブジェクトにでもラベルとして貼り付け、貼り付けかえることが可能です。<code>x</code>は整数にしか貼り付けてはいけないとか、<code>y</code>は関数にしか貼り付けてはいけないとか、そういう制約はありません。</p>
+<p>したがって、次のようなコードが完全に機能します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys <span class="im">as</span> x     <span class="co"># xにモジュールを代入</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">1</span>   <span class="co"># xに整数を代入</span></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">"string"</span>    <span class="co"># xに文字列を代入</span></span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]     <span class="co"># xにリストを代入</span></span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> x():        <span class="co"># xに関数を代入</span></span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'I am x.'</span>)</span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a>x()     <span class="co"># xを関数として呼び出した</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>コードの詳細はまだわからないと思いますが、このコードでは、同じ”x”という変数に、モジュール、整数、文字列、リスト、関数を次々と代入しています。このコードの出力は、次のようになります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 出力</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>module <span class="st">'sys'</span> (built<span class="op">-</span><span class="kw">in</span>)<span class="op">&gt;</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>string</span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>function x at <span class="bn">0x7fb1ac7938b0</span><span class="op">&gt;</span></span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>I am x.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記の出力は、最後の行を除きすべて<code>print(x)</code>の出力です。これを見ると分かるように、<code>x</code>は、モジュール、整数、文字列、リスト、そして関数へと変化しています。</p>
+<p>このようにPythonでは、最初に『<code>x</code>は整数だよ』とか、『<code>x</code>はモジュールだよ』と言った宣言をしません。<code>x</code>(が指すオブジェクト)のデータ型は、<strong>動的に変化</strong>し得るのです。このような言語の性質を<strong>動的型付け</strong>と呼びます。それに対して、C言語やJavaがそうであるように、『<code>x</code>は整数だよ』『<code>x</code>は配列だよ』といった宣言をし、そのあとはずっと同じ型のデータしか格納できない、といった性質を<strong>静的型付け</strong>と言います。</p>
+<p><strong>動的型付け</strong>の利点は非常に<strong>柔軟</strong>なプログラミングができるということです。なぜならば、プログラムにおいて、<code>x</code>のデータ型に依存した処理を、ギリギリまで遅らせることができるからです。それどころか、場合によっては、最後まで型を気にする必要すらないからです。たとえば、<code>print(x)</code>と書くとき、<code>x</code>がどんな型をもっているのかなど、(ほとんど)気にする必要はありません。</p>
+<p>一方、静的型付け言語だと、<code>x</code>が整数なのか、文字列なのか、最初に決めてしまわならないし、最後まで気にしなくてなりません。従って、往々にして、型ごとに別々のコードを書かなくてはならないことになります。</p>
+<p>一方、<strong>動的型付け</strong>言語の欠点は、コードが実行されるまで<code>x</code>のデータ型がわからないため、<code>x</code>が現れるたびにインタープリタが逐一<code>x</code>の型を判断して、型に応じた適切な処理を実行しなくてはならないことです。そのコストは、実行速度の低下となって現れます。それに対して<strong>静的型付け</strong>言語は、最初から最後まで<code>x</code>のデータ型が固定されているので、逐一データ型をチェックする必要はありません。静的型付け言語では、<code>x+y</code>という表現が出たとき、<code>x</code>は整数か、浮動小数点数か、文字列か、と問う必要はないのです。</p>
+</section>
+<section id="変数にまつわる用語" class="level2">
+<h2 class="anchored" data-anchor-id="変数にまつわる用語">変数にまつわる用語</h2>
+<p>すでにお気づきのように、Pythonのような動的型付け言語においては、<strong>変数</strong>という言葉を<strong>関数</strong>や<strong>モジュール</strong>と言った言葉からわざわざ切り離して定義する意味はほとんどありません。そこで、本講義では、<strong>変数</strong>という言葉は、ラベルを意味するにすぎず、ときには数値であったり、関数であったり、モジュールであったりしても良いとします。要するに何らかのオブジェクトを参照している記号であれば、それは変数です。</p>
+<p>また、<strong>名前</strong>、<strong>識別子</strong>、<strong>記号</strong>と言った言葉も使うことがありますが、これらは断りが無い限り全て<strong>変数</strong>と同じ意味で用いることにします。特に、<strong>変数</strong>が数値や文字列だけでなく、関数やモジュールを指すことを明確にしたいときに、これらの言葉を使うことがあります。</p>
+</section>
+<section id="まとめ" class="level2">
+<h2 class="anchored" data-anchor-id="まとめ">まとめ</h2>
+<p>今回の授業では、以下の点について学びました。</p>
+<ul>
+<li>ハコ型の代入とラベル型の代入の違い</li>
+<li>Copy on modifyにまつわるRとPythonの違い</li>
+<li>スライス記法の挙動</li>
+<li>イミュータブル・ミュータブルの意味</li>
+</ul>
+<p>次回はリストについてさらに掘り下げて学んで行きます。リストについて掘り下げて学ぶことで、メモリやアドレスという概念がPythonの理解において重要であることが分かるでしょう。</p>
+</section>
+<section id="参考書" class="level2">
+<h2 class="anchored" data-anchor-id="参考書">参考書</h2>
+<ul>
+<li><a href="https://www.amazon.co.jp/R%E8%A8%80%E8%AA%9E%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC-Hadley-Wickham/dp/432012393X">『R言語徹底解説』</a>(Hadley Wickham著、石田基広、市川太祐、高柳慎一その他訳)(2016) 共立出版. ISBN-13 : 978-4320123939.</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/Yamachan050125\.github\.io\/yamachan050125\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

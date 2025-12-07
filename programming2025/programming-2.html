@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>programming-2 – Syakaikano-Omochabako</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-43081d808c96cc46af55a3a816ae9eed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Syakaikano-Omochabako</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#第2回-vs-code仮想環境入門" id="toc-第2回-vs-code仮想環境入門" class="nav-link active" data-scroll-target="#第2回-vs-code仮想環境入門">第2回 VS Code/仮想環境入門</a>
+  <ul class="collapse">
+  <li><a href="#vs-codeを起動する" id="toc-vs-codeを起動する" class="nav-link" data-scroll-target="#vs-codeを起動する">VS Codeを起動する</a></li>
+  <li><a href="#vs-code-ショートカット" id="toc-vs-code-ショートカット" class="nav-link" data-scroll-target="#vs-code-ショートカット">VS Code ショートカット</a></li>
+  <li><a href="#プロキシの設定vs-code" id="toc-プロキシの設定vs-code" class="nav-link" data-scroll-target="#プロキシの設定vs-code">プロキシの設定(VS Code)</a></li>
+  <li><a href="#各種エクステンションのインストール" id="toc-各種エクステンションのインストール" class="nav-link" data-scroll-target="#各種エクステンションのインストール">各種エクステンションのインストール</a></li>
+  <li><a href="#vs-codeインターラクティブモード" id="toc-vs-codeインターラクティブモード" class="nav-link" data-scroll-target="#vs-codeインターラクティブモード">VS Codeインターラクティブモード</a>
+  <ul class="collapse">
+  <li><a href="#練習1" id="toc-練習1" class="nav-link" data-scroll-target="#練習1">練習1</a></li>
+  </ul></li>
+  <li><a href="#emacsキーバインディング" id="toc-emacsキーバインディング" class="nav-link" data-scroll-target="#emacsキーバインディング">Emacsキーバインディング</a>
+  <ul class="collapse">
+  <li><a href="#練習2" id="toc-練習2" class="nav-link" data-scroll-target="#練習2">練習2</a></li>
+  </ul></li>
+  <li><a href="#マークダウン入門" id="toc-マークダウン入門" class="nav-link" data-scroll-target="#マークダウン入門">マークダウン入門</a>
+  <ul class="collapse">
+  <li><a href="#構文" id="toc-構文" class="nav-link" data-scroll-target="#構文">構文</a></li>
+  <li><a href="#目次をつける" id="toc-目次をつける" class="nav-link" data-scroll-target="#目次をつける">目次をつける</a></li>
+  <li><a href="#pdfへの出力" id="toc-pdfへの出力" class="nav-link" data-scroll-target="#pdfへの出力">PDFへの出力</a></li>
+  <li><a href="#図の作成" id="toc-図の作成" class="nav-link" data-scroll-target="#図の作成">図の作成</a></li>
+  <li><a href="#スライドの作成" id="toc-スライドの作成" class="nav-link" data-scroll-target="#スライドの作成">スライドの作成</a></li>
+  </ul></li>
+  <li><a href="#anacondaとは" id="toc-anacondaとは" class="nav-link" data-scroll-target="#anacondaとは">Anacondaとは</a></li>
+  <li><a href="#プロキシの設定anaconda" id="toc-プロキシの設定anaconda" class="nav-link" data-scroll-target="#プロキシの設定anaconda">プロキシの設定(Anaconda)</a></li>
+  <li><a href="#anaconda仮想環境" id="toc-anaconda仮想環境" class="nav-link" data-scroll-target="#anaconda仮想環境">Anaconda仮想環境</a></li>
+  <li><a href="#仮想環境の状態チェック" id="toc-仮想環境の状態チェック" class="nav-link" data-scroll-target="#仮想環境の状態チェック">仮想環境の状態チェック</a></li>
+  <li><a href="#仮想環境の構築" id="toc-仮想環境の構築" class="nav-link" data-scroll-target="#仮想環境の構築">仮想環境の構築</a></li>
+  <li><a href="#vs-codeで特定の仮想環境を使う" id="toc-vs-codeで特定の仮想環境を使う" class="nav-link" data-scroll-target="#vs-codeで特定の仮想環境を使う">VS Codeで特定の仮想環境を使う</a></li>
+  <li><a href="#まとめ" id="toc-まとめ" class="nav-link" data-scroll-target="#まとめ">まとめ</a></li>
+  <li><a href="#参考書" id="toc-参考書" class="nav-link" data-scroll-target="#参考書">参考書</a></li>
+  <li><a href="#補足事項" id="toc-補足事項" class="nav-link" data-scroll-target="#補足事項">補足事項</a>
+  <ul class="collapse">
+  <li><a href="#コマンドプロンプトからvs-codeが起動しないときは" id="toc-コマンドプロンプトからvs-codeが起動しないときは" class="nav-link" data-scroll-target="#コマンドプロンプトからvs-codeが起動しないときは">コマンドプロンプトからVS Codeが起動しないときは?</a></li>
+  <li><a href="#実行ボタンでcondaが見つからないエラーが出るときは" id="toc-実行ボタンでcondaが見つからないエラーが出るときは" class="nav-link" data-scroll-target="#実行ボタンでcondaが見つからないエラーが出るときは">『実行』ボタンで『condaが見つからない』エラーが出るときは?</a></li>
+  <li><a href="#replで変なエラーが出るようになったときは" id="toc-replで変なエラーが出るようになったときは" class="nav-link" data-scroll-target="#replで変なエラーが出るようになったときは">REPLで変なエラーが出るようになったときは?</a></li>
+  <li><a href="#pythonのバージョン3.8をmyenv環境にインストールするには" id="toc-pythonのバージョン3.8をmyenv環境にインストールするには" class="nav-link" data-scroll-target="#pythonのバージョン3.8をmyenv環境にインストールするには">Pythonのバージョン3.8をmyenv環境にインストールするには?</a></li>
+  <li><a href="#rのバージョン3.6をmyenv環境にインストールするにはwindowsの場合" id="toc-rのバージョン3.6をmyenv環境にインストールするにはwindowsの場合" class="nav-link" data-scroll-target="#rのバージョン3.6をmyenv環境にインストールするにはwindowsの場合">Rのバージョン3.6をmyenv環境にインストールするには?(Windowsの場合)</a></li>
+  <li><a href="#rのバージョン4.1をmyenv環境にインストールするにはmacの場合" id="toc-rのバージョン4.1をmyenv環境にインストールするにはmacの場合" class="nav-link" data-scroll-target="#rのバージョン4.1をmyenv環境にインストールするにはmacの場合">Rのバージョン4.1をmyenv環境にインストールするには?(Macの場合)</a></li>
+  <li><a href="#rをvs-code上で起動できるようにするには" id="toc-rをvs-code上で起動できるようにするには" class="nav-link" data-scroll-target="#rをvs-code上で起動できるようにするには">RをVS Code上で起動できるようにするには?</a></li>
+  <li><a href="#cコンパイラとアセンブラをenvc環境にインストールするには" id="toc-cコンパイラとアセンブラをenvc環境にインストールするには" class="nav-link" data-scroll-target="#cコンパイラとアセンブラをenvc環境にインストールするには">CコンパイラとアセンブラをenvC環境にインストールするには?</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="第2回-vs-code仮想環境入門" class="level1">
+<h1>第2回 VS Code/仮想環境入門</h1>
+<ul>
+<li><a href="#第2回-vs-code仮想環境入門">第2回 VS Code/仮想環境入門</a>
+<ul>
+<li><a href="#vs-codeを起動する">VS Codeを起動する</a></li>
+<li><a href="#vs-code-ショートカット">VS Code ショートカット</a></li>
+<li><a href="#プロキシの設定vs-code">プロキシの設定(VS Code)</a></li>
+<li><a href="#各種エクステンションのインストール">各種エクステンションのインストール</a></li>
+<li><a href="#vs-codeインターラクティブモード">VS Codeインターラクティブモード</a>
+<ul>
+<li><a href="#練習1">練習1</a></li>
+</ul></li>
+<li><a href="#emacsキーバインディング">Emacsキーバインディング</a>
+<ul>
+<li><a href="#練習2">練習2</a></li>
+</ul></li>
+<li><a href="#マークダウン入門">マークダウン入門</a>
+<ul>
+<li><a href="#構文">構文</a>
+<ul>
+<li><a href="#練習3">練習3</a></li>
+</ul></li>
+<li><a href="#目次をつける">目次をつける</a></li>
+<li><a href="#pdfへの出力">PDFへの出力</a></li>
+<li><a href="#図の作成">図の作成</a></li>
+<li><a href="#スライドの作成">スライドの作成</a></li>
+</ul></li>
+<li><a href="#anacondaとは">Anacondaとは</a></li>
+<li><a href="#プロキシの設定anaconda">プロキシの設定(Anaconda)</a></li>
+<li><a href="#anaconda仮想環境">Anaconda仮想環境</a></li>
+<li><a href="#仮想環境の状態チェック">仮想環境の状態チェック</a></li>
+<li><a href="#仮想環境の構築">仮想環境の構築</a></li>
+<li><a href="#vs-codeで特定の仮想環境を使う">VS Codeで特定の仮想環境を使う</a></li>
+<li><a href="#まとめ">まとめ</a></li>
+<li><a href="#参考書">参考書</a></li>
+<li><a href="#補足事項">補足事項</a>
+<ul>
+<li><a href="#コマンドプロンプトからvs-codeが起動しないときは">コマンドプロンプトからVS Codeが起動しないときは?</a></li>
+<li><a href="#実行ボタンでcondaが見つからないエラーが出るときは">『実行』ボタンで『condaが見つからない』エラーが出るときは?</a></li>
+<li><a href="#replで変なエラーが出るようになったときは">REPLで変なエラーが出るようになったときは?</a></li>
+<li><a href="#pythonのバージョン38をmyenv環境にインストールするには">Pythonのバージョン3.8をmyenv環境にインストールするには?</a></li>
+<li><a href="#rのバージョン36をmyenv環境にインストールするにはwindowsの場合">Rのバージョン3.6をmyenv環境にインストールするには?(Windowsの場合)</a></li>
+<li><a href="#rのバージョン41をmyenv環境にインストールするにはmacの場合">Rのバージョン4.1をmyenv環境にインストールするには?(Macの場合)</a></li>
+<li><a href="#rをvs-code上で起動できるようにするには">RをVS Code上で起動できるようにするには?</a></li>
+<li><a href="#cコンパイラとアセンブラをenvc環境にインストールするには">CコンパイラとアセンブラをenvC環境にインストールするには?</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="vs-codeを起動する" class="level2">
+<h2 class="anchored" data-anchor-id="vs-codeを起動する">VS Codeを起動する</h2>
+<p>プログラマにとって、ソースコードやスクリプトを編集するための<strong>エディタ</strong>は、とても重要なものです。プログラミングの学習においては、エディタの研究にもしっかりと時間を割きましょう。本講義では、Visual Studio Code(VS Code)という、Microsoftが開発したフリーのエディタを用いることにします。</p>
+<p>それでは早速VS Codeを起動してみましょう。ホームパス下にGitHubという名前のフォルダを作ってください。（注；本講義では、「フォルダー」と「ディレクトリ」をほとんど同じ意味で用います。）Windowsユーザーの人は、ドキュメントフォルダーの下に作るのが良いでしょう。Anaconda promptやコマンドプロンプトで次のように入力して得られるパスです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="pp">%</span><span class="va">HOMEPATH</span><span class="pp">%</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>GitHubフォルダの場所はあまり重要ではないので、ホームパスがよくわからない人は、自分が分かりやすい場所に作っても構いません。GitHubフォルダを作ったら、その中にさらにmy_first_codeという名前のフォルダーを作りましょう。</p>
+<p>my_first_codeの中身（からっぽ）をWindowsエクスプローラで表示し、右クリックすると「Codeで開く」という選択肢がありますので、それを選ぶと、VS Codeが起動します(下図)。<strong>「Codeで開く」が見つからない</strong>場合は、フォルダをVS Codeのショートカットアイコンにドラッグ&amp;ドロップしてください。</p>
+<p><img src="img/vscode1.png" class="img-fluid"></p>
+<p>とりあえず覚えなくてはならないのは、左上のエクスプローラーと、それを開閉するボタンです。エクスプローラーでは、現在いるフォルダmy_first_codeの中にどのようなファイルがあるかを示しています。VS Codeのエクスプローラーの詳しい使い方については、『独習Python』のp30-31を読んでください。</p>
+</section>
+<section id="vs-code-ショートカット" class="level2">
+<h2 class="anchored" data-anchor-id="vs-code-ショートカット">VS Code ショートカット</h2>
+<p>VS Codeを使うに当たって、覚えたほうが良いショートカットが3つあります。</p>
+<ul>
+<li><strong>Ctrl-Shift-P</strong>: コマンドパレットを開きます。VS Codeの諸々の操作は、このコマンドパレットに望みの操作に関連するキーワードを入力し、出てきた操作リストの中から望みの操作を選択するという形で行います。</li>
+<li><strong>Ctrl-Shift-X</strong>: 拡張機能検索ウィンドウとインストール済み拡張機能の一覧を表示します。邪魔な拡張機能を無効にしたり、新しい拡張機能を探してインストールするのに使います。</li>
+<li><strong>Ctrl-,</strong>: 設定項目検索ウィンドウを開きます。注)設定ファイルを直接編集するときは、コマンドパレットにsettings.jsonと入力してください。</li>
+</ul>
+</section>
+<section id="プロキシの設定vs-code" class="level2">
+<h2 class="anchored" data-anchor-id="プロキシの設定vs-code">プロキシの設定(VS Code)</h2>
+<p><strong>この設定が必要なのは、大学の有線LANに接続する場合だけです。それ以外の方は、この項目は読み飛ばしてください!</strong></p>
+<p>VS Codeを快適に使うためには、インターネット経由で様々な<strong>エクステンション</strong>(拡張機能)をインストールする必要があります。大学内の有線LANに接続してエクステンション（拡張機能）をインストールするためには、プロキシの設定が必要です。</p>
+<p><strong>Ctrl-,</strong>と叩くと、設定のための検索窓が立ち上がりますので、<strong>proxy</strong>と入力しましょう。すると、</p>
+<pre class="vscode"><code>Http: Proxy
+使用するプロキシ設定。設定されていない場合は、'http_proxy' および &gt;'https_proxy' の環境変数から継承されます。
+[                                        ]</code></pre>
+<p>というproxy設定パネルが現れますので、次のように大学のプロキシサーバーとポート番号を入力しましょう。ただし、ここで、<code>http://proxy-server-addr:????</code>の箇所は、大学のプロキシサーバーの正しいURLとポート番号に置き換えてください。正しいURLとポート番号はMoodle(KUTLMS)に記載してあります。</p>
+<pre class="vscode"><code>Http: Proxy
+使用するプロキシ設定。設定されていない場合は、'http_proxy' および 'https_proxy' の環境変数から継承されます。
+[http://proxy-server-addr:????            ]</code></pre>
+<!--
+入力できたら、設定ファイルに正しく書き込まれているか次のようにして確認しましょう。**Ctrl-Shift-P**と叩いて、コマンドパレットを開きます。**settings.json**と入力すると、幾つか候補が出てきますが、そのうち、
+
+```vscode
+基本設定：設定(JSON)を開く
+Preferences: Open Settings (JSON)
+```
+
+を選択します。すると、json形式でかかれた設定ファイル**settings.json**が開かれますので、次のように、プロキシが記載されていることを確認します。
+
+```json
+{
+    ...
+    ...
+    "http.proxy": "http://proxy-server-addr:????", 
+    ...
+    ...
+}
+```
+
+...のところは何か色々書いてあると思いますが、プロキシの設定が見当たれば大丈夫です。
+
+もしくは、上記のsettings.jsonを開いて、直接プロキシの行を書き込んでしまっても構いませんが、そのように直接書き込むメリットはあまり無いと思います。むしろ各種設定は、上記のsettings.jsonというjson形式のファイルに書き込まれていて、VS Codeで自由に追記・修正できるということを理解するのが重要でしょう。
+-->
+</section>
+<section id="各種エクステンションのインストール" class="level2">
+<h2 class="anchored" data-anchor-id="各種エクステンションのインストール">各種エクステンションのインストール</h2>
+<p>プロキシの設定ができましたので、各種エクステンションがインストールできます。エクステンション（拡張機能）をインストールするには、<strong>Ctrl-Shift-X</strong>を叩きます。現れた検索ウィンドウにエクステンション名を入力すれば、候補をリストアップしてくれますので、望みのものを選んでインストールボタンを押しましょう。</p>
+<p>以下のエクステンションが必要ですので、インストールしましょう。</p>
+<ul>
+<li>Japanese Language Pack for VS Code (VS Codeを日本語化)</li>
+<li>Python(Microsoftのもの)</li>
+<li>Jupyter(インターラクティブモード)</li>
+<li>Awesome Emacs Keymap (Emacsキーバインディング)</li>
+<li>Markdown All in One (マークダウン便利ツール集)</li>
+<li>markdownlint (Markdownの構文チェッカー)</li>
+<li>Markdown PDF (MarkdownファイルをPDFやHTMLに変換)</li>
+</ul>
+<!--
+- Pylance (Intellisenseがうまく機能しない場合、試す価値あり)
+- Path Intellisense (ファイル名パス補完)
+- R (Rが実行できるようになります)
+- R Tools (R用のIntellisense)
+- Rainbow CSV (CSVファイルが見やすくなります)
+- Edit CSV (CSVが編集できる)
+-->
+<!--
+マークダウン系のエクステンションは(文字通り)無数に存在しますので、必ずしも上記のもので無くて良いですし、より良いものがあるかもしれません。ぜひ自分に合うエクステンションを探してみてください。上のエクステンションを全て一度にインストールするのは大変だと思うので、まずは**Japanese Language Pack**と**Python**エクステンションをインストールしましょう（残りは各自インストールしておいてください）。
+
+なお以下は授業では使いませんが、AWSなどの外部サーバーで開発を行う際に大変重宝します。リモートのファイルを直接VS Codeで編集できます。
+
+- Remote - SSH (外部サーバー等にSSH接続できる)
+-->
+<!--
+以下は、VS Code内で図を書くことができる便利なエクステンションです。ソフトウェアの設計図などをMarkdownで書きたい人には大変便利です。本稿の図はほとんどこのエクステンションを使って作成しました。必須ではありませんが、興味が有る人は入れて見てください。
+
+- Draw.io Integration (図を作成)
+-->
+</section>
+<section id="vs-codeインターラクティブモード" class="level2">
+<h2 class="anchored" data-anchor-id="vs-codeインターラクティブモード">VS Codeインターラクティブモード</h2>
+<p>それでは大体の準備ができたので、いよいよVS Codeでプログラミングしてみましょう。Pythonのプログラミングを行うときは、インターラクティブモードという、VS Codeの内部で<strong>Jupyter</strong>を起動する方法が便利です。</p>
+<p>VS Codeのエクスプローラからmy_first_code.pyというファイルを作成し、開いてください(教科書pp.30-31参照)。1行目に次のように入力してください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#%%</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>もし編集画面が次のように変化すればインターラクティブモードの起動に成功したことを表します。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/interactive.png" class="img-fluid figure-img"></p>
+<figcaption>interactive</figcaption>
+</figure>
+</div>
+<p><strong>尚、初回は「インタープリタが未選択」という通知が出る場合があります。</strong> これは、<a href="#anacondaとは">後述</a>するように、一つのパソコンに複数のPythonがインストールされている可能性があるので、どのPythonを使うのか定められていないということです。その時は、通知内容にしたがって、インタープリタを選択します。“Python 3.x.x xx-bit (‘base’: conda)”を選択してください。(xは各自の環境に依存します。)正しいインタープリタが選択されていれば、画面の右下に、“Python 3.x.x xx-bit (‘base’: conda)”の表記が表示されます。正しいインタープリタが選択されていない場合は、「<a href="#vs-codeで特定の仮想環境を使う">VS Codeで特定の仮想環境を使う</a>」の欄の記述に従って、選択を行ってください。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/select_base_interpreter.png" class="img-fluid figure-img"></p>
+<figcaption>select_base_interpreter.PNG</figcaption>
+</figure>
+</div>
+<p>ためしに、簡単な計算を行ってみましょう。“#%%”記号のすぐ下に計算式を書いて<strong>Shift-Enter</strong>と叩いてみましょう。すると次のように編集画面が変化します。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/interactive_one_plus_one.png" class="img-fluid figure-img"></p>
+<figcaption>interactive_opo</figcaption>
+</figure>
+</div>
+<p>この編集画面で”#%%“記号と青線に挟まれた部分は<strong>セル</strong>と呼ばれ、この部分に記述されたPythonコードは、<strong>Shift-Enter</strong>によってまとめて実行されます。</p>
+<p>一方、セルを実行して得られた結果は、画面右の<strong>インターラクティブウィンドウ</strong>に表示されます。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/interactive_opo2.png" class="img-fluid figure-img"></p>
+<figcaption>interative_opo2</figcaption>
+</figure>
+</div>
+<p>上図で右側がインターラクティブウィンドウです。1+1の結果である2が表示されています。</p>
+<section id="練習1" class="level3">
+<h3 class="anchored" data-anchor-id="練習1">練習1</h3>
+<p>VS Codeインターラクティブモードを用いて、以下のような様々な計算を行ってみなさい。なお、以降の講義では、VS Code上のコードを<code># %%</code>、REPL上のコードを<code>&gt;&gt;&gt;</code>で表すことにします。注)<code>&gt;&gt;&gt;</code>記号はプロンプトなので、<strong>入力する必要はありません</strong>。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">+</span> y)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> x <span class="op">+</span> y</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y <span class="op">**</span> z)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, World!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>いくつかセルが出来たら、“# %%”記号の横にある”Run Cell”、“Run Above”、“Run Below”などをクリックしてみましょう。何が起きたか分かりますか？(“Run Debug”は難しいのでクリックしないように。)</p>
+</section>
+</section>
+<section id="emacsキーバインディング" class="level2">
+<h2 class="anchored" data-anchor-id="emacsキーバインディング">Emacsキーバインディング</h2>
+<p>これで自由にPythonコードを実行できるようになりました。ここで、ついでにEmacsキーバインディングの練習をしましょう。まず、上で説明した手順にしたがって、<strong>Awesome Emacs Keymap</strong>エクステンションをインストールしてください。</p>
+<p>Awesome Emacs Keymapエクステンションをインストールすると、Emacsキーバインディングが使えるようになります。 my_first_code.pyを開き、コードの任意の箇所にカーソルを置いて、Ctrl-nと叩いてみましょう。カーソルが次の行に移動したらキーバインディングが正常に機能しています。Ctrl-pと叩けばカーソルが前の行に移動するはずです。このように、キーバインドを使うと、マウスを使わずにカーソルを移動できます。</p>
+<p>主なEmacsキーバインディングは以下の通りです。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>キー操作</th>
+<th>動作</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ctrl-n</td>
+<td>次の行に移動</td>
+</tr>
+<tr class="even">
+<td>Ctrl-p</td>
+<td>前の行に移動</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-b</td>
+<td>前の文字に移動</td>
+</tr>
+<tr class="even">
+<td>Ctrl-f</td>
+<td>次の文字に移動</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-a</td>
+<td>行頭へ移動</td>
+</tr>
+<tr class="even">
+<td>Ctrl-e</td>
+<td>行末へ移動</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-v</td>
+<td>次のページへ移動</td>
+</tr>
+<tr class="even">
+<td>Alt-v</td>
+<td>前のページへ移動</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-k</td>
+<td>現在の行のカーソル以降を削除</td>
+</tr>
+<tr class="even">
+<td>Ctrl-d</td>
+<td>前方一文字削除</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-h</td>
+<td>後方一文字削除</td>
+</tr>
+<tr class="even">
+<td>Ctrl-s</td>
+<td>順方向検索</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-r</td>
+<td>逆方向検索</td>
+</tr>
+<tr class="even">
+<td>Ctrl-x Ctrl-s</td>
+<td>保存</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-x Ctrl-u</td>
+<td>アンドゥ</td>
+</tr>
+<tr class="even">
+<td>Ctrl-space</td>
+<td>マーク設定</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-w</td>
+<td>マーク設定地点からカーソル位置までをカット</td>
+</tr>
+<tr class="even">
+<td>Ctrl-y</td>
+<td>貼り付け</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-x Ctrl-c</td>
+<td>エディター終了</td>
+</tr>
+</tbody>
+</table>
+<p>これらのキーバインドを駆使して、可能な限りマウスに触らないでコーディングするように練習してください。</p>
+<p>タッチタイピングで視線の移動を減らし、Emacsキーバインディングで手の移動を減らして、ストレスのないプログラミング生活を楽しみましょう。上記の他にも多数の便利なキー操作がありますので、インターネット等で調べてみてください。また、ここでは説明しませんが、VS Codeはキーバインドを細かくカスタマイズすることもできます。気になる人は、インターネットでカスタマイズの方法を調べてみましょう。</p>
+<section id="練習2" class="level3">
+<h3 class="anchored" data-anchor-id="練習2">練習2</h3>
+<p>my_first_code.pyの上で、上の表に上げたキーバインドを一つずつ試してみましょう。</p>
+</section>
+</section>
+<section id="マークダウン入門" class="level2">
+<h2 class="anchored" data-anchor-id="マークダウン入門">マークダウン入門</h2>
+<section id="構文" class="level3">
+<h3 class="anchored" data-anchor-id="構文">構文</h3>
+<p>次に、簡単なマークダウンファイルを作成してみましょう。マークダウンとは、HTMLのようなマークアップ言語の一種で、プレーンテキスト文書に書式を付けて文書を整形するための言語です。ホームページを記述するためのHTML(HyperText Markup Language)については皆さんご存知かとおもいますが、Markdownは、HTMLよりももっと機能を限定して簡略化したようなものです。(ちなみに本講義資料も全てマークダウンで記述しました。)</p>
+<p>HTMLでは、たとえば見出しや段落を作るとき、次のようなテキスト文書をつくります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="dt">&gt;</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>見出し<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h2</span><span class="dt">&gt;</span>これは小見出し<span class="dt">&lt;/</span><span class="kw">h2</span><span class="dt">&gt;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        これは段落。これは<span class="dt">&lt;</span><span class="kw">b</span><span class="dt">&gt;</span>太字<span class="dt">&lt;/</span><span class="kw">b</span><span class="dt">&gt;</span>。</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">ul</span><span class="dt">&gt;</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>            <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>これは項目<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>            <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>これも項目<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;/</span><span class="kw">ul</span><span class="dt">&gt;</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        これも段落。</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>しかし、HTMLには次のような欠点があります。</p>
+<ul>
+<li>書くのが面倒</li>
+<li>読みにくい</li>
+<li>ソースと表示が大きくことなる</li>
+</ul>
+<p>そこで、スタイルなどの細かい微調整は諦めてもっと簡潔に書式を記述できるようにしたのがマークダウンです。マークダウンでは上記と同じ文書が次のようになります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># これは見出し</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## これは小見出し</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>これは段落。これは**太字**。</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>これは項目</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>これも項目</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>これも段落。</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>HTMLに比べると非常に簡潔であることが分かると思います。</p>
+<p>マークダウン文書を作成するまえに、以下のエクステンションをインストールする必要があります。</p>
+<ul>
+<li>Markdown All in One (マークダウン便利ツール集)</li>
+<li>markdownlint (Markdownの構文チェッカー)</li>
+<li>Markdown PDF (MarkdownファイルをPDFやHTMLに変換)</li>
+</ul>
+<p>そのほか、図やスライドを作るには、以下のエクステンションが必要です。</p>
+<ul>
+<li>Draw.io Integration (図の作成)</li>
+<li>Marp for VS Code (スライドの作成)</li>
+</ul>
+<p>エクステンションがインストールできたら、早速マークダウンを書いてみましょう。VS Codeのエクスプローラで、my_first_markdown.mdというファイルを作成し、開いてください。(マークダウン文書の拡張子は必ず.mdにします。)文書を開いたら、Emacsキーバインドなどを活用しつつ、上述のマークダウン文書を打ち込んでいきましょう。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/markdown.png" class="img-fluid figure-img"></p>
+<figcaption>markdown</figcaption>
+</figure>
+</div>
+<p>上図で、画面の左がソースファイルの編集画面、右側にはプレビューが表示されます。ソースとプレビューを比較すると分かるように、両者に大きな違いがないことが分かります。これがマークダウンの最大の特徴です。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>記法</th>
+<th>解説</th>
+<th>出力</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code># 見出し</code></td>
+<td><code># + 半角スペース +　見出し文字列</code></td>
+<td>大見出し(タイトル)</td>
+</tr>
+<tr class="even">
+<td><code>## 見出し</code></td>
+<td><code>## + 半角スペース +　見出し文字列</code></td>
+<td>中見出し(セクション)</td>
+</tr>
+<tr class="odd">
+<td><code>### 見出し</code></td>
+<td><code>### + 半角スペース +　見出し文字列</code></td>
+<td>小見出し</td>
+</tr>
+<tr class="even">
+<td><code>**文字**</code></td>
+<td><code>** + 太字にしたい文字列 + **</code></td>
+<td>太字</td>
+</tr>
+<tr class="odd">
+<td><code>- 項目</code></td>
+<td>マイナス記号 + 半角スペース + 箇条書き項目</td>
+<td>箇条書き</td>
+</tr>
+<tr class="even">
+<td><code>1. 項目</code></td>
+<td>数字 + ピリオド + 半角スペース + 箇条書き項目</td>
+<td>数字付き箇条書き</td>
+</tr>
+<tr class="odd">
+<td><code>----</code></td>
+<td>ハイフン三つ以上</td>
+<td>水平線</td>
+</tr>
+<tr class="even">
+<td><code>[ハイパーリンク](https://homepage.com)</code></td>
+<td><code>[文字列](URL)</code></td>
+<td>ハイパーリンク</td>
+</tr>
+</tbody>
+</table>
+<p>見出しは<code>#</code>記号の数が多いほど小さくなります。見出しの前後は必ず1行の空行を入れます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># 見出し1</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## 見出し2</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">### 見出し3</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 見出し4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>なお、入れ子の箇条書きをVS Codeで作る時はタブキーで字下げをすると入れ子になります。(ちなみに、<strong>Shift+Tab</strong>で字下げを元に戻せます。)</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>項目1</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ss">  1. </span>項目1-1</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="ss">  2. </span>項目1-2</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>項目2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>表は次のように作ります。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>商品<span class="pp">|</span>個数<span class="pp">|</span>値段<span class="pp">|</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>--<span class="pp">|</span>--<span class="pp">|</span>--<span class="pp">|</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>りんご<span class="pp">|</span>2個<span class="pp">|</span>200円<span class="pp">|</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>みかん<span class="pp">|</span>8個<span class="pp">|</span>350円<span class="pp">|</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>バナナ<span class="pp">|</span>1房<span class="pp">|</span>100円<span class="pp">|</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="練習3" class="level4">
+<h4 class="anchored" data-anchor-id="練習3">練習3</h4>
+<p>my_first_markdown.mdに上記の見出し、入れ子の箇条書き、表の例を記述し、プレビューを確認しなさい。以下のようになりましたか？</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/markdown_practice.png" class="img-fluid figure-img"></p>
+<figcaption>markdown_practice</figcaption>
+</figure>
+</div>
+<p>なお、URLリンクの挿入は以下のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>プログラミングのHPは<span class="co">[</span><span class="ot">こちら</span><span class="co">](https://kut-econ.github.io/programming2021/)</span>。</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>コード断片の挿入は以下のようにします。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> x <span class="op">+</span> y</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(z)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記の<code>python</code>の部分には、<code>markdown</code>、<code>R</code>、<code>C</code>、<code>bash</code>など、言語の名前を指定します。</p>
+</section>
+</section>
+<section id="目次をつける" class="level3">
+<h3 class="anchored" data-anchor-id="目次をつける">目次をつける</h3>
+<p><code>Markdown All in One</code>がインストールしてあれば、簡単に目次をつけることができます。この目次は、文書を変更すると、その内容を自動的に反映してくれる便利な目次です。一度挿入すれば、二度とマニュアルで編集する必要はありません。</p>
+<p>文書の先頭、大見出しのすぐ下にカーソルをもっていき、<code>Ctrl-Shift-P</code>を叩いてコマンドパレットを出してください。<code>Create table</code>と入力すると、<code>Markdown All in One: Create Table of Contents</code>という選択肢が出てきますので、これを選択すると、目次が挿入されます。</p>
+</section>
+<section id="pdfへの出力" class="level3">
+<h3 class="anchored" data-anchor-id="pdfへの出力">PDFへの出力</h3>
+<p>拡張機能Markdown PDFをインストールすれば、マークダウンファイルをPDFに出力できます。</p>
+<p><code>Ctrl-Shift-P</code>でコマンドパレットを起動し、<code>export</code>と入力してください。幾つか選択肢が出てきますが、その中から<code>Markdown PDF: Export (pdf)</code>を選択します。これだけで、現在開いているマークダウンファイルが同じディレクトリにPDF形式で出力されます。</p>
+</section>
+<section id="図の作成" class="level3">
+<h3 class="anchored" data-anchor-id="図の作成">図の作成</h3>
+<p>VS Codeで図を作成するには、Draw.io Integrationという拡張機能をインストールする必要があります。<code>Ctrl-Shift-X</code>で<code>Draw.io Integration</code>を検索し、インストールしてください。</p>
+<p>VS Codeで、<code>.drawio.png</code>という拡張子のファイルを作ってください。たとえば<code>filename.drawio.png</code>のような名前にします。これをクリックすると、ドローイングツールのDrawioが起動して、図を作成できるようになります。</p>
+<p>図を作成したら、次のようにして、マークダウン中に挿入できます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="al">![sample-img](filename.drawio.png)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで、URLリンクとは違って、最初に<code>!</code>マークが入っていることに注意してください。</p>
+</section>
+<section id="スライドの作成" class="level3">
+<h3 class="anchored" data-anchor-id="スライドの作成">スライドの作成</h3>
+<p>マークダウンでスライドを作るには、拡張機能の<code>Marp for VS Code</code>をインストールします。</p>
+<p><code>Marp</code>がインストールできたら、VS Codeでマークダウンファイルを新たに作成してください。ファイル名は何でも構いませんが、<code>slide.md</code>にしておきましょう。</p>
+<p><code>slide.md</code>を開いて、ファイルの先頭に、次のように記述してください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="an">marp:</span><span class="co"> true</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!--</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co">headingDivider: 2</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co">--&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>marp:</code>と<code>true</code>の間に一つスペースを入れるのを忘れないようにしてください。これで、レベル2の見出しがスライド頁の区切りになります。</p>
+<p>たとえば、以下のように入力してみてください。プレビューがスライドになるはずです。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="an">marp:</span><span class="co"> true</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!--</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="co">headingDivider: 2</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co">--&gt;</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="fu"># Marpで楽しくスライド作り</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>1234567 工科太郎</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="fu">## これは頁タイトルになる</span></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>ここは2ページ目である。</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>番号付き箇条書き項目である</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>番号付き箇条書き項目である</span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>番号付き箇条書き項目である</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>PDFに出力することも簡単にできますので試してみてください(編集画面の上のほうにある三角マークからできます)。</p>
+<p>VS Codeの話は上記でおしまいです。VS Codeには他にも様々な拡張機能があるので、色々探してみてください。</p>
+</section>
+</section>
+<section id="anacondaとは" class="level2">
+<h2 class="anchored" data-anchor-id="anacondaとは">Anacondaとは</h2>
+<p>Anacondaとは、Pythonを中心として、データサイエンスを実践する上で便利なソフトウェアを多数まとめたものです。最初からPythonを使って様々な作業を行うための環境が整っているので、初心者でもPythonを始めやすい特徴があります。また、仮想環境を自由に作成することができ、仮想環境ごとに異なるバージョンのPythonをインストールしたり、追加パッケージをインストールすることができるという便利さがあります。近年の入門書の多くがAnacondaを推奨していることを鑑み、本講義でもAnacondaを用いることにします。</p>
+<p>Anacondaを使用するうえで最初に理解しなければならないことは、<strong>一つのパソコンには複数のPythonがインストールされている場合があるので、今自分がどのPythonを使っているのかいつも意識すべきである</strong>ということです。</p>
+<p>下の図のように、パソコンにPythonが直接インストールされている場合がありますし、Anaconda仮想環境のそれぞれにPythonがインストールされている場合もありますが、これらは全て別のものです。自分が思っているのと違うPythonを気づかずに使っていると、「思っていたのと挙動が違う!」というトラブルにハマってしまうことになるので、注意しましょう。慣れないうちは、Anacondaの<strong>base仮想環境</strong>にインストールされているPythonを使用するようにしましょう。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/anaconda.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>anaconda.drawio.PNG</figcaption>
+</figure>
+</div>
+</section>
+<section id="プロキシの設定anaconda" class="level2">
+<h2 class="anchored" data-anchor-id="プロキシの設定anaconda">プロキシの設定(Anaconda)</h2>
+<p><strong>この設定が必要なのは、大学の有線LANに接続する場合だけです。それ以外の方は、この項目は読み飛ばしてください!</strong></p>
+<p>ここからはAnacondaの解説をします。大学の有線LANに繋がっている研究室のパソコン等でAnacondaを使用する場合、プロキシの設定が必要です。</p>
+<p>Windowsスタートメニューから、Anaconda Promptを起動し、次のように入力すると、プロキシの設定が表示されます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span>base) C:\Users\hoge<span class="kw">&gt;</span>conda config -<span class="at">-show</span> proxy_servers</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>proxy_servers: {}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記のようにproxy_serversの項目が空欄になっていたら、プロキシが設定されていません。その場合は、以下のように順次入力してhttpとhttpsの両方にnocのプロキシサーバーを設定しましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span>base) C:\Users\hoge<span class="kw">&gt;</span>conda config -<span class="at">-set</span> proxy_servers.http http:/<span class="at">/proxy-server-addr:</span>????</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span>base) C:\Users\hoge<span class="kw">&gt;</span>conda config -<span class="at">-set</span> proxy_servers.https http:/<span class="at">/proxy-server-addr:</span>????</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ここで、proxy-server.addrは正しいプロキシサーバーのアドレス(Moodleに記載)に、????は正しいポート番号に置き換えてください。</p>
+<p>もう一度設定を表示して、プロキシが正しく設定されているか確認しましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span>base) C:\Users\hoge<span class="kw">&gt;</span>conda config -<span class="at">-show</span> proxy_servers</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>proxy_servers:</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  http: http:/<span class="at">/proxy-server-addr:</span>????</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  https: http:/<span class="at">/proxy-server-addr:</span>????</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>上記の用に表示されれば正しく設定されています。</p>
+</section>
+<section id="anaconda仮想環境" class="level2">
+<h2 class="anchored" data-anchor-id="anaconda仮想環境">Anaconda仮想環境</h2>
+<p>大学のPCでは、Anacondaに追加機能をインストールすることはできません。Anacondaに追加機能をインストールするには、Windowsの管理者権限が必要だからです。また、管理者権限があったとしても、Anacondaを直接いじるのは不安です。良く分からない追加機能をインストールして、Anaconda全体に不具合が生じるかもしれないからです。</p>
+<p>このような問題を解決するために、Anacondaには仮想環境という仕組みが備わっています。仮想環境とは、新しくPythonがインストールされていて、自由にパッケージのインストール・アンインストールを行うことができる自分専用の環境のことです。(解説はしませんが、Anacondaがない場合はvenvモジュールによって仮想環境を作ることができます。)</p>
+<p>Pythonを使っていると、必ず近いうちに複数のバージョンのPythonを使い分けなくてはならない時がやってきます。その時のために、今から仮想環境に慣れましょう。</p>
+</section>
+<section id="仮想環境の状態チェック" class="level2">
+<h2 class="anchored" data-anchor-id="仮想環境の状態チェック">仮想環境の状態チェック</h2>
+<p>Anacondaをインストールすると、baseという名前のデフォルトの仮想環境が作成されます。Anaconda promptを起動すると、base環境が起動している状態になります。試しに次のようにして、base環境を停止してみましょう。</p>
+<pre class="anaconda"><code>(base) C:\Users\hoge&gt;conda deactivate
+
+C:\Users\hoge&gt;</code></pre>
+<p>プロンプトから(base)という文字列が無くなりました。この状態では、全ての仮想環境がストップしています。再びbaseを起動するために、次のように入力しましょう。</p>
+<pre class="anaconda"><code>C:\Users\hoge&gt;conda activate
+
+(base) C:\Users\hoge&gt;</code></pre>
+<p>次に、現在存在している仮想環境をcondaコマンドでチェックしておきましょう。以下のように打ち込みます。</p>
+<pre class="anaconda"><code>(base) C:\Users\hoge&gt;conda env list
+# conda environments:
+#
+base                  *  E:\ProgramData\Anaconda3</code></pre>
+<p>最初は仮想環境がbaseしか存在しないので、#のある行を除けば1行しか出力されません。アスタリスク(*)は、現在自分のいる仮想環境がbaseであることを示しており、そのあとのパスはbaseがインストールされているディレクトリを表しています。全く同じ出力は、次のようにしても得られます。</p>
+<pre class="anaconda"><code>(base) C:\Users\hoge&gt;conda info --envs
+# conda environments:
+#
+base                  *  E:\ProgramData\Anaconda3</code></pre>
+<p>Pythonでデータ解析を行うためには、様々なパッケージをインストールする必要があります。パッケージは仮想環境ごとに異なるものをインストールすることが出来ますが、baseには最初から多くのパッケージがインストールされています。baseにインストールされているパッケージのリストを取得してみましょう。</p>
+<pre class="anaconda"><code>(base) C:\Users\hoge&gt;conda list
+# packages in environment at E:\ProgramData\Anaconda3:
+#
+# Name                    Version                   Build  Channel
+_anaconda_depends         2020.07                  py38_0
+_ipyw_jlab_nb_ext_conf    0.1.0                    py38_0
+alabaster                 0.7.12             pyhd3eb1b0_0
+anaconda                  custom                   py38_1
+anaconda-client           1.7.2                    py38_0
+
+...（中略）...
+
+xz                        5.2.5                h62dcd97_0
+yaml                      0.2.5                he774522_0
+yapf                      0.31.0             pyhd3eb1b0_0
+zeromq                    4.3.3                ha925a31_3
+zfp                       0.5.5                hd77b12b_6
+zict                      2.0.0              pyhd3eb1b0_0
+zipp                      3.4.1              pyhd3eb1b0_0
+zlib                      1.2.11               h62dcd97_4
+zope                      1.0                      py38_1
+zope.event                4.5.0                    py38_0
+zope.interface            5.3.0            py38h2bbff1b_0
+zstd                      1.4.5                h04227a9_0</code></pre>
+<p>ものすごく長い出力が得られたと思いますが、これらが全て予めインストールされているパッケージです。非常に多くのパッケージが既にインストール済みですので、データ解析では、多くの場合base環境だけで事足ります。しかしながら、例えば実験プログラミング用パッケージであるotreeはインストールされていませんので、こういったパッケージをインストールする場合には、新たな仮想環境の構築が必須になります。</p>
+</section>
+<section id="仮想環境の構築" class="level2">
+<h2 class="anchored" data-anchor-id="仮想環境の構築">仮想環境の構築</h2>
+<p>それではいよいよ、仮想環境を作ってみましょう。たとえばmyenvという名前の仮想環境を作るには次のようにします。</p>
+<pre class="anaconda"><code>(base) C:\Users\hoge&gt;conda create -n myenv
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: E:\ProgramData\Anaconda3\envs\myenv
+
+Proceed ([y]/n)?</code></pre>
+<p>environmental location:の所に出てくるパスに仮想環境が構築されることになりますが、具体的なパスは人によって異なります。(パスを変更することもできますが、ここでは説明を省略します。)</p>
+<p>以下のように’y’と入力すると、仮想環境が構築されます。</p>
+<pre class="anaconda"><code>Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate myenv
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) C:\Users\hoge&gt;</code></pre>
+<p>ちゃんと環境ができているかチェックしましょう。</p>
+<pre class="anaconda"><code>(base) C:\Users\hoge&gt;conda info -e
+# conda environments:
+#
+base                  *  E:\ProgramData\Anaconda3
+myenv                    E:\ProgramData\Anaconda3\envs\myenv</code></pre>
+<p>たしかにmyenvという環境が出来ているようですが、アスタリスク記号<code>*</code>はbaseについており、myenvは起動していないことが分かります。myenvを起動するには、次のようにします。</p>
+<pre class="anaconda"><code>(base) C:\Users\hoge&gt;conda activate myenv
+
+(myenv) C:\Users\hoge&gt;</code></pre>
+<p>プロンプトが<code>(base)</code>から<code>(myenv)</code>に変わり、myenv環境が起動しました。myenv環境にインストールされているパッケージのリストを表示してみましょう。</p>
+<pre class="anaconda"><code>(myenv) C:\Users\hoge&gt;conda list
+# packages in environment at E:\ProgramData\Anaconda3\envs\myenv:
+#
+# Name                    Version                   Build  Channel
+
+(myenv) C:\Users\hoge&gt;</code></pre>
+<p>全くパッケージが入っていないことが分かります。Pythonすら入っていません。たとえばPythonのバージョン3.8をこの環境にインストールするには、次のようにします。</p>
+<pre class="anaconda"><code>(myenv) C:\Users\hoge&gt;conda install python=3.8
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: E:\ProgramData\Anaconda3\envs\myenv
+
+  added / updated specs:
+    - python=3.8
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    python-3.8.8               |       hdbf39b2_5        15.8 MB
+    ------------------------------------------------------------
+                                           Total:        15.8 MB
+
+The following NEW packages will be INSTALLED:
+
+  ca-certificates    pkgs/main/win-64::ca-certificates-2021.4.13-haa95532_1
+  certifi            pkgs/main/win-64::certifi-2020.12.5-py38haa95532_0
+  openssl            pkgs/main/win-64::openssl-1.1.1k-h2bbff1b_0
+  pip                pkgs/main/win-64::pip-21.0.1-py38haa95532_0
+  python             pkgs/main/win-64::python-3.8.8-hdbf39b2_5
+  setuptools         pkgs/main/win-64::setuptools-52.0.0-py38haa95532_0
+  sqlite             pkgs/main/win-64::sqlite-3.35.4-h2bbff1b_0
+  vc                 pkgs/main/win-64::vc-14.2-h21ff451_1
+  vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.27.29016-h5e58377_2
+  wheel              pkgs/main/noarch::wheel-0.36.2-pyhd3eb1b0_0
+  wincertstore       pkgs/main/win-64::wincertstore-0.2-py38_0
+
+
+Proceed ([y]/n)?</code></pre>
+<p>yを入力して続行すると、pythonをインストールできます。(しばらく時間がかかります。)実際にインストールされたかどうか確かめて見ましょう。</p>
+<pre class="anaconda"><code>(myenv) C:\Users\hoge&gt;conda list
+# packages in environment at E:\ProgramData\Anaconda3\envs\myenv:
+#
+# Name                    Version                   Build  Channel
+ca-certificates           2021.4.13            haa95532_1
+certifi                   2020.12.5        py38haa95532_0
+openssl                   1.1.1k               h2bbff1b_0
+pip                       21.0.1           py38haa95532_0
+python                    3.8.8                hdbf39b2_5
+setuptools                52.0.0           py38haa95532_0
+sqlite                    3.35.4               h2bbff1b_0
+vc                        14.2                 h21ff451_1
+vs2015_runtime            14.27.29016          h5e58377_2
+wheel                     0.36.2             pyhd3eb1b0_0
+wincertstore              0.2                      py38_0
+
+(myenv) C:\Users\hoge&gt;</code></pre>
+<p>ちゃんとPythonがインストールされていることが分かります。REPLを起動してみましょう。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>(myenv) C:\Users\hoge<span class="op">&gt;</span>python</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>Python <span class="fl">3.8.8</span> (default, Apr <span class="dv">13</span> <span class="dv">2021</span>, <span class="dv">15</span>:<span class="dv">0</span><span class="er">8</span>:<span class="dv">0</span><span class="er">3</span>) [MSC v<span class="fl">.1916</span> <span class="dv">64</span> bit (AMD64)] :: Anaconda, Inc. on win32</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>Type <span class="st">"help"</span>, <span class="st">"copyright"</span>, <span class="st">"credits"</span> <span class="kw">or</span> <span class="st">"license"</span> <span class="cf">for</span> more information.</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>パッケージをインストールしたいときは、</p>
+<pre class="anaconda"><code>conda install package_name</code></pre>
+<p>のように入力します。package_nameはパッケージ名です。パッケージのバージョンまで指定したいときは、</p>
+<pre class="anaconda"><code>conda install package_name=ver_num</code></pre>
+<p>とします。ver_numはバージョン番号です。</p>
+<p>たとえば、次のようにすればデータ解析パッケージのpandasをインストールできます。注)myenv環境に、Rのバージョン3.6やCのコンパイラ、アセンブラ等を入れておいてください。やり方は<a href="#faq">FAQ</a>を参照。</p>
+<pre class="anaconda"><code>conda install pandas</code></pre>
+<p>myenv環境を停止してbaseに戻る時は、</p>
+<pre class="anaconda"><code>conda deactivate</code></pre>
+<p>と入力します。</p>
+<p>最後にcondaコマンドをまとめておきましょう。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>コマンド</th>
+<th>動作</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>conda --help</code></td>
+<td>condaコマンドのヘルプを表示</td>
+</tr>
+<tr class="even">
+<td><code>conda command --help</code></td>
+<td>コマンドcommandのヘルプを表示</td>
+</tr>
+<tr class="odd">
+<td><code>conda config --show</code></td>
+<td>全てのパラメータを表示</td>
+</tr>
+<tr class="even">
+<td><code>conda config --show par</code></td>
+<td>パラメータparの設定を表示</td>
+</tr>
+<tr class="odd">
+<td><code>conda config --set par value</code></td>
+<td>パラメータparの値をvalueに設定</td>
+</tr>
+<tr class="even">
+<td><code>conda config --remove-key par</code></td>
+<td>パラメータparの設定を消去</td>
+</tr>
+<tr class="odd">
+<td><code>conda info --envs</code></td>
+<td>全ての仮想環境を表示</td>
+</tr>
+<tr class="even">
+<td><code>conda info -e</code></td>
+<td>同上</td>
+</tr>
+<tr class="odd">
+<td><code>conda env list</code></td>
+<td>同上</td>
+</tr>
+<tr class="even">
+<td><code>conda create -n env_name</code></td>
+<td>仮想環境env_nameを作成</td>
+</tr>
+<tr class="odd">
+<td><code>conda list</code></td>
+<td>現環境のインストール済みパッケージをリストアップ</td>
+</tr>
+<tr class="even">
+<td><code>conda install package</code></td>
+<td>パッケージpackageを現在環境にインストール</td>
+</tr>
+<tr class="odd">
+<td><code>conda install package=ver</code></td>
+<td>パッケージpackageのバージョンverを現環境にインストール</td>
+</tr>
+<tr class="even">
+<td><code>conda remove package</code></td>
+<td>パッケージpackageを現環境からアンインストール</td>
+</tr>
+<tr class="odd">
+<td><code>conda remove -n env_name --all</code></td>
+<td>仮想環境env_nameを削除</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="vs-codeで特定の仮想環境を使う" class="level2">
+<h2 class="anchored" data-anchor-id="vs-codeで特定の仮想環境を使う">VS Codeで特定の仮想環境を使う</h2>
+<p>新しく作成した仮想環境myenvをVS Codeで呼び出すためには、その仮想環境にipykernelパッケージをインストールする必要があります。また、コード補完を行うためには、pyreadlineのインストールも必要です。</p>
+<pre class="anaconda"><code>conda activate myenv
+conda install ipykernel</code></pre>
+<p>次にVS Codeを起動し、my_first_code.pyを開きましょう。この状態で<strong>Ctrl-Shift-P</strong>をたたいてコマンドパレットを呼び出し、<strong>select</strong>と入力します。幾つか候補が出てきますが、その中から<strong>Python: Select Interpreter</strong>を選びます。すると、仮想環境のリストが表示されるので、正しい仮想環境を選びましょう。myenvがリストにない場合は、パレットにmyenvと入力するとリストに現れます。</p>
+<p>新環境myenvを選ぶと、VS Codeの画面下にある青い帯のところに、‘myenv’:condaと表示されます。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/myenv.png" class="img-fluid figure-img"></p>
+<figcaption>myenv</figcaption>
+</figure>
+</div>
+<p>これで、インターラクティブモードで実行したPythonコードはすべて仮想環境myenvにインストールしたインタープリタによって実行されます。</p>
+<p>仮想環境をbaseに戻したいときは、同じようにコマンドパレットからbaseを呼び出しましょう。</p>
+<!--
+## VS Code以外のエディター(参考)
+
+### Emacs
+
+VS Code以外にもエディターはたくさんありますが、代表的なものはvi(vimともいう)とEmacsです。プログラミングするだけならば、VS CodeはEmacsと同程度に拡張性があり、Emacsよりも使いやすいので、VS Codeがインストールされている環境ではわざわざEmacsでコーディングする理由はないと思うかもしれません。
+
+しかしながら、VS Codeは大がかりなアプリケーションなので、慣れてくると、ちょっとしたプログラムを作成するのに一々VS Codeを立ち上げるのは面倒くさいと思うようになるでしょう。そのようなときに、より手軽なEmacsが便利ですので、覚えておいて損はありません。
+
+また、プログラミングを好きになりたいのなら、Emacsのキーバインディングをしっかりとマスターすることを強くお勧めします。その練習のためにEmacsを使ってみるのは有益だと思います。
+
+### vi/vim
+
+ぜひマスターしてほしいもう一つのエディターはvi(vimともいう)です。こちらは、数多あるエディターの中でも最も軽快に動作するエディターであり、Linux/Unixに標準で搭載されています。標準で搭載されているので、どのマシンでもいきなり使えるという保証がありますし、何よりも動作が軽快なので、「ちょこっと」設定ファイル等を書き換えるのに大変重宝します。筆者は、Linuxの設定ファイルを編集したりするのにはviを、プログラミングにはVS CodeやEmacs、Pycharmといった重厚なエディターを使うというふうに使い分けています。Linuxをいじりだすとわかりますが、各種の設定ファイルをちょこちょこ書き換えるのにいちいちEmacsなどを立ち上げていられません。Gitでコミットする際のメッセージを編集するのにもviが軽快で便利です。viのマニュアルはネット上に溢れていますので、ぜひ試してみてください。
+-->
+</section>
+<section id="まとめ" class="level2">
+<h2 class="anchored" data-anchor-id="まとめ">まとめ</h2>
+<p>今回の講義では、次の点について学びました。</p>
+<ul>
+<li>VS Codeの設定</li>
+<li>VS Codeのインタラクティブモード</li>
+<li>Emacsキーバインド</li>
+<li>マークダウン記法</li>
+<li>Anacondaの設定</li>
+<li>仮想環境の構築</li>
+</ul>
+<p>エディターを使いこなすことはプログラミングの習得において大変重要です。VS Codeを自分のパソコンや研究室のパソコンにインストールし、Pythonコードやマークダウン文書の作成を通してEmacsキーバインドに慣れるようにしましょう。</p>
+</section>
+<section id="参考書" class="level2">
+<h2 class="anchored" data-anchor-id="参考書">参考書</h2>
+<ul>
+<li><a href="https://www.amazon.co.jp/Markdown%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E5%85%A5%E9%96%80-%E3%83%97%E3%83%AC%E3%83%BC%E3%83%B3%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%81%A7%E6%B0%97%E6%A5%BD%E3%81%AB%E6%9B%B8%E3%81%93%E3%81%86%EF%BC%81-%E6%8A%80%E8%A1%93%E3%81%AE%E6%B3%89%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%EF%BC%88NextPublishing%EF%BC%89-%E8%97%A4%E5%8E%9F-%E6%83%9F/dp/4844398369/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;qid=&amp;sr=">『Markdownライティング入門』</a>(藤原 惟)(2018) インプレスR&amp;D. ISBN-13:978-4844398363.</li>
+</ul>
+<!--
+## 宿題(ホームワーク)
+
+1. 本講義でリストアップしたVS Codeのエクステンションのうち、授業中にインストールできなかったものをインストールしておきなさい。
+2. 自分のパソコンもしくは研究室のパソコンにもVS Codeをインストールし、必要な設定(研究室の場合はプロキシ等)を行うとともに、重要なエクステンションを全てインストールしなさい。
+3. CSV関連のエクステンションをインストールし、CSVファイルがVS Codeで表示・編集できることを確かめなさい。
+4. 本講義資料で随所に現れるコード断片に注意しなさい。このようなコード断片をマークダウンに挿入する方法をインターネットで調べて実際に試してみなさい。
+5. 研究室のパソコンでAnacondaを使っている人は、proxyの設定が正しいかチェックしなさい。間違っている場合は、正しく設定しなおしてください。
+6. condaコマンドで環境構築の際、**同時に**特定のバージョンのpythonもインストールする方法を調べなさい。また、実際にそれを試してみなさい。
+7. 新しく作った仮想環境にnumpyパッケージをインストールしてみなさい。また削除してみなさい。
+8. LinuxやMacOSを使っている人は、Emacsとviを使ってみなさい。しばらく使ってみて、なぜviが根強い人気を誇っているのか考えてみなさい。
+-->
+</section>
+<section id="補足事項" class="level2">
+<h2 class="anchored" data-anchor-id="補足事項">補足事項</h2>
+<section id="コマンドプロンプトからvs-codeが起動しないときは" class="level3">
+<h3 class="anchored" data-anchor-id="コマンドプロンプトからvs-codeが起動しないときは">コマンドプロンプトからVS Codeが起動しないときは?</h3>
+<p>これはVS Codeのパスを環境変数PATHに追加することで解決します。VS Codeのショートカットを右クリックして、プロパティを選択し、「リンク先」に書いてあるパスを<strong>ユーザー環境変数</strong>の<strong>PATH</strong>に追加します(システム環境変数ではありません)。実行ファイル名”Code.exe”はパスに含めないでください。これによってGitからも起動できるようになります。</p>
+</section>
+<section id="実行ボタンでcondaが見つからないエラーが出るときは" class="level3">
+<h3 class="anchored" data-anchor-id="実行ボタンでcondaが見つからないエラーが出るときは">『実行』ボタンで『condaが見つからない』エラーが出るときは?</h3>
+<p>VS CodeのPythonスクリプト上で右上の実行ボタン(緑色の矢印)を押すと</p>
+<blockquote class="blockquote">
+<p>conda : 用語 ‘conda’ は、コマンドレット、関数、スクリプト ファイル、または操作可能なプログラムの名前として認 識されません。名前が正しく記述されていることを確認し、・・・</p>
+</blockquote>
+<p>というエラーが出ることがあります。これはcondaコマンドのあるディレクトリにパスを通すことで解決します。</p>
+<p>Anaconda Promptで、</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb37"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>where conda</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>と入力してcondaコマンドのパスを調べてください。そのパスを、windowsの環境変数PATHに加えれば解決します。複数出た場合は全部加えてください。</p>
+</section>
+<section id="replで変なエラーが出るようになったときは" class="level3">
+<h3 class="anchored" data-anchor-id="replで変なエラーが出るようになったときは">REPLで変なエラーが出るようになったときは?</h3>
+<p>REPLで日本語文字を使うと、それ以降</p>
+<blockquote class="blockquote">
+<p>UnicodeDecodeError: ‘cp932’ codec can’t decode byte 0x82 in position 96: illegal multibyte sequence</p>
+</blockquote>
+<p>というエラーが出るようになることがあります。これは大した問題ではありません。Anaconda Promptを起動したときのディレクトリにある.python_historyというファイルを削除すれば解決します。見つからない場合は、Windowsの設定で隠しファイルを表示しないモードになっているか、もしくは別のディレクトリに同ファイルがある可能性があります。Anaconda Promptで</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb38"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="pp">%</span><span class="va">HOME</span><span class="pp">%</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>と叩いて表示されるディレクトリを探してみてください。Windowsで隠しファイル(ピリオドからはじまるファイル名)を表示しないモードになっていると見つからないのでご注意ください。</p>
+</section>
+<section id="pythonのバージョン3.8をmyenv環境にインストールするには" class="level3">
+<h3 class="anchored" data-anchor-id="pythonのバージョン3.8をmyenv環境にインストールするには">Pythonのバージョン3.8をmyenv環境にインストールするには?</h3>
+<p>myenv環境をactivateしてから、次を実行します(以下のコマンドは、VSCode上で対話的にpythonを実行するためのパッケージipykernelも同時にインストールします)。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb39"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>conda install python=3.8 ipykernel</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="rのバージョン3.6をmyenv環境にインストールするにはwindowsの場合" class="level3">
+<h3 class="anchored" data-anchor-id="rのバージョン3.6をmyenv環境にインストールするにはwindowsの場合">Rのバージョン3.6をmyenv環境にインストールするには?(Windowsの場合)</h3>
+<p>myenv環境をactivateしてから、次を実行します(以下のコマンドはrtools、cpp11、pryrも同時にインストールします)。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb40"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>conda install <span class="at">-c</span> conda<span class="at">-forge</span> r<span class="at">-base</span>=3.6 rtools r<span class="at">-cpp11</span> r<span class="at">-pryr</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Rがインストールできましたら、<code>R</code>と入力して起動してください。</p>
+</section>
+<section id="rのバージョン4.1をmyenv環境にインストールするにはmacの場合" class="level3">
+<h3 class="anchored" data-anchor-id="rのバージョン4.1をmyenv環境にインストールするにはmacの場合">Rのバージョン4.1をmyenv環境にインストールするには?(Macの場合)</h3>
+<p>myenv環境をactivateしてから、次を実行します(以下のコマンドはcpp11、pryrも同時にインストールします)。Macではrtoolsは必要ありませんのでインストール不要です。MacではRのバージョン3.6が公開されていないように見受けられますので、とりあえずバージョン4.1で代用してください。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb41"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>conda install <span class="at">-c</span> conda<span class="at">-forge</span> r<span class="at">-base</span>=4.1 r<span class="at">-cpp11</span> r<span class="at">-pryr</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Rがインストールできましたら、<code>R</code>と入力して起動してください。</p>
+</section>
+<section id="rをvs-code上で起動できるようにするには" class="level3">
+<h3 class="anchored" data-anchor-id="rをvs-code上で起動できるようにするには">RをVS Code上で起動できるようにするには?</h3>
+<p>VS Codeの3つの設定項目</p>
+<ul>
+<li>R: Rterm</li>
+<li>R: Rpath</li>
+<li>R: Interpreter Path</li>
+</ul>
+<p>を設定します。</p>
+<p><code>myenv</code>環境でRをインストールしたら、RがインストールされているPathを調べてください。Anaconda Promptで<code>myenv</code>を起動し、次のように入力すると表示されます。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb42"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>where R</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Macの場合は<code>which R</code>になります。このPathを、上記の3つの設定項目すべてにコピーしてください。設定項目はCtrl-,で検索できます。</p>
+</section>
+<section id="cコンパイラとアセンブラをenvc環境にインストールするには" class="level3">
+<h3 class="anchored" data-anchor-id="cコンパイラとアセンブラをenvc環境にインストールするには">CコンパイラとアセンブラをenvC環境にインストールするには?</h3>
+<p>次のようにして自身のAnaconda仮想環境にGNU Cコンパイラ、NASMアセンブラ、makeコマンドをインストールできます。なお、Cコンパイラをインストールする環境は、Rをインストールする環境とは別に(たとえば<code>envC</code>という名前で)作成することをおすすめします。</p>
+<p><code>envC</code>環境にこれらをインストールする場合は、<code>envC</code>を<code>activate</code>してから、次のように入力します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb43"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>conda install m2w64<span class="at">-gcc</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>conda install <span class="at">-c</span> anaconda nasm</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>conda install <span class="at">-c</span> conda<span class="at">-forge</span> make</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/Yamachan050125\.github\.io\/yamachan050125\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
