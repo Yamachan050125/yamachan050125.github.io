@@ -15,6 +15,9 @@ website:
         text: 2025計量経済学
       - href: Shizenchirigaku\index.md
         text: 2025自然地理学
+      - href: programming2025\index.md
+        text: プログラミング2025
+
       # 他のページを作ったらここに追加します
       # - href: about.qmd
       #   text: About
