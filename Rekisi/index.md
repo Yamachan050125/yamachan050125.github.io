@@ -51,9 +51,9 @@
 ### 欧米の近代化と産業革命
 [イギリスとアメリカの革命]()
 
-[フランス革命](/Rekisi/FranceKakumeiSiryou_Mogijyugyou1 "フランス革命の資料（模擬授業用）")
+[フランス革命](/Rekisi/FranceKakumeiSiryou_Mogijyugyou1/ "フランス革命の資料（模擬授業用）")
 
-[産業革命と社会の変化]()
+[産業革命と社会の変化](/Rekisi/SangyouKakumei.md "産業革命と社会の変化の資料")
 
 [ナポレオンと民主主義の発展]()
 
