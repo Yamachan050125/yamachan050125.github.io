@@ -4,9 +4,9 @@ project:
 website:
   title: "Syakaikano-Omochabako"
   
-  # 左側のメニュー（サイドバー）の設定
+  
   sidebar:
-    style: "docked"  # ← これがあのデザインにするカギです
+    style: "docked"  
     search: true
     contents:
       - href: index.qmd
