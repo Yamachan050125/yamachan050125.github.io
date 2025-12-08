@@ -36,6 +36,8 @@ website:
             text: 功利主義と義務論
           - href: Rinri\5Syakaikeiyakusetu.qmd
             text: 社会契約説
+          - href: Rinri\6Seimeirinnrigaku.qmd
+            text: 応用倫理学と生命倫理学
 
       # 4. 日記
       - section: "日記"
