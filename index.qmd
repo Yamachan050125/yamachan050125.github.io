@@ -1,8 +1,6 @@
 ---
 title: "社会科のおもちゃ箱"
-author: 
-    - name: "藤井大和"
-    - affiliation: 高知工科大学 経済マネジメント学群
+author: "neo"
 ---
 
 # サイト概要
