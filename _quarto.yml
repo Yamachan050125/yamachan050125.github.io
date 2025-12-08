@@ -44,6 +44,15 @@ website:
         contents:
           - href: blog/index.qmd
             text: 日記トップ
+      
+      - section: "地理学"
+        contents:
+          - href: Shizenchirigaku/index.qmd
+            text: 地理学トップ
+          - href: Shizenchirigaku\1Chirigakutoha.qmd
+            text: 地理学
+          - href: Shizenchirigaku\2Taikijyunkan.qmd
+            text: 大気大循環
 
   # 上部のメニュー（必要なければ消してもOK、残してもOK）
   navbar:
