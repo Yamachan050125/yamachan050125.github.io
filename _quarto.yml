@@ -28,7 +28,7 @@ website:
         contents:
           - href: Rinri/index.qmd
             text: 哲学・倫理学トップ
-          - href: Rinri\Tetsugakutekisikou.qmd
+          - href: Rinri\2Tetsugakutekisikou.qmd
             text: 哲学的思考と高校倫理学の難しさ
           - href: Rinri\3Kihanrinrigaku.qmd
             text: 客観主義と主観主義
