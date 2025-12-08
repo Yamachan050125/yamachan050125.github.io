@@ -34,6 +34,8 @@ website:
             text: 客観主義と主観主義
           - href: Rinri\4Kourisyugi.qmd
             text: 功利主義と義務論
+          - href: Rinri\5Syakaikeiyakusetu.qmd
+            text: 社会契約説
 
       # 4. 日記
       - section: "日記"
