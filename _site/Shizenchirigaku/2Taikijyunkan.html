@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -251,7 +280,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">目次</h2>
    
   <ul>
-  <li><a href="#大気の温室効果" id="toc-大気の温室効果" class="nav-link active" data-scroll-target="#大気の温室効果">大気の温室効果</a></li>
+  <li><a href="#温室効果" id="toc-温室効果" class="nav-link active" data-scroll-target="#温室効果">温室効果</a></li>
   </ul>
 </nav>
     </div>
@@ -277,8 +306,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="大気の温室効果" class="level2">
-<h2 class="anchored" data-anchor-id="大気の温室効果">大気の温室効果</h2>
+<section id="温室効果" class="level2">
+<h2 class="anchored" data-anchor-id="温室効果">温室効果</h2>
 <p>地球は、<strong>ハビタブルゾーン</strong>にあり、生命維持に必要な液体の水が存在できる地域である。</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -293,6 +322,10 @@ ul.task-list li input[type="checkbox"] {
 <p>ある天体で生命が発生しうる、発生した生命を維持しうる可能性のある宇宙空間。つまり、太陽の光によって熱くなり過ぎず、かつ光が届かな過ぎて寒くなりすぎず、液体の水が存在できる地域であり、太陽系では地球と火星付近を指す。</p>
 </div>
 </div>
+<p>しかし、ここにあっても地球の温度は現在の気温まで上がらない。</p>
+<p><span id="eq-yama"><span class="math display">\[
+I \pi r^2 (1 - A) = 4 \pi r^2 \sigma T^4_{eq}
+\tag{1}\]</span></span></p>
 
 
 </section>
