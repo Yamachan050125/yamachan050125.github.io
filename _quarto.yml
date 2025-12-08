@@ -2,27 +2,51 @@ project:
   type: website
 
 website:
-  title: "社会科のおもちゃばこ"
-  
-  
+  title: "社会科のおもちゃ箱"
+
+  # 左側のメニュー（サイドバー）
   sidebar:
-    style: "docked"  
+    style: "docked"
     search: true
+    collapse-level: 1  # ★これを入れると、クリックで開閉（収納）できるようになります！
+
     contents:
+      # 1. ホーム
       - href: index.qmd
         text: Home
-     
 
-      # 他のページを作ったらここに追加します
-      # - href: about.qmd
-      #   text: About
+      # 2. 教育（フォルダの中身をここにまとめる）
+      - section: "教育"
+        contents:
+          - href: kyouiku/index.qmd   
+            text: 教育トップ
+          # 他にファイルがあればここに追加
+        
 
-  # 上部のメニュー
+      # 3. 哲学・倫理学
+      - section: "哲学・倫理学"
+        contents:
+          - href: Rinri/index.qmd
+            text: 哲学・倫理学トップ
+          - href: Rinri\Tetsugakutekisikou.qmd
+            text: 哲学的思考と高校倫理学の難しさ
+          - href: Rinri\3Kihanrinrigaku.qmd
+            text: 客観主義と主観主義
+          - href: Rinri\4Kourisyugi.qmd
+            text: 功利主義と義務論
+
+      # 4. 日記
+      - section: "日記"
+        contents:
+          - href: blog/index.qmd
+            text: 日記トップ
+
+  # 上部のメニュー（必要なければ消してもOK、残してもOK）
   navbar:
     left:
       - href: index.qmd
         text: Home
-      
+      # 上にもリンクを残したい場合はここに書く
 
 format:
   html:
@@ -31,3 +55,4 @@ format:
       - brand
     css: styles.css
     toc: true
+
