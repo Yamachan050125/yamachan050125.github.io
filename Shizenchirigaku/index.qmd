@@ -9,26 +9,6 @@ format: html
 
 [2 大気大循環](/Shizenchirigaku/2Taikijyunkan.qmd)
 
-[資料３　ケッペンの気候区分と土壌](/Shizenchirigaku/2025自然地理学２.pdf)
-
-
-[資料４　気候と地形（微気候） 高知の気候とその適応形態](/Shizenchirigaku/2025自然地理学4.pdf)
-
-
-[資料５　植生と森林](/Shizenchirigaku/2025自然地理学5.pdf)
-
-
-[資料7-8　火山と地震（プルームテクトニクス,プレートテクトニクス）](/Shizenchirigaku/2025自然地理学7-8.pdf)
-
-[資料９　高知の地質](/Shizenchirigaku/2025自然地理学9.pdf)
-
-[資料10　地形変化の一般的過程](/Shizenchirigaku/2025自然地理学10.pdff)
-
-[資料11　水循環](/Shizenchirigaku/2025自然地理学11.pdf)
-
-[資料13　土砂災害の現状と対策-](/Shizenchirigaku/2025自然地理学13.pdf)
-
-[資料14-15　高知の魚食文化と自然地理](/Shizenchirigaku/2025自然地理学14-15.pdf)
 
 ## 参考文献
 高橋日出男、小泉武栄, 『自然地理学概論（地理学基礎シリーズ２）』朝倉書店
