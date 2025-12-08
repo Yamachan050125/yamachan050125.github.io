@@ -46,7 +46,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      # 上にもリンクを残したい場合はここに書く
+      
 
 format:
   html:
