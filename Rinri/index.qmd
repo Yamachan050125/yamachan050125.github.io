@@ -2,20 +2,6 @@
 title: 哲学・倫理学
 ---
 
-# 資料一覧
-
-[１　哲学・倫理学とは(このページ)](Rinri\index.qmd)
-
-[２　哲学的思考と高校倫理学の難しさ](Rinri\2Tetsugakutekisikou.qmd)
-
-[３　客観主義と主観主義](Rinri\3Kihanrinrigaku.qmd)
-
-[４　功利主義と義務論](Rinri\4Kourisyugi.qmd)
-
-[５　社会契約説](Rinri\5Syakaikeiyakusetu.qmd)
-
-[６　応用倫理学と生命倫理学](Rinri\6Seimeirinnrigaku.qmd)
-
 ## 参考文献
 吉川孝、横地徳広、池田喬 編著　『映画で考える生命環境倫理学』勁草書房、2019年
 
