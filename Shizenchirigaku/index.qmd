@@ -5,9 +5,13 @@ format: html
 ---
 # 資料一覧
 
-[1 地理学とは](/Shizenchirigaku/1Chirigakutoha.qmd)
+[1 地理学とは](1Chirigakutoha.qmd)
 
-[2 大気大循環](/Shizenchirigaku/2Taikijyunkan.qmd)
+[2 大気大循環](2Taikijyunkan.qmd)
+
+[3 ケッペンの気候区分](3Keppen.qmd)
+
+
 
 
 ## 参考文献

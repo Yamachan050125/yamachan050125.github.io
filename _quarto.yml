@@ -45,6 +45,7 @@ website:
           - href: blog/index.qmd
             text: 日記トップ
       
+      # 5. 地理学
       - section: "地理学"
         contents:
           - href: Shizenchirigaku/index.qmd
@@ -53,6 +54,8 @@ website:
             text: 地理学
           - href: Shizenchirigaku\2Taikijyunkan.qmd
             text: 大気大循環
+          - href: Shizenchirigaku\3Keppen.qmd
+            text: ケッペンの気候区分
 
   # 上部のメニュー（必要なければ消してもOK、残してもOK）
   navbar:
