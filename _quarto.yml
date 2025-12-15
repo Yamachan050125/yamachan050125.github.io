@@ -56,6 +56,8 @@ website:
             text: 大気大循環
           - href: Shizenchirigaku\3Keppen.qmd
             text: ケッペンの気候区分
+          - href: Shizenchirigaku\4Nettai.qmd
+            text: 各気候の特徴
 
   # 上部のメニュー（必要なければ消してもOK、残してもOK）
   navbar:
