@@ -4,6 +4,8 @@ author: Yamato Fujii
 ---
 ## 資料一覧
 
+[１　地図の特性と注意](1chizunomikata.qmd)
+
 [２　メルカトル図法](2chizunouso.qmd)
 
 ## すべての地図はどこか間違っている
