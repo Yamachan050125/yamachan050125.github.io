@@ -64,6 +64,8 @@ website:
         contents:
           - href: Chizugaku/index.qmd
             text: 地図学トップ
+          - href: Chizugaku/2chizunouso.qmd
+            text: 2 メルカトル図法
 
   # 上部のメニュー（必要なければ消してもOK、残してもOK）
   navbar:
