@@ -4,7 +4,7 @@ author: Yamato Fujii
 ---
 ## 資料一覧
 
-
+[２　メルカトル図法](2chizunouso.qmd)
 
 ## すべての地図はどこか間違っている
 
