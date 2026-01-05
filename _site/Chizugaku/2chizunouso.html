@@ -298,7 +298,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#横方向に引き延ばして隙間をなくす" id="toc-横方向に引き延ばして隙間をなくす" class="nav-link" data-scroll-target="#横方向に引き延ばして隙間をなくす">② 横方向に引き延ばして隙間をなくす</a></li>
   <li><a href="#縦方向にも引き延ばす完成" id="toc-縦方向にも引き延ばす完成" class="nav-link" data-scroll-target="#縦方向にも引き延ばす完成">③ 縦方向にも引き延ばす（完成）</a></li>
   </ul></li>
-  <li><a href="#メルカトル図法の特性と歪み" id="toc-メルカトル図法の特性と歪み" class="nav-link" data-scroll-target="#メルカトル図法の特性と歪み">メルカトル図法の特性と歪み</a></li>
+  <li><a href="#メルカトル図法の特性と歪み" id="toc-メルカトル図法の特性と歪み" class="nav-link" data-scroll-target="#メルカトル図法の特性と歪み">メルカトル図法の特性と歪み</a>
+  <ul class="collapse">
+  <li><a href="#メリット" id="toc-メリット" class="nav-link" data-scroll-target="#メリット">メリット</a></li>
+  <li><a href="#デメリット" id="toc-デメリット" class="nav-link" data-scroll-target="#デメリット">デメリット</a></li>
+  <li><a href="#まとめると" id="toc-まとめると" class="nav-link" data-scroll-target="#まとめると">まとめると…</a></li>
+  </ul></li>
+  <li><a href="#発展横メルカトル図法" id="toc-発展横メルカトル図法" class="nav-link" data-scroll-target="#発展横メルカトル図法">[発展]横メルカトル図法</a></li>
+  <li><a href="#関連資料リンク" id="toc-関連資料リンク" class="nav-link" data-scroll-target="#関連資料リンク">関連資料リンク</a></li>
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul>
 </nav>
@@ -343,18 +350,143 @@ ul.task-list li input[type="checkbox"] {
 <section id="横方向に引き延ばして隙間をなくす" class="level3">
 <h3 class="anchored" data-anchor-id="横方向に引き延ばして隙間をなくす">② 横方向に引き延ばして隙間をなくす</h3>
 <p><img src="png\p110f_100.png" class="img-fluid"></p>
-<p>これでかなり地図っぽくなった。今の状態のこの地図を、<strong>正距円筒図法</strong>（または正方形図法）という。この地図は、引き延ばしたがために、<strong>角度・面積・方位</strong>が異なっており、<strong>距離も赤道上のみ正しくなる</strong>という地図になっている。（羽田(2021), p.174-175）</p>
-<p>では、横方向に引き伸ばした分だけ、縦方向にも引き伸ばす。</p>
+<p>これでかなり地図っぽくなった。今の状態のこの地図を、<strong>正距円筒図法</strong>（または<strong>正方形図法</strong>）という。この地図は、引き延ばしたがために、<strong>角度・面積・方位</strong>のすべてが異なっており、<strong>距離も赤道上のみ正しくなる</strong>という地図になっている。（羽田(2021), p.174-175）これでは使いようがない。</p>
+<p>では、せめて角度を正しくしよう。横方向に引き伸ばした分だけ、縦方向にも引き伸ばす。</p>
 </section>
 <section id="縦方向にも引き延ばす完成" class="level3">
 <h3 class="anchored" data-anchor-id="縦方向にも引き延ばす完成">③ 縦方向にも引き延ばす（完成）</h3>
 <p><img src="png\p120f_100.png" class="img-fluid"></p>
-<p>こうしてできたのが、<strong>メルカトル図法</strong>である。</p>
+<p>こうしてできたのが、1569年にGerardus Mercator（ゲラルドゥス・メルカトル）という地理学者が発明した<strong>メルカトル図法</strong>である。</p>
 </section>
 </section>
 <section id="メルカトル図法の特性と歪み" class="level2">
 <h2 class="anchored" data-anchor-id="メルカトル図法の特性と歪み">メルカトル図法の特性と歪み</h2>
-<p>メルカトル図法は、<strong>緯線経線が直交することが最も大きなメリット</strong>である。</p>
+<section id="メリット" class="level3">
+<h3 class="anchored" data-anchor-id="メリット">メリット</h3>
+<section id="角度が正しい" class="level4">
+<h4 class="anchored" data-anchor-id="角度が正しい">角度が正しい</h4>
+<p>メルカトル図法は、<strong>南北の方位が正しいことと、角度が正しいことが最も大きなメリット</strong>である。</p>
+<p><strong>角度の正しさは、航海をする上では非常に重要な要素</strong>だ。南北があっているのだから、航海は、北の方向からどの角度に進めばよいかを定めることができる。そうすれば行くべき正しい方向を決められる。</p>
+</section>
+<section id="緯線経線が直交する" class="level4">
+<h4 class="anchored" data-anchor-id="緯線経線が直交する">緯線・経線が直交する</h4>
+<p>どの位置にいるかというのが、緯線・経線で大まかに把握しやすい。当然、面積や距離がずれているので、正確には測れない。ただ、ほかの地図だと緯線・経線がグニャグニャで即座の把握は面倒になっている。</p>
+</section>
+<section id="赤道付近は距離面積角度方位のすべてが正しい" class="level4">
+<h4 class="anchored" data-anchor-id="赤道付近は距離面積角度方位のすべてが正しい">赤道付近は距離・面積・角度・方位のすべてが正しい</h4>
+<p>以上のような作り方をしているので、赤道付近はほとんど引き延ばされていない。よって、<strong>赤道付近は、すべてが正しい地図になっている</strong>。</p>
+<p>この原理を応用したものが、後から紹介する[発展]横メルカトル図法である。</p>
+</section>
+</section>
+<section id="デメリット" class="level3">
+<h3 class="anchored" data-anchor-id="デメリット">デメリット</h3>
+<section id="距離が正しくない" class="level4">
+<h4 class="anchored" data-anchor-id="距離が正しくない">距離が正しくない</h4>
+<p>作成過程で横に引き延ばしているので、当然、距離は正しくない。</p>
+</section>
+<section id="面積が正しくない" class="level4">
+<h4 class="anchored" data-anchor-id="面積が正しくない">面積が正しくない</h4>
+<p>距離同様に面積も正しくない。実際にどれほど伸びているかを示している図が下である。</p>
+<p><img src="png\p126f_100.png" class="img-fluid"></p>
+<p>赤道付近では、ほとんど歪みがないが、<strong>南北に行くほど歪みがおおきくなる</strong>。</p>
+<p><a href="https://thetruesize.com/#?borders=1~!MTMwODg2ODE.NDM5NjMyNQ*MzA5NTA2Mzk(ODQ1MDYzOQ~!CONTIGUOUS_US*MTAwMjQwNzU.MjUwMjM1MTc(MTc1)MQ~!IN*NTI2NDA1MQ.Nzg2MzQyMQ)Mg~!CN*OTkyMTY5Nw.NzMxNDcwNQ(MjI1)Mw">True size of</a>というサイトでは、このメルカトル図法によって、どれほど国の大きさが大きくなっているのかを視覚的に見ることができる。</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">注意</span>注意
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>このサイトで注意すべきなのは、緯度の高い地域で比較しても意味がないことである。メルカトル図法は、緯度が高いほど歪みが大きくなる。例えば、いくらロシアが以外にも小さい国だということを示すために、日本の地図をロシア近くに持って行っても、それは間違っている。</p>
+<p>比べるなら、赤道付近で行うべきであろう。そうすれば、正確な国の大きさが比較できる。</p>
+</div>
+</div>
+<p>実際の大きさを視覚的に地球儀で比べてみるなら、この<a href="https://arnofiva.github.io/world-sizes/">World Size</a>というサイトもおすすめだ。</p>
+</section>
+<section id="方位が正しくない" class="level4">
+<h4 class="anchored" data-anchor-id="方位が正しくない">方位が正しくない</h4>
+<p>メルカトル図法は、方位が正しいと誤解されがちである。確かに、メルカトル図法は、<strong>南北方向</strong>の方位は正しい。しかし、<strong>東西方向の方位は正しくない。</strong></p>
+<p>日本の裏側はどこか。それは紛れもなく皆が「ブラジル」と答えるであろう。<strong>「裏側」ということは、日本から真東（もしくは真西）に進めば裏側にたどり着くはず</strong>だ。</p>
+<p>しかし、<strong>メルカトル図法で東に進むと、アメリカに突き当たる</strong>。メルカトル図法の地図において、日本の裏側はアメリカを示すのである。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="png\Brasil_to_Japan.png" class="img-fluid figure-img"></p>
+<figcaption>東京から真東に向かうと</figcaption>
+</figure>
+</div>
+<p>緯度が高いほど歪みが大きく、緯度が低いほど歪みが小さい地図であるから、よく考えてみれば当然だ。</p>
+</section>
+</section>
+<section id="まとめると" class="level3">
+<h3 class="anchored" data-anchor-id="まとめると">まとめると…</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>距離</th>
+<th>面積</th>
+<th>角度</th>
+<th>方位</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>メルカトル図法</td>
+<td>✖（赤道付近のみ〇）</td>
+<td>✖（赤道付近のみ〇）</td>
+<td>すべての地点で〇</td>
+<td>南北方向のみ〇（東西方向は✖）</td>
+</tr>
+</tbody>
+</table>
+<p>距離も面積も東西方位も異なるこのメルカトル図法は、決して世界地図のグローバルスタンダードにはなるべきではなかったのだが、現状は地図の需要の急拡大により、一目ですべての国がわかるメルカトル図法が「世界地図」として広く普及した。</p>
+</section>
+</section>
+<section id="発展横メルカトル図法" class="level2">
+<h2 class="anchored" data-anchor-id="発展横メルカトル図法">[発展]横メルカトル図法</h2>
+<p>先ほど伝えたようにメルカトル図法は、<strong>赤道付近以外は</strong>ズレズレである。それは、<strong>赤道付近は引き延ばしていない</strong>からである。</p>
+<p>日本地図でこのメルカトル図法を使うと、あまりにも歪む。<strong>では、剥き方を変えてみたら、どうなるか。</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="png\p400f_100.png" class="img-fluid figure-img"></p>
+<figcaption>縦に剥く</figcaption>
+</figure>
+</div>
+<p>こうすれば、<strong>これまでの剥き方では赤道付近に来ていた正確な部分が、日本に来るではないか。</strong></p>
+<p>で、これを引き延ばすと、こうなる。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="png\p410f_100.png" class="img-fluid figure-img"></p>
+<figcaption>横メルカトル図法</figcaption>
+</figure>
+</div>
+<p>ここから、日本の部分だけを切り出せば、距離・面積・角度・方位がほぼすべて等しい最強の地図ができるわけだ。これを<strong>横メルカトル図法</strong>という。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="png\yokomerukatoru.png" class="img-fluid figure-img"></p>
+<figcaption>横メルカトル図法の日本地図</figcaption>
+</figure>
+</div>
+<p>この横メルカトル図法を国際基準に合わせた形が、現在の多くの地図で使われる<strong>UTM（ユニバーサル横メルカトル）図法</strong>手法であり、日本の<a href="https://maps.gsi.go.jp/#5/36.104611/140.084556/&amp;base=std&amp;ls=std&amp;disp=1&amp;vs=c1g1j0h0k0l0u0t0z0r0s0m0f1">地理院地図</a>もこの書き方である。</p>
+<p>このようにすることで、その地域を示す小さな地図は、この方法を使うことで、ほとんどズレなく書くことができるのである。</p>
+<p>地理学者メルカトルに感謝しなければなるまい。</p>
+</section>
+<section id="関連資料リンク" class="level2">
+<h2 class="anchored" data-anchor-id="関連資料リンク">関連資料リンク</h2>
+<p>ここで使われている地図は、全て沼津沼津高専様が公開している<a href="https://user.numazu-ct.ac.jp/~tsato/tsato/graphics/map_projection/#t_p410">地図投影法学習のための地図画像素材集</a>よりお借りした。感謝申し上げる。</p>
+<ul>
+<li>沼津高専　地図投影法学習のための地図画像素材集　<a href="https://user.numazu-ct.ac.jp/~tsato/tsato/graphics/map_projection/#t_p410">https://user.numazu-ct.ac.jp/~tsato/tsato/graphics/map_projection/#t_p410</a></li>
+</ul>
 </section>
 <section id="section" class="level2">
 <h2 class="anchored" data-anchor-id="section"></h2>
