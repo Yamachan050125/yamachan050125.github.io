@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Yamato Fujii">
 
-<title>４　各気候の特徴 – 社会科のおもちゃ箱</title>
+<title>３　正距方位図法 – 社会科のおもちゃ箱</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -134,7 +106,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Shizenchirigaku/index.html">地理学</a></li><li class="breadcrumb-item"><a href="../Shizenchirigaku/4Nettai.html">各気候の特徴</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">３　正距方位図法</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="サーチ" onclick="window.quartoOpenSearch();">
@@ -243,13 +215,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
  <span class="menu-text">地理学</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="セクションを切り替え">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="セクションを切り替え">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Shizenchirigaku/index.html" class="sidebar-item-text sidebar-link">
@@ -276,7 +248,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Shizenchirigaku/4Nettai.html" class="sidebar-item-text sidebar-link active">
+  <a href="../Shizenchirigaku/4Nettai.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">各気候の特徴</span></a>
   </div>
 </li>
@@ -321,38 +293,38 @@ window.Quarto = {
     <h2 id="toc-title">目次</h2>
    
   <ul>
-  <li><a href="#熱帯" id="toc-熱帯" class="nav-link active" data-scroll-target="#熱帯">熱帯</a>
-  <ul class="collapse">
-  <li><a href="#気候の特徴" id="toc-気候の特徴" class="nav-link" data-scroll-target="#気候の特徴">気候の特徴</a></li>
-  <li><a href="#人の暮らし" id="toc-人の暮らし" class="nav-link" data-scroll-target="#人の暮らし">人の暮らし</a>
-  <ul class="collapse">
-  <li><a href="#住居" id="toc-住居" class="nav-link" data-scroll-target="#住居">住居</a></li>
-  <li><a href="#衣服" id="toc-衣服" class="nav-link" data-scroll-target="#衣服">衣服</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#乾燥帯" id="toc-乾燥帯" class="nav-link" data-scroll-target="#乾燥帯">乾燥帯</a>
-  <ul class="collapse">
-  <li><a href="#砂漠地域が分布する場所" id="toc-砂漠地域が分布する場所" class="nav-link" data-scroll-target="#砂漠地域が分布する場所">砂漠地域が分布する場所</a></li>
-  <li><a href="#砂漠気候の特徴" id="toc-砂漠気候の特徴" class="nav-link" data-scroll-target="#砂漠気候の特徴">砂漠気候の特徴</a></li>
-  <li><a href="#乾燥地の農業" id="toc-乾燥地の農業" class="nav-link" data-scroll-target="#乾燥地の農業">乾燥地の農業</a></li>
-  </ul></li>
-  <li><a href="#温帯" id="toc-温帯" class="nav-link" data-scroll-target="#温帯">温帯</a></li>
+  <li><a href="#正距方位図法とは" id="toc-正距方位図法とは" class="nav-link active" data-scroll-target="#正距方位図法とは">正距方位図法とは</a></li>
+  <li><a href="#正距方位図法をつくる" id="toc-正距方位図法をつくる" class="nav-link" data-scroll-target="#正距方位図法をつくる">正距方位図法をつくる</a></li>
+  <li><a href="#正距方位図法の特徴" id="toc-正距方位図法の特徴" class="nav-link" data-scroll-target="#正距方位図法の特徴">正距方位図法の特徴</a></li>
+  <li><a href="#正距方位図法のデメリット" id="toc-正距方位図法のデメリット" class="nav-link" data-scroll-target="#正距方位図法のデメリット">正距方位図法のデメリット</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Shizenchirigaku/index.html">地理学</a></li><li class="breadcrumb-item"><a href="../Shizenchirigaku/4Nettai.html">各気候の特徴</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">４　各気候の特徴</h1>
+<h1 class="title">３　正距方位図法</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">作者</div>
+    <div class="quarto-title-meta-contents">
+             <p>Yamato Fujii </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">公開</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026年1月21日</p>
+    </div>
+  </div>
   
     
   </div>
@@ -362,67 +334,70 @@ window.Quarto = {
 </header>
 
 
+<section id="正距方位図法とは" class="level2">
+<h2 class="anchored" data-anchor-id="正距方位図法とは">正距方位図法とは</h2>
+<p>地図の中心から各地への距離と方位が正しくなるように描いた地図のことである。</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="png\keppen.png" class="img-fluid figure-img"></p>
-<figcaption>ケッペンの気候区分</figcaption>
+<p><img src="png\p210f_100.png" class="img-fluid figure-img"></p>
+<figcaption>正距方位図法</figcaption>
 </figure>
 </div>
-<section id="熱帯" class="level1">
-<h1>熱帯</h1>
-<section id="気候の特徴" class="level2">
-<h2 class="anchored" data-anchor-id="気候の特徴">気候の特徴</h2>
-<p>地球表面の36％を占める。</p>
-<p>降水は、局所的に短時間に集中して強雨になることが多い。</p>
-<p>熱帯収束帯のかかり方によって、Af（年間を通じて収束下）、Am（季節的に収束下）に区分される。</p>
-<ul>
-<li>赤道付近では、亜熱帯高圧帯からの貿易風が卓越</li>
-<li>上昇気流が発生し、活発な雲が帯状に発生</li>
-</ul>
 </section>
-<section id="人の暮らし" class="level2">
-<h2 class="anchored" data-anchor-id="人の暮らし">人の暮らし</h2>
-<section id="住居" class="level3">
-<h3 class="anchored" data-anchor-id="住居">住居</h3>
-<ul>
-<li>湿気を防ぐため高床式住居　オセアニアでは、熱帯植物の葉や茎を使用して作られる。</li>
-</ul>
+<section id="正距方位図法をつくる" class="level2">
+<h2 class="anchored" data-anchor-id="正距方位図法をつくる">正距方位図法をつくる</h2>
+<p>どこが歪むかは、<strong>作ってみるとわかりやすい</strong>ので、作ってみよう。</p>
+<p>メルカトル図法同様に、地球儀を剥くところから始めてみよう。</p>
+<p>今度は、<strong>北極点が中心となるように上から剥いてみよう</strong>。</p>
+<p><img src="png\p200f_100.png" class="img-fluid"></p>
+<p>上から剥くとこうなる。</p>
+<p>この状態では、正直なところ地図として使いにくい。地図間に空白があるので、非常に見にくい。</p>
+<p>では、<strong>引き伸ばして隙間をなくしてみよう</strong>。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="png\p210f_100.png" class="img-fluid figure-img"></p>
+<figcaption>正距方位図法</figcaption>
+</figure>
+</div>
+<p>そうすれば完成だ。とても簡単だろう。</p>
 </section>
-<section id="衣服" class="level3">
-<h3 class="anchored" data-anchor-id="衣服">衣服</h3>
-<ul>
-<li>インドのサリー、ガーナのケンテなど</li>
-<li>一枚の布を体に巻き付ける</li>
-</ul>
+<section id="正距方位図法の特徴" class="level2">
+<h2 class="anchored" data-anchor-id="正距方位図法の特徴">正距方位図法の特徴</h2>
+<p>このように、かなり大きな隙間を引き延ばしている。</p>
+<p>しかし、<strong>中心点からの距離と方位自体は何も変わっていない</strong>のがわかるだろう。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>距離</th>
+<th>面積</th>
+<th>角度</th>
+<th>方位</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>正距方位図法</td>
+<td>中心点からのみ〇</td>
+<td>×</td>
+<td>×</td>
+<td>中心点からのみ〇</td>
+<td>レーダーなど</td>
+</tr>
+</tbody>
+</table>
+<p><strong>中心点からの距離と方位は変わらない</strong>ので、みんなが映画やゲームでよく見るシーンのレーダーは正距方位図法なのである。距離と方位はこれでよくわかる</p>
+<blockquote class="blockquote">
+<p>？？？「魚雷！10時方向！距離20！」</p>
+</blockquote>
+<p>こんなセリフは、正距方位図法があるからできるのだ。</p>
 </section>
-</section>
-</section>
-<section id="乾燥帯" class="level1">
-<h1>乾燥帯</h1>
-<section id="砂漠地域が分布する場所" class="level2">
-<h2 class="anchored" data-anchor-id="砂漠地域が分布する場所">砂漠地域が分布する場所</h2>
-<p><strong>中緯度高気圧帯の影響を受ける地域</strong>　Ex）サハラ砂漠、中東地域</p>
-<p><strong>海洋から遠く離れた地域</strong>　Ex）ゴビ砂漠、タクラマカン砂漠</p>
-<p><strong>沖合に寒流が流れ空気が冷却されて上昇気流が発生しにくい場所</strong>　Ex）アタカマ砂漠、ナミブ砂漠</p>
-<p><strong>山脈の風下側</strong>　Ex）パタゴニア</p>
-</section>
-<section id="砂漠気候の特徴" class="level2">
-<h2 class="anchored" data-anchor-id="砂漠気候の特徴">砂漠気候の特徴</h2>
-<p>降水量は1年を通じて少ない。地球の1/3は砂漠地帯に属する。相対湿度が低いため、気温の日較差が大きい（砂漠の土壌は日射の反射率が大きい）。</p>
-<p><strong>乾燥指数</strong>（<span class="math inline">\(AI\)</span>）：年平均降水量（<span class="math inline">\(P\)</span>）<span class="math inline">\(÷\)</span> 可能蒸発散量(<span class="math inline">\(PET\)</span>)</p>
-<ul>
-<li><strong>極乾燥地域</strong> <span class="math inline">\(AI&lt;0.05\)</span></li>
-<li><strong>半湿潤地域</strong> <span class="math inline">\(0.50≦AI＜0.65\)</span></li>
-</ul>
-<p><strong>オアシス</strong>：砂漠土壌と岩盤の間に地下水が流下している場合に形成される</p>
-</section>
-<section id="乾燥地の農業" class="level2">
-<h2 class="anchored" data-anchor-id="乾燥地の農業">乾燥地の農業</h2>
-<p>乾燥地は降水量が少ないが、日照が十二分にあるため、水があれば非常に高い農業収穫が期待できる。</p>
-</section>
-</section>
-<section id="温帯" class="level1">
-<h1>温帯</h1>
+<section id="正距方位図法のデメリット" class="level2">
+<h2 class="anchored" data-anchor-id="正距方位図法のデメリット">正距方位図法のデメリット</h2>
+<p>いわずもがな、面積も角度もめちゃくちゃである。</p>
+<p>地図の見た目もかなり悪い。 南極大陸が円周を囲っているではないか。</p>
+<p>よって、一般的にはあまり使われない地図である。</p>
 
 
 </section>
