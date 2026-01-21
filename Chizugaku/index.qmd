@@ -8,6 +8,11 @@ author: Yamato Fujii
 
 [２　メルカトル図法](2chizunouso.qmd)
 
+[３　正距方位図法](3Seikyohouizuhou.qmd)
+
+[４　サンソン図法・モルワイデ図法](4Moruwaide.qmd)
+
+
 ## すべての地図はどこか間違っている
 
 日本に住む人間であれば、一度は地図に触れたことがあるであろう。観光情報雑誌やGoogle Mapを使いながら旅をしている読者も多いと思う。しかし、**あなたが見ている地図は本当に正しいのだろうか**。
@@ -27,5 +32,9 @@ author: Yamato Fujii
 
 ## 参考文献
 * 羽田康祐（2021）『地図リテラシー入門 地図の正しい読み方・描き方がわかる』, ベレ出版
-* 
 
+## 地図素材など
+
+ここで使われている地図は、全て沼津沼津高専様が公開している[地図投影法学習のための地図画像素材集](https://user.numazu-ct.ac.jp/~tsato/tsato/graphics/map_projection/#t_p410)よりお借りした。感謝申し上げる。
+
+* 沼津高専　地図投影法学習のための地図画像素材集　[https://user.numazu-ct.ac.jp/~tsato/tsato/graphics/map_projection/#t_p410](https://user.numazu-ct.ac.jp/~tsato/tsato/graphics/map_projection/#t_p410)

@@ -114,11 +114,6 @@ title: "２　メルカトル図法"
 
 地理学者メルカトルに感謝しなければなるまい。
 
-## 関連資料リンク
-
-ここで使われている地図は、全て沼津沼津高専様が公開している[地図投影法学習のための地図画像素材集](https://user.numazu-ct.ac.jp/~tsato/tsato/graphics/map_projection/#t_p410)よりお借りした。感謝申し上げる。
-
-* 沼津高専　地図投影法学習のための地図画像素材集　[https://user.numazu-ct.ac.jp/~tsato/tsato/graphics/map_projection/#t_p410](https://user.numazu-ct.ac.jp/~tsato/tsato/graphics/map_projection/#t_p410)
 
 
 
