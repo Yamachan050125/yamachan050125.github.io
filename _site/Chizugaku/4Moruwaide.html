@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Yamato Fujii">
 
-<title>１　地図の特性と注意 – 社会科のおもちゃ箱</title>
+<title>４　サンソン図法・モルワイデ図法 – 社会科のおもちゃ箱</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -105,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Chizugaku/index.html">地図学</a></li><li class="breadcrumb-item"><a href="../Chizugaku/1chizunomikata.html">1 地図の特性と注意</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">４　サンソン図法・モルワイデ図法</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="サーチ" onclick="window.quartoOpenSearch();">
@@ -255,13 +256,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
  <span class="menu-text">地図学</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="セクションを切り替え">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="セクションを切り替え">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Chizugaku/index.html" class="sidebar-item-text sidebar-link">
@@ -270,7 +271,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Chizugaku/1chizunomikata.html" class="sidebar-item-text sidebar-link active">
+  <a href="../Chizugaku/1chizunomikata.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1 地図の特性と注意</span></a>
   </div>
 </li>
@@ -298,27 +299,42 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">目次</h2>
    
   <ul>
-  <li><a href="#地図" id="toc-地図" class="nav-link active" data-scroll-target="#地図">地図</a>
+  <li><a href="#サンソン図法をつくろう" id="toc-サンソン図法をつくろう" class="nav-link active" data-scroll-target="#サンソン図法をつくろう">サンソン図法をつくろう</a>
   <ul class="collapse">
-  <li><a href="#地図の正確性を示す４つの要素" id="toc-地図の正確性を示す４つの要素" class="nav-link" data-scroll-target="#地図の正確性を示す４つの要素">地図の正確性を示す４つの要素</a></li>
+  <li><a href="#地球儀から表面の地図部分を剥いてみる" id="toc-地球儀から表面の地図部分を剥いてみる" class="nav-link" data-scroll-target="#地球儀から表面の地図部分を剥いてみる">①　地球儀から表面の地図部分を剥いてみる</a></li>
+  <li><a href="#中心に引き延ばして隙間をなくす" id="toc-中心に引き延ばして隙間をなくす" class="nav-link" data-scroll-target="#中心に引き延ばして隙間をなくす">② 中心に引き延ばして隙間をなくす</a></li>
+  <li><a href="#完成" id="toc-完成" class="nav-link" data-scroll-target="#完成">③ 完成</a></li>
   </ul></li>
-  <li><a href="#各図法の正確性" id="toc-各図法の正確性" class="nav-link" data-scroll-target="#各図法の正確性">各図法の正確性</a></li>
+  <li><a href="#モルワイデ図法のつくり方" id="toc-モルワイデ図法のつくり方" class="nav-link" data-scroll-target="#モルワイデ図法のつくり方">モルワイデ図法のつくり方</a></li>
+  <li><a href="#サンソン図法モルワイデ図法の特徴" id="toc-サンソン図法モルワイデ図法の特徴" class="nav-link" data-scroll-target="#サンソン図法モルワイデ図法の特徴">サンソン図法・モルワイデ図法の特徴</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Chizugaku/index.html">地図学</a></li><li class="breadcrumb-item"><a href="../Chizugaku/1chizunomikata.html">1 地図の特性と注意</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">１　地図の特性と注意</h1>
+<h1 class="title">４　サンソン図法・モルワイデ図法</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">作者</div>
+    <div class="quarto-title-meta-contents">
+             <p>Yamato Fujii </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">公開</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026年1月21日</p>
+    </div>
+  </div>
   
     
   </div>
@@ -328,23 +344,56 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="地図" class="level2">
-<h2 class="anchored" data-anchor-id="地図">地図</h2>
-<p>地図は、現実の地理的な情報を縮小して表現したものである。しかし、<strong>地図は正確に現実を反映しているわけではない。</strong> なぜか。それは、<strong>地球は球体であり、地図は、その表面を無理矢理平面に表現しているから</strong>である。</p>
-<p>したがって、地図を作成する際には、必ず何らかの歪みが生じる。 この歪みは、地図の種類や作成方法によって異なる。</p>
-<section id="地図の正確性を示す４つの要素" class="level3">
-<h3 class="anchored" data-anchor-id="地図の正確性を示す４つの要素">地図の正確性を示す４つの要素</h3>
-<p>地図の正確性は、この<strong>距離、面積、角度、方位</strong>の４つの要素で評価される。すべての要素を完全に正確に表現することは不可能であり、地図は、目的に応じてどの要素を重視するかを選択して使う。</p>
+<p>この章では、サンソン図法とモルワイデ図法について記述する。これは、似たような作り方をするので、同じページにて紹介する。</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="png\2026-01-04 004024.png" class="img-fluid figure-img"></p>
-<figcaption>地図の正確性を示す４つの要素</figcaption>
+<p><img src="png\2026-01-21 122318.png" class="img-fluid figure-img"></p>
+<figcaption>サンソン図法とモルワイデ図法</figcaption>
+</figure>
+</div>
+<section id="サンソン図法をつくろう" class="level2">
+<h2 class="anchored" data-anchor-id="サンソン図法をつくろう">サンソン図法をつくろう</h2>
+<p>まずは、サンソン図法を作っていこう</p>
+<p>いつも通り、地球儀から地図を剥がしていくことから始めよう。</p>
+<section id="地球儀から表面の地図部分を剥いてみる" class="level3">
+<h3 class="anchored" data-anchor-id="地球儀から表面の地図部分を剥いてみる">①　地球儀から表面の地図部分を剥いてみる</h3>
+<p>メルカトル図法と同じ剥き方にするとこうなる</p>
+<p><img src="png\p100f_100.png" class="img-fluid"></p>
+<p>これを単純に横に引き延ばせば、メルカトル図法になるが、今回は引き延ばし方を変える。</p>
+</section>
+<section id="中心に引き延ばして隙間をなくす" class="level3">
+<h3 class="anchored" data-anchor-id="中心に引き延ばして隙間をなくす">② 中心に引き延ばして隙間をなくす</h3>
+<p>伸ばし方を、真ん中変えてみよう</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="png\p151f_100.png" class="img-fluid figure-img"></p>
+<figcaption>サンソン図法の引き延ばし方</figcaption>
+</figure>
+</div>
+</section>
+<section id="完成" class="level3">
+<h3 class="anchored" data-anchor-id="完成">③ 完成</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="png\p150f_050.png" class="img-fluid figure-img"></p>
+<figcaption>サンソン図法</figcaption>
 </figure>
 </div>
 </section>
 </section>
-<section id="各図法の正確性" class="level2">
-<h2 class="anchored" data-anchor-id="各図法の正確性">各図法の正確性</h2>
+<section id="モルワイデ図法のつくり方" class="level2">
+<h2 class="anchored" data-anchor-id="モルワイデ図法のつくり方">モルワイデ図法のつくり方</h2>
+<p>モルワイデ図法は、サンソン図法を変えていくだけだ。</p>
+<p><strong>緯度によって縦横比を調整し、全体の形が楕円形になるようにした</strong>だけである。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="png\p160f_100.png" class="img-fluid figure-img"></p>
+<figcaption>モルワイデ図法</figcaption>
+</figure>
+</div>
+</section>
+<section id="サンソン図法モルワイデ図法の特徴" class="level2">
+<h2 class="anchored" data-anchor-id="サンソン図法モルワイデ図法の特徴">サンソン図法・モルワイデ図法の特徴</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -358,22 +407,14 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>メルカトル図法</td>
-<td>×</td>
-<td>×</td>
-<td>〇</td>
-<td>南北のみ〇</td>
-<td>海図などで使用</td>
+<td>サンソン図法</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="even">
-<td>正距方位図法</td>
-<td>中心からのみ〇</td>
-<td>×</td>
-<td>×</td>
-<td>中心からのみ〇</td>
-<td>レーダーなどで使用</td>
-</tr>
-<tr class="odd">
 <td>モルワイデ図法</td>
 <td></td>
 <td></td>

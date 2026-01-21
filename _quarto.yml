@@ -70,6 +70,8 @@ website:
             text: 2 メルカトル図法
           - href: Chizugaku\3Seikyohouizuhou.qmd
             text: 3 正距方位図法
+          - href: Chizugaku\4Moruwaide.qmd
+            text: 4 サンソン図法・モルワイデ図法
 
   # 上部のメニュー（必要なければ消してもOK、残してもOK）
   navbar:
