@@ -68,6 +68,8 @@ website:
             text: 1 地図の特性と注意
           - href: Chizugaku/2chizunouso.qmd
             text: 2 メルカトル図法
+          - href: Chizugaku\3Seikyohouizuhou.qmd
+            text: 3 正距方位図法
 
   # 上部のメニュー（必要なければ消してもOK、残してもOK）
   navbar:
