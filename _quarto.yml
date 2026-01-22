@@ -14,13 +14,7 @@ website:
       # 1. ホーム
       - href: index.qmd
         text: Home
-
-      # 2. 教育（フォルダの中身をここにまとめる）
-      - section: "教育"
-        contents:
-          - href: kyouiku/index.qmd   
-            text: 教育トップ
-          # 他にファイルがあればここに追加
+        # 他にファイルがあればここに追加
         
 
       # 3. 哲学・倫理学
@@ -38,12 +32,6 @@ website:
             text: 社会契約説
           - href: Rinri\6Seimeirinnrigaku.qmd
             text: 応用倫理学と生命倫理学
-
-      # 4. 日記
-      - section: "日記"
-        contents:
-          - href: blog/index.qmd
-            text: 日記トップ
       
       # 5. 地理学
       - section: "地理学"
@@ -72,12 +60,24 @@ website:
             text: 3 正距方位図法
           - href: Chizugaku\4Moruwaide.qmd
             text: 4 サンソン図法・モルワイデ図法
+      
+      - section: "教育学"
+        contents:
+          - href: Kyouiku/index.qmd   
+            text: 教育学トップ
 
   # 上部のメニュー（必要なければ消してもOK、残してもOK）
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: ホーム
+      - href: Rinri/index.qmd
+        text: 哲学・倫理学
+      - href: Shizenchirigaku/index.qmd
+        text: 地理学
+      - href: Chizugaku/index.qmd
+        text: 地図学
+      
       
 
 format:
