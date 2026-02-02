@@ -61,10 +61,10 @@ website:
           - href: Chizugaku\4Moruwaide.qmd
             text: 4 サンソン図法・モルワイデ図法
       
-      - section: "教育学"
+      - section: "教育(教員向け)"
         contents:
           - href: Kyouiku/index.qmd   
-            text: 教育学トップ
+            text: 教育トップ
 
   # 上部のメニュー（必要なければ消してもOK、残してもOK）
   navbar:
