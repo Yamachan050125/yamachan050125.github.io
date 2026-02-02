@@ -1310,6 +1310,41 @@
     "text": "まだメモ書き程度です。\n/cpython/Include/cpython/dictobject.hより。\ntypedef struct _dictkeysobject PyDictKeysObject;\n\n/* The ma_values pointer is NULL for a combined table\n * or points to an array of PyObject* for a split table\n */\n\ntypedef struct {\n    PyObject_HEAD\n\n    /* Number of items in the dictionary */\n    Py_ssize_t ma_used;\n\n    /* Dictionary version: globally unique, value change each time\n       the dictionary is modified */\n    uint64_t ma_version_tag;\n\n    PyDictKeysObject *ma_keys;\n\n    /* If ma_values is NULL, the table is \"combined\": keys and values\n       are stored in ma_keys.\n\n       If ma_values is not NULL, the table is splitted:\n       keys are stored in ma_keys and values are stored in ma_values */\n    PyObject **ma_values;\n} PyDictObject;\n/cpython/Objects/dict-common.hより。\ntypedef struct {\n    /* Cached hash code of me_key. */\n    Py_hash_t me_hash;\n    PyObject *me_key;\n    PyObject *me_value; /* This field is only meaningful for combined tables */\n} PyDictKeyEntry;\n/* See dictobject.c for actual layout of DictKeysObject */\nstruct _dictkeysobject {\n    Py_ssize_t dk_refcnt;\n\n    /* Size of the hash table (dk_indices). It must be a power of 2. */\n    uint8_t dk_log2_size;\n\n    /* Kind of keys */\n    uint8_t dk_kind;\n\n    /* Version number -- Reset to 0 by any modification to keys */\n    uint32_t dk_version;\n\n    /* Number of usable entries in dk_entries. */\n    Py_ssize_t dk_usable;\n\n    /* Number of used entries in dk_entries. */\n    Py_ssize_t dk_nentries;\n\n    /* Actual hash table of dk_size entries. It holds indices in dk_entries,\n       or DKIX_EMPTY(-1) or DKIX_DUMMY(-2).\n\n       Indices must be: 0 &lt;= indice &lt; USABLE_FRACTION(dk_size).\n\n       The size in bytes of an indice depends on dk_size:\n\n       - 1 byte if dk_size &lt;= 0xff (char*)\n       - 2 bytes if dk_size &lt;= 0xffff (int16_t*)\n       - 4 bytes if dk_size &lt;= 0xffffffff (int32_t*)\n       - 8 bytes otherwise (int64_t*)\n\n       Dynamically sized, SIZEOF_VOID_P is minimum. */\n    char dk_indices[];  /* char is required to avoid strict aliasing. */\n\n    /* \"PyDictKeyEntry dk_entries[dk_usable];\" array follows:\n       see the DK_ENTRIES() macro */\n};"
   },
   {
+    "objectID": "Kyouiku/1Yoikyouikutowa.html",
+    "href": "Kyouiku/1Yoikyouikutowa.html",
+    "title": "第３回高知ユネスコ協会教育シンポジウム",
+    "section": "",
+    "text": "学力は主に遺伝と環境の２つで決まります。遺伝の影響は大きいですが、環境の影響も無視できません。\n経済的に厳しい環境に置かれた子どもたちの学力は、どうしても裕福な環境にある子どもたちより劣る傾向にあります。\nBradbury et al. (2015)など\n\n親の所得と子どもの学力との相関については、ほぼ全ての国の分析で正の相関がある\n\n樋口・萩原（2017）\n\n高所得者層の家庭に生まれた子どもは、大人になっても高い所得を得ており、低所得者層の家庭に生まれた子どもは、低い所得しか得られていない。\n\n野崎ほか（2018）\n\n小学校6年生においては、世帯所得からの影響のうち、学校外教育支出によって媒介される効果が確認 低所得者層への教育支援の充実が子どもの学力向上へ寄与する可能性\n\nこれに伴う、教育格差の拡大が問題となっています。\n我々は、この教育格差の問題を解決するために、日々活動を行っています。"
+  },
+  {
+    "objectID": "Kyouiku/1Yoikyouikutowa.html#環境による学力変化と教育格差",
+    "href": "Kyouiku/1Yoikyouikutowa.html#環境による学力変化と教育格差",
+    "title": "第３回高知ユネスコ協会教育シンポジウム",
+    "section": "",
+    "text": "学力は主に遺伝と環境の２つで決まります。遺伝の影響は大きいですが、環境の影響も無視できません。\n経済的に厳しい環境に置かれた子どもたちの学力は、どうしても裕福な環境にある子どもたちより劣る傾向にあります。\nBradbury et al. (2015)など\n\n親の所得と子どもの学力との相関については、ほぼ全ての国の分析で正の相関がある\n\n樋口・萩原（2017）\n\n高所得者層の家庭に生まれた子どもは、大人になっても高い所得を得ており、低所得者層の家庭に生まれた子どもは、低い所得しか得られていない。\n\n野崎ほか（2018）\n\n小学校6年生においては、世帯所得からの影響のうち、学校外教育支出によって媒介される効果が確認 低所得者層への教育支援の充実が子どもの学力向上へ寄与する可能性\n\nこれに伴う、教育格差の拡大が問題となっています。\n我々は、この教育格差の問題を解決するために、日々活動を行っています。"
+  },
+  {
+    "objectID": "Kyouiku/1Yoikyouikutowa.html#講師が見る子どもの教育的課題-学習習慣の欠如",
+    "href": "Kyouiku/1Yoikyouikutowa.html#講師が見る子どもの教育的課題-学習習慣の欠如",
+    "title": "第３回高知ユネスコ協会教育シンポジウム",
+    "section": "2 講師が見る子どもの教育的課題 ～学習習慣の欠如～",
+    "text": "2 講師が見る子どもの教育的課題 ～学習習慣の欠如～\n我々が教育現場で感じる子どもの教育的課題として、最も大きく感じるのが、学習習慣の欠如です。\n\n2.1 こういう子どもたちが多い\n「前回教えたのになあ…」\n「家でやるのは宿題だけ」\n「もはや宿題すらやらない」　こうなれば家庭学習の時間はゼロ\n「定期試験前だけ勉強して普段はやらない」\n非常にもったいない\n\n\n2.2 学習習慣と学力の関係\n学習習慣がある子どもは、学力が高い傾向にあります。これは、我々が教育現場で感じるだけでなく、研究でも明らかです。\n杉村ほか（1988）\n\n成績上位群の方が望ましい学習習慣が身についている。\n学業成績と学習習慣の関係は学年が進むにつれて強くなる\n\n苅谷（2004）\n\n学力階層下位の中学生は、自宅でほとんど予習・復習をせず、勉強時間も短い"
+  },
+  {
+    "objectID": "Kyouiku/1Yoikyouikutowa.html#学習習慣の現状",
+    "href": "Kyouiku/1Yoikyouikutowa.html#学習習慣の現状",
+    "title": "第３回高知ユネスコ協会教育シンポジウム",
+    "section": "3 学習習慣の現状",
+    "text": "3 学習習慣の現状"
+  },
+  {
+    "objectID": "Kyouiku/1Yoikyouikutowa.html#引用文献",
+    "href": "Kyouiku/1Yoikyouikutowa.html#引用文献",
+    "title": "第３回高知ユネスコ協会教育シンポジウム",
+    "section": "4 引用文献",
+    "text": "4 引用文献\nBradbery., B, M. Corak, J. Waldfogel, and E. Washbrook. (2015) “Too Many Children Behind The U.S. Achievement Gap in Comparative Perspective.” Russell Sage Foundation, https://cir.nii.ac.jp/crid/1970304959903771308\n樋口美雄, 萩原里紗(2017)『大学への教育投資と世代間所得移転：奨学金は救世主か』,勁草書房\n野崎華世, 樋口美雄, 中室牧子,妹尾渉(2018)『親の所得・家庭環境と子どもの学力の関係：国際比較を考慮に入れて』, 国立教育政策研究所 NIER Discussion Paper Series No.008, https://www.nier.go.jp/05_kenkyu_seika/pdf_seika/h28/nier_dps_008_201803.pdf\n杉村健, 井上登世子, 豊田弘司（1988）,『小学生における学習習慣と学業成績の関係』, 奈良教育大学教育研究所紀要 巻 22, p. 43-58 https://nara-edu.repo.nii.ac.jp/records/9798\n苅谷剛彦（2000）『学習時間の研究 -努力の不平等とメリトクラシー』，教育社会学研究第66集https://www.jstage.jst.go.jp/article/eds1951/66/0/66_0_213/_article/-char/ja/\n高知県HP 令和７年度 全国学力・学習状況調査結果 https://www.pref.kochi.lg.jp/doc/gakuryokutyousa/file_contents/file_20258144205650_1.pdf\n国立教育政策研究所『令和６年度経年変化分析調査・保護者に対する調査 』https://www.nier.go.jp/24chousakekkahoukoku/kannren_chousa/keinen_hogosha_chousa.html\n秋田喜代美, 村瀬公胤, 市川洋子（2004）,『中学校入学後の学習習慣の形成過程 -基礎学力を支援する学校・家庭環境の検討-』,東京大学大学院教育学研究科紀要 43巻, 205-234 https://cir.nii.ac.jp/crid/1390009224602906240\n豊田弘司（2009）『中学生における学習習慣と学業成績の関係に関する実践的研究』,奈良教育大学教育実践総合センター研究紀要 巻 16, p. 1-6 https://nara-edu.repo.nii.ac.jp/records/111072025/\n文部科学省『平成29・30・32年度改訂学習指導要領解説』https://www.mext.go.jp/a_menu/shotou/new-cs/1384661.htm\n高知県教育だより『夢のかけ橋』第102号（令和７年１０月発行）https://www.pref.kochi.lg.jp/doc/2014061600060/file_contents/file_20251061155652_1.pdf\n荒牧良祐, 浅田 匡（2017）『小学生の学習習慣・学習意識と親の教育観との関係に関する研究』日本教育心理学会第59 回総会発表論文集p.712 https://www.jstage.jst.go.jp/article/pamjaep/59/0/59_712/_article/-char/ja\n志水宏吉, 高田一宏（2016）『マインド・ザ・ギャップ！ ―現代日本の学力格差とその克服―』大阪大学出版"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "社会科のおもちゃ箱",
@@ -1593,6 +1628,18 @@
       "ホーム",
       "地図学",
       "3 正距方位図法"
+    ]
+  },
+  {
+    "objectID": "Kyouiku/index.html#概要",
+    "href": "Kyouiku/index.html#概要",
+    "title": "教育",
+    "section": "概要",
+    "text": "概要\nこのページは、教員向けです。",
+    "crumbs": [
+      "ホーム",
+      "教育(教員向け)",
+      "教育トップ"
     ]
   },
   {
