@@ -66,20 +66,6 @@ website:
           - href: Kyouiku/index.qmd   
             text: 教育トップ
 
-  # 上部のメニュー（必要なければ消してもOK、残してもOK）
-  navbar:
-    left:
-      - href: index.qmd
-        text: ホーム
-      - href: Rinri/index.qmd
-        text: 哲学・倫理学
-      - href: Shizenchirigaku/index.qmd
-        text: 地理学
-      - href: Chizugaku/index.qmd
-        text: 地図学
-      
-      
-
 format:
   html:
     theme:
