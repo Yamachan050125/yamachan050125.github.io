@@ -22,6 +22,8 @@ website:
         contents:
           - href: Rinri/index.qmd
             text: 哲学・倫理学トップ
+          - href: Rinri\1RinriGakusyusidouyouryou.qmd
+            text: 平成30年度告示学習指導要領「高校公民 倫理」のポイント
           - href: Rinri\2Tetsugakutekisikou.qmd
             text: 哲学的思考と高校倫理学の難しさ
           - href: Rinri\3Kihanrinrigaku.qmd
