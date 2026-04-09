@@ -16,7 +16,14 @@ website:
         text: Home
         # 他にファイルがあればここに追加
         
-
+      - section: "政治経済（経済分野）"
+        contents: 
+          - href: Keizaigaku\index.qmd
+            text: 政治経済（経済分野）トップ
+          - href: Keizaigaku\Sijyou.qmd
+            text: 経済活動と市場
+      
+      
       # 3. 哲学・倫理学
       - section: "哲学・倫理学"
         contents:
