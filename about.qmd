@@ -1,5 +1,16 @@
 ---
 title: "About"
+image: png/IMG_2173.jpg
+about:
+  template: trestles
 ---
 
-About this site
+藤井 大和
+
+Yamato Fujii
+
+
+## Education
+
+* 高知工科大学 経済マネジメント学群
+* 佛教大学 通信教育課程 科目等履修生
