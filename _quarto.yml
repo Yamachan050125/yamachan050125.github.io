@@ -6,7 +6,6 @@ website:
 
   navbar: 
     search: true
-    collapse-level: 1
     title: false
     pinned: true
     background: success
