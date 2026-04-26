@@ -3,10 +3,10 @@ project:
 
 website:
   title: "教育のおもちゃばこ"
-  logo: png\Kyouiku-Torikera.png
 
   navbar: 
     search: true
+    logo: png/Kyouiku-Torikera.png
     title: false
     pinned: true
     background: "#ff751f"
