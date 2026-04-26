@@ -2,16 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>政治経済　経済分野 – 社会科のおもちゃ箱</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -35,14 +32,15 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-bfc81c90a4e668f7cc6782dca231ae32.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a35d343c8bdbcb87d3b82ed68e48a46c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -301,7 +299,6 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#資料" id="toc-資料" class="nav-link active" data-scroll-target="#資料">資料</a></li>
-  <li><a href="#参考文献" id="toc-参考文献" class="nav-link" data-scroll-target="#参考文献">参考文献</a></li>
   </ul>
 </nav>
     </div>
@@ -328,19 +325,11 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>このページでは、高等学校の政治経済の特に経済分野について取り扱う。</p>
-<p>高等学校の経済学は、多くがマクロ経済学と経済史によって構成されており、最新のミクロ経済学の情報は薄い。 マクロ経済学は、近年マクロの視点のみで見る限界が見え始め、ミクロの視点を取り入れたことで、その境界は薄くなりつつある。 また、<strong>すでに否定派が主流の「キチンの波」などが未だに残る</strong>など、基礎的な知識はある程度あるが、<font color="red">ずさんな教科書</font>になっている。教員は、その「学び続ける力」によりアップデートを図らなければならない。</p>
+<p>高等学校の経済学は、多くがマクロ経済学と経済史によって構成されており、最新のミクロ経済学の情報は薄い。 マクロ経済学は、近年マクロの視点のみで見る限界が見え始め、ミクロの視点を取り入れたことで、その境界は薄くなりつつある。 また、<strong>すでに否定派が主流の「キチンの波」などが未だに残る</strong>など、基礎的な知識はある程度あるが、教員による「学び続ける力」によりアップデートを図らなければならない<font color="red">ずさんな教科書</font>になっている。</p>
 <p>この章の資料ページでは、主に中学校発展・高校レベルの経済学を記述する。</p>
 <section id="資料" class="level2">
 <h2 class="anchored" data-anchor-id="資料">資料</h2>
 <p><a href="../Keizaigaku/Sijyou.html">１　経済活動と市場</a></p>
-</section>
-<section id="参考文献" class="level2">
-<h2 class="anchored" data-anchor-id="参考文献">参考文献</h2>
-<ul>
-<li>高等学校学習指導要領（平成30年公示）公民編 (2018)　文部科学省</li>
-<li>中学校学習指導要領（平成29年公示）社会編(2017) 文部科学省</li>
-<li>N・グレゴリー・マンキュー『マンキュー経済学Ⅱ　マクロ編［第４版］』（2019）東洋経済新報社</li>
-</ul>
 
 
 </section>
@@ -419,7 +408,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/Yamachan050125\.github\.io\/yamachan050125\.github\.io\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
