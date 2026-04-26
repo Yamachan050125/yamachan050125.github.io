@@ -26,5 +26,6 @@ format:
       - brand
     css: styles.css
     toc: true
+    favicon: png/favicon.ico
 
 lang: ja
