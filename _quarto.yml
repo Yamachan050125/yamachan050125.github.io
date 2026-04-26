@@ -2,16 +2,16 @@ project:
   type: website
 
 website:
-  title: "教育のおもちゃ箱"
+  title: "やまちゃんのHP"
 
   navbar: 
     search: true
     title: false
     pinned: true
-    background: light
+    background: primary
 
     left:
-      - text: "教育のおもちゃ箱 ～やまちゃんのHP～"
+      - text: "やまちゃんのHP"
         href: "https://yamachan050125.github.io/"
       - text: "社会科のおもちゃ箱"
         href: "https://yamachan050125.github.io/Syakaika-Siryou/"
