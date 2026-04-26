@@ -2,18 +2,19 @@ project:
   type: website
 
 website:
-  title: "やまちゃんのHP"
+  title: "教育のおもちゃばこ"
+  logo: png\Kyouiku-Torikera.png
 
   navbar: 
     search: true
     title: false
     pinned: true
-    background: primary
+    background: "#ff751f"
 
     left:
-      - text: "やまちゃんのHP"
+      - text: "Home"
         href: "https://yamachan050125.github.io/"
-      - text: "社会科のおもちゃ箱"
+      - text: "社会科授業資料"
         href: "https://yamachan050125.github.io/Syakaika-Siryou/"
         
 format:

@@ -1,8 +1,10 @@
 ---
-title: "やまちゃんのホームページ"
+title: "教育のおもちゃばこ"
 ---
+
+![](png\Logo-Kyouiku-Omochabako.png)
 
 ## 授業資料
 授業資料の公開は、以下のサイトで行っています。
 
-[社会科のおもちゃ箱](https://yamachan050125.github.io/Syakaika-Siryou/)
+[社会科のおもちゃばこ](https://yamachan050125.github.io/Syakaika-Siryou/)
