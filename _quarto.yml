@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "教育のおもちゃ箱 ～やまちゃんのHP～"
+  title: "教育のおもちゃ箱"
 
   navbar: 
     search: true
@@ -11,15 +11,12 @@ website:
     pinned: true
     background: success
 
-    contents:
-      - href: index.qmd
-        text: Home
-        # 他にファイルがあればここに追加
+    left:
+      - text: "教育のおもちゃ箱 ～やまちゃんのHP～"
+        href: "https://yamachan050125.github.io/"
+      - text: "社会科のおもちゃ箱"
+        href: "https://yamachan050125.github.io/Syakaika-Siryou/
         
-      - href: https://yamachan050125.github.io/Syakaika-Siryou/
-        text: 授業資料共有サイト「社会科のおもちゃ箱」
-
- 
 format:
   html:
     theme:
