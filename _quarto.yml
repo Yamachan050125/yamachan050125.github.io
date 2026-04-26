@@ -2,16 +2,16 @@ project:
   type: website
 
 website:
-  title: "社会科のおもちゃ箱"
+  title: "教育のおもちゃ箱 ～やまちゃんのHP～"
 
-  # 左側のメニュー（サイドバー）
-  sidebar:
-    style: "docked"
+  navbar: 
     search: true
-    collapse-level: 1  # ★これを入れると、クリックで開閉（収納）できるようになります！
+    collapse-level: 1
+    title: false
+    pinned: true
+    background: success
 
     contents:
-      # 1. ホーム
       - href: index.qmd
         text: Home
         # 他にファイルがあればここに追加
@@ -19,6 +19,7 @@ website:
       - href: https://yamachan050125.github.io/Syakaika-Siryou/
         text: 授業資料共有サイト「社会科のおもちゃ箱」
 
+ 
 format:
   html:
     theme:
