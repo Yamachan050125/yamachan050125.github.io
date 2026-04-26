@@ -16,64 +16,8 @@ website:
         text: Home
         # 他にファイルがあればここに追加
         
-      - section: "政治経済（経済分野）"
-        contents: 
-          - href: Keizaigaku\index.qmd
-            text: 政治経済（経済分野）トップ
-          - href: Keizaigaku\Sijyou.qmd
-            text: 経済活動と市場
-      
-      
-      # 3. 哲学・倫理学
-      - section: "哲学・倫理学"
-        contents:
-          - href: Rinri/index.qmd
-            text: 哲学・倫理学トップ
-          - href: Rinri\1RinriGakusyusidouyouryou.qmd
-            text: 平成30年告示学習指導要領「高校公民 倫理」のポイント
-          - href: Rinri\2Tetsugakutekisikou.qmd
-            text: 哲学的思考と高校倫理学の難しさ
-          - href: Rinri\3Kihanrinrigaku.qmd
-            text: 客観主義と主観主義
-          - href: Rinri\4Kourisyugi.qmd
-            text: 功利主義と義務論
-          - href: Rinri\5Syakaikeiyakusetu.qmd
-            text: 社会契約説
-          - href: Rinri\6Seimeirinnrigaku.qmd
-            text: 応用倫理学と生命倫理学
-      
-      # 5. 地理学
-      - section: "地理学"
-        contents:
-          - href: Shizenchirigaku/index.qmd
-            text: 地理学トップ
-          - href: Shizenchirigaku\1Chirigakutoha.qmd
-            text: 地理学
-          - href: Shizenchirigaku\2Taikijyunkan.qmd
-            text: 大気大循環
-          - href: Shizenchirigaku\3Keppen.qmd
-            text: ケッペンの気候区分
-          - href: Shizenchirigaku\4Nettai.qmd
-            text: 各気候の特徴
-      
-      # 6. 地図学
-      - section: "地図学"
-        contents:
-          - href: Chizugaku/index.qmd
-            text: 地図学トップ
-          - href: Chizugaku/1chizunomikata.qmd
-            text: 1 地図の特性と注意
-          - href: Chizugaku/2chizunouso.qmd
-            text: 2 メルカトル図法
-          - href: Chizugaku\3Seikyohouizuhou.qmd
-            text: 3 正距方位図法
-          - href: Chizugaku\4Moruwaide.qmd
-            text: 4 サンソン図法・モルワイデ図法
-      
-      - section: "教育(教員向け)"
-        contents:
-          - href: Kyouiku/index.qmd   
-            text: 教育トップ
+      - href: https://yamachan050125.github.io/Syakaika-Siryou/
+        text: 授業資料共有サイト「社会科のおもちゃ箱」
 
 format:
   html:
