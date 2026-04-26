@@ -8,7 +8,7 @@ website:
     search: true
     title: false
     pinned: true
-    background: success
+    background: light
 
     left:
       - text: "教育のおもちゃ箱 ～やまちゃんのHP～"
