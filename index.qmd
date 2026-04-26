@@ -2,7 +2,7 @@
 title: "やまちゃんのおもちゃばこ"
 ---
 
-![](png\YamachanOmochabako.png)
+![](png/YamachanOmochabako.png)
 
 ## 教育学関係資料
 教育学関係の知識はこちらのサイトを参照
