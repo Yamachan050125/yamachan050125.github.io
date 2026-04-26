@@ -1,10 +1,15 @@
 ---
-title: "教育のおもちゃばこ"
+title: "やまちゃんのおもちゃばこ"
 ---
 
-![](png\Logo-Kyouiku-Omochabako.png)
+![](png\YamachanOmochabako.png)
 
-## 授業資料
+## 教育学関係資料
+教育学関係の知識はこちらのサイトを参照
+
+[学校教育のおもちゃばこ](https://yamachan050125.github.io/Kyouiku_gaku/)
+
+## 社会科の授業資料
 授業資料の公開は、以下のサイトで行っています。
 
 [社会科のおもちゃばこ](https://yamachan050125.github.io/Syakaika-Siryou/)
