@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "藤井 大和\nYamato Fujii"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\n\n高知工科大学 経済マネジメント学群\n佛教大学 通信教育課程 科目等履修生"
+  },
+  {
     "objectID": "Kyouiku/index.html#概要",
     "href": "Kyouiku/index.html#概要",
     "title": "教育",
@@ -26,20 +40,6 @@
     "title": "やまちゃんのおもちゃばこ",
     "section": "経歴等",
     "text": "経歴等\nabout"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "藤井 大和\nYamato Fujii"
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About",
-    "section": "Education",
-    "text": "Education\n\n高知工科大学 経済マネジメント学群\n佛教大学 通信教育課程 科目等履修生"
   },
   {
     "objectID": "Kyouiku/3KochiUnesuko_siryou.html",
