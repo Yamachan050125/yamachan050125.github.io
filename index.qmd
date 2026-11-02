@@ -1,8 +1,10 @@
 ---
-title: "やまちゃんのおもちゃばこ"
+title: ""
 ---
 
 ![](png/YamachanOmochabako.png)
+
+
 
 ## 教育学関係資料
 教育学関係の知識はこちらのサイトを参照
@@ -13,6 +15,14 @@ title: "やまちゃんのおもちゃばこ"
 授業資料の公開は、以下のサイトで行っています。
 
 [社会科のおもちゃばこ](https://yamachan050125.github.io/Syakaika-Siryou/)
+
+
+## 社会科指導法
+
+[（執筆途中です）社会科指導法](https://yamachan050125.github.io/syakaika_sidouhou/)
+
+
+
 
 ## 経歴等
 [about](https://yamachan050125.github.io/about)
